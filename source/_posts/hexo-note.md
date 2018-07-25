@@ -1,5 +1,5 @@
 ---
-title: 打造个人博客中遇到的坑
+title: 打造Hexo个人博客中遇到的坑
 date: 2018-07-25 09:46:24
 tags: hexo
 category: 工具
@@ -17,7 +17,9 @@ category: 工具
 
 ### hexo作博客
 使用`hexo`构建博客主要是参照[hexo的官方文档](https://hexo.io/zh-cn/index.html).以下是构建的步骤:
+
 #### 开始使用
+
 * 1. **概述**: 
   * **安装**: post_asset_folder: true
   > **注意**:
@@ -95,4 +97,12 @@ category: 工具
 {% asset_img Andrew-Ng-Deep-Learning-notes.png This is an example image %}
  * **设置_config.yml的permalink: :title/**: 这样两者的地址就一样的
 
+## Hexo-Next-主题优化
+[参考](https://www.jianshu.com/p/4ef35521fee9)
+1. 浏览页面的时候显示当前浏览进度
+_config.yml scrollpercent
+  
 [1]: http://kyonhuang.top/Andrew-Ng-Deep-Learning-notes/
+
+2. 开启版权声明
+主题配置文件下,搜索关键字post_copyright,enable改为true
