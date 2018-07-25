@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.170 --> 00:00:05.880
+Up until now, we've really been doing really mostly image processing where
+
+00:00:05.880 --> 00:00:10.320
+you take an image in, sum of I of x,y and you apply some function to it and
+
+00:00:10.320 --> 00:00:15.310
+you get out a new image what I'm labelling is I prime of x,y.
+
+00:00:15.310 --> 00:00:18.760
+And that's great and there's whole courses, in fact, entire careers.
+
+00:00:18.760 --> 00:00:21.470
+Hundreds of thousands of PhDs written on image processing.
+
+00:00:21.470 --> 00:00:23.020
+But that's not why we're here.
+
+00:00:23.020 --> 00:00:25.520
+We're here to talk about real computer vision.
+
+00:00:25.520 --> 00:00:30.492
+In real vision you still take an image in, but what you get out is good stuff.
+
+00:00:30.492 --> 00:00:32.980
+All right, the whole idea is that we're putting images in and
+
+00:00:32.980 --> 00:00:34.810
+we're getting stuff out.
+
+00:00:34.810 --> 00:00:38.110
+So what are some examples of stuff?
+
+00:00:38.110 --> 00:00:40.080
+Well, maybe just a line.
+
+00:00:40.080 --> 00:00:42.250
+So here we have an image on the left and
+
+00:00:42.250 --> 00:00:45.080
+some edge description of it in the middle, and
+
+00:00:45.080 --> 00:00:48.860
+you can see a whole bunch of lines that have been found within this image.
+
+00:00:48.860 --> 00:00:50.250
+Or maybe you want to find circles.
+
+00:00:50.250 --> 00:00:53.010
+Actually it's a little hard to see, but there's a bowling ball there.
+
+00:00:53.010 --> 00:00:55.820
+And the way the bowling ball was found was find all the circles in the image.
+
+00:00:55.820 --> 00:00:56.780
+Well guess what?
+
+00:00:56.780 --> 00:00:58.490
+There's only one circle and that's the bowling ball.
+
+00:00:59.500 --> 00:01:01.360
+Or, here's some more circles.
+
+00:01:01.360 --> 00:01:02.360
+Just find the coins.
+
+00:01:02.360 --> 00:01:05.230
+And in fact I'll tell you that this particular picture was put
+
+00:01:05.230 --> 00:01:09.170
+together by a TI TA of mine a huge number of years ago.
+
+00:01:09.170 --> 00:01:13.950
+He's now a pretty famous researcher doing stuff on at I can't say where.
+
+00:01:15.420 --> 00:01:18.820
+But this was in order to show how to do a Hough transform on circles.
+
+00:01:18.820 --> 00:01:22.650
+And you might even find a good stuff as like.
+
+00:01:22.650 --> 00:01:23.630
+Find me this car.
+
+00:01:23.630 --> 00:01:24.260
+So you see on the,
+
+00:01:24.260 --> 00:01:27.960
+on the left here just some examples of where we might locate the car.
+
+00:01:27.960 --> 00:01:30.080
+But actually, the car is found right in the middle.
+
+00:01:30.080 --> 00:01:32.440
+Actually, this is a notion of an arbitrary shape.
+
+00:01:32.440 --> 00:01:36.710
+And in fact, we're going to get to how to do finding an arbitrary shape.
+
+00:01:36.710 --> 00:01:40.370
+Actually not this lecture, not this lesson, not the one after it.
+
+00:01:40.370 --> 00:01:44.199
+But the one after that, where we talk about a generalized Hough transform.
+

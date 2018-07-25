@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.430 --> 00:00:03.325
+Let's just talk about a couple limit limitations on this,
+
+00:00:03.325 --> 00:00:07.240
+which are going to get us to the Fourier series in just a minute, okay?
+
+00:00:07.240 --> 00:00:08.850
+For this integral to exist,
+
+00:00:08.850 --> 00:00:11.377
+this Fourier transform, we don't actually want infinites, right?
+
+00:00:11.377 --> 00:00:15.250
+Because that's not so good when, when are, when we, when we try to like,
+
+00:00:15.250 --> 00:00:18.840
+write down infinity, it just goes a really long time, all right.
+
+00:00:18.840 --> 00:00:22.060
+One thing we'd say is that this whole thing is integrable,
+
+00:00:22.060 --> 00:00:27.580
+okay, if the original function itself is integrable.
+
+00:00:27.580 --> 00:00:31.350
+That is if I take the, the function, I actually have to take its absolute value.
+
+00:00:31.350 --> 00:00:35.970
+If I sum it up from minus infinity to infinity, it, it can't explode.
+
+00:00:35.970 --> 00:00:38.040
+It has to be limited to a value.
+
+00:00:38.040 --> 00:00:42.340
+So you might ask, but wait a minute, I thought we had infinite repeating series.
+
+00:00:42.340 --> 00:00:44.600
+&gt;&gt; I thought we had infinite repeating series.
+
+00:00:44.600 --> 00:00:46.870
+We did when we were talking about Fourier series.
+
+00:00:46.870 --> 00:00:48.720
+We're now talking about the Fourier transform,
+
+00:00:48.720 --> 00:00:51.000
+where we're trying to keep things bounded.
+
+00:00:51.000 --> 00:00:53.200
+So the idea is that these integrals have to exist.
+
+00:00:53.200 --> 00:00:56.980
+It's base, it's based on the same principle, but it's, it's this idea.
+
+00:00:56.980 --> 00:01:01.135
+So in Fourier series, we talked about repeating functions.
+
+00:01:01.135 --> 00:01:03.400
+In Fourier transform we're talking about integral,
+
+00:01:03.400 --> 00:01:05.890
+integrable functions, all right?
+
+00:01:05.890 --> 00:01:09.570
+In a minute when we have a fixed length function, it'll be clear.
+
+00:01:09.570 --> 00:01:11.370
+In fact, let's get to that right now.
+
+00:01:11.370 --> 00:01:16.260
+You see it says, so obviously if there was a bound of width T.
+
+00:01:16.260 --> 00:01:20.560
+Right, so if, if all my entire function fell within T, then obviously I could
+
+00:01:20.560 --> 00:01:25.590
+just integrate from sort of, T, negative T over 2, to plus T over 2, right?
+
+00:01:25.590 --> 00:01:28.150
+That would be the entire integral.
+
+00:01:28.150 --> 00:01:29.120
+And that's going to lead us,
+
+00:01:29.120 --> 00:01:33.530
+at least in my twisted mind, to this notion of the discrete Fourier transform.
+

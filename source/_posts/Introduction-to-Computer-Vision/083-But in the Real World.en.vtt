@@ -1,0 +1,256 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.220 --> 00:00:01.040
+So far, so good.
+
+00:00:02.150 --> 00:00:03.755
+Except that what I just showed you won't work.
+
+00:00:03.755 --> 00:00:06.780
+[LAUGH] And let me show you why.
+
+00:00:06.780 --> 00:00:08.270
+So in the real world.
+
+00:00:08.270 --> 00:00:10.720
+So here I have this little function, okay?
+
+00:00:10.720 --> 00:00:12.780
+And so this is f of x, right?
+
+00:00:12.780 --> 00:00:14.460
+And it's got some stuff, and then it takes a jump and
+
+00:00:14.460 --> 00:00:16.170
+it's got some more stuff over there.
+
+00:00:16.170 --> 00:00:18.350
+So that's intensity as a function of x.
+
+00:00:18.350 --> 00:00:22.080
+If I actually take the gradient of that function by just doing,
+
+00:00:22.080 --> 00:00:24.350
+say, a right difference.
+
+00:00:24.350 --> 00:00:24.940
+All right?
+
+00:00:24.940 --> 00:00:28.680
+What I'll do, I'll apply my derivative operator and I'll get this.
+
+00:00:28.680 --> 00:00:31.510
+And one might ask, where is the edge.
+
+00:00:31.510 --> 00:00:33.830
+Well, we can see here, the edge is really, whoops,
+
+00:00:33.830 --> 00:00:35.710
+I missed, the edge is right there.
+
+00:00:35.710 --> 00:00:38.670
+But in this mess, it's sort of hard to tell.
+
+00:00:38.670 --> 00:00:41.960
+And the problem, of course, is that we've added noise.
+
+00:00:41.960 --> 00:00:44.570
+And that noise has caused us to have positive and
+
+00:00:44.570 --> 00:00:46.690
+negative derivatives all over the place.
+
+00:00:46.690 --> 00:00:50.360
+So let's look a little bit more about the effect of noise on some of
+
+00:00:50.360 --> 00:00:53.470
+our derivatives and what we might do about them, okay?
+
+00:00:53.470 --> 00:00:56.290
+So, here we have again more of that striped duck,
+
+00:00:56.290 --> 00:00:59.490
+and here we have the gradient image.
+
+00:00:59.490 --> 00:01:03.290
+And what you can start to see is that as I add noise to the image,
+
+00:01:03.290 --> 00:01:05.580
+my gradient starts to fall apart.
+
+00:01:05.580 --> 00:01:09.200
+That is I'm starting to see this, I had this little bit of Gaussian noise and
+
+00:01:09.200 --> 00:01:11.660
+now I'm turning into these big salt and pepper noise.
+
+00:01:11.660 --> 00:01:12.490
+Oh it feels like salt and
+
+00:01:12.490 --> 00:01:16.780
+pepper noise, just these large spikes are happening within my derivative.
+
+00:01:16.780 --> 00:01:19.810
+So we have to handle that noise somehow.
+
+00:01:19.810 --> 00:01:23.010
+You probably know how to handle, how do we handle noise?
+
+00:01:23.010 --> 00:01:25.360
+We filter, we smooth, we get rid of it, right?
+
+00:01:25.360 --> 00:01:26.460
+We did that before.
+
+00:01:26.460 --> 00:01:28.200
+Come on, are you paying attention?
+
+00:01:28.200 --> 00:01:30.660
+Alright, so here's my image f.
+
+00:01:30.660 --> 00:01:34.260
+So now let me apply a smoothing kernel, h.
+
+00:01:34.260 --> 00:01:35.730
+Okay, so I'm just going to smooth it.
+
+00:01:35.730 --> 00:01:38.820
+So when I smooth it, I get this is h convolved.
+
+00:01:38.820 --> 00:01:41.780
+Doesn't matter whether you do convolution or correlation.
+
+00:01:41.780 --> 00:01:46.230
+H convolved with f, and you see now I get a nice, smooth function.
+
+00:01:46.230 --> 00:01:50.210
+So now that we've smoothed the signal, we can take the derivative and
+
+00:01:50.210 --> 00:01:53.920
+what you see is we get this nice, smooth peak.
+
+00:01:53.920 --> 00:01:55.540
+So, where is the edge?
+
+00:01:55.540 --> 00:01:58.700
+The edge is going to be at this peak right here,
+
+00:01:58.700 --> 00:02:00.840
+corresponding to that edge right there.
+
+00:02:00.840 --> 00:02:03.970
+So basically in order to find our edges, we're going to have to
+
+00:02:03.970 --> 00:02:08.410
+basically apply smooth gradients somehow and look for some peaks.
+
+00:02:08.410 --> 00:02:09.110
+Before we go ahead and
+
+00:02:09.110 --> 00:02:14.780
+do that, remember this whole notion of associate property and linearity etc.
+
+00:02:14.780 --> 00:02:20.640
+We can save ourselves an operation, because the derivative of h
+
+00:02:20.640 --> 00:02:27.400
+convolved with f, is the same as the derivative of h convolved with f.
+
+00:02:27.400 --> 00:02:30.540
+So what does that look like when we're doing this edge detection?
+
+00:02:30.540 --> 00:02:31.800
+It's the following.
+
+00:02:31.800 --> 00:02:34.770
+So here we have the same f that we had before.
+
+00:02:34.770 --> 00:02:38.570
+Now, I take my h, and I take the derivative.
+
+00:02:38.570 --> 00:02:41.210
+That now looks like this.
+
+00:02:41.210 --> 00:02:44.001
+When I apply that function directly to f,
+
+00:02:44.001 --> 00:02:47.201
+I get out the same value that I got out last time.
+
+00:02:47.201 --> 00:02:51.347
+Which has to be because of the associative property of linear operators, and
+
+00:02:51.347 --> 00:02:55.110
+derivatives and filtering being these linear operators.
+
+00:02:55.110 --> 00:02:59.980
+That also saves us an operation, because we can just take this filter and
+
+00:02:59.980 --> 00:03:02.840
+apply it and no more derivatives have to be done.
+
+00:03:02.840 --> 00:03:06.100
+All right, so last question, okay.
+
+00:03:06.100 --> 00:03:07.820
+So, we have these nice peaks.
+
+00:03:07.820 --> 00:03:09.030
+We have to find the peaks.
+
+00:03:09.030 --> 00:03:11.800
+We have to find the maximum of that derivative.
+
+00:03:11.800 --> 00:03:13.460
+How do we find maxima?
+
+00:03:13.460 --> 00:03:15.090
+We take more derivatives.
+
+00:03:15.090 --> 00:03:18.130
+So we're going to have to take another derivative.
+
+00:03:18.130 --> 00:03:21.920
+So now, instead of just doing a single derivative,
+
+00:03:21.920 --> 00:03:24.140
+we're going to take a second derivative.
+
+00:03:24.140 --> 00:03:29.240
+So, before h was just a Gaussian, this was our first derivative of a Gaussian.
+
+00:03:29.240 --> 00:03:32.680
+If we take the derivative of that again we get this,
+
+00:03:32.680 --> 00:03:35.780
+what's sometimes called inverted mexican hat.
+
+00:03:35.780 --> 00:03:38.080
+And you'll see that, when we do it in 2D,
+
+00:03:38.080 --> 00:03:41.640
+right, because it's kind of like this sombrero shape but up and down, right?
+
+00:03:41.640 --> 00:03:45.720
+When we apply that operator to the image,
+
+00:03:45.720 --> 00:03:51.130
+we get this nice zero crossing with this strong slope.
+
+00:03:51.130 --> 00:03:54.290
+And that's what corresponds to our edge.
+
+00:03:54.290 --> 00:03:54.790
+All right.
+
+00:03:54.790 --> 00:03:58.040
+And this idea of a stong slope zero crossing.
+
+00:03:58.040 --> 00:04:01.040
+We don't have to find general maxima, we just have to find any place where
+
+00:04:01.040 --> 00:04:04.425
+the value is zero and that nearby has a strong gradient.
+

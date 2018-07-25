@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.240 --> 00:00:03.860
+In the verged case, drawn here, you can take a look at
+
+00:00:03.860 --> 00:00:06.320
+the epipolar lines by considering a couple of different points.
+
+00:00:06.320 --> 00:00:09.820
+So remember, each point defines a pair of epipolar lines, and
+
+00:00:09.820 --> 00:00:11.150
+here they're drawn.
+
+00:00:11.150 --> 00:00:16.180
+And so here's an example of epipolar lines of two verged cameras.
+
+00:00:16.180 --> 00:00:21.070
+And what that means is, that, for example, this point here since it's on,
+
+00:00:21.070 --> 00:00:25.070
+this happens to be on this line, must be somewhere on that line, and
+
+00:00:25.070 --> 00:00:28.790
+in fact, there it is, okay, and this point here.
+
+00:00:28.790 --> 00:00:32.220
+Now, only a few lines are drawn here, of course, if I was looking for
+
+00:00:32.220 --> 00:00:35.930
+this point here, there's some epipolar line, because there's some point here
+
+00:00:35.930 --> 00:00:40.120
+that defines an epipolar plane, and there would be a corresponding epipolar line
+
+00:00:40.120 --> 00:00:43.280
+on the other side, we've only drawn in a few of them.
+
+00:00:43.280 --> 00:00:44.880
+So, here's a question for you.
+
+00:00:44.880 --> 00:00:49.890
+We said that all the epipolar lines converge at the epipole,
+
+00:00:49.890 --> 00:00:51.780
+well where's the epipole?
+
+00:00:51.780 --> 00:00:54.640
+Well, let's take a look at just this image on the right.
+
+00:00:54.640 --> 00:00:57.570
+The problem is, is that this image ended here.
+
+00:00:57.570 --> 00:01:00.390
+If this image were huge, this line and
+
+00:01:00.390 --> 00:01:04.050
+then this line, here's where they would intersect, okay?
+
+00:01:04.050 --> 00:01:07.240
+So the problem is, is that the, the image, if you will, is sort of cropped,
+
+00:01:07.240 --> 00:01:10.090
+the image sensor is too small to actually find the epipole.
+
+00:01:10.090 --> 00:01:13.640
+The epipole is a mathematical construct that's the intersection
+
+00:01:13.640 --> 00:01:18.360
+of the baseline with the infinite plane that contains the image plane.
+
+00:01:18.360 --> 00:01:23.010
+So that's why the, the epipole lines look like they would converge, but
+
+00:01:23.010 --> 00:01:25.450
+they they do it off the screen.
+

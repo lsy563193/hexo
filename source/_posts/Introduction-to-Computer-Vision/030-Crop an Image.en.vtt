@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.380 --> 00:00:03.140
+Let's use this method of selecting a range of rows and
+
+00:00:03.140 --> 00:00:07.300
+columns to extract a larger portion from an image.
+
+00:00:07.300 --> 00:00:10.620
+By the way, this is also known as cropping an image.
+
+00:00:10.620 --> 00:00:12.710
+Let's use a different picture this time.
+
+00:00:12.710 --> 00:00:14.309
+Let's see what it looks like.
+
+00:00:14.309 --> 00:00:16.460
+All right, a classic two-wheeler there.
+
+00:00:17.790 --> 00:00:20.154
+Let's check the size of the image first.
+
+00:00:20.154 --> 00:00:23.780
+All right, 320 by 500.
+
+00:00:23.780 --> 00:00:27.700
+When cropping this image, we'd want our limits to be within this range.
+
+00:00:28.840 --> 00:00:37.120
+Let's say we want to select rows 110 through 310, and columns 10 through 160.
+
+00:00:37.120 --> 00:00:39.190
+I wonder what we'll find there.
+
+00:00:40.270 --> 00:00:42.020
+That's the front wheel.
+
+00:00:42.020 --> 00:00:42.820
+No points for that.
+
+00:00:44.140 --> 00:00:45.950
+So what is the size of the cropped image?
+

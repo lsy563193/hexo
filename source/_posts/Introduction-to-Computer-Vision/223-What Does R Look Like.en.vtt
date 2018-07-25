@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:02.110
+So what does R look like?
+
+00:00:02.110 --> 00:00:04.840
+Well there are two ways to think about this,
+
+00:00:04.840 --> 00:00:06.320
+first we'll think about it the hard way.
+
+00:00:07.390 --> 00:00:15.280
+R A to B expresses how each basis vector in A would be expressed in terms of B.
+
+00:00:15.280 --> 00:00:21.460
+So the first column of R A B is the component of the I
+
+00:00:21.460 --> 00:00:28.810
+vector of A expressed in terms of how much it has in the i direction in B,
+
+00:00:28.810 --> 00:00:33.560
+in the j direction in B, and in the k direction in B.
+
+00:00:33.560 --> 00:00:38.240
+So you can think of it as like the dot product between i A, and
+
+00:00:38.240 --> 00:00:42.510
+each of the components of B, i B, j B, k B.
+
+00:00:42.510 --> 00:00:46.770
+And likewise each of the following columns is done, is, is that way.
+
+00:00:46.770 --> 00:00:49.838
+So, one way of thinking about this is that the columns of
+
+00:00:49.838 --> 00:00:55.740
+R A B are the i vector of A expressed in the B coordinate frame.
+
+00:00:55.740 --> 00:00:58.420
+Then the j vector of A in the B coordinate frame, and
+
+00:00:58.420 --> 00:01:01.660
+the k vector of A in the B coordinate frame.
+
+00:01:01.660 --> 00:01:03.830
+All right, so why is this true?
+
+00:01:03.830 --> 00:01:05.740
+Well let's think about it this way.
+
+00:01:05.740 --> 00:01:11.927
+Suppose I had a point, vector, in the A frame.
+
+00:01:11.927 --> 00:01:17.230
+That was just at value of 1, 0, 0, okay?
+
+00:01:17.230 --> 00:01:22.090
+So what that means it's actually a distance of 1 in the i direction of
+
+00:01:22.090 --> 00:01:26.760
+the A frame and none in the j and k of the A frame.
+
+00:01:26.760 --> 00:01:29.870
+What should the value of that be?
+
+00:01:29.870 --> 00:01:30.480
+All right?
+
+00:01:30.480 --> 00:01:32.450
+And I'll just write that down here.
+
+00:01:32.450 --> 00:01:35.180
+Well, this multiplies this.
+
+00:01:35.180 --> 00:01:36.400
+This to that so.
+
+00:01:36.400 --> 00:01:42.760
+So it would just give me the iA dotted with iB.
+
+00:01:42.760 --> 00:01:48.270
+So the first component of the transformed frame is just the i vectors amount in,
+
+00:01:48.270 --> 00:01:50.130
+in the i direction of B.
+
+00:01:50.130 --> 00:01:52.360
+Well, now let's go through this.
+
+00:01:52.360 --> 00:01:54.090
+We go one, two, three.
+
+00:01:54.090 --> 00:01:58.050
+It's again, is going to get iA.jB.
+
+00:01:58.050 --> 00:02:01.680
+Okay, and again iA.kB.
+
+00:02:01.680 --> 00:02:04.750
+In other words it's just what it says here is what we have to
+
+00:02:04.750 --> 00:02:07.910
+get out if we had just a 1, 0, 0,
+
+00:02:07.910 --> 00:02:12.250
+needs to be how that vector is dotted which each of the components.
+
+00:02:12.250 --> 00:02:16.010
+And that's why this matrix can be thought of as having it's
+
+00:02:16.010 --> 00:02:21.110
+column vectors as just being the each of the basis vectors of
+
+00:02:21.110 --> 00:02:24.460
+the a frame expressed in terms of the b frame.
+
+00:02:24.460 --> 00:02:25.730
+Do you get that?
+
+00:02:25.730 --> 00:02:27.480
+So on the sides you'll have that.
+
+00:02:27.480 --> 00:02:30.770
+So just press the pause button and that way you can.
+
+00:02:35.809 --> 00:02:38.220
+See what's going on.
+
+00:02:38.220 --> 00:02:40.850
+Just to remind you I labeled this that the columns of
+
+00:02:40.850 --> 00:02:45.000
+the rotation matrix are the axes of frame A expressed in frame B.
+
+00:02:45.000 --> 00:02:48.370
+Why? because we just went through all that nonsense showing it to you.
+
+00:02:48.370 --> 00:02:53.580
+By the way, it can also be thought of as the rows are just the column,
+
+00:02:53.580 --> 00:02:59.790
+are just the bases of the B vector expressed in the A frame, right?
+
+00:02:59.790 --> 00:03:03.550
+So here's iB in, in the, in terms of the i component of A.
+
+00:03:03.550 --> 00:03:05.160
+Here's iB in terms of the j.
+
+00:03:05.160 --> 00:03:06.510
+Here's iB in k.
+
+00:03:06.510 --> 00:03:10.010
+So you think about this is that if I were to transpose that vector.
+
+00:03:10.010 --> 00:03:11.882
+So I made the columns the rows,
+
+00:03:11.882 --> 00:03:17.230
+the rows the columns, I would now have instead of RAB, I'd have RBA, all right?
+
+00:03:17.230 --> 00:03:19.120
+This is an orthogonal matrix, right?
+
+00:03:19.120 --> 00:03:21.840
+The orthogonal matrix, all of the rows,
+
+00:03:21.840 --> 00:03:25.960
+all the columns are unit vectors that are perpendicular to each other.
+
+00:03:25.960 --> 00:03:30.790
+So the determinate so the, the magnets of determinate is 1.
+
+00:03:30.790 --> 00:03:33.350
+And it's your traditional rotation matrix and
+
+00:03:33.350 --> 00:03:38.300
+by the way, really important is that the inverse is equal to the transpose.
+
+00:03:38.300 --> 00:03:40.580
+So, if you had a rotation matrix and you want to go back and
+
+00:03:40.580 --> 00:03:44.340
+forth between the two, the inverse and transpose, which realize it has to be.
+
+00:03:44.340 --> 00:03:49.680
+Because the inverse of RAB has to be RBA and we just showed how the,
+
+00:03:49.680 --> 00:03:53.270
+the rows are the sort of the transposed of the spec to the columns.
+

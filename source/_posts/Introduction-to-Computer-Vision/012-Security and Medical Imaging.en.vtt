@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.210 --> 00:00:03.590
+Finally, two more surveillance is a huge issue.
+
+00:00:03.590 --> 00:00:06.950
+This ideas of being able to monitor environment for
+
+00:00:06.950 --> 00:00:09.350
+crowd safety, a variety of reasons.
+
+00:00:09.350 --> 00:00:12.591
+These are screenshots taken from Siemens sells a system for
+
+00:00:12.591 --> 00:00:14.100
+doing port monitoring.
+
+00:00:14.100 --> 00:00:16.320
+Just to know whether, say, people are loitering, or
+
+00:00:16.320 --> 00:00:18.420
+vehicles are approaching that aren't supposed to be.
+
+00:00:18.420 --> 00:00:20.450
+This is also a computer vision.
+
+00:00:20.450 --> 00:00:24.180
+A more direct effect on a single individual with computer vision is work in
+
+00:00:24.180 --> 00:00:25.440
+medical imagining.
+
+00:00:25.440 --> 00:00:27.570
+Okay, so here you see an example.
+
+00:00:27.570 --> 00:00:30.200
+There's all sorts of 3D imaging, MRI, CAT scan,
+
+00:00:30.200 --> 00:00:32.750
+stuff like that, but here you see some work.
+
+00:00:32.750 --> 00:00:37.420
+This came out of Eric Grimson's lab a while ago at MIT where on a screen,
+
+00:00:37.420 --> 00:00:43.180
+a the computer vision system is registering the skull
+
+00:00:43.180 --> 00:00:48.620
+that's on the table with a model that has been created from the 3D imaging.
+
+00:00:48.620 --> 00:00:53.340
+So while, when the surgeon looks at this monitor, he sees the real person, and
+
+00:00:53.340 --> 00:00:56.800
+by the way, if there were a scalpel here, he'd see the hand with the scalpel or
+
+00:00:56.800 --> 00:00:59.490
+drill or whatever you're using to make a hole in the person's head.
+
+00:00:59.490 --> 00:01:03.430
+And where the various structures are underneath that you wanted to see, and
+
+00:01:03.430 --> 00:01:05.019
+that's also computer vision.
+
+00:01:05.019 --> 00:01:07.300
+Look, this is just a quick taste of the state of the art,
+
+00:01:07.300 --> 00:01:08.350
+hopefully, it inspires you.
+
+00:01:08.350 --> 00:01:10.980
+One of the things I want you to realize is that
+
+00:01:12.020 --> 00:01:14.950
+almost everything that I showed you here is less than ten years only, and
+
+00:01:14.950 --> 00:01:17.580
+in fact, many of them are less than five years old.
+
+00:01:17.580 --> 00:01:19.290
+So the field is rapidly changing, and
+
+00:01:19.290 --> 00:01:23.320
+there's a tremendous amount of opportunity in computer vision right now, so
+
+00:01:23.320 --> 00:01:25.770
+this is exactly the right time for you to take this class.
+
+00:01:25.770 --> 00:01:28.286
+So that you can invent some cool technology.
+
+00:01:28.286 --> 00:01:30.900
+Make, $3 gazillion and
+
+00:01:30.900 --> 00:01:33.430
+send a very large donation to the people who made it possible.
+

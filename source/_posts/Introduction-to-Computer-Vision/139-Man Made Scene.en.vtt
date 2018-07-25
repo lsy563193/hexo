@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:03.637
+Let me show you just more example just to highly a particular little problem.
+
+00:00:03.637 --> 00:00:06.907
+So here we have a nice man-made scene of a some beautiful bridge
+
+00:00:06.907 --> 00:00:08.042
+somewhere in Europe.
+
+00:00:08.042 --> 00:00:14.170
+And you'll notice that there is this strong vertical here.
+
+00:00:14.170 --> 00:00:17.642
+And a vertical if you think about coming down this way and
+
+00:00:17.642 --> 00:00:20.550
+coming that, is a step edge horizontally.
+
+00:00:20.550 --> 00:00:25.000
+Okay. You remember, dots like this are sinusoids that,
+
+00:00:25.000 --> 00:00:27.700
+that vary as you go up and down.
+
+00:00:27.700 --> 00:00:30.270
+And you remember that if you have a step edge,
+
+00:00:30.270 --> 00:00:32.520
+remember we had a square wave, okay?
+
+00:00:32.520 --> 00:00:35.090
+It had all the frequencies, just in decreasing power.
+
+00:00:35.090 --> 00:00:37.730
+And what you're seeing is a whole bunch of frequencies in
+
+00:00:37.730 --> 00:00:39.800
+decreasing power coming down.
+
+00:00:39.800 --> 00:00:41.290
+So the question is,
+
+00:00:41.290 --> 00:00:46.420
+where is the strong horizontal edge that's suggested by that vertical line?
+
+00:00:46.420 --> 00:00:50.830
+Remember a vertical line is all of these frequencies, which means that it's got
+
+00:00:50.830 --> 00:00:54.720
+a horizontal sharp edge, and the answer is a little tricky.
+
+00:00:55.910 --> 00:01:00.750
+Basically, if you think about how the sinusoid goes in the image,
+
+00:01:00.750 --> 00:01:06.340
+it's essentially as if it assumes the image just kept wrapping around, okay?
+
+00:01:06.340 --> 00:01:08.290
+Remember we talked about the Fourier series,
+
+00:01:08.290 --> 00:01:10.830
+assuming that everything just kind of repeats?
+
+00:01:10.830 --> 00:01:16.210
+So here what we're essentially doing when we do this sum from minus n over
+
+00:01:16.210 --> 00:01:21.590
+2 to n over 2, is we're assuming that the thing continues, that it's periodic.
+
+00:01:21.590 --> 00:01:24.540
+Which would mean that the thing over here should be the same as the thing
+
+00:01:24.540 --> 00:01:25.720
+over there.
+
+00:01:25.720 --> 00:01:29.970
+And if it's not, that would represent a significant change.
+
+00:01:29.970 --> 00:01:37.310
+And, this edge down here, is really different than that edge down there.
+
+00:01:37.310 --> 00:01:40.690
+So when you wrap it around, you get a big step.
+
+00:01:40.690 --> 00:01:43.870
+And that's what cor, causing that sort of weirdness in the Fourier transform.
+
+00:01:43.870 --> 00:01:47.560
+Do you remember when we talked about doing filtering in MATLAB?
+
+00:01:47.560 --> 00:01:50.180
+There was, there was a wrap option.
+
+00:01:50.180 --> 00:01:54.030
+To head out off the edges instead of replicate or reflect.
+
+00:01:54.030 --> 00:01:56.800
+You could take the stuff from the top and put it back down on the bottom.
+
+00:01:56.800 --> 00:01:59.840
+And I said that won't make any sense to you at all until we get to
+
+00:01:59.840 --> 00:02:01.100
+Fourier analysis.
+
+00:02:01.100 --> 00:02:05.095
+Well, that's as if you had a periodic signal.
+
+00:02:05.095 --> 00:02:08.820
+Because if you don't have that, you get this funny sort of sharp edge.
+
+00:02:08.820 --> 00:02:12.510
+One way to eliminate that when you're doing Fourier analysis is you'll take
+
+00:02:12.510 --> 00:02:17.120
+you're image, and you'll multiply the whole image by a Gaussian that tapers off
+
+00:02:17.120 --> 00:02:21.300
+towards zero by the edges, and then everything becomes nice and smooth.
+
+00:02:21.300 --> 00:02:23.799
+When in doubt, fix your life with a Gaussian.
+

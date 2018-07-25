@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.580 --> 00:00:04.050
+That ends this lesson on the relationship between convolution in
+
+00:00:04.050 --> 00:00:06.689
+the spacial domain and the frequency domain.
+
+00:00:06.689 --> 00:00:11.270
+In particular the convolution in the spacial domain is multiplication in
+
+00:00:11.270 --> 00:00:12.820
+the frequency domain.
+
+00:00:12.820 --> 00:00:15.890
+We've also made good on the promise of explaining some of some of
+
+00:00:15.890 --> 00:00:19.940
+these ugly artifacts that we saw particular ringing is sort of
+
+00:00:19.940 --> 00:00:23.680
+a Fourier transform of a box that is if you cut off the frequencies hard.
+
+00:00:23.680 --> 00:00:28.550
+You get this ring or if you have a cutoff in space that's hard,
+
+00:00:28.550 --> 00:00:31.520
+you get this ringing in frequency.
+
+00:00:31.520 --> 00:00:35.280
+What we now have are the tools that will allow us to tackle aliasing.
+
+00:00:35.280 --> 00:00:39.030
+That is when you do something to an image that involves sampling that causes it
+
+00:00:39.030 --> 00:00:40.410
+to look really ugly.
+
+00:00:40.410 --> 00:00:42.020
+And the high frequency stuff.
+
+00:00:42.020 --> 00:00:46.260
+It's a little bit of of a bumpy ride, so strap yourself in and
+
+00:00:46.260 --> 00:00:47.290
+get ready for the next lesson.
+

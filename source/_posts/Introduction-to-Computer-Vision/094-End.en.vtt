@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.350 --> 00:00:03.950
+So, that ends the lesson on edge detection and
+
+00:00:03.950 --> 00:00:08.380
+in fact, the first subunit all together on image processing.
+
+00:00:08.380 --> 00:00:11.030
+Hopefully you've learned a little bit about filtering with convolution and
+
+00:00:11.030 --> 00:00:14.050
+correlation, and the idea about taking these derivatives.
+
+00:00:14.050 --> 00:00:16.750
+We've also talked about filters being used as templates.
+
+00:00:18.000 --> 00:00:21.010
+next, what we're going to do is we're going to take a little detour, and
+
+00:00:21.010 --> 00:00:22.880
+do some real computer vision.
+
+00:00:22.880 --> 00:00:26.650
+That is, computing some data structure that tells us what's in
+
+00:00:26.650 --> 00:00:30.940
+the picture from our images, and will actually use these edges and
+
+00:00:30.940 --> 00:00:34.350
+then we'll come back to doing more about image processing.
+
+00:00:34.350 --> 00:00:37.440
+But first, you'll get to go find some lines, circles, coins, and
+
+00:00:37.440 --> 00:00:38.540
+cool stuff in pictures.
+

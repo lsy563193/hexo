@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.150 --> 00:00:02.530
+Welcome back introduction computer vision.
+
+00:00:02.530 --> 00:00:05.520
+Today, we're going to be talking about intrinsic camera calibration.
+
+00:00:05.520 --> 00:00:09.350
+Last time, we said, that we're going to do geometric calibration in general, and
+
+00:00:09.350 --> 00:00:11.710
+that there were two parts to calibration.
+
+00:00:11.710 --> 00:00:15.760
+The first transformation is from some arbitrary world coordinate system,
+
+00:00:15.760 --> 00:00:20.700
+to the camera system or the camera pose, and this was the extrinsic parameters,
+
+00:00:20.700 --> 00:00:23.320
+and it mapped from, world coordinates to camera coordinates, or
+
+00:00:23.320 --> 00:00:26.330
+camera coordinates to world, depending upon how you think about it.
+
+00:00:26.330 --> 00:00:30.570
+When we write it as T, W, C, it takes you from the world, to the camera.
+
+00:00:31.640 --> 00:00:34.700
+We expressed it in terms of homogeneous coordinates,
+
+00:00:34.700 --> 00:00:39.980
+where we had a world coordinate p here expressed in that world coordinate frame,
+
+00:00:39.980 --> 00:00:42.350
+and it was homogeneous so there's a one down there.
+
+00:00:42.350 --> 00:00:45.900
+And we pump it through both the rotation component and the translation component
+
+00:00:45.900 --> 00:00:49.470
+to get the three dimensional point in camera coordinates.
+
+00:00:49.470 --> 00:00:54.200
+And, that world to camera matrix and codes what were referred to
+
+00:00:54.200 --> 00:00:58.250
+as the extrinsic parameters or the extrinsic parameter matrix.
+
+00:00:58.250 --> 00:00:59.060
+We also said that,
+
+00:00:59.060 --> 00:01:03.128
+that encodes six degrees of freedom, three translation, three rotation.
+
+00:01:03.128 --> 00:01:06.650
+Today, we're going to talk about the second transformation which goes from
+
+00:01:06.650 --> 00:01:12.490
+the 3D camera coordinates to the 2D image coordinates or the 2D image plane.
+
+00:01:12.490 --> 00:01:15.360
+And these are referred to as the intrinsic parameters, and
+
+00:01:15.360 --> 00:01:18.270
+we'll again come up with the intrinsic parameter matrix.
+

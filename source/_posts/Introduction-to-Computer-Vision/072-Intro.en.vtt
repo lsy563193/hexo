@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.330 --> 00:00:02.500
+Welcome back to Computer Vision.
+
+00:00:02.500 --> 00:00:06.930
+The last lesson, we started talking about filtering as a way of
+
+00:00:06.930 --> 00:00:09.050
+finding a specific pattern in an image.
+
+00:00:09.050 --> 00:00:10.820
+We talked about template finding.
+
+00:00:10.820 --> 00:00:13.810
+And the idea was that given some pattern, correlation or
+
+00:00:13.810 --> 00:00:17.070
+convolution would be some way of finding that pattern in the image.
+
+00:00:17.070 --> 00:00:18.630
+And the assume, we assumed that the,
+
+00:00:18.630 --> 00:00:21.490
+that the goal thing that we were looking for was given to us.
+
+00:00:21.490 --> 00:00:23.320
+And then there was also this idea that, well,
+
+00:00:23.320 --> 00:00:27.920
+maybe we could just take the locations where this pattern was found.
+
+00:00:27.920 --> 00:00:30.630
+And that became sort of a description of what we were looking for.
+
+00:00:30.630 --> 00:00:32.640
+You could even think of that as describing the image,
+
+00:00:32.640 --> 00:00:34.040
+although we didn't talk too much about that.
+
+00:00:35.200 --> 00:00:37.700
+But again, that's the idea that you have,
+
+00:00:37.700 --> 00:00:40.710
+you know what the important thing is that you're looking at.
+
+00:00:40.710 --> 00:00:41.970
+But what about generic images?
+
+00:00:41.970 --> 00:00:43.719
+Ones that you don't know in advance.
+
+00:00:44.780 --> 00:00:45.840
+What's going to be in the picture.
+
+00:00:47.390 --> 00:00:50.290
+What are some good, the word we sometimes use is features,
+
+00:00:50.290 --> 00:00:53.630
+what are some good things to try to find in the picture,
+
+00:00:53.630 --> 00:00:56.260
+that might capture a lot of the information there, and
+
+00:00:56.260 --> 00:00:58.920
+sort of give you the essence of what you need to work on.
+

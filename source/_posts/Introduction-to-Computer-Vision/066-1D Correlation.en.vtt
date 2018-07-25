@@ -1,0 +1,200 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.520 --> 00:00:02.719
+All right,
+back to our regularly scheduled program.
+
+00:00:02.719 --> 00:00:06.386
+All right, we're going to introduce
+this using one-dimensional signal and
+
+00:00:06.386 --> 00:00:07.450
+then we'll go to 2D.
+
+00:00:07.450 --> 00:00:12.420
+So here we have a signal, and
+it's a 1D signal, and here's a filter.
+
+00:00:12.420 --> 00:00:16.930
+And that filter,
+if you take a look, actually
+
+00:00:16.930 --> 00:00:22.390
+this filter here looks a lot like,
+oh yeah, something like that.
+
+00:00:22.390 --> 00:00:26.960
+And that's because I made this and
+I actually pulled out that chunk.
+
+00:00:26.960 --> 00:00:27.660
+Okay?
+
+00:00:27.660 --> 00:00:30.050
+But the system doesn't know that yet.
+
+00:00:30.050 --> 00:00:33.270
+And what we're going to do is we're
+going to do the normalized correlation
+
+00:00:33.270 --> 00:00:35.910
+of this filter with that signal.
+
+00:00:35.910 --> 00:00:38.700
+When you do that,
+you get a result that looks like this.
+
+00:00:38.700 --> 00:00:42.838
+And you'll notice its maximum is at
+this peak, this peak here in red, right?
+
+00:00:42.838 --> 00:00:45.358
+Right here, okay?
+
+00:00:45.358 --> 00:00:49.323
+And that's the location
+of where this filter
+
+00:00:49.323 --> 00:00:52.568
+came from out of that signal, okay?
+
+00:00:52.568 --> 00:00:57.338
+So the highest value is exactly
+when these things match.
+
+00:00:57.338 --> 00:01:02.644
+There are a couple of reasons to explain
+that, here's the one that I like best.
+
+00:01:02.644 --> 00:01:07.171
+Pretend for a moment that both of
+our signals were normalized, or
+
+00:01:07.171 --> 00:01:10.724
+were sort of shifted, so
+that they were about zero.
+
+00:01:10.724 --> 00:01:14.173
+So sometimes they went positive and
+sometimes they went negative, okay?
+
+00:01:14.173 --> 00:01:17.840
+And remember we've got the scale
+being approximately the same.
+
+00:01:17.840 --> 00:01:19.950
+because they scale up, so
+their standard deviation is one.
+
+00:01:21.060 --> 00:01:23.880
+If I take one filter and
+I lay it over the image and
+
+00:01:23.880 --> 00:01:27.570
+I'm going to multiply them and
+then sum them up.
+
+00:01:27.570 --> 00:01:30.720
+Remember, some of my values are positive
+and some of them might be negative.
+
+00:01:30.720 --> 00:01:33.730
+I realize this is the first time
+we've talked about negative signals.
+
+00:01:33.730 --> 00:01:37.310
+In fact, on the drawing here you'll
+notice it's zero in the middle.
+
+00:01:37.310 --> 00:01:40.020
+But if I've got positive numbers and
+negative numbers and
+
+00:01:40.020 --> 00:01:43.820
+I've got positive numbers and negative
+numbers in my filter, if I want to do
+
+00:01:43.820 --> 00:01:48.840
+a multiplication and have it come up as
+high as possible, when does that happen?
+
+00:01:48.840 --> 00:01:53.200
+Well the obvious intuition is,
+well whenever my pixels in the image
+
+00:01:53.200 --> 00:01:57.494
+are positive, I want my coefficients
+in my filter to be positive.
+
+00:01:57.494 --> 00:02:00.675
+Because positive times positive
+is what negative, Megan?
+
+00:02:00.675 --> 00:02:01.579
+&gt;&gt; Positive times positive?
+
+00:02:01.579 --> 00:02:02.097
+&gt;&gt; Yeah.
+
+00:02:02.097 --> 00:02:03.271
+&gt;&gt; Positive.
+&gt;&gt; Positive.
+
+00:02:03.271 --> 00:02:06.957
+And what do I want where
+the image is negative?
+
+00:02:06.957 --> 00:02:12.083
+I want the filter coefficients
+to be negative also, right?
+
+00:02:12.083 --> 00:02:15.370
+Because negative times negative is what,
+Megan?
+
+00:02:15.370 --> 00:02:16.780
+&gt;&gt; Positive.
+&gt;&gt; Positive, very good.
+
+00:02:16.780 --> 00:02:18.970
+Yeah, she went to film school,
+but she's doing great.
+
+00:02:18.970 --> 00:02:22.750
+Anyway, and so if you think of
+sort of a filter as having,
+
+00:02:22.750 --> 00:02:26.750
+because we've scaled it, it can't go
+arbitrarily high and arbitrarily low.
+
+00:02:26.750 --> 00:02:30.260
+If you get that signal to
+be lined up exactly, so
+
+00:02:30.260 --> 00:02:32.440
+wherever it's positive
+the other is positive and
+
+00:02:32.440 --> 00:02:35.900
+where one is negative the other is
+negative, you get the maximum value.
+
+00:02:35.900 --> 00:02:40.030
+There are a lot more sophisticated
+ways of showing this involving
+
+00:02:40.030 --> 00:02:43.570
+differences in distributions and
+things like that.
+
+00:02:43.570 --> 00:02:46.460
+They all basically will show you
+that the maximum value you can get.
+
+00:02:47.520 --> 00:02:49.840
+The product of these is when
+they're exactly the same.
+

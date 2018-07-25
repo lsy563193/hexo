@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.670 --> 00:00:03.190
+So the Generalized Hough transform or
+
+00:00:03.190 --> 00:00:06.200
+Generalize Hough transform algorithm is very easy.
+
+00:00:06.200 --> 00:00:07.593
+If the orientation is known,
+
+00:00:07.593 --> 00:00:11.059
+you know the orientation of the object, you do exactly what I showed you.
+
+00:00:11.059 --> 00:00:15.165
+For each edge point, you compute the gradient direction, you retrieve
+
+00:00:15.165 --> 00:00:19.675
+the displacement vectors r for that direction to vote for the reference point,
+
+00:00:19.675 --> 00:00:23.680
+and the peak in this space, in this case, we're only voting in X, Y.
+
+00:00:23.680 --> 00:00:26.720
+That's the reference point, that's where your object is.
+
+00:00:26.720 --> 00:00:29.730
+It's the one with the most, sort of, supporting edges.
+
+00:00:29.730 --> 00:00:33.370
+Now, it's sort of unreasonable that you might know the orientation and
+
+00:00:33.370 --> 00:00:35.480
+the scale, so let's talk about orientation.
+
+00:00:35.480 --> 00:00:38.250
+Okay? Supposed the orientation is not known.
+
+00:00:38.250 --> 00:00:42.450
+Well, all we have to do is try the different possible orientations, and
+
+00:00:42.450 --> 00:00:45.210
+that's written here, again for each edge point.
+
+00:00:45.210 --> 00:00:48.610
+But now, we have a, what we'll call a master orientation.
+
+00:00:48.610 --> 00:00:51.280
+This is the actual orientation of the object.
+
+00:00:51.280 --> 00:00:54.330
+For each orientation, possible master orientation,
+
+00:00:54.330 --> 00:00:58.990
+we compute the gradient direction, but we subtract off the master.
+
+00:00:58.990 --> 00:01:03.260
+So the master here is this theta star, the actual gradient is theta.
+
+00:01:03.260 --> 00:01:06.660
+But the, the gradient we're going to use is this theta prime,
+
+00:01:06.660 --> 00:01:12.450
+which is just the gradient with the overall orientation subtracted off of it.
+
+00:01:12.450 --> 00:01:16.750
+And so now, we retrieve the displacement vectors for theta prime.
+
+00:01:18.090 --> 00:01:22.924
+So we're still voting, and peaks in this Hough space are the reference point,
+
+00:01:22.924 --> 00:01:26.765
+but notice now that we're voting in X and Y and also theta star.
+
+00:01:26.765 --> 00:01:30.240
+So you remember that space complexity, which is k to the n?
+
+00:01:30.240 --> 00:01:33.680
+Well, n just went from being two to three, and the bottom line is any
+
+00:01:33.680 --> 00:01:39.040
+decent sized number squared is much smaller than any decent sized number cubed.
+
+00:01:39.040 --> 00:01:44.010
+So you just got a lot bigger by going to this adding this orientation.
+
+00:01:44.010 --> 00:01:47.390
+What's kind of cool by the way and this was in the original arbitrary shapes
+
+00:01:47.390 --> 00:01:49.880
+paper, you could also do this for say scale.
+
+00:01:49.880 --> 00:01:55.570
+Suppose the scale was unknown, our algorithm looks stunningly similar for
+
+00:01:55.570 --> 00:01:56.330
+each edge point.
+
+00:01:56.330 --> 00:01:59.260
+But now instead of having a master theta, right?
+
+00:01:59.260 --> 00:02:01.090
+We have a master scale.
+
+00:02:01.090 --> 00:02:05.840
+So for each possible master scale, we again compute the gradient direction.
+
+00:02:05.840 --> 00:02:10.508
+We again retrieve the displacement vectors, but now we have to
+
+00:02:10.508 --> 00:02:15.440
+vote with the scaled displacement, the vector scaled by S.
+
+00:02:15.440 --> 00:02:19.190
+And again we vote, whichever gets the most votes is the right point.
+
+00:02:19.190 --> 00:02:20.520
+And the peaks in this space and
+
+00:02:20.520 --> 00:02:23.670
+now the space is X, Y and S where S is the scale.
+
+00:02:23.670 --> 00:02:25.320
+So again, it's cubic.
+
+00:02:25.320 --> 00:02:26.970
+Now you can imagine that if you had scale and
+
+00:02:26.970 --> 00:02:30.535
+orientation, that would be quartic, that's raised to the 4th.
+
+00:02:30.535 --> 00:02:34.430
+Modest numbers raised to the fourth power are brutal, so
+
+00:02:34.430 --> 00:02:36.490
+you have to be careful in terms of how you do this.
+

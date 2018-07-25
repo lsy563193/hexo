@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:03.580
+You could say, well, instead of using small windows, use a slightly bigger
+
+00:00:03.580 --> 00:00:07.950
+window, so this is question of, how should we pick the window size, and just
+
+00:00:07.950 --> 00:00:11.800
+like when we were talking about scale, there's not going to be any easy answer.
+
+00:00:11.800 --> 00:00:16.270
+Here's an example of another stereo pair, I'm only showing you the left.
+
+00:00:16.270 --> 00:00:21.950
+So if I do a sliding window stereo, well, for a small window size,
+
+00:00:23.300 --> 00:00:29.060
+well I, I get the branches pretty well, of the tree, but you'll notice
+
+00:00:29.060 --> 00:00:33.680
+there is all this I think the technical word is crap, all over everywhere else.
+
+00:00:33.680 --> 00:00:37.580
+That is you know, this is a disparity image, and, and my ground should be
+
+00:00:37.580 --> 00:00:41.610
+going from near to far, and there shouldn't be all this junk all over it.
+
+00:00:41.610 --> 00:00:42.950
+So what do I do?
+
+00:00:42.950 --> 00:00:44.550
+Well obviously, because of noise and
+
+00:00:44.550 --> 00:00:48.170
+things, I need to make my window bigger to get a more robust match.
+
+00:00:48.170 --> 00:00:52.400
+So if I make my window bigger, I get this nice ground pattern here, right,
+
+00:00:52.400 --> 00:00:55.580
+you can see that it goes from near to far, okay, and
+
+00:00:55.580 --> 00:00:57.840
+the trees back here are farther away.
+
+00:00:57.840 --> 00:01:00.600
+But notice what happens to the tree branches there.
+
+00:01:00.600 --> 00:01:01.100
+Okay?
+
+00:01:01.100 --> 00:01:03.830
+The window is too big, and when you put it over a branch,
+
+00:01:03.830 --> 00:01:07.110
+it gets both the branch and the background, it doesn't know what to do.
+
+00:01:07.110 --> 00:01:10.495
+Just as I said earlier in this course, scale is always an issue,
+
+00:01:10.495 --> 00:01:11.610
+there's no magic answer.
+

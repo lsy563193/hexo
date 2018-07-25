@@ -1,0 +1,232 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.070 --> 00:00:01.710
+We can see this going on in images.
+
+00:00:01.710 --> 00:00:04.640
+So here's a nicer picture showing you aliasing in images.
+
+00:00:04.640 --> 00:00:08.510
+So you can see what's happening is that this is a radial sine wave,
+
+00:00:08.510 --> 00:00:10.240
+and you can see as you get closer and
+
+00:00:10.240 --> 00:00:15.250
+closer, the pixels are supposed to be wiggling faster and faster.
+
+00:00:15.250 --> 00:00:18.440
+And eventually I run out of pixels.
+
+00:00:18.440 --> 00:00:22.930
+Okay, I don't have enough samples to get how quickly the thing varies.
+
+00:00:22.930 --> 00:00:26.780
+And so that is an example of aliasing here.
+
+00:00:26.780 --> 00:00:29.600
+So, what is its impact on you?
+
+00:00:29.600 --> 00:00:32.409
+Well, its impact on you is you have to be a little careful how you treat your
+
+00:00:32.409 --> 00:00:36.980
+images, for example, and this comes from Steve, all right?
+
+00:00:36.980 --> 00:00:40.140
+Suppose I've got this image, a beautiful Van Gogh picture.
+
+00:00:40.140 --> 00:00:42.300
+Suppose it's too big to fit on a screen.
+
+00:00:42.300 --> 00:00:44.400
+I want a smaller version of it.
+
+00:00:44.400 --> 00:00:45.300
+How can we reduce it?
+
+00:00:45.300 --> 00:00:48.930
+I don't know. Make it half the size or quarter of its size to do that.
+
+00:00:48.930 --> 00:00:53.230
+Well, one obvious way would be to throw away every other column and
+
+00:00:53.230 --> 00:00:54.270
+every other row, all right?
+
+00:00:54.270 --> 00:00:55.650
+Just throw those away.
+
+00:00:55.650 --> 00:00:57.450
+And that's called image sub-sampling.
+
+00:00:57.450 --> 00:00:59.050
+Now by the way here it says by half,
+
+00:00:59.050 --> 00:01:01.700
+what it means is I throw away half the columns and
+
+00:01:01.700 --> 00:01:05.220
+half the rows, which of course is actually a quarter size smaller, right.
+
+00:01:05.220 --> 00:01:07.460
+But half meaning, half the rows, half the columns.
+
+00:01:07.460 --> 00:01:11.000
+If I did that again, I would now have one quarter of the total rows,
+
+00:01:11.000 --> 00:01:13.430
+one quarter of the total columns, one-sixteenth the size.
+
+00:01:13.430 --> 00:01:15.290
+I could do it again, one-eighth.
+
+00:01:15.290 --> 00:01:19.850
+In fact, you might start to notice this is already looking a little ugly.
+
+00:01:19.850 --> 00:01:23.900
+And in fact, to make it clear exactly how ugly it is, let me blow up the half,
+
+00:01:23.900 --> 00:01:24.550
+the quarter and
+
+00:01:24.550 --> 00:01:29.000
+the eighth by zooming in on both of them just blowing up the pixels.
+
+00:01:29.000 --> 00:01:33.098
+And you'll notice, this is atrocious, okay.
+
+00:01:33.098 --> 00:01:37.960
+The, the one-half one doesn't look too bad, but remember here we've only
+
+00:01:37.960 --> 00:01:42.600
+taken one out of every eight columns and one out of every eight rows.
+
+00:01:42.600 --> 00:01:44.740
+And then we blow, blew the thing back up.
+
+00:01:44.740 --> 00:01:48.500
+And you can see that this does not look like a blurry version of
+
+00:01:48.500 --> 00:01:50.400
+the original, okay.
+
+00:01:50.400 --> 00:01:52.500
+And the reason is we have aliasing.
+
+00:01:52.500 --> 00:01:58.640
+We have sampled too infrequently for the amount of variation that there is.
+
+00:01:58.640 --> 00:02:02.550
+Essentially, things wiggling here more often than one out of every eight.
+
+00:02:02.550 --> 00:02:07.740
+And so if I just take one eighth, right, I'm not capturing all the wiggles.
+
+00:02:07.740 --> 00:02:09.720
+So what's the right thing to do?
+
+00:02:09.720 --> 00:02:12.610
+Well, we need to do that anti-aliasing, we just learned that.
+
+00:02:12.610 --> 00:02:16.140
+So, a simple one is to do Gaussian, okay?
+
+00:02:16.140 --> 00:02:21.280
+So, what we'll do is we'll filter, right, so we'll take the Gaussian and
+
+00:02:21.280 --> 00:02:24.660
+then take every other row, all right?
+
+00:02:24.660 --> 00:02:28.340
+And then if you want to be not so clever about this, you could do a Gaussian of
+
+00:02:28.340 --> 00:02:31.630
+that, and take every other row of that, to get the one quarter.
+
+00:02:31.630 --> 00:02:34.830
+And you could do the Gaussian again, and do that.
+
+00:02:34.830 --> 00:02:38.140
+Or, what you could do is you do a much bigger Gaussian to begin with, and
+
+00:02:38.140 --> 00:02:39.840
+take one out of every eight.
+
+00:02:39.840 --> 00:02:43.150
+You can convince yourself that mathematically these are going to be equivalent.
+
+00:02:43.150 --> 00:02:48.400
+When I do that, and I blow up the Gaussian one-eighth, you'll see
+
+00:02:48.400 --> 00:02:54.470
+that this actually looks pretty much like a blurry version of that, right?
+
+00:02:54.470 --> 00:02:57.510
+Compare this to what we did with the subsampling, right?
+
+00:02:57.510 --> 00:02:59.390
+So here's sort of our original.
+
+00:02:59.390 --> 00:03:02.290
+Here is the Gaussian eighth 4x zoom.
+
+00:03:02.290 --> 00:03:05.220
+And here is the subsample 4x zoom.
+
+00:03:05.220 --> 00:03:09.950
+And you can see that the Gaussian does a much better job doing the reduction and
+
+00:03:09.950 --> 00:03:11.874
+that's because it's been anti-aliased.
+
+00:03:13.270 --> 00:03:19.270
+So if you're doing Computer Vision and you decide, you know, what I've got
+
+00:03:19.270 --> 00:03:23.460
+this huge 1920 by 1080 image coming in, but I'm just trying to recognize faces,
+
+00:03:23.460 --> 00:03:28.550
+all right, and my faces are going to be, you know, 100 pixels big let's say.
+
+00:03:28.550 --> 00:03:30.210
+And you say, you know what?
+
+00:03:30.210 --> 00:03:34.180
+What I can do is, it's going to be expensive to do that face recognition.
+
+00:03:34.180 --> 00:03:36.340
+We're going to talk about face recognition towards the end of the class.
+
+00:03:36.340 --> 00:03:40.790
+It's expensive to do that over the entire image, when it's so big.
+
+00:03:40.790 --> 00:03:43.915
+Let me make the image, you know, one-eighth its size this way,
+
+00:03:43.915 --> 00:03:45.820
+one-eighth its size that way.
+
+00:03:45.820 --> 00:03:48.610
+And, I'll make my faces smaller, and look for them that way.
+
+00:03:48.610 --> 00:03:49.320
+You know what?
+
+00:03:49.320 --> 00:03:53.720
+That will work pretty well, if you do this, if you do anti-aliasing.
+
+00:03:53.720 --> 00:03:56.540
+If you just pull out the arbitrary pixels right,
+
+00:03:56.540 --> 00:03:58.550
+you're going to make a mess of the whole thing.
+
+00:03:58.550 --> 00:04:02.410
+You'll get aliasing, and then the faces won't look right.
+
+00:04:02.410 --> 00:04:06.190
+So that's why doing this kind of stuff matters even in computer vision.
+

@@ -1,0 +1,217 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.270 --> 00:00:01.470
+In computational photography,
+
+00:00:01.470 --> 00:00:04.960
+it's common to make what's known as a thin lens assumption.
+
+00:00:04.960 --> 00:00:08.119
+So a thin lens assumption is basically the drawing that I
+
+00:00:08.119 --> 00:00:09.620
+just showed you before.
+
+00:00:09.620 --> 00:00:13.170
+Where we say okay, for given lens with a given focal point,
+
+00:00:13.170 --> 00:00:17.340
+it's going to image some object at let's say distance, d0,
+
+00:00:17.340 --> 00:00:21.024
+at some distance di, or, or for d for image, back.
+
+00:00:21.024 --> 00:00:23.610
+And the question is can we predict,
+
+00:00:23.610 --> 00:00:29.710
+from the focal point what the relationship is between d0 and di?
+
+00:00:29.710 --> 00:00:32.880
+Well obviously the answer is yes, or I wouldn't have been wasting all this film.
+
+00:00:32.880 --> 00:00:35.730
+Or, I waste your time.
+
+00:00:35.730 --> 00:00:39.714
+So here's a thin film lens diagram taken from the slides by a Forsyth for
+
+00:00:39.714 --> 00:00:43.450
+their textbook, and we're going to use that to derive the relationship
+
+00:00:43.450 --> 00:00:46.250
+between distance in the world.
+
+00:00:46.250 --> 00:00:49.280
+And which we're going to call here z, away from the,
+
+00:00:49.280 --> 00:00:51.720
+the center of the lens, to the distance z prime,
+
+00:00:51.720 --> 00:00:55.470
+which is where the image will be focused, and the focal length, f.
+
+00:00:55.470 --> 00:01:00.650
+First, just to be clear, here is some point p that's at some height y,
+
+00:01:00.650 --> 00:01:03.350
+since we're just going to look at that side.
+
+00:01:03.350 --> 00:01:08.240
+We're going to assume that it's projected at some point p prime, that is,
+
+00:01:08.240 --> 00:01:09.810
+y prime.
+
+00:01:09.810 --> 00:01:10.380
+Off of here.
+
+00:01:11.410 --> 00:01:14.060
+And here is our focal length, f.
+
+00:01:14.060 --> 00:01:15.700
+All right?
+
+00:01:15.700 --> 00:01:20.170
+The idea is that all parallel rays are going to intersect f.
+
+00:01:20.170 --> 00:01:23.340
+Okay? Which is why this one goes back here this way as well.
+
+00:01:23.340 --> 00:01:24.230
+All right?
+
+00:01:24.230 --> 00:01:28.710
+So when we have all sorts of parallel lines and that are going through the same
+
+00:01:28.710 --> 00:01:33.780
+point, it's easy to reason about what's going on here using similar triangles.
+
+00:01:33.780 --> 00:01:35.870
+So here we have our similar triangle.
+
+00:01:35.870 --> 00:01:41.660
+And it basically says that y is to z as y prime is to z prime.
+
+00:01:41.660 --> 00:01:42.650
+Two things to note here.
+
+00:01:42.650 --> 00:01:45.190
+First of all, I only use the magnitude of z and
+
+00:01:45.190 --> 00:01:47.570
+z prime, because we're only going to worry about the length.
+
+00:01:47.570 --> 00:01:50.180
+And I probably could have used the magnitude of y prime, but
+
+00:01:50.180 --> 00:01:54.840
+just to make it clear that the y value is inverted,
+
+00:01:54.840 --> 00:01:57.900
+I set negative y prime as being a positive value.
+
+00:01:57.900 --> 00:02:00.750
+So if y is positive, then y prime would be negative.
+
+00:02:00.750 --> 00:02:05.230
+If y is negative, then y prime would be positive and thus the negative sign.
+
+00:02:05.230 --> 00:02:06.920
+All right, so that's our first similar triangle.
+
+00:02:07.930 --> 00:02:09.570
+Our next similar triangle is here.
+
+00:02:10.610 --> 00:02:13.670
+And that says, and this one's a little bit trickier.
+
+00:02:13.670 --> 00:02:18.460
+Again, the ratio between y prime and y is the same as
+
+00:02:18.460 --> 00:02:23.770
+the ratio between z minus f, so that's this amount, right?
+
+00:02:23.770 --> 00:02:28.250
+All of z minus f, is to f.
+
+00:02:28.250 --> 00:02:29.830
+So y is to f.
+
+00:02:29.830 --> 00:02:31.530
+All right. So just look that a little bit.
+
+00:02:31.530 --> 00:02:36.240
+So y prime, size of y prime is to y as z prime minus f is to f.
+
+00:02:36.240 --> 00:02:40.220
+So that gives us a second set of similar triangles.
+
+00:02:40.220 --> 00:02:43.180
+Combining these two formulas gives us this formula.
+
+00:02:43.180 --> 00:02:44.390
+Not rocket science here,
+
+00:02:44.390 --> 00:02:46.470
+we're just setting the two left hands sides are the same, so
+
+00:02:46.470 --> 00:02:49.640
+we set the two right hand sides equal to the same.
+
+00:02:49.640 --> 00:02:52.430
+We continue, we play around with the math a little bit.
+
+00:02:52.430 --> 00:02:53.950
+And we get this very simple formula.
+
+00:02:53.950 --> 00:02:57.531
+That 1 over the magnitude of z prime plus 1
+
+00:02:57.531 --> 00:03:01.170
+over the magnitude of z equals 1 over f.
+
+00:03:01.170 --> 00:03:04.260
+That's the thin lens equation, and
+
+00:03:04.260 --> 00:03:09.100
+any points that satisfy that equation are in focus, okay.
+
+00:03:09.100 --> 00:03:13.760
+So if my film plane, on a thin lens assumption or a thin lens model.
+
+00:03:13.760 --> 00:03:18.110
+If my film plane is z prime away from the lens for
+
+00:03:18.110 --> 00:03:22.920
+a focal length f, then everything that is z away will be in focus.
+
+00:03:22.920 --> 00:03:28.060
+So by moving the lens in and out a little bit from my film plane,
+
+00:03:28.060 --> 00:03:31.360
+I change where in the world things are in focus.
+
+00:03:31.360 --> 00:03:34.060
+So I can change the z prime easily.
+
+00:03:34.060 --> 00:03:38.120
+I can move the, the lens in and out from where my film plate is and
+
+00:03:38.120 --> 00:03:41.510
+that changes the points out in the world that are in focus.
+
+00:03:41.510 --> 00:03:43.900
+There's a cool little thin lens app.
+
+00:03:43.900 --> 00:03:46.730
+It took me four times to say that before I got it right.
+
+00:03:46.730 --> 00:03:49.300
+It's posted here on the Web and it just let's you sort of
+
+00:03:49.300 --> 00:03:52.417
+play around with how you change the geometry of what's going to happen.
+

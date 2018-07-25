@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.130 --> 00:00:04.360
+So the really cool thing about doing this is that now we
+
+00:00:04.360 --> 00:00:07.060
+can take perspective projection and
+
+00:00:07.060 --> 00:00:12.780
+make it a linear matrix operation while we're working in homogenous coordinates.
+
+00:00:12.780 --> 00:00:18.410
+And we don't have to worry about the nonhomogeneous part until the very end.
+
+00:00:18.410 --> 00:00:20.220
+So that looks like this.
+
+00:00:20.220 --> 00:00:24.729
+So here I have a three by four matrix, and you notice it's 1, 1, 1 over f.
+
+00:00:25.790 --> 00:00:31.210
+And I multiply that by my homogenous 3D coordinate, xyz1, and
+
+00:00:31.210 --> 00:00:35.260
+I get out this three dimensional homogeneous coordinate, right.
+
+00:00:35.260 --> 00:00:41.190
+So it's 2D homogeneous coordinate 3, with component x, y, and z over f.
+
+00:00:41.190 --> 00:00:42.270
+Okay?
+
+00:00:42.270 --> 00:00:45.940
+And I can just keep this around as a homogeneous coordinate until I
+
+00:00:45.940 --> 00:00:48.210
+actually need to use it in an image.
+
+00:00:48.210 --> 00:00:52.050
+And when I use it as an image, I do the division of the top element by
+
+00:00:52.050 --> 00:00:58.330
+the homogeneous element, and I would get f times x over z and f times y over z.
+
+00:00:58.330 --> 00:01:01.030
+Which by the way is sometimes called u, v.
+
+00:01:01.030 --> 00:01:06.440
+And those are the coordinates in the image of some point x,
+
+00:01:06.440 --> 00:01:12.130
+y, z out in the world projected through a projection with a focal length of f.
+
+00:01:12.130 --> 00:01:17.090
+And so our projection operator was this linear matrix multiplication, and
+
+00:01:17.090 --> 00:01:19.710
+as we know, we all love linear matrix multiplications,
+
+00:01:19.710 --> 00:01:21.270
+because we know how to do them a lot.
+
+00:01:21.270 --> 00:01:23.180
+And invert them and all other kinds of stuff.
+
+00:01:23.180 --> 00:01:26.807
+And it's really the basis behind projective geometry, and the projection
+
+00:01:26.807 --> 00:01:29.919
+mathematics that we'll be using for a bunch of the course actually.
+
+00:01:29.919 --> 00:01:35.580
+By the way, f, from now on, is for focal length.
+
+00:01:35.580 --> 00:01:37.240
+Before we're talking about that distance D, so
+
+00:01:37.240 --> 00:01:40.880
+here our focal length is the distance from the center of projection to the image
+
+00:01:40.880 --> 00:01:44.966
+plane, and it is not the f of the aperture that we were talking about last time.
+
+00:01:44.966 --> 00:01:46.270
+I probably shouldn't have even reminded you,
+
+00:01:46.270 --> 00:01:48.800
+because it's probably months ago since you watched that lecture.
+
+00:01:48.800 --> 00:01:51.180
+But f here is always going to be focal length,
+
+00:01:51.180 --> 00:01:54.610
+which is the distance from the center projection to the image plane.
+
+00:01:54.610 --> 00:01:59.770
+So how does scaling the projection matrix change the transformation?
+
+00:01:59.770 --> 00:02:03.910
+Well, here what I've done is I've scaled my projection matrix by f.
+
+00:02:03.910 --> 00:02:07.970
+I could have scaled it by something else, but I'll, I'll scale it by f.
+
+00:02:07.970 --> 00:02:11.350
+So now, instead of having along that diagonal of 1, 1, and
+
+00:02:11.350 --> 00:02:16.650
+1 over f, instead, I just multiply by f and I have f, f, and 1.
+
+00:02:16.650 --> 00:02:20.590
+Multiply that by my three dimensional homogenous coordinated vector which has
+
+00:02:20.590 --> 00:02:21.790
+four dimensions to it.
+
+00:02:21.790 --> 00:02:24.630
+Now I get out fx, fy, and z.
+
+00:02:24.630 --> 00:02:28.840
+And then when I do that division, what do I get, the same thing I got before.
+
+00:02:28.840 --> 00:02:30.070
+Okay? So it was invariant.
+

@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.390 --> 00:00:03.060
+We can do the same thing in two dimensions also.
+
+00:00:03.060 --> 00:00:05.600
+So, here is a different pepper image.
+
+00:00:05.600 --> 00:00:06.420
+Right?
+
+00:00:06.420 --> 00:00:09.320
+This is a little chunk of the pepper image.
+
+00:00:09.320 --> 00:00:10.600
+Happens to have some garlic in it too.
+
+00:00:10.600 --> 00:00:11.420
+All right.
+
+00:00:11.420 --> 00:00:13.690
+Taken right sort of from here.
+
+00:00:13.690 --> 00:00:18.180
+I could do normalized correlation of this small patch on the whole image.
+
+00:00:18.180 --> 00:00:19.190
+And I can plot that.
+
+00:00:19.190 --> 00:00:21.950
+And when you do you get this answer.
+
+00:00:21.950 --> 00:00:24.740
+All right. You see this little spike here?
+
+00:00:24.740 --> 00:00:29.550
+That's what happens when the filter lands right on the spot in the image that it
+
+00:00:29.550 --> 00:00:30.700
+was taken from.
+
+00:00:30.700 --> 00:00:33.290
+You get this, again, the positives line up with the positives,
+
+00:00:33.290 --> 00:00:34.820
+the negative line up with the negatives.
+

@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.190 --> 00:00:04.140
+The right way is what's known as inverse warping.
+
+00:00:04.140 --> 00:00:11.560
+Given some pixel in x prime, y prime, in the new place, transform back.
+
+00:00:11.560 --> 00:00:13.724
+Figure out where it came from.
+
+00:00:13.724 --> 00:00:18.380
+So now x y is the inverse, T inverse of x prime,
+
+00:00:18.380 --> 00:00:20.580
+y prime in the first image, right?
+
+00:00:20.580 --> 00:00:22.390
+So I have to figure out where it came from.
+
+00:00:22.390 --> 00:00:26.750
+So I have a pixel on the right, I figure out where it came from in the left.
+
+00:00:26.750 --> 00:00:28.450
+Now you have a different question to ask.
+
+00:00:28.450 --> 00:00:29.760
+You no longer ask question,
+
+00:00:29.760 --> 00:00:33.670
+what happens if I get sent to a location between pixels.
+
+00:00:33.670 --> 00:00:35.390
+I now have to ask the question, okay,
+
+00:00:35.390 --> 00:00:40.260
+what happened if a pixel comes from between two pixels?
+
+00:00:40.260 --> 00:00:45.220
+Well, what you have to do is what's referred to as interpolation.
+
+00:00:45.220 --> 00:00:50.120
+Interpolation basically says, if I have some set of pixels, and
+
+00:00:50.120 --> 00:00:52.770
+I'll think of them as being at integer locations.
+
+00:00:52.770 --> 00:00:57.510
+So I have some pixels here at the corner and I wrote that as, i j, i plus 1 j,
+
+00:00:57.510 --> 00:01:02.690
+i j plus 1, and i plus 1 j plus 1, so those are the corners.
+
+00:01:02.690 --> 00:01:08.480
+If I want to find the value of something that is say an a distance
+
+00:01:08.480 --> 00:01:13.230
+in x, between the two pixels, and b distance or
+
+00:01:13.230 --> 00:01:18.450
+b percentage in y between the two pixels, what's the value?
+
+00:01:18.450 --> 00:01:22.860
+The general process of determining what the value of the function should be,
+
+00:01:22.860 --> 00:01:27.050
+between points that you know, is referred to as interpolation.
+
+00:01:27.050 --> 00:01:30.000
+Here we're back to thinking of our image as its functions a little bit, so
+
+00:01:30.000 --> 00:01:33.220
+we have a value of the function at each of those integer locations, and
+
+00:01:33.220 --> 00:01:37.030
+we need to guess the value of the function at this location that's
+
+00:01:37.030 --> 00:01:38.900
+somewhere between the points we know.
+
+00:01:38.900 --> 00:01:42.360
+That general process is referred to as interpolation.
+
+00:01:42.360 --> 00:01:45.540
+The simplest interpolation is called nearest neighbor.
+
+00:01:45.540 --> 00:01:48.510
+Nearest neighbor means, well, just like it sounds.
+
+00:01:48.510 --> 00:01:53.270
+I land some place in my grid, and I say oh, you you're the closest value.
+
+00:01:53.270 --> 00:01:55.200
+I'm just going to pretend that I'm that value.
+
+00:01:55.200 --> 00:01:58.500
+So this quadrant would all have one value.
+
+00:01:58.500 --> 00:02:01.070
+This quadrant would have another value, et cetera.
+
+00:02:01.070 --> 00:02:04.730
+It's not a very clever, not a very smooth way of doing things.
+
+00:02:04.730 --> 00:02:07.740
+A much better way, and perhaps the simplest computational way,
+
+00:02:07.740 --> 00:02:09.979
+is called bilinear interpolation.
+
+00:02:09.979 --> 00:02:12.900
+Bilinear interpolation basically says that I
+
+00:02:12.900 --> 00:02:18.090
+figure out the value in the x direction along with both the top and the bottom.
+
+00:02:19.990 --> 00:02:24.510
+And I do that by linearly interpolating between those two values, and then I
+
+00:02:24.510 --> 00:02:28.610
+would interpolate between those values again using a different proportion,
+
+00:02:28.610 --> 00:02:29.990
+in this case b.
+
+00:02:29.990 --> 00:02:32.620
+But, because these are all linear operations, you can just write it
+
+00:02:32.620 --> 00:02:36.250
+as one single linear operation, and you get this formula here.
+
+00:02:36.250 --> 00:02:38.520
+And it's very clean and very easy.
+
+00:02:38.520 --> 00:02:41.850
+There are more clever ways, by cubic, where you take,
+
+00:02:41.850 --> 00:02:44.520
+instead of just fitting linear things, you fit cubic splines between them.
+
+00:02:44.520 --> 00:02:48.200
+But, basically, the idea is that you're, you're interpolating.
+
+00:02:48.200 --> 00:02:52.560
+And what's nice, now, is that you don't have any holes in your picture, right?
+
+00:02:52.560 --> 00:02:56.976
+You went for every pixel in the target image, figure out where it came from in
+
+00:02:56.976 --> 00:03:01.602
+your source image, interpolate that value, and stick it in the target image.
+
+00:03:01.602 --> 00:03:05.330
+So there are no holes in your warped target.
+
+00:03:05.330 --> 00:03:09.570
+By the way, it won't surprise you that Matlab and OpenCV and Octave and
+
+00:03:09.570 --> 00:03:12.880
+all of these, support this interpolation generically.
+
+00:03:12.880 --> 00:03:15.677
+in, in Matlab, you can take a look at this function called interp2,
+
+00:03:15.677 --> 00:03:18.490
+that's two-dimensional interpolation.
+
+00:03:18.490 --> 00:03:20.060
+And it will allow you to do this.
+

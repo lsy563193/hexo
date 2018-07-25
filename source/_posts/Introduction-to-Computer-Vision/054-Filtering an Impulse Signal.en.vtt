@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.170 --> 00:00:03.920
+So, let's take a look at what an impulse response looks like in an image.
+
+00:00:03.920 --> 00:00:06.300
+So here we have an impulse.
+
+00:00:06.300 --> 00:00:08.310
+Okay, and so, here's our impulse, right?
+
+00:00:08.310 --> 00:00:12.960
+It's just a single pixel with a value of one, okay?
+
+00:00:12.960 --> 00:00:16.830
+And we're going to filter it with some kernel, h, okay?
+
+00:00:16.830 --> 00:00:18.570
+Remember kernel mask,
+
+00:00:18.570 --> 00:00:22.390
+thing that we're moving around in order to make our filter, so we have our H.
+
+00:00:22.390 --> 00:00:24.360
+So the question is, what is the output?
+
+00:00:24.360 --> 00:00:27.600
+And again, I want to thank Christin Gramen for having made these slides so
+
+00:00:27.600 --> 00:00:29.780
+I can change them, steal them, move them around.
+
+00:00:29.780 --> 00:00:31.410
+So first I put down my filter, and
+
+00:00:31.410 --> 00:00:33.730
+you see my filter's over here like this, right?
+
+00:00:33.730 --> 00:00:38.940
+So it doesn't hit that 1 at all, and so its value is just going to be a 0.
+
+00:00:38.940 --> 00:00:40.410
+Fine, no big deal.
+
+00:00:40.410 --> 00:00:40.920
+All right.
+
+00:00:40.920 --> 00:00:42.580
+Now, move the filter over a little bit.
+
+00:00:42.580 --> 00:00:46.221
+Well, it just pulls out the f here, right, so this
+
+00:00:46.221 --> 00:00:52.003
+pixel right there pulls out the f so an f goes right there, in, in my result.
+
+00:00:52.003 --> 00:00:56.322
+Move it over one more time, what do I get, I get the e.
+
+00:00:56.322 --> 00:00:59.530
+Move it over one more time again, what do I get, I get the d.
+
+00:00:59.530 --> 00:01:06.520
+So, you notice that even though the filter goes D-E-F, left to right.
+
+00:01:06.520 --> 00:01:11.060
+In the image, what comes out is F-E-D, going the other way, and
+
+00:01:11.060 --> 00:01:14.020
+that's just because of how this correlation pulled it up.
+
+00:01:14.020 --> 00:01:16.790
+And it won't surprise you that it, not only does it flip it left and
+
+00:01:16.790 --> 00:01:19.470
+right, it also flips it up and down.
+
+00:01:19.470 --> 00:01:25.110
+And that's what happens when you do a correlational filter of a impulse.
+
+00:01:25.110 --> 00:01:27.230
+Just because of the way you slide it over,
+
+00:01:27.230 --> 00:01:31.030
+you'll end up flipping that entire response.
+
+00:01:31.030 --> 00:01:34.030
+By the way, something that I was being implicit about is I was assuming that
+
+00:01:34.030 --> 00:01:37.900
+this center of that filter was what we were calling the reference point, right.
+
+00:01:37.900 --> 00:01:42.810
+So wherever the center was located, wherever that center pixel.
+
+00:01:42.810 --> 00:01:46.790
+That was the one that was being entered into on the result.
+
+00:01:46.790 --> 00:01:47.410
+Okay.
+
+00:01:47.410 --> 00:01:50.490
+You could use a different point, but we're going to assume that the center pixel
+
+00:01:50.490 --> 00:01:52.770
+is the reference pintal, pixel of the filter.
+

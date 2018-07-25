@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.230 --> 00:00:02.250
+All right, that ends this lesson.
+
+00:00:02.250 --> 00:00:05.846
+What we've done so far is we've derived how the extrinsics and
+
+00:00:05.846 --> 00:00:09.880
+the intrinsics are combined to form a single calibration matrix.
+
+00:00:09.880 --> 00:00:14.860
+And this matrix maps from some arbitrary world coordinate all the way down to
+
+00:00:14.860 --> 00:00:15.820
+a pixel value.
+
+00:00:15.820 --> 00:00:17.230
+What, you know, some x, y,
+
+00:00:17.230 --> 00:00:21.720
+z in the world, what UV does it end up in the, in the image.
+
+00:00:21.720 --> 00:00:22.950
+All right?
+
+00:00:22.950 --> 00:00:25.030
+So what are we going to do in the next lesson?
+
+00:00:25.030 --> 00:00:27.060
+Well, the obvious thing in the next lesson is,
+
+00:00:27.060 --> 00:00:30.240
+how would you go about finding that matrix, all right?
+
+00:00:30.240 --> 00:00:35.575
+And basically, the requirement's going to be, if I gave you the location of some
+
+00:00:35.575 --> 00:00:40.320
+3-D points in space, and I gave you the location of those points in the image,
+
+00:00:40.320 --> 00:00:43.960
+I should be able to recover that camera calibration matrix.
+
+00:00:43.960 --> 00:00:46.010
+And that's what we're going to do next time.
+
+00:00:46.010 --> 00:00:51.300
+And then, a couple of times after that, we'll say, well if we're less interested
+
+00:00:51.300 --> 00:00:55.180
+in going from a world coordinate system to a camera coordinate system, but
+
+00:00:55.180 --> 00:00:59.230
+instead, we're interested in going from one camera coordinate system to another,
+
+00:00:59.230 --> 00:01:00.840
+remember that stereo thing?
+
+00:01:00.840 --> 00:01:02.710
+How would we do that calibration?
+
+00:01:02.710 --> 00:01:04.540
+But first, we go from the world to the image.
+

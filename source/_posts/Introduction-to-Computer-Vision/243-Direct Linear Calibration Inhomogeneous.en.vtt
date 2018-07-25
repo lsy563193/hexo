@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.270 --> 00:00:02.300
+How about another way, okay?
+
+00:00:02.300 --> 00:00:04.530
+I'm going to show you another approach.
+
+00:00:04.530 --> 00:00:08.830
+Which in some sense is easier to understand, but it's actually not as good.
+
+00:00:08.830 --> 00:00:12.140
+That's why I showed you the other one first, all right?
+
+00:00:12.140 --> 00:00:15.050
+So here I'm using the same equation again.
+
+00:00:15.050 --> 00:00:20.000
+Now using uv1 as being projectively similar to m times XYZ1.
+
+00:00:20.000 --> 00:00:24.680
+But remember, if m can be changed by
+
+00:00:24.680 --> 00:00:27.770
+a scale value without affecting anything, then I could
+
+00:00:27.770 --> 00:00:32.560
+divide all the values by whatever that was on the bottom right-hand corner of m.
+
+00:00:32.560 --> 00:00:35.590
+And what I would get out would be a 1 here.
+
+00:00:35.590 --> 00:00:40.650
+So I can just put a 1 in the bottom right-hand corner of that matrix.
+
+00:00:40.650 --> 00:00:46.830
+And the reason I do that is now my equations for Ui and Vi become this.
+
+00:00:46.830 --> 00:00:47.580
+All right?
+
+00:00:47.580 --> 00:00:51.958
+And what you'll notice is I now have terms when I multiply out.
+
+00:00:51.958 --> 00:00:56.240
+This, the 1s and the denominator multiply Ui and Vi, which remember I,
+
+00:00:56.240 --> 00:01:00.420
+those are knowns, because those are the locations of the points in the image.
+
+00:01:00.420 --> 00:01:04.290
+So I now have terms that don't have the variables in them.
+
+00:01:04.290 --> 00:01:09.510
+That's why this is referred to as the inhomogeneous solution.
+
+00:01:09.510 --> 00:01:14.830
+And one of the reasons this is not as good is suppose the original m23
+
+00:01:14.830 --> 00:01:19.180
+was supposed to be much, much smaller than the other values,
+
+00:01:19.180 --> 00:01:21.490
+that is close to zero compared to the others.
+
+00:01:21.490 --> 00:01:25.270
+Well you've just set a number that was supposed to be really close to zero to
+
+00:01:25.270 --> 00:01:29.190
+one, that's dangerous with respect to numerical stability.
+
+00:01:29.190 --> 00:01:30.830
+So in general and, and
+
+00:01:30.830 --> 00:01:35.490
+also in terms of overall minimization, doing the singular value decomposition or
+
+00:01:35.490 --> 00:01:39.670
+doing the eigenvector finding on a transpose a, is, is the preferred method.
+
+00:01:39.670 --> 00:01:42.860
+And, by the way, it's one line in MATLAB, so you might as well just do it.
+

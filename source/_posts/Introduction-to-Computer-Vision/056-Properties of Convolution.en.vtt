@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.790 --> 00:00:01.760
+All right.
+
+00:00:01.760 --> 00:00:02.752
+One more thing.
+
+00:00:02.752 --> 00:00:05.258
+In order for all of this to work, we need a pr-,.
+
+00:00:05.258 --> 00:00:08.530
+a, a property called shift invariance.
+
+00:00:08.530 --> 00:00:12.130
+And shift invariance is basically that your operator behaves
+
+00:00:12.130 --> 00:00:13.800
+everywhere the same way.
+
+00:00:13.800 --> 00:00:17.200
+So I have a couple of pixels over here on the left and I apply my operator.
+
+00:00:17.200 --> 00:00:19.720
+If I had the same pixels over here on the right.
+
+00:00:19.720 --> 00:00:20.640
+Oh, this is my left,
+
+00:00:20.640 --> 00:00:24.990
+my right, your right, turn around, okay, or, look, never mind.
+
+00:00:24.990 --> 00:00:26.490
+If I have them up and down, right.
+
+00:00:26.490 --> 00:00:29.990
+If I have a couple pixels up here, and I apply a filter I get the same values if
+
+00:00:29.990 --> 00:00:32.250
+I have a couple pixels down here and I apply a filter.
+
+00:00:32.250 --> 00:00:34.170
+That means that I can shift things around and
+
+00:00:34.170 --> 00:00:36.440
+do the addition, and get my entire image back.
+
+00:00:37.980 --> 00:00:42.332
+As we said, because convolution or correlation are built on multiplication and
+
+00:00:42.332 --> 00:00:44.572
+addition, these are linear operators,
+
+00:00:44.572 --> 00:00:48.630
+making the whole notion of filtering a linear operation.
+
+00:00:48.630 --> 00:00:52.350
+And this means that convolution has some very useful properties.
+
+00:00:52.350 --> 00:00:54.790
+For example, it's commutative.
+
+00:00:54.790 --> 00:00:58.490
+All right. So, f convolved with g is the same as g convolved with f.
+
+00:00:58.490 --> 00:01:02.080
+Remember that whole idea about which is the impulse and which is the filter?
+
+00:01:02.080 --> 00:01:03.540
+It's also associative.
+
+00:01:03.540 --> 00:01:07.570
+So that here we, we wrote the associative property of convolution.
+
+00:01:07.570 --> 00:01:09.710
+We're going to take advantage of that in just a minute.
+
+00:01:09.710 --> 00:01:11.300
+It has an, a, a unit impulse.
+
+00:01:11.300 --> 00:01:12.020
+It's the identity.
+
+00:01:12.020 --> 00:01:13.030
+So that's what we talk about,
+
+00:01:13.030 --> 00:01:17.790
+that if you convolve any function with the identity you get back that function.
+
+00:01:17.790 --> 00:01:19.850
+And then here's a cool one.
+
+00:01:19.850 --> 00:01:24.392
+Differentiation of course is just the limit of subtraction and then a division,
+
+00:01:24.392 --> 00:01:28.759
+and a division is same as multiplication it's 1 over in that, in that case.
+
+00:01:28.759 --> 00:01:31.730
+So differentiation is a linear operator.
+
+00:01:31.730 --> 00:01:36.300
+Now you may have remembered that from calculus, right, so the derivative of
+
+00:01:36.300 --> 00:01:40.640
+a times f, where a is a constant, was just a times the derivative of f.
+
+00:01:40.640 --> 00:01:45.145
+And the derivative of f plus g was the derivative of f plus the derivative of g.
+
+00:01:45.145 --> 00:01:49.644
+So, differentiation is also a linear operator.
+
+00:01:49.644 --> 00:01:54.820
+And because of associativity we get this cool property here.
+
+00:01:54.820 --> 00:01:59.210
+That the derivative of a convolution is the same as taking
+
+00:01:59.210 --> 00:02:03.168
+the derivative of one of the elements and then convolving it with the second.
+
+00:02:03.168 --> 00:02:06.440
+And we're going to make use of that when we do edge detection and
+
+00:02:06.440 --> 00:02:08.169
+gradient finding in a little bit.
+

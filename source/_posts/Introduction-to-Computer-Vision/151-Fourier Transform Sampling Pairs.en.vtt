@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.100 --> 00:00:03.100
+But there's one other pair that I, I need you to know about.
+
+00:00:03.100 --> 00:00:06.050
+And again we're not going to derive this but it's important.
+
+00:00:06.050 --> 00:00:11.470
+And that is the notion of a pulse train or a set of impulses, okay.
+
+00:00:11.470 --> 00:00:15.630
+And so this is refered to as a pulse train, you can see that here.
+
+00:00:15.630 --> 00:00:20.900
+And the Fourier transform of pulse train is another impulse train.
+
+00:00:20.900 --> 00:00:25.350
+And the thing that you need to realize is that, and remember the scaling theorem
+
+00:00:25.350 --> 00:00:27.790
+give us this and a bunch of things give us this, right?
+
+00:00:27.790 --> 00:00:31.230
+As the pulses in space get further apart,
+
+00:00:31.230 --> 00:00:34.860
+the pulses in frequency get closer together.
+
+00:00:34.860 --> 00:00:38.880
+And this is a hand-wavy way of thinking about this.
+
+00:00:38.880 --> 00:00:43.640
+Imagine that our pulses got very, very far apart, okay?
+
+00:00:43.640 --> 00:00:46.360
+So far apart that I have an impulse in the middle and
+
+00:00:46.360 --> 00:00:49.350
+the next one is infinitely far away.
+
+00:00:49.350 --> 00:00:52.030
+Well, that would be just like having sort of a single impulse.
+
+00:00:52.030 --> 00:00:53.710
+That's the hand-wavy part.
+
+00:00:53.710 --> 00:00:57.170
+Well, what is the Fourier transform of a single impulse?
+
+00:00:57.170 --> 00:01:00.654
+Well, we said it was a 1 because an impulse gives you back the,
+
+00:01:00.654 --> 00:01:03.840
+when you can involve it, it gives you back the entire image.
+
+00:01:03.840 --> 00:01:06.720
+So therefore the frequency has to keep all the frequencies.
+
+00:01:06.720 --> 00:01:09.460
+So the hand wavy way of thinking about this is,
+
+00:01:09.460 --> 00:01:15.020
+as I stretch out my impulses in space, I have to shove all these impulses and
+
+00:01:15.020 --> 00:01:19.150
+frequency in time infinitely close together to make a solid bar.
+
+00:01:19.150 --> 00:01:23.100
+Okay, and that's one way of thinking about how the Fourier transform of
+
+00:01:23.100 --> 00:01:25.740
+an impulse train is another impulse train, and
+
+00:01:25.740 --> 00:01:28.980
+as they get bigger in space they get closer in frequency.
+

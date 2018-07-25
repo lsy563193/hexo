@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.620
+&gt;&gt; One thing that comes up when doing filtering is what to do
+
+00:00:02.620 --> 00:00:03.735
+about the boundaries,
+
+00:00:03.735 --> 00:00:06.879
+because you might ask what happens when your filter falls off the edge.
+
+00:00:06.879 --> 00:00:09.096
+&gt;&gt; What happens when your filter falls off the edge?
+
+00:00:09.096 --> 00:00:12.277
+&gt;&gt; Meghan has been rehearsing this all week, outstanding.
+
+00:00:12.277 --> 00:00:16.619
+Well, basically it's undefined until you define it.
+
+00:00:16.619 --> 00:00:17.258
+All right?
+
+00:00:17.258 --> 00:00:21.080
+So you have to think about what size operation you want, so
+
+00:00:21.080 --> 00:00:23.422
+that can be illustrated like this.
+
+00:00:23.422 --> 00:00:24.501
+Okay?
+
+00:00:24.501 --> 00:00:27.623
+And here we're going to use a little bit of old MatLab nomenclature,
+
+00:00:27.623 --> 00:00:31.432
+they've changed it, because the old MatLab nomenclature actually makes it clear.
+
+00:00:31.432 --> 00:00:36.460
+So, here I've got a function f and I'm filtering it with g.
+
+00:00:36.460 --> 00:00:40.256
+And you might try to think about well, what's the size output that I want.
+
+00:00:40.256 --> 00:00:43.494
+And there's sort of three different possible sizes.
+
+00:00:43.494 --> 00:00:50.554
+One is when g just touches that corner, I start to get a response.
+
+00:00:50.554 --> 00:00:54.095
+So if I think of the center point of g as the reference,
+
+00:00:54.095 --> 00:00:58.761
+I would actually get a box that's bigger than the original function.
+
+00:00:58.761 --> 00:00:59.737
+Okay.
+
+00:00:59.737 --> 00:01:05.072
+The flip side is if I want to make sure that all of g is actually touching f,
+
+00:01:05.072 --> 00:01:08.657
+then I'm going to, again using the center point,
+
+00:01:08.657 --> 00:01:12.252
+I end up with a smaller output than the original.
+
+00:01:12.252 --> 00:01:14.639
+And that, that's used to be referred to as valid,
+
+00:01:14.639 --> 00:01:16.756
+since all those points were in fact correct.
+
+00:01:16.756 --> 00:01:20.615
+But the problem is when I filter a 55 by 55 image,
+
+00:01:20.615 --> 00:01:23.791
+I'd really want to get back a 55 by 55.
+
+00:01:23.791 --> 00:01:27.356
+I don't want to get back a 58 by 58 or a 52 by 52.
+
+00:01:27.356 --> 00:01:30.118
+What I want is referred to as the same.
+
+00:01:30.118 --> 00:01:35.900
+So here you see that we put that filter with its middle at the corners and
+
+00:01:35.900 --> 00:01:38.058
+we get back the same size.
+
+00:01:38.058 --> 00:01:40.185
+So the problem of course,
+
+00:01:40.185 --> 00:01:45.419
+is what's underneath these pixels here that are sticking out?
+
+00:01:45.419 --> 00:01:47.147
+And basically when you do filtering,
+
+00:01:47.147 --> 00:01:49.310
+you have to tell the system what you want there.
+

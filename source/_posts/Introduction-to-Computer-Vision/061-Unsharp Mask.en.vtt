@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.968
+You have time for a quick story?
+
+00:00:01.968 --> 00:00:03.170
+Okay, sure.
+
+00:00:03.170 --> 00:00:04.672
+Anybody here ever use Photoshop?
+
+00:00:04.672 --> 00:00:05.707
+Raise your hand.
+
+00:00:05.707 --> 00:00:06.974
+In the older Photoshop or
+
+00:00:06.974 --> 00:00:10.244
+even currently, they have something called the unsharp mask.
+
+00:00:10.244 --> 00:00:11.445
+Okay?
+
+00:00:11.445 --> 00:00:14.515
+And when you apply the unsharp mask, what does it do?
+
+00:00:14.515 --> 00:00:16.216
+It makes it sharper.
+
+00:00:16.216 --> 00:00:17.098
+Now you might ask,
+
+00:00:17.098 --> 00:00:20.254
+why would you call an unsharp mask something that makes it sharper?
+
+00:00:20.254 --> 00:00:21.555
+Don't ask.
+
+00:00:21.555 --> 00:00:22.390
+Okay.
+
+00:00:22.390 --> 00:00:25.917
+In the old days, like when you did things in a darkroom,
+
+00:00:25.917 --> 00:00:29.463
+you were playing with light and you, chemicals, etc.
+
+00:00:29.463 --> 00:00:33.034
+But you still actually able to add and subtract light.
+
+00:00:33.034 --> 00:00:36.475
+So those of you have ever seen film knows that film were made out of
+
+00:00:36.475 --> 00:00:37.638
+negatives, right?
+
+00:00:37.638 --> 00:00:40.718
+And so that where it was dark, it would let out hardly any light and
+
+00:00:40.718 --> 00:00:42.510
+where it was light it would let a lot and
+
+00:00:42.510 --> 00:00:45.880
+then the, it would reflect on, it would be projected onto paper.
+
+00:00:45.880 --> 00:00:50.142
+And then whenever a lot of light hit the paper, it would become black and
+
+00:00:50.142 --> 00:00:52.620
+that's why you had to make it be a negative.
+
+00:00:52.620 --> 00:00:56.525
+Some very clever photographer figured out the following.
+
+00:00:56.525 --> 00:01:01.243
+Let's suppose I take a negative and then I put a piece of
+
+00:01:01.243 --> 00:01:06.901
+wax paper over it and I put another piece of film underneath that.
+
+00:01:06.901 --> 00:01:07.768
+Okay?
+
+00:01:07.768 --> 00:01:10.905
+And I turn on the light for just a split [SOUND] second.
+
+00:01:10.905 --> 00:01:15.910
+I will get a blurry negative of the original negative.
+
+00:01:15.910 --> 00:01:16.744
+Okay?
+
+00:01:16.744 --> 00:01:19.568
+Right? Because it, it becomes a negative, it's a piece of film, so
+
+00:01:19.568 --> 00:01:22.623
+I, I put the, the good negative, the sharp negative piece of wax paper and
+
+00:01:22.623 --> 00:01:25.119
+then another negative and there are other ways of making it.
+
+00:01:25.119 --> 00:01:30.224
+But the idea is that I would get a blurry negative of the negative, okay?
+
+00:01:30.224 --> 00:01:33.394
+So if the negative were all white, this negative would now become all black.
+
+00:01:33.394 --> 00:01:34.495
+All right?
+
+00:01:34.495 --> 00:01:37.131
+It was the negative value.
+
+00:01:37.131 --> 00:01:40.201
+Then what you could do is you'd develop that film, et cetera.
+
+00:01:40.201 --> 00:01:45.636
+You could put that blurry negative of the negative in
+
+00:01:45.636 --> 00:01:50.711
+with the original film and expose it at one shot.
+
+00:01:50.711 --> 00:01:55.749
+And the math that was being done was exactly this math.
+
+00:01:55.749 --> 00:02:00.009
+We had our original and because it's a negative of it,
+
+00:02:00.009 --> 00:02:05.291
+we're subtracting off a slightly blurry version of the picture and
+
+00:02:05.291 --> 00:02:08.362
+that would give you a sharper picture.
+
+00:02:08.362 --> 00:02:12.381
+So that's how you did image processing with chemicals and
+
+00:02:12.381 --> 00:02:14.602
+film to make a sharper picture.
+
+00:02:14.602 --> 00:02:19.807
+And what do you think that extra negative that you made, okay?
+
+00:02:19.807 --> 00:02:23.611
+That was blurrier was called, it was less sharp.
+
+00:02:23.611 --> 00:02:29.550
+It was the unsharp mask and it would be added to the original picture.
+
+00:02:29.550 --> 00:02:33.989
+And the unsharp mask would yield for you sharper picture.
+
+00:02:33.989 --> 00:02:36.383
+So now you learned something totally irrelevant,
+
+00:02:36.383 --> 00:02:39.059
+because you probably haven't even seen a piece of film.
+
+00:02:39.059 --> 00:02:45.032
+But it is why in software today, unsharp masks make pictures sharper.
+
+00:02:45.032 --> 00:02:47.868
+And now you actually know why, why the math works.
+
+00:02:47.868 --> 00:02:51.355
+Right? You're essentially subtracting off a slightly blurry version of
+
+00:02:51.355 --> 00:02:51.910
+the image.
+

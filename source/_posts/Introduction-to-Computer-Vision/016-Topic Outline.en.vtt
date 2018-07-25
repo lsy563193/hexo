@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.100 --> 00:00:04.059
+The course itself is structured in these sort of ten overall units.
+
+00:00:04.059 --> 00:00:07.880
+Don't worry, they're not all as equally long and pedantic as this introduction.
+
+00:00:07.880 --> 00:00:10.970
+We'll start off early by doing some image processing because you have to
+
+00:00:10.970 --> 00:00:14.970
+manipulate images to do a variety of types of interaction with them later.
+
+00:00:14.970 --> 00:00:16.930
+And we actually have a problem set early on there that
+
+00:00:16.930 --> 00:00:21.510
+goes from image processing to getting some basic structure.
+
+00:00:21.510 --> 00:00:24.930
+Then we'll talk about the geometry of cameras and camera models, and what
+
+00:00:24.930 --> 00:00:28.740
+happens when you have multiple views and how you can relate them to each other.
+
+00:00:28.740 --> 00:00:32.662
+We'll get down to the image and talk about features, computing something about
+
+00:00:32.662 --> 00:00:36.369
+one image and figuring out where in the other image those same points occur.
+
+00:00:36.369 --> 00:00:39.102
+because once you can do that, there's a lot you can do in terms of
+
+00:00:39.102 --> 00:00:43.942
+thinking about either transforming images or computing geometry between them.
+
+00:00:43.942 --> 00:00:47.160
+We'll spend just a little bit of time talking about how images get formed in
+
+00:00:47.160 --> 00:00:49.460
+the first place, what we call lightness and brightness.
+
+00:00:49.460 --> 00:00:52.638
+How does light interact with material and
+
+00:00:52.638 --> 00:00:57.187
+then come to your imaging sensor in order to make a picture?
+
+00:00:57.187 --> 00:01:00.372
+We'll spend a bit of time talking about motion, remember we talked about not
+
+00:01:00.372 --> 00:01:03.460
+just static images, but we can actually have sequences of images?
+
+00:01:03.460 --> 00:01:06.240
+So the question of how things are moving can be looked at.
+
+00:01:06.240 --> 00:01:10.230
+And these are sort of separated into motion in the image, and that,
+
+00:01:10.230 --> 00:01:13.880
+that is sort of how the pixels change, and then tracking the object.
+
+00:01:13.880 --> 00:01:17.140
+And we'll focus a bit on tracking as well.
+
+00:01:17.140 --> 00:01:20.100
+Then we'll get to something which we're going to do just a little bit of,
+
+00:01:20.100 --> 00:01:22.390
+of classification and recognition.
+
+00:01:22.390 --> 00:01:25.740
+And some of you may be saying, aw that's disappointing.
+
+00:01:25.740 --> 00:01:27.750
+No, no, no, it's not disappointing, okay?
+
+00:01:29.130 --> 00:01:33.550
+A lot of classification recognition is deeply steeped in machine learning.
+
+00:01:33.550 --> 00:01:36.590
+So what we'll do is, we'll do some of it here, sort of some basic pattern
+
+00:01:36.590 --> 00:01:39.500
+recognition, and then computer vision applied to recognition.
+
+00:01:39.500 --> 00:01:42.890
+And then if you want to do more in the recognition universe,
+
+00:01:42.890 --> 00:01:45.460
+you'll have to learn some machine learning as well.
+
+00:01:45.460 --> 00:01:50.100
+The course concludes with just some extra stuff that is just useful to know,
+
+00:01:50.100 --> 00:01:52.100
+if you're actually going to do computer vision work.
+
+00:01:52.100 --> 00:01:55.160
+And then finally, because I can't help myself and neither can Arpin,
+
+00:01:55.160 --> 00:01:58.840
+because he has true inspiration from biological systems,
+
+00:01:58.840 --> 00:02:01.450
+we'll talk a little bit about how the human vision system works.
+

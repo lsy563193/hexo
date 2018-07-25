@@ -1,0 +1,316 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.130 --> 00:00:04.900
+To detect lines in an image,
+we first need to find edge pixels.
+
+00:00:04.900 --> 00:00:09.010
+So let's load an image,
+convert it to grayscale, and
+
+00:00:09.010 --> 00:00:12.330
+find edge pixels using
+the Canny Operator.
+
+00:00:12.330 --> 00:00:13.490
+Let's see what these look like.
+
+00:00:14.910 --> 00:00:16.730
+Here's the original image.
+
+00:00:16.730 --> 00:00:19.470
+As you can see, it has some lines in it.
+
+00:00:19.470 --> 00:00:23.820
+The grayscale version, and edge pixels.
+
+00:00:23.820 --> 00:00:27.690
+Now we'll apply the Hough
+transform method to find lines.
+
+00:00:27.690 --> 00:00:30.210
+For this we'll use the Hough
+function in MATLAB.
+
+00:00:32.049 --> 00:00:35.200
+Find out more about this function
+in the MATLAB documentation.
+
+00:00:36.400 --> 00:00:40.308
+The equivalent function
+in Octave is houghtf.
+
+00:00:40.308 --> 00:00:43.690
+The first returned value
+is the accumulator array.
+
+00:00:43.690 --> 00:00:46.450
+The second is a vector
+of theta values or
+
+00:00:46.450 --> 00:00:51.245
+angles and third is a vector
+of radius values or rho.
+
+00:00:52.520 --> 00:00:54.470
+Let's see what this looks like.
+
+00:00:54.470 --> 00:00:58.419
+We pass in the theta and
+rho values to properly label each axis.
+
+00:00:59.805 --> 00:01:04.209
+Rho or distance from origin
+is along the y axis.
+
+00:01:04.209 --> 00:01:10.901
+And the angle, theta, is on the x axis
+ranging from minus 90 to plus 90.
+
+00:01:10.901 --> 00:01:14.550
+Okay, so let's find the peaks
+in this accumulator array.
+
+00:01:14.550 --> 00:01:18.280
+We pass in 100 as the maximum number
+of peaks we are interested in.
+
+00:01:19.340 --> 00:01:24.800
+Note that a similar function called
+immaximize needs to be used in octave.
+
+00:01:24.800 --> 00:01:28.030
+Let's plot these peaks on
+the hough accumulator array.
+
+00:01:29.320 --> 00:01:34.000
+Note that we need to use the theta and
+rho values to plot the peaks correctly.
+
+00:01:35.030 --> 00:01:37.599
+The peaks are marked by small red boxes.
+
+00:01:39.170 --> 00:01:42.390
+The size of the peaks matrix is 13 by 2.
+
+00:01:42.390 --> 00:01:44.760
+13 peaks were found.
+
+00:01:44.760 --> 00:01:47.250
+Each row contains
+the location of a peak.
+
+00:01:47.250 --> 00:01:50.850
+The first column has row values,
+or y values.
+
+00:01:50.850 --> 00:01:53.720
+And the second one has x values.
+
+00:01:53.720 --> 00:01:54.940
+Using these peaks,
+
+00:01:54.940 --> 00:01:59.790
+we can find line segments using
+the hough lines function in MATLAB.
+
+00:01:59.790 --> 00:02:02.230
+It looks like 28 line
+segments were found.
+
+00:02:03.590 --> 00:02:08.258
+Each element in line_segs is
+a structure where the two end points,
+
+00:02:08.258 --> 00:02:10.850
+the theta and the rho values.
+
+00:02:10.850 --> 00:02:12.480
+Let's plot these line segments.
+
+00:02:13.590 --> 00:02:17.660
+As you can see, most of the longer
+line segments have been detected, but
+
+00:02:17.660 --> 00:02:20.630
+a lot of spurious line
+segments also show up.
+
+00:02:20.630 --> 00:02:23.820
+Okay, so how can we get better results?
+
+00:02:23.820 --> 00:02:25.640
+Let's take a look at
+the edge pixels again.
+
+00:02:26.970 --> 00:02:31.020
+We notice that there are breaks along
+the longer lines in some areas.
+
+00:02:31.020 --> 00:02:34.310
+There is also this dense grouping of
+curves that could throw the Hough
+
+00:02:34.310 --> 00:02:35.910
+detector off.
+
+00:02:35.910 --> 00:02:37.380
+To find a set of cleaner, or
+
+00:02:37.380 --> 00:02:41.450
+more meaningful lines,
+we can do multiple things.
+
+00:02:41.450 --> 00:02:46.250
+For instance, we could increase
+the threshold parameter for hough peaks.
+
+00:02:46.250 --> 00:02:48.480
+To understand what
+these parameters mean,
+
+00:02:48.480 --> 00:02:51.780
+let's look at the documentation for
+this function.
+
+00:02:51.780 --> 00:02:55.120
+So threshold is the minimum
+value in the accumulator array
+
+00:02:55.120 --> 00:02:59.260
+that is the minimum number of pixels
+that support a line required for
+
+00:02:59.260 --> 00:03:02.720
+that line to be counted
+as a valid candidate.
+
+00:03:02.720 --> 00:03:06.230
+Any possible lines with less
+pixels will not be considered.
+
+00:03:06.230 --> 00:03:11.480
+Here we set it to be 0.6 times the
+maximum value in the accumulator array,
+
+00:03:11.480 --> 00:03:14.220
+the default being 0.5 times max.
+
+00:03:14.220 --> 00:03:16.780
+Neighborhood size defines
+the region over which
+
+00:03:16.780 --> 00:03:19.200
+local maxima will be computed.
+
+00:03:19.200 --> 00:03:21.900
+Note that this is not
+a region in the image.
+
+00:03:21.900 --> 00:03:25.640
+We are computing local maxima
+in the accumulator array, so
+
+00:03:25.640 --> 00:03:29.390
+the size of the neighborhood is
+defined in rho and theta dimensions.
+
+00:03:30.490 --> 00:03:34.250
+A neighborhood size of five degrees
+along the theta dimension means that
+
+00:03:34.250 --> 00:03:38.650
+a strong line will suppress
+other lines that are similar but
+
+00:03:38.650 --> 00:03:40.900
+slightly off in direction.
+
+00:03:40.900 --> 00:03:44.160
+Recall that we found 13
+peaks in our last attempt.
+
+00:03:44.160 --> 00:03:46.210
+This time we have only seven peaks.
+
+00:03:47.310 --> 00:03:49.590
+Let's see where these peaks are.
+
+00:03:49.590 --> 00:03:52.670
+Looks like we might have
+cleaner results after all.
+
+00:03:52.670 --> 00:03:55.380
+Let's compare this with
+the previous accumulator peaks.
+
+00:03:56.450 --> 00:03:59.570
+We see that a lot of
+the previously found peaks in this
+
+00:03:59.570 --> 00:04:02.120
+dense region are now gone.
+
+00:04:02.120 --> 00:04:05.795
+The new peaks are clustered
+around three major locations.
+
+00:04:08.290 --> 00:04:09.720
+Okay, what more can we do?
+
+00:04:11.050 --> 00:04:14.700
+We could play with
+the parameters of houghlines.
+
+00:04:14.700 --> 00:04:18.355
+How about we increase
+the fill gap parameter to 50?
+
+00:04:18.355 --> 00:04:22.402
+This is the maximum number of pixels
+allowed between two segments for
+
+00:04:22.402 --> 00:04:25.690
+them to be counted as one if
+they lie along the same line.
+
+00:04:26.950 --> 00:04:31.530
+To focus on longer lines, let's increase
+the minimum length to be 100 pixels.
+
+00:04:32.840 --> 00:04:35.230
+For a better understanding
+of these parameters,
+
+00:04:35.230 --> 00:04:37.309
+take a look at the documentation for
+houghlines.
+
+00:04:38.680 --> 00:04:40.880
+Okay, let's see what
+the new segments look like.
+
+00:04:42.160 --> 00:04:43.820
+Compared with the previous results,
+
+00:04:43.820 --> 00:04:47.260
+we see that the false positives
+have been mostly removed.
+
+00:04:47.260 --> 00:04:51.320
+Some of the previously broken
+segments have also been joined.
+
+00:04:51.320 --> 00:04:54.560
+Obviously you can do a better job
+by playing with the parameters,
+
+00:04:54.560 --> 00:04:56.310
+especially here.
+
+00:04:56.310 --> 00:04:59.020
+So feel free to play with
+the huff transform functions.
+

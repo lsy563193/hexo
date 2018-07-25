@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.280 --> 00:00:02.040
+So the way this is done,
+
+00:00:02.040 --> 00:00:05.220
+is in what's called the dynamic programming formulation.
+
+00:00:05.220 --> 00:00:07.820
+And it's a little complicated but bear with me.
+
+00:00:07.820 --> 00:00:10.710
+So what we have here is, I'm going to pretend that I've got the left
+
+00:00:10.710 --> 00:00:14.720
+scan line signal down here and each of these is supposed to be the pixels.
+
+00:00:14.720 --> 00:00:17.280
+Although, I noticed there are more dots than pixels.
+
+00:00:17.280 --> 00:00:21.250
+So, assume that there's as many squares as there are dots in this grid.
+
+00:00:21.250 --> 00:00:22.870
+And same thing over here.
+
+00:00:24.000 --> 00:00:25.070
+And let's assume for
+
+00:00:25.070 --> 00:00:31.040
+a moment that we know that the leftmost pixel here corresponds to this one.
+
+00:00:31.040 --> 00:00:35.180
+And the rightmost pixel there corresponds to that one, all right?
+
+00:00:35.180 --> 00:00:41.180
+Well then, a solution to the mapping of the left to the right
+
+00:00:41.180 --> 00:00:46.880
+is just a path from that top left-hand corner to the right, bottom right corner.
+
+00:00:46.880 --> 00:00:49.250
+So, there's a particular path, okay?
+
+00:00:49.250 --> 00:00:54.120
+And the goal is to find the best possible path.
+
+00:00:54.120 --> 00:00:57.040
+And best possible path meaning the least cost.
+
+00:00:57.040 --> 00:00:59.580
+Now, when you're located somewhere in this grid,
+
+00:00:59.580 --> 00:01:03.220
+there's only three different ways that this path can go.
+
+00:01:03.220 --> 00:01:06.440
+The simplest way is when you go on the diagonal.
+
+00:01:06.440 --> 00:01:09.130
+Now, when you go on the diagonal, what it means is,
+
+00:01:09.130 --> 00:01:13.050
+if this pixel was mapping to this one, then this one is mapping to the next one.
+
+00:01:13.050 --> 00:01:15.520
+That is, they're staying at the same disparity.
+
+00:01:15.520 --> 00:01:18.670
+So if, if I have to go plus three to match this pixel,
+
+00:01:18.670 --> 00:01:19.920
+then this one's also plus three.
+
+00:01:19.920 --> 00:01:21.660
+And I just keep going along.
+
+00:01:21.660 --> 00:01:26.870
+But, suppose I have some pixels that are visible in one image and
+
+00:01:26.870 --> 00:01:29.000
+not visible in the next.
+
+00:01:29.000 --> 00:01:32.470
+So, here I have an, an area that I'm saying is left occlusion.
+
+00:01:32.470 --> 00:01:35.120
+What I mean by that is visible to the left eye and
+
+00:01:35.120 --> 00:01:37.500
+is not visible to the right eye.
+
+00:01:37.500 --> 00:01:40.140
+So, what that means is that all of these pixels,
+
+00:01:40.140 --> 00:01:44.400
+this range here, are all being mapped to this one location.
+
+00:01:44.400 --> 00:01:48.500
+So you can think of it as that this pixel was mapped to this pixel, but
+
+00:01:48.500 --> 00:01:50.730
+all of these were not seen.
+
+00:01:50.730 --> 00:01:52.760
+So that's a left occlusion.
+
+00:01:52.760 --> 00:01:56.670
+Correspondingly, you can have right occlusions, all right?
+
+00:01:56.670 --> 00:01:59.760
+And the goal is to find the least cost through.
+
+00:01:59.760 --> 00:02:03.620
+Now, when you're going diagonally, you're cost is just the match between two
+
+00:02:03.620 --> 00:02:06.185
+pixels and that can be a match much like we did before.
+
+00:02:06.185 --> 00:02:08.680
+[INAUDIBLE] normalized correlations or sum of square differences,
+
+00:02:08.680 --> 00:02:11.910
+depending upon whether you're doing similarity or dissimilarity.
+
+00:02:11.910 --> 00:02:13.910
+But when you're not going the one-to-one, but
+
+00:02:13.910 --> 00:02:16.150
+you're actually doing the occlusion, you're,
+
+00:02:16.150 --> 00:02:20.550
+what you need to do is pay a price for occlusion pixels.
+
+00:02:20.550 --> 00:02:23.370
+And a variety of methods have been designed that
+
+00:02:23.370 --> 00:02:26.250
+tell you that say how to try to assign that cost.
+
+00:02:26.250 --> 00:02:28.590
+Some of them are Bayesian, some are other ways.
+
+00:02:28.590 --> 00:02:31.350
+Now, for those of you that know about shortest path or
+
+00:02:31.350 --> 00:02:34.010
+Dijkstra algorithms or other forms of solving this.
+
+00:02:34.010 --> 00:02:37.180
+This can be formulated as a dynamic programming problem.
+
+00:02:37.180 --> 00:02:39.620
+And dynamic programming approaches are nice because they're
+
+00:02:39.620 --> 00:02:40.900
+computationally efficient.
+
+00:02:40.900 --> 00:02:43.490
+You don't actually compute all possible paths.
+
+00:02:43.490 --> 00:02:46.320
+And yet you can still compute the best possible path.
+
+00:02:46.320 --> 00:02:49.230
+And the only thing required is that you basically have to be
+
+00:02:49.230 --> 00:02:53.850
+able to evaluate the costs of going horizontal, vertical or diagonal.
+
+00:02:53.850 --> 00:02:55.300
+And here, I've listed some references,
+
+00:02:55.300 --> 00:02:59.750
+including one by [UNKOWN] Bobick, that showed about how to do that.
+
+00:02:59.750 --> 00:03:03.350
+We introduced this thing call ground control points which was a cool way of not
+
+00:03:03.350 --> 00:03:07.410
+being very sensitive to the occlusion cost value that you use.
+
+00:03:07.410 --> 00:03:08.930
+Which was part of the problem of,
+
+00:03:08.930 --> 00:03:11.240
+of earlier methods, but this is in the way backs
+

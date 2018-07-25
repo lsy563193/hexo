@@ -1,0 +1,232 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.380 --> 00:00:02.330
+What we're going to do is we're going to step through the geometry for
+
+00:00:02.330 --> 00:00:04.460
+a pretty simple stereo system.
+
+00:00:04.460 --> 00:00:06.589
+The first thing that we're going to do,
+
+00:00:06.589 --> 00:00:09.890
+is assume that the optical axes are parallel.
+
+00:00:09.890 --> 00:00:13.700
+That's these right here, and because the optical axes are perpendicular to
+
+00:00:13.700 --> 00:00:16.329
+the image planes, it means the image planes are parallel.
+
+00:00:16.329 --> 00:00:20.880
+In fact, we're going to assume that they're exactly coplanar.
+
+00:00:20.880 --> 00:00:26.152
+So this image drawn here is as if we were looking down on our camera rig system,
+
+00:00:26.152 --> 00:00:26.970
+all right?
+
+00:00:26.970 --> 00:00:31.010
+The cameras are looking out, okay, and this is the image plane right here,
+
+00:00:31.010 --> 00:00:34.560
+so we're looking down on the plane, and that will let us take a look at
+
+00:00:34.560 --> 00:00:38.119
+how things shift left to right in the stereo imagery.
+
+00:00:39.140 --> 00:00:40.050
+For our geometry here,
+
+00:00:40.050 --> 00:00:45.300
+we're going to assume our cameras are separated by Baseline B and
+
+00:00:45.300 --> 00:00:50.690
+that both cameras have a focal length of f, so f is on both sides.
+
+00:00:50.690 --> 00:00:53.150
+So for the two cameras, they both have the same focal length.
+
+00:00:54.160 --> 00:00:59.360
+Now, let's assume that we have some Point P in this scene, okay.
+
+00:00:59.360 --> 00:01:03.340
+And it's located at a distance Z in the camera coordinate systems.
+
+00:01:03.340 --> 00:01:07.910
+Now remember, the Z is the distance all the way down to the centers of
+
+00:01:07.910 --> 00:01:09.190
+projection, okay?
+
+00:01:09.190 --> 00:01:12.590
+So that's Z not to the image plane, but to the center of projection.
+
+00:01:12.590 --> 00:01:16.960
+And if you remember, just for mathematical convenience, we put the image plane
+
+00:01:16.960 --> 00:01:20.580
+in front of the center of projection so things don't get inverted.
+
+00:01:20.580 --> 00:01:24.830
+So, that point P projects into both the left and the right images.
+
+00:01:24.830 --> 00:01:28.150
+Now, just to make sure you're paying attention, on the left image,
+
+00:01:28.150 --> 00:01:31.080
+the distance is going to be positive.
+
+00:01:31.080 --> 00:01:33.750
+And on the right image, the distance is going to be negative because our
+
+00:01:33.750 --> 00:01:35.760
+origins are right in the middle.
+
+00:01:35.760 --> 00:01:38.820
+Zero is here is in the middle of the image plane, got it?
+
+00:01:38.820 --> 00:01:41.910
+So, distance is positive in the left and negative in the right.
+
+00:01:41.910 --> 00:01:46.290
+These quantities, xl and xr, are meant to be distances, so they're positive
+
+00:01:46.290 --> 00:01:51.190
+values, but whether they move plus or minus depends upon which image we're in.
+
+00:01:51.190 --> 00:01:56.210
+So here's our point pl, and there's our point pr, and pl, is as I said,
+
+00:01:56.210 --> 00:02:00.230
+this distance xl to the right of the optical axis, so
+
+00:02:00.230 --> 00:02:03.500
+it's positive, and the point pr is to the left.
+
+00:02:03.500 --> 00:02:08.370
+So it's negative xr to the left of zero, all right?
+
+00:02:08.370 --> 00:02:13.116
+So now we can do some simple geometry to figure out the relationships between
+
+00:02:13.116 --> 00:02:18.190
+xs, ps, bs, ps and everything else that happens to be in the picture.
+
+00:02:18.190 --> 00:02:22.560
+We want to find an expression for z, so we start by using similar triangles,
+
+00:02:22.560 --> 00:02:25.200
+just like we did for projection, but these are different triangles.
+
+00:02:25.200 --> 00:02:26.630
+The one's looking down.
+
+00:02:26.630 --> 00:02:30.150
+We have the first triangle, which is based upon the point p and
+
+00:02:30.150 --> 00:02:31.420
+each of the projections.
+
+00:02:31.420 --> 00:02:33.340
+That triangle's shown in yellow.
+
+00:02:33.340 --> 00:02:37.300
+And then there is another triangle that's based upon the center of projections,
+
+00:02:37.300 --> 00:02:38.740
+and the point P.
+
+00:02:38.740 --> 00:02:40.310
+And that one is shown here in blue.
+
+00:02:40.310 --> 00:02:41.160
+See how it faded in.
+
+00:02:41.160 --> 00:02:42.070
+Let me back it up.
+
+00:02:42.070 --> 00:02:44.760
+There it is. That's the other triangle.
+
+00:02:44.760 --> 00:02:47.310
+Well, we now have two similar triangles.
+
+00:02:47.310 --> 00:02:50.446
+So we can write down what the relationship is between the edges.
+
+00:02:50.446 --> 00:02:56.060
+Namely that B minus these distances,
+
+00:02:56.060 --> 00:03:03.380
+so that's going to be this distance, okay, is to this distance,
+
+00:03:03.380 --> 00:03:08.750
+which is just Z minus f, that's same proportion as
+
+00:03:08.750 --> 00:03:13.190
+the total baseline B, I'll draw it here, is to the total Z.
+
+00:03:14.215 --> 00:03:17.120
+Okay, those similar triangles give us that relationship, so
+
+00:03:17.120 --> 00:03:22.980
+very little bit of rearranging gives us an expression for Z that says that
+
+00:03:22.980 --> 00:03:28.561
+Z is equal to f times B over xl minus xr, okay?
+
+00:03:30.150 --> 00:03:33.550
+And that difference between the left and
+
+00:03:33.550 --> 00:03:37.230
+the right amount, that's called the disparity.
+
+00:03:37.230 --> 00:03:40.600
+The cool thing here is that we're computing the distance in
+
+00:03:40.600 --> 00:03:44.070
+the scene based upon a difference between these two.
+
+00:03:44.070 --> 00:03:49.660
+Now you should ask yourself a little question here.
+
+00:03:49.660 --> 00:03:51.820
+What happens when disparity is zero?
+
+00:03:51.820 --> 00:03:58.330
+Well when disparity is zero, that means that some point in the scene
+
+00:03:58.330 --> 00:04:03.830
+projected to the same point in the left image as the right image.
+
+00:04:03.830 --> 00:04:08.930
+In other words, as I moved my, from my left to my right camera,
+
+00:04:08.930 --> 00:04:10.890
+that point didn't appear to move.
+
+00:04:12.000 --> 00:04:13.420
+Well remember, we had a quiz on this.
+
+00:04:13.420 --> 00:04:15.610
+We talked about how come the moon follows you.
+
+00:04:15.610 --> 00:04:18.480
+Well, the moon follows you because Z is so
+
+00:04:18.480 --> 00:04:24.000
+far away that you get, no change in the left and the right.
+
+00:04:24.000 --> 00:04:27.110
+So the disparity is zero, so the depth is what?
+
+00:04:27.110 --> 00:04:29.180
+It's infinite, okay.
+
+00:04:29.180 --> 00:04:32.780
+And that's the inverse relationship between disparity and depth.
+

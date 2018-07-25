@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.180 --> 00:00:03.276
+But we're not really going to talk much about doing this inverse part.
+
+00:00:03.276 --> 00:00:06.891
+Instead we're going to talk about how the Fourier transform shows you
+
+00:00:06.891 --> 00:00:09.170
+what's going on in frequency.
+
+00:00:09.170 --> 00:00:12.840
+So, suppose I have a function, and here's a function.
+
+00:00:12.840 --> 00:00:15.000
+And suppose this is this noisy signal.
+
+00:00:15.000 --> 00:00:18.170
+I want a nice smooth version of it.
+
+00:00:18.170 --> 00:00:18.850
+Right.
+
+00:00:18.850 --> 00:00:20.670
+So how might I do that?
+
+00:00:20.670 --> 00:00:22.918
+Well, we learned before that you might blur it with,
+
+00:00:22.918 --> 00:00:25.400
+let's say, a Gaussian kernel.
+
+00:00:25.400 --> 00:00:28.350
+Okay, and what does it mean to blur it with a Gaussian kernel?
+
+00:00:28.350 --> 00:00:32.980
+We're going to convolve the underlying image with that Gaussian.
+
+00:00:32.980 --> 00:00:38.520
+But it turns out the Fourier transform of a Gaussian is a Gaussian.
+
+00:00:38.520 --> 00:00:39.310
+All right.
+
+00:00:39.310 --> 00:00:40.265
+And that's what this shows here.
+
+00:00:40.265 --> 00:00:44.288
+So the Fourier transform, if this is h of x, this is h of u,
+
+00:00:44.288 --> 00:00:46.105
+it's another Gaussian.
+
+00:00:46.105 --> 00:00:49.695
+But you'll notice that here it's over sigma squared and
+
+00:00:49.695 --> 00:00:52.720
+here's it's times sigma squared.
+
+00:00:52.720 --> 00:00:55.810
+Okay. And that's what this is trying to show you here is that if I have this
+
+00:00:55.810 --> 00:01:00.140
+Gaussian kernel with a variance sigma squared then I get a new Gaussian, and
+
+00:01:00.140 --> 00:01:02.980
+I apologize, this is an awfully drawn Gaussian,
+
+00:01:02.980 --> 00:01:07.260
+I get a Gaussian whose variance is 1 over sigma squared.
+
+00:01:07.260 --> 00:01:11.280
+Now, if you think about that, that make a little bit of sense, right?
+
+00:01:11.280 --> 00:01:14.310
+First of all, let's think of a really, really skinny Gaussian.
+
+00:01:14.310 --> 00:01:17.000
+All right, like, almost an impulse.
+
+00:01:17.000 --> 00:01:19.100
+Remember, when you convolve a function with impulse,
+
+00:01:19.100 --> 00:01:21.240
+you get back the original function?
+
+00:01:21.240 --> 00:01:24.280
+So that means you basically keep all the frequencies.
+
+00:01:24.280 --> 00:01:28.640
+So if my kernel was a very tight little Gaussian,
+
+00:01:28.640 --> 00:01:33.410
+I would expect to be able to keep all the frequencies I've, oops, don't,
+
+00:01:33.410 --> 00:01:36.659
+there we go, I expect to be able to get almost all of the frequencies back.
+
+00:01:37.710 --> 00:01:42.830
+Likewise, let's suppose my kernel was really, really fat.
+
+00:01:42.830 --> 00:01:44.870
+Blurs the heck out of everything.
+
+00:01:44.870 --> 00:01:49.600
+Well then, I would expect to get hardly any high frequency and
+
+00:01:49.600 --> 00:01:53.010
+only to get a very, only the, the low frequencies.
+
+00:01:53.010 --> 00:01:56.226
+And that's why the Fourier transform, that's one way of thinking about it,
+
+00:01:56.226 --> 00:01:59.130
+that the Fourier transform of a fat Gaussian is a skinny one,
+
+00:01:59.130 --> 00:02:01.730
+and the Fourier transform of a skinny Gaussian is a fat one.
+
+00:02:01.730 --> 00:02:03.940
+Remember, they, they go back and forth.
+
+00:02:03.940 --> 00:02:04.810
+All right.
+
+00:02:04.810 --> 00:02:08.130
+So, what's going to happen when we blur this
+
+00:02:08.130 --> 00:02:11.860
+function with the Gaussian is we're going to
+
+00:02:11.860 --> 00:02:17.670
+multiply its Fourier transform by the Fourier transform of that Gaussian.
+
+00:02:17.670 --> 00:02:21.190
+And what it's going to do is, it's going to keep the low values and
+
+00:02:21.190 --> 00:02:23.970
+it's going to lower down the higher frequencies.
+
+00:02:23.970 --> 00:02:27.290
+It's going to reduce the higher frequencies by doing that multiplication.
+
+00:02:27.290 --> 00:02:30.360
+And we say that that means that it attenuates, that's the word we use,
+
+00:02:30.360 --> 00:02:32.580
+it attenuates the high frequencies.
+

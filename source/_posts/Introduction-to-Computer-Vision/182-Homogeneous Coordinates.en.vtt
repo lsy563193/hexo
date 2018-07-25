@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.180 --> 00:00:01.839
+Now, we get to the ugly stuff.
+
+00:00:01.839 --> 00:00:03.220
+Homogeneous coordinates.
+
+00:00:03.220 --> 00:00:09.048
+It's not ugly, it's beautiful, for some twisted notion of aesthetic.
+
+00:00:09.048 --> 00:00:15.810
+So, that operation where we take x over z and y over z.
+
+00:00:15.810 --> 00:00:17.440
+Is that a linear transformation?
+
+00:00:18.520 --> 00:00:19.430
+Well, the answer is no.
+
+00:00:19.430 --> 00:00:22.950
+Now, before we said that well, division's a linear operation.
+
+00:00:22.950 --> 00:00:25.180
+Sure. Division by some constant by a,
+
+00:00:25.180 --> 00:00:27.740
+1 over a, multiplying 1 over a, that's a linear operation.
+
+00:00:27.740 --> 00:00:31.010
+But, here and I take x, y, and z, okay?
+
+00:00:31.010 --> 00:00:36.590
+I actually have to pull out that z and divide the x and the y by it.
+
+00:00:36.590 --> 00:00:40.870
+And so, if I've got another point with x1, y1, z1, I divide by that z.
+
+00:00:40.870 --> 00:00:42.350
+So, it's not a linear operation.
+
+00:00:42.350 --> 00:00:44.780
+I have to essentially change what's going on.
+
+00:00:44.780 --> 00:00:47.140
+So what we're going to do is we're going to do a trick.
+
+00:00:47.140 --> 00:00:50.990
+And the trick is, we're going to add one more coordinate, all right?
+
+00:00:50.990 --> 00:00:53.790
+And we can do this in either two dimensions or three dimensions.
+
+00:00:53.790 --> 00:00:57.097
+In two dimensions x,y becomes xy1.
+
+00:00:57.097 --> 00:01:01.030
+X,y,z becomes xyz1.
+
+00:01:01.030 --> 00:01:05.480
+And this bottom coordinate, which right now here is written as a 1,
+
+00:01:05.480 --> 00:01:08.370
+later we're going to, they'll, it'll take other values,
+
+00:01:08.370 --> 00:01:11.920
+that's the homogeneous edition, the homogeneous coordinate.
+
+00:01:11.920 --> 00:01:15.010
+Sometimes it's called the scale factor but I, but I think that's inappropriate,
+
+00:01:15.010 --> 00:01:18.430
+it should just be viewed as the homogeneous coordinate.
+
+00:01:18.430 --> 00:01:22.470
+Or the homos, homogeneous component of the vector.
+
+00:01:22.470 --> 00:01:26.900
+So, converting from regular coordinates to homogenous and
+
+00:01:26.900 --> 00:01:29.450
+back again is pretty easy, right?
+
+00:01:29.450 --> 00:01:32.906
+If I have the homogeneous coordinate x,y,w I
+
+00:01:32.906 --> 00:01:36.370
+get the nonhomogeneous by just dividing by w.
+
+00:01:36.370 --> 00:01:41.380
+So 2dx over w and 3d x, y, and z, each over w.
+
+00:01:41.380 --> 00:01:46.790
+So now you see why converting xy1 to nonhomogeneous I still get back the x and
+
+00:01:46.790 --> 00:01:47.990
+y as I had before.
+
+00:01:47.990 --> 00:01:49.980
+But if that last homogenous coordinate is not 1,
+
+00:01:49.980 --> 00:01:52.310
+then I'll get a different value.
+
+00:01:52.310 --> 00:01:56.670
+By the way, this makes homogeneous coordinates invariant under scale.
+
+00:01:56.670 --> 00:02:00.270
+If I were to multiply the entire homogeneous coordinate by some constant, say a.
+
+00:02:00.270 --> 00:02:02.246
+So, I have ax, ay, aw.
+
+00:02:02.246 --> 00:02:06.310
+When I do the conversion back again doing the division, the a just cancels out.
+

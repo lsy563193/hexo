@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.450 --> 00:00:03.020
+Turns out that there are some other rectangular grids,
+
+00:00:03.020 --> 00:00:06.630
+it's really nice when somebody spray paints the rectangular grid.
+
+00:00:06.630 --> 00:00:11.620
+Here you're seeing a movie, of a American football play, in fact,
+
+00:00:11.620 --> 00:00:13.650
+this is a college football play.
+
+00:00:13.650 --> 00:00:18.190
+But you'll notice they're running around on a plane because to play football,
+
+00:00:18.190 --> 00:00:19.560
+on bumpy things is hard.
+
+00:00:19.560 --> 00:00:20.280
+All right?
+
+00:00:20.280 --> 00:00:25.159
+So since it's a plane, we can rectify that to a different plane.
+
+00:00:25.159 --> 00:00:28.404
+In particular, what about the plane that you would see if
+
+00:00:28.404 --> 00:00:30.440
+you were looking sort of overhead?
+
+00:00:31.680 --> 00:00:32.299
+Okay?
+
+00:00:32.299 --> 00:00:38.700
+So what we've done is, this is just the same frame, mapped to a different view,
+
+00:00:38.700 --> 00:00:42.702
+where we've taken these lines which converge and we've made them all parallel.
+
+00:00:42.702 --> 00:00:44.160
+All right.
+
+00:00:44.160 --> 00:00:48.466
+Now you'll notice that all the points go to the right place,
+
+00:00:48.466 --> 00:00:53.120
+except, the players of course, right, they are not on a plane.
+
+00:00:53.120 --> 00:00:55.074
+Just their feet are on the plane, so
+
+00:00:55.074 --> 00:00:59.503
+their feet go to the right place, but the players themselves are stretched out,
+
+00:00:59.503 --> 00:01:02.230
+because the players are not on the plane.
+
+00:01:02.230 --> 00:01:05.830
+But what we did is we applied the entire homography, the, sorry.
+
+00:01:05.830 --> 00:01:09.460
+We applied the homography to the entire image, so everything on the football
+
+00:01:09.460 --> 00:01:13.150
+field went to the right place, the players went to a slightly different place.
+
+00:01:13.150 --> 00:01:16.940
+But you'll notice, if you look at this, you could see exactly what's going on.
+
+00:01:16.940 --> 00:01:20.820
+Here you see two videos playing at the same time, one is the play as
+
+00:01:20.820 --> 00:01:25.010
+observed by the camera, the other one is this rectified thing, a little bit of
+
+00:01:25.010 --> 00:01:27.580
+shaking is going on here because this was done all automatically.
+
+00:01:27.580 --> 00:01:29.780
+And by the way, this is like one of the few results I'll show you
+
+00:01:29.780 --> 00:01:31.800
+that was actually done by a student of mine.
+
+00:01:31.800 --> 00:01:34.410
+When we were doing that interpreting American football plays, and
+
+00:01:34.410 --> 00:01:36.620
+this way just a pre processing step.
+
+00:01:36.620 --> 00:01:38.840
+But the, we're able to recover the projection.
+
+00:01:38.840 --> 00:01:42.060
+So if you need to save money on a blimp, this is what you do so
+
+00:01:42.060 --> 00:01:43.330
+you can see an overhead view.
+
+00:01:43.330 --> 00:01:47.050
+In fact in some sense this is easier because you see the side of the players,
+
+00:01:47.050 --> 00:01:48.900
+not just their overhead.
+
+00:01:48.900 --> 00:01:50.330
+So I probably should have patented this and
+
+00:01:50.330 --> 00:01:52.820
+made a billion dollars and then I well, didn't happen.
+

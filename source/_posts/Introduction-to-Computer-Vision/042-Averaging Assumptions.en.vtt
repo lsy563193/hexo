@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.470 --> 00:00:03.229
+All right look, that was not rocket science, that seemed reasonable.
+
+00:00:03.229 --> 00:00:08.352
+But the important question to ask, really important question to ask is,
+
+00:00:08.352 --> 00:00:11.250
+why was that solution intuitive for you?
+
+00:00:11.250 --> 00:00:12.230
+Why did you say, you know what,
+
+00:00:12.230 --> 00:00:14.910
+I'm going to take a little average in order to get rid of some of the noise?
+
+00:00:14.910 --> 00:00:18.814
+What assumptions are you making about pictures, and
+
+00:00:18.814 --> 00:00:22.989
+by the way, about noise, in coming up with that answer.
+
+00:00:22.989 --> 00:00:24.574
+All right, so a little thought we come up with,
+
+00:00:24.574 --> 00:00:26.430
+you're making a couple of key assumptions.
+
+00:00:26.430 --> 00:00:29.720
+The first assumption is that the real value of
+
+00:00:29.720 --> 00:00:35.430
+a pixel is probably similar to the values nearby.
+
+00:00:35.430 --> 00:00:36.160
+Okay.
+
+00:00:36.160 --> 00:00:40.260
+Otherwise, why would I use the pixels nearby in order to try to
+
+00:00:40.260 --> 00:00:42.290
+figure out what my real value was?
+
+00:00:42.290 --> 00:00:45.160
+So okay that was assumption number one.
+
+00:00:45.160 --> 00:00:46.880
+The other thing that you're assuming.
+
+00:00:46.880 --> 00:00:48.288
+And for those of you who know a little,
+
+00:00:48.288 --> 00:00:50.368
+just a little about that problem, though the math etc.
+
+00:00:50.368 --> 00:00:54.828
+You're basically assuming that each noise that's been added to each pixel is
+
+00:00:54.828 --> 00:00:58.761
+independent of the noise that's been added to all the other pixels.
+
+00:00:58.761 --> 00:01:02.351
+And so what that means is if I take the average of the noise,
+
+00:01:02.351 --> 00:01:05.372
+that's going to tend to, I'm going to assume zero.
+
+00:01:05.372 --> 00:01:08.713
+That is that sometimes it'll be up, and sometimes it'll be down, and
+
+00:01:08.713 --> 00:01:11.457
+if I take the average around them, that that will be zero.
+
+00:01:11.457 --> 00:01:15.450
+So if I have pixels nearby having about the same value are related and
+
+00:01:15.450 --> 00:01:18.710
+the noise is independent, then the average is the right thing to do.
+

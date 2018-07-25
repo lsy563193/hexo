@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.937
+All right. Welcome back to com, Introduction to Computer Vision.
+
+00:00:02.937 --> 00:00:07.368
+Today finally, we're going to get to talk about calibrating cameras.
+
+00:00:07.368 --> 00:00:10.644
+Where we're going to be calibrating with spectra 3D world.
+
+00:00:10.644 --> 00:00:14.048
+So finally, we can get to the parameters of cells.
+
+00:00:14.048 --> 00:00:18.319
+If you remember last time, we solved for the full projection equation.
+
+00:00:18.319 --> 00:00:22.024
+That was made up of really a composition of the translation, rotation,
+
+00:00:22.024 --> 00:00:23.849
+projection and intrinsics.
+
+00:00:23.849 --> 00:00:27.877
+For the rest of today, we're not going to worry about the fact that M
+
+00:00:27.877 --> 00:00:31.332
+has this internal structure, till maybe the very end.
+
+00:00:31.332 --> 00:00:33.768
+We're going to think of M just this way.
+
+00:00:33.768 --> 00:00:38.003
+That is M is going to be this matrix that's going to take your world points and
+
+00:00:38.003 --> 00:00:39.708
+homogeneous coordinates.
+
+00:00:39.708 --> 00:00:44.278
+And eventually, get you out your image points also in homogeneous coordinates.
+
+00:00:44.278 --> 00:00:47.130
+So what we're going to try to do is find that M.
+

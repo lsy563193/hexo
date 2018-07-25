@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.210 --> 00:00:03.490
+Let's continue looking at this relationship between the spatial domain and
+
+00:00:03.490 --> 00:00:05.140
+the frequency domain.
+
+00:00:05.140 --> 00:00:08.660
+Here's some simple properties of the Fourier transform.
+
+00:00:08.660 --> 00:00:10.300
+We started with one that we already talked about.
+
+00:00:10.300 --> 00:00:14.660
+Everything is linear because we're just doing sums and multiplies, all right?
+
+00:00:14.660 --> 00:00:18.550
+The one we just described was this convolution one.
+
+00:00:18.550 --> 00:00:22.330
+That convolution in the spacial domain is multiplication in
+
+00:00:22.330 --> 00:00:25.400
+the frequency domain and vice versa.
+
+00:00:25.400 --> 00:00:28.270
+One that's kind of interesting is scaling.
+
+00:00:28.270 --> 00:00:32.580
+So, if I scale a function by a constant a.
+
+00:00:32.580 --> 00:00:33.590
+So let's think about it this way.
+
+00:00:33.590 --> 00:00:35.190
+Suppose a was greater than 1.
+
+00:00:35.190 --> 00:00:38.020
+Let's suppose a was 2, all right?
+
+00:00:38.020 --> 00:00:41.170
+Well, that would mean that when x had been 1,
+
+00:00:41.170 --> 00:00:45.130
+now x is 2, so it, it would sh, shrink, right?
+
+00:00:45.130 --> 00:00:48.100
+When you multiply by a number bigger than 1, right?
+
+00:00:48.100 --> 00:00:50.370
+So if I had some function, right?
+
+00:00:50.370 --> 00:00:53.540
+Now what happens is this value gets moved over there, so
+
+00:00:53.540 --> 00:00:56.390
+I essentially shrink that function, okay?
+
+00:00:57.420 --> 00:01:02.030
+So when I shrink a function things are going to now wiggle faster, right?
+
+00:01:02.030 --> 00:01:03.530
+because they were wiggling slower before.
+
+00:01:03.530 --> 00:01:05.790
+If I pull it in it now wiggles faster.
+
+00:01:05.790 --> 00:01:09.930
+And so what happens is I end up stretching the Fourier transform.
+
+00:01:09.930 --> 00:01:13.570
+And this is the formula for it, 1 over a times F of u over a.
+
+00:01:13.570 --> 00:01:15.190
+So it's got that inverse property.
+
+00:01:15.190 --> 00:01:18.080
+Which is just like that Gaussian idea also, right?
+
+00:01:18.080 --> 00:01:21.630
+If I make it fatter, my Fourier transform gets skinnier.
+
+00:01:22.800 --> 00:01:25.620
+One last one to look at, and we're not going to use this much, but
+
+00:01:25.620 --> 00:01:27.220
+I want you to just see this is.
+
+00:01:27.220 --> 00:01:32.690
+When you take the derivative of a function, so this is some nth derivative.
+
+00:01:32.690 --> 00:01:37.880
+You multiply its Fourier transform by a function that's
+
+00:01:37.880 --> 00:01:40.050
+proportional to the frequency.
+
+00:01:40.050 --> 00:01:43.630
+So suppose n was just 1 and you're taking the first derivatives, right?
+
+00:01:43.630 --> 00:01:49.530
+What that says is that you would be multiplying F of u, times u.
+
+00:01:49.530 --> 00:01:54.340
+Which means the higher frequencies get accentuated.
+
+00:01:54.340 --> 00:01:56.602
+Which was exactly what we saw when we took derivatives.
+
+00:01:56.602 --> 00:01:59.460
+Remember when we added noise, high frequency noise, and
+
+00:01:59.460 --> 00:02:02.000
+then we took the derivative, the whole thing blew up?
+
+00:02:02.000 --> 00:02:06.610
+That's because you're multiplying it by, when you take this derivative,
+
+00:02:06.610 --> 00:02:09.008
+you multiply the high frequency components.
+

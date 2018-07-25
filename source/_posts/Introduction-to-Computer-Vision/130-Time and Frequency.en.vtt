@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.067
+To give you a little bit of a notion of sort of frequency and
+
+00:00:02.067 --> 00:00:04.392
+time, et cetera, pretty soon we're going to throw time away,
+
+00:00:04.392 --> 00:00:06.174
+because we're only going to be interested in space.
+
+00:00:06.174 --> 00:00:09.375
+But, since we're talking about how, how quickly something wiggles, and
+
+00:00:09.375 --> 00:00:12.700
+it originally was derived from one dimension, we'll talk about it this way.
+
+00:00:12.700 --> 00:00:19.770
+So, here I have a signal, okay, g of t, okay, that's made up of two parts.
+
+00:00:19.770 --> 00:00:23.495
+Okay, it's got a sinusoid of some frequency f and
+
+00:00:23.495 --> 00:00:30.690
+then another sinusoid of 3f but it's been scaled to make a third.
+
+00:00:30.690 --> 00:00:33.180
+So that's this signal here and
+
+00:00:33.180 --> 00:00:36.790
+you can write that as just the sum of these two sinusoids.
+
+00:00:36.790 --> 00:00:39.330
+After all, that's what this equation says.
+
+00:00:39.330 --> 00:00:43.340
+And because of linearity the stuff just sums,
+
+00:00:43.340 --> 00:00:45.650
+the combination of two on the right gives you on the left.
+
+00:00:45.650 --> 00:00:49.190
+And if I were to draw out sort of the contributions of
+
+00:00:49.190 --> 00:00:53.270
+the sinusoids to the signal, it would look like this, okay?
+
+00:00:53.270 --> 00:00:55.770
+So this is written, in this particular way.
+
+00:00:55.770 --> 00:00:57.430
+I'm only showing you positive frequency,
+
+00:00:57.430 --> 00:00:59.110
+we'll talk about negative in just a minute.
+
+00:00:59.110 --> 00:01:04.170
+But whatever f is, the idea is that the signal here has a frequency spectrum
+
+00:01:04.170 --> 00:01:09.340
+with a certain amount of power at f, and sort of one-third of that at 3f, okay?
+
+00:01:09.340 --> 00:01:11.530
+And this is one form of drawing out spectra.
+
+00:01:11.530 --> 00:01:14.260
+We'll talk more about spectra in just a minute.
+
+00:01:14.260 --> 00:01:16.860
+You'll notice that this picture on the left is sort of
+
+00:01:16.860 --> 00:01:21.630
+kind of approximating getting towards a square wave, and it turns out that,
+
+00:01:21.630 --> 00:01:23.880
+actually, if you really wanted a square wave,
+
+00:01:23.880 --> 00:01:27.890
+what you do is you keep adding these odd frequencies, all right?
+
+00:01:27.890 --> 00:01:30.790
+And I want to show you this because, sometimes, people will ask, well,
+
+00:01:30.790 --> 00:01:35.018
+how can I get sort of a sharp boundary using just smooth sinusoids?
+
+00:01:35.018 --> 00:01:37.160
+So here we have our original picture.
+
+00:01:37.160 --> 00:01:40.705
+And now I take that original one and I add in something that wiggles at
+
+00:01:40.705 --> 00:01:45.670
+5 times f, and you see that I'm getting closer yet to a square wave.
+
+00:01:45.670 --> 00:01:50.000
+And then I get to 7 times f, and what comes after the 9, and
+
+00:01:50.000 --> 00:01:52.560
+what you can see is that we're getting closer and
+
+00:01:52.560 --> 00:01:56.870
+closer to having this as a perfect square wave, okay?
+
+00:01:56.870 --> 00:02:02.510
+And in fact, you can show that a square wave can just be written as this
+
+00:02:02.510 --> 00:02:07.890
+infinite sum, okay, of these frequencies, okay?
+
+00:02:07.890 --> 00:02:09.780
+And it, the amount of power you need,
+
+00:02:09.780 --> 00:02:13.670
+goes down as the frequency, increases, all right?
+
+00:02:13.670 --> 00:02:16.840
+So, what we want to do is we want to get to a point where we
+
+00:02:16.840 --> 00:02:21.810
+can look at a signal and say, process it in a certain way, or, or
+
+00:02:21.810 --> 00:02:23.040
+compute it in a certain way.
+
+00:02:23.040 --> 00:02:28.870
+To say, what are the sinusoidal components that go into making up this image?
+
+00:02:28.870 --> 00:02:33.040
+And in fact, you can show that to do a square wave like this, you need a,
+
+00:02:33.040 --> 00:02:37.830
+an infinite sum of decreasing amount of increasing frequency.
+
+00:02:37.830 --> 00:02:38.879
+And that's what's shown here.
+
+00:02:39.980 --> 00:02:43.780
+Now what I haven't done is I haven't talked to you at all about phase.
+
+00:02:43.780 --> 00:02:46.830
+And in fact, I'm not talking at all about, you know, what the phase, right,
+
+00:02:46.830 --> 00:02:49.490
+I could have this offset, or I could have had different elements offset.
+
+00:02:49.490 --> 00:02:52.540
+And in fact, all I'm showing you here is the amount, or
+
+00:02:52.540 --> 00:02:55.200
+you can think of it as the power, we'll talk more about that in a minute,
+
+00:02:55.200 --> 00:02:57.420
+of the content of each sinusoid.
+
+00:02:57.420 --> 00:03:00.390
+And the reason we're not talking about phase is,
+
+00:03:00.390 --> 00:03:02.360
+our goal is not to reconstruct an image.
+
+00:03:02.360 --> 00:03:05.810
+We just want to, typically what we're going to want to know is,
+
+00:03:05.810 --> 00:03:10.000
+how much power there is in each of the different frequencies.
+
+00:03:10.000 --> 00:03:12.930
+In Computer Vision, we're interested in sort of analyzing what's going on.
+
+00:03:12.930 --> 00:03:15.550
+If we're actually going to reconstruct images,
+
+00:03:15.550 --> 00:03:19.730
+then we would probably have to worry more about the phase to, get you,
+
+00:03:19.730 --> 00:03:22.250
+better reconstruction, but we're not going to do that, today.
+

@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.180 --> 00:00:03.340
+All right, let's do some work, not much work, but a little bit of work.
+
+00:00:03.340 --> 00:00:07.900
+So last time we talked about, adding a noise function to an image function, so
+
+00:00:07.900 --> 00:00:12.200
+here we have our noise, defined as just this random things scaled by the sigma,
+
+00:00:12.200 --> 00:00:15.340
+our output was just the image plus the noise.
+
+00:00:15.340 --> 00:00:18.320
+And we said, remember, you have to worry about the size of the sigma in
+
+00:00:18.320 --> 00:00:21.520
+respect to the range of the image, so if your image is 0 to 255,
+
+00:00:21.520 --> 00:00:25.910
+a sigma five might be plausible, if your image goes 0 to 1, size of
+
+00:00:25.910 --> 00:00:31.000
+sigma five is not plausible, so you have worry about how those come together.
+
+00:00:31.000 --> 00:00:33.750
+Now, suppose there was noise in your image, and
+
+00:00:33.750 --> 00:00:38.390
+you wanted to remove the noise, how might you think about doing that?
+
+00:00:38.390 --> 00:00:42.950
+Now I'm sure, bunch of you have suggestions that are kind of similar.
+
+00:00:42.950 --> 00:00:45.490
+Here, here's the typical one, right?
+
+00:00:45.490 --> 00:00:48.850
+Let me replace the value of each pixel,
+
+00:00:48.850 --> 00:00:52.632
+with sort of an average of the pixels around it.
+
+00:00:52.632 --> 00:00:53.950
+Okay?
+
+00:00:53.950 --> 00:00:55.960
+So.
+
+00:00:55.960 --> 00:00:59.030
+Let's think about what that would look like in 1D, and then we'll go to 2D,
+
+00:00:59.030 --> 00:01:01.930
+and we'll talk about why is this the right thing to do or
+
+00:01:01.930 --> 00:01:04.680
+when is this not the right thing to do, all right.
+
+00:01:04.680 --> 00:01:08.380
+So, here's our first attempt, so, we're going to replace each pixel with
+
+00:01:08.380 --> 00:01:10.770
+an average of the values of the pixels neighborhood, and
+
+00:01:10.770 --> 00:01:15.610
+this is referred to as a moving average, so here I have some location here, and
+
+00:01:15.610 --> 00:01:19.470
+I just take the average value and I put it down there, okay?
+
+00:01:19.470 --> 00:01:23.790
+And then I would move my little, what's called window as I take my average, and
+
+00:01:23.790 --> 00:01:26.840
+I get a new value, and I get another one, and then eventually,
+
+00:01:26.840 --> 00:01:30.980
+I would get this new somewhat smoothed version of the original, and
+
+00:01:30.980 --> 00:01:35.030
+it's smoothed meaning that we sort of averaged of the things locally.
+

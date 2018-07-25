@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.760 --> 00:00:04.120
+But what if we missed things going on between the samples,
+
+00:00:04.120 --> 00:00:07.250
+what if we don't have enough dots?
+
+00:00:07.250 --> 00:00:08.655
+All right.
+
+00:00:08.655 --> 00:00:12.100
+Well, not surprisingly something's getting lost, right,
+
+00:00:12.100 --> 00:00:15.830
+some information is getting lost, right, so here we're showing you right so
+
+00:00:15.830 --> 00:00:19.380
+I've got a dot here, I've got a dot here and there's all this change going on in
+
+00:00:19.380 --> 00:00:24.600
+between, that is not realized or I should say not captured.
+
+00:00:24.600 --> 00:00:29.810
+Perhaps, the surprising result though, is that actually
+
+00:00:29.810 --> 00:00:34.780
+this is indistinguishable from a lower frequency, okay, so
+
+00:00:34.780 --> 00:00:40.380
+here what's drawn in is, this the same set of dots, that we had before, but
+
+00:00:40.380 --> 00:00:45.550
+there's a low frequency sinusoid that fits through there, 'kay.
+
+00:00:45.550 --> 00:00:50.200
+Continuing with that, with sort of a surprising result is that,
+
+00:00:50.200 --> 00:00:56.680
+the low frequency that was always indistinguishable from those high frequencies,
+
+00:00:56.680 --> 00:01:00.020
+if you only gave me a small number of dots.
+
+00:01:00.020 --> 00:01:04.790
+Okay, that is, I can't tell, whether or not it's a high frequency or
+
+00:01:04.790 --> 00:01:09.450
+a low frequency, and that's the definition of aliasing, or
+
+00:01:09.450 --> 00:01:13.530
+I should say that's an example of aliasing, the definition is it's the signal
+
+00:01:13.530 --> 00:01:18.490
+that travels sort of in disguise of another signal or of other frequencies.
+
+00:01:18.490 --> 00:01:19.020
+All right.
+
+00:01:19.020 --> 00:01:21.650
+Now we're going to make this formal in just a minute, but that's what's going on
+
+00:01:21.650 --> 00:01:25.660
+in aliasing is that I've got a signal and I can't distinguish between a low
+
+00:01:25.660 --> 00:01:28.540
+frequency that was in there and actually a high frequency
+

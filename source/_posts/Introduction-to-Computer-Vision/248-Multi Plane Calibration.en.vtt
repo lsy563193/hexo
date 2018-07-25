@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.430 --> 00:00:03.250
+Finally, and this is the half bit that I was telling you about,
+
+00:00:03.250 --> 00:00:08.380
+there's an alternative way of doing calibration, which is pretty cool.
+
+00:00:08.380 --> 00:00:12.030
+And in fact, it's really what everybody is using today,
+
+00:00:12.030 --> 00:00:15.550
+because typically you don't have all these points.
+
+00:00:15.550 --> 00:00:17.770
+And it's a way of getting the intrinsics, and
+
+00:00:17.770 --> 00:00:21.930
+then if you know where you put these checker boards it's extrinsics.
+
+00:00:21.930 --> 00:00:25.460
+Basically what you do is you take a checker board and you move it around.
+
+00:00:25.460 --> 00:00:30.240
+And you can end up calibrating the camera, with respect to that checkerboard.
+
+00:00:30.240 --> 00:00:34.094
+The reason everybody uses that, these days, is that there's.
+
+00:00:34.094 --> 00:00:37.174
+First of all, you can print out a checkerboard and it the checkerboard has to be
+
+00:00:37.174 --> 00:00:39.423
+on a plane, well that's easy you print out a checkerboard.
+
+00:00:39.423 --> 00:00:41.826
+You gotta make sure your printer doesn't screw things up,
+
+00:00:41.826 --> 00:00:44.770
+you gotta make sure that it actually comes out that squares are squares.
+
+00:00:44.770 --> 00:00:50.060
+You mount it on something that's a nice piece of rigid cardboard or foam core.
+
+00:00:50.060 --> 00:00:52.482
+And you don't have to know the positions and
+
+00:00:52.482 --> 00:00:56.100
+orientations in order to get the intrinsics of the camera.
+
+00:00:56.100 --> 00:00:58.430
+And later you can get the intrinsics as well.
+
+00:00:58.430 --> 00:01:00.200
+And why does everybody use this?
+
+00:01:00.200 --> 00:01:02.970
+Because the code is easily available online.
+
+00:01:02.970 --> 00:01:05.670
+OpenCV supports this directly.
+
+00:01:05.670 --> 00:01:07.420
+We list here a MATLAB version of it.
+
+00:01:07.420 --> 00:01:10.500
+If you go to Zhengyou Zhang's web site, he's like doctor calibration.
+
+00:01:10.500 --> 00:01:14.520
+He did spectacular work for us, thesis etc, in calibration.
+
+00:01:14.520 --> 00:01:16.900
+I'll also tell you that there's something cool you can do, and
+
+00:01:16.900 --> 00:01:19.530
+in fact, the a student of mine, Kelsey Hawkins did this.
+
+00:01:19.530 --> 00:01:22.460
+And I, I think the code is made publicly available.
+
+00:01:22.460 --> 00:01:26.900
+If you take a checkerboard and you mount it on the end of a robot arm.
+
+00:01:26.900 --> 00:01:31.470
+And remember, a robot knows where its arm is in terms of its coordinate system.
+
+00:01:31.470 --> 00:01:35.067
+If you also know let's say the offset of that checkerboard from the the end
+
+00:01:35.067 --> 00:01:36.750
+effector, the hand.
+
+00:01:36.750 --> 00:01:39.960
+Then what you can do is with a camera you can just move that
+
+00:01:39.960 --> 00:01:43.700
+checkerboard around using the robot, and of course we know the 3D
+
+00:01:43.700 --> 00:01:48.010
+location of the checkerboard at every point in time that we take an image.
+
+00:01:48.010 --> 00:01:51.720
+And so, by taking those images of the checkerboard,
+
+00:01:51.720 --> 00:01:56.200
+you end up calibrating the camera to the robot's coordinate system.
+
+00:01:56.200 --> 00:01:59.200
+So, it's a cool use of doing this directly within robotics.
+

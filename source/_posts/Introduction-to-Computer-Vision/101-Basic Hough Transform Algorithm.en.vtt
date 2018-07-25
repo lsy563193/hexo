@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.140 --> 00:00:02.530
+So speaking of the algorithm, let's take a look at it.
+
+00:00:02.530 --> 00:00:05.140
+So we're going to use the polar parameterization of the line,
+
+00:00:05.140 --> 00:00:06.700
+the polar representation.
+
+00:00:06.700 --> 00:00:10.740
+And something called a Hough Accumulator Array, which is just a fancy word for
+
+00:00:10.740 --> 00:00:12.750
+the thing that's going to collect the votes.
+
+00:00:12.750 --> 00:00:16.930
+You're basically going to have an array, two dimensions in this case, that where
+
+00:00:16.930 --> 00:00:20.070
+the bins represent different values of d and different values of theta.
+
+00:00:20.070 --> 00:00:22.100
+One of the things you'll have to decide, and
+
+00:00:22.100 --> 00:00:25.820
+by the way you'll be implementing this, is how big are the bins?
+
+00:00:25.820 --> 00:00:27.330
+How many of them are there?
+
+00:00:27.330 --> 00:00:30.280
+So if it goes from 0 to let's say 0 to pi,
+
+00:00:30.280 --> 00:00:34.655
+well if you have every one degree then there'd be 180 bins, if you had ever
+
+00:00:34.655 --> 00:00:38.520
+10 degree there'd only be 18 so you have to decide how big the bins are.
+
+00:00:38.520 --> 00:00:42.570
+So given this equation and the Hough Accumulator Array, here is the algorithm.
+
+00:00:42.570 --> 00:00:44.810
+And I hope you appreciated that I tried to color code this.
+
+00:00:44.810 --> 00:00:47.450
+It looks garishly ugly but it tries to keep everything clean.
+
+00:00:47.450 --> 00:00:49.910
+So, the basic Hough algorithm is this.
+
+00:00:49.910 --> 00:00:54.080
+You initialize your accumulator rate to zero everywhere, then, for
+
+00:00:54.080 --> 00:00:59.040
+every edge point, aha, so we have to have a set of edge points.
+
+00:00:59.040 --> 00:01:00.210
+That is, at every place in x, y,
+
+00:01:00.210 --> 00:01:03.460
+we have to know whether it's an edge point, or we have a list of them.
+
+00:01:03.460 --> 00:01:08.430
+Somehow, we know which points are edges, in fact, how do we know we know that?
+
+00:01:08.430 --> 00:01:10.380
+Because we did that last time, right?
+
+00:01:10.380 --> 00:01:12.370
+So you know how to do this in MATLAB or Octave or
+
+00:01:12.370 --> 00:01:15.470
+your can write it in assembly code if you were really masochistic.
+
+00:01:15.470 --> 00:01:21.380
+So for each edge point x, y, what we do is, so here I use theta from 0 to 180,
+
+00:01:21.380 --> 00:01:24.910
+that's you know, supposed to be 1 degree increments.
+
+00:01:24.910 --> 00:01:26.350
+All right, solve for d.
+
+00:01:26.350 --> 00:01:29.520
+We just use that equation since we have x and y and
+
+00:01:29.520 --> 00:01:30.970
+we have theta we can solve for d.
+
+00:01:30.970 --> 00:01:33.800
+But notice, I'm not doing anything to restrict d being positive or
+
+00:01:33.800 --> 00:01:36.490
+negative here, so it could be positive, could be negative.
+
+00:01:36.490 --> 00:01:42.790
+And I have to then set H of d, theta, I have to increment its vote.
+
+00:01:42.790 --> 00:01:46.340
+So if d is negative, what that means is, what I really mean is,
+
+00:01:46.340 --> 00:01:47.780
+the bin of that d.
+
+00:01:47.780 --> 00:01:50.770
+So maybe my d goes from minus 100 to 100.
+
+00:01:50.770 --> 00:01:54.180
+So I would have 201 bins, if I do them by steps of 1, so
+
+00:01:54.180 --> 00:01:57.690
+if I got a minus 20, I'd have to add 100, that'd be 80.
+
+00:01:57.690 --> 00:01:59.540
+You, you get what I'm saying, right?
+
+00:01:59.540 --> 00:02:02.360
+The, the d value goes into its bin, so
+
+00:02:02.360 --> 00:02:05.140
+the bin of that D value gets incremented by one.
+
+00:02:05.140 --> 00:02:08.050
+After you've done all the voting you find the values of d and
+
+00:02:08.050 --> 00:02:11.150
+theta, where H of d of theta is a maximum.
+
+00:02:11.150 --> 00:02:12.950
+So you want to find these peaks.
+
+00:02:12.950 --> 00:02:16.490
+By the way, MATLAB there's a function called Hough Peaks, which by the way,
+
+00:02:16.490 --> 00:02:17.595
+you're not going to be allowed to use,
+
+00:02:17.595 --> 00:02:20.350
+because you're going to have to write your own peak finder.
+
+00:02:20.350 --> 00:02:21.280
+All right.
+
+00:02:21.280 --> 00:02:23.920
+Well anyway, let's assume you found just one d in theta, well the,
+
+00:02:23.920 --> 00:02:29.740
+the line itself would be d is equal to x cosine theta minus y sine theta.
+
+00:02:29.740 --> 00:02:33.090
+Get it? That's all there is to finding these lines given the edge points.
+

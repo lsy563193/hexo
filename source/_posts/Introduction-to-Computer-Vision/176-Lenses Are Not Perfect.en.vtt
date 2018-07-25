@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.150 --> 00:00:02.420
+All right. Our last bit is, is, is, I have,
+
+00:00:02.420 --> 00:00:05.720
+I have to break it to you that reality can be a problem.
+
+00:00:05.720 --> 00:00:07.800
+That's a nicer way of saying life sucks.
+
+00:00:09.430 --> 00:00:13.630
+In reality lenses aren't really thin, lenses aren't perfect,
+
+00:00:13.630 --> 00:00:16.430
+photographers aren't perfect, except some of us.
+
+00:00:16.430 --> 00:00:18.060
+Sensing arrays aren't perfect so
+
+00:00:18.060 --> 00:00:21.580
+sometimes we have to do stuff to try to fix these things.
+
+00:00:21.580 --> 00:00:25.540
+So, here's an example of a problem that's fixable, easily,
+
+00:00:25.540 --> 00:00:28.130
+in mathematics and geometry.
+
+00:00:28.130 --> 00:00:30.580
+And this is referred to as geometric distortion.
+
+00:00:30.580 --> 00:00:34.480
+So on the left here, we have a nice, regular grid.
+
+00:00:34.480 --> 00:00:37.550
+But sometimes, our lenses are not perfect, and
+
+00:00:37.550 --> 00:00:42.230
+they'll bow things out like this, and this is called pin cushion distortion.
+
+00:00:42.230 --> 00:00:44.430
+And sometimes they'll bow things out like that, and
+
+00:00:44.430 --> 00:00:46.730
+that's referred to as barrel distortion.
+
+00:00:46.730 --> 00:00:48.900
+By the way, for those of you that use Photoshop or
+
+00:00:48.900 --> 00:00:52.060
+other more sophisticated image manipulation tools.
+
+00:00:52.060 --> 00:00:54.020
+You can correct for this in the image, and
+
+00:00:54.020 --> 00:00:58.230
+in fact, in Photoshop and, and in Camera Raw, if it knows the camera and
+
+00:00:58.230 --> 00:01:03.050
+lens that you're using, you tell it, correct for the geometric aberrations and
+
+00:01:03.050 --> 00:01:04.569
+it will go ahead and just fix that for you.
+
+00:01:04.569 --> 00:01:07.590
+because it knows about the lens and it knows about the camera.
+
+00:01:07.590 --> 00:01:09.340
+By the way, I used the word, aberration.
+
+00:01:09.340 --> 00:01:12.270
+That's what we tend to use for any sorts of problems that are,
+
+00:01:12.270 --> 00:01:15.250
+are in how the lenses, how the images are created.
+
+00:01:15.250 --> 00:01:18.580
+Here's an example of the correcting of that radial distortions.
+
+00:01:18.580 --> 00:01:20.040
+Radial coming out from the middle.
+
+00:01:20.040 --> 00:01:22.870
+Picture on the left taken with a lens that's actually designed to
+
+00:01:22.870 --> 00:01:26.550
+try to capture as much of the scene as possible, but it's very distorted.
+
+00:01:26.550 --> 00:01:29.240
+On the right, you can see the recovery making it as if
+
+00:01:29.240 --> 00:01:30.990
+everything were perfectly flat.
+
+00:01:30.990 --> 00:01:32.640
+Another kind of aberration or
+
+00:01:32.640 --> 00:01:36.840
+problem in computational photography is what's called chromatic aberration.
+
+00:01:36.840 --> 00:01:39.550
+Oh sure, if any of you are Pink Floyd fans, you're familiar with
+
+00:01:39.550 --> 00:01:42.690
+the picture that shows white light coming through a prism spreading out and
+
+00:01:42.690 --> 00:01:43.930
+making a rainbow.
+
+00:01:43.930 --> 00:01:46.950
+I would it to you, but I'm sure I'd have to pay Pink Floyd money.
+
+00:01:46.950 --> 00:01:47.890
+All right.
+
+00:01:47.890 --> 00:01:52.630
+And the problem is, is that different color lights are diffracted different
+
+00:01:52.630 --> 00:01:55.980
+amounts by a particular lens, or a particular medium.
+
+00:01:55.980 --> 00:02:00.470
+So the problem is, how do I get all the light coming from a point to land on
+
+00:02:00.470 --> 00:02:02.440
+the same place in my image?
+
+00:02:02.440 --> 00:02:05.560
+And this is shown here where they're showing you the, the red and
+
+00:02:05.560 --> 00:02:09.008
+blue lights as converging to different places.
+
+00:02:09.008 --> 00:02:14.370
+And, here's an example at a corner, and when you blow it up, you can see this
+
+00:02:14.370 --> 00:02:19.600
+red line that's between the, the blue sky and the, the white building.
+
+00:02:19.600 --> 00:02:22.000
+Where did that red line come from, there's no red there.
+
+00:02:22.000 --> 00:02:24.320
+Well, that's chromatic aberration.
+
+00:02:24.320 --> 00:02:27.240
+By the way, Photoshop knows how to take care of that too.
+
+00:02:27.240 --> 00:02:29.760
+That one's a little bit more of an approximation, but
+
+00:02:29.760 --> 00:02:32.630
+you can remove the chromatic aberration of your lenses that way.
+
+00:02:33.700 --> 00:02:36.580
+Last one we'll talk about is what's called vignetting.
+
+00:02:36.580 --> 00:02:41.050
+If you use certain cameras at certain aperture settings.
+
+00:02:41.050 --> 00:02:47.000
+Not all of the rays that are hitting from, say, the middle of the image,
+
+00:02:47.000 --> 00:02:51.430
+coming through the middle are being caught at the corners.
+
+00:02:51.430 --> 00:02:54.230
+So here we have a, a lens imaging system and
+
+00:02:54.230 --> 00:02:56.800
+we're going to talk about that in just a minute, and we've got some point.
+
+00:02:56.800 --> 00:02:58.856
+And the ones that would be near the edges goes,
+
+00:02:58.856 --> 00:03:00.709
+goes through a couple different lenses.
+
+00:03:00.709 --> 00:03:04.110
+Only some of them hit the imaging medium, and so
+
+00:03:04.110 --> 00:03:09.310
+what that causes is that you get these dark areas around the, the edges.
+
+00:03:09.310 --> 00:03:10.400
+And that's called vignetting.
+

@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.180 --> 00:00:02.009
+And in fact that's shown here.
+
+00:00:02.009 --> 00:00:02.760
+So it says, you know,
+
+00:00:02.760 --> 00:00:06.090
+what if the template in the scene is not identical to some sub image.
+
+00:00:06.090 --> 00:00:11.135
+So here we have a scene and we have a template, well it turns out
+
+00:00:11.135 --> 00:00:16.777
+that the best location of this template in this scene is right there.
+
+00:00:16.777 --> 00:00:18.112
+It actually finds the same car.
+
+00:00:18.112 --> 00:00:20.071
+Now you have to worry about scale and orientation and
+
+00:00:20.071 --> 00:00:22.757
+all that stuff, stuff that we're going to talk about later in the class.
+
+00:00:22.757 --> 00:00:26.462
+But even though the cars are quite different the fact of the matter is
+
+00:00:26.462 --> 00:00:29.780
+it has sort of bright stuff here and dark brown things there.
+
+00:00:29.780 --> 00:00:32.182
+This has bright stuff there and dark brown things there.
+
+00:00:32.182 --> 00:00:34.854
+So as a template it's not awful.
+
+00:00:34.854 --> 00:00:37.330
+So that's using these filters as templates
+

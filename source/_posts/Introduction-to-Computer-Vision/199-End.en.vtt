@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.380 --> 00:00:03.110
+That ends the lesson on stereo geometry.
+
+00:00:03.110 --> 00:00:06.290
+The idea is that, if you have calibrated cameras,
+
+00:00:06.290 --> 00:00:10.500
+if you know the match, then you could compute the depth.
+
+00:00:10.500 --> 00:00:11.820
+So, this has been sort of general.
+
+00:00:11.820 --> 00:00:15.200
+The only math that we did was the relationship between disparity and depth.
+
+00:00:15.200 --> 00:00:16.250
+In the next lesson,
+
+00:00:16.250 --> 00:00:19.777
+what we'll do is we'll focus on actually finding the disparity.
+
+00:00:19.777 --> 00:00:24.400
+Figuring out which point in one image matches which point in the other image.
+
+00:00:24.400 --> 00:00:26.790
+And that's what you're going to be doing in your problem set.
+
+00:00:26.790 --> 00:00:30.300
+Then we're going to work on calibration which is determining the relative views.
+
+00:00:30.300 --> 00:00:33.160
+And by the way, you're going to do that in a different problem set.
+
+00:00:33.160 --> 00:00:35.290
+But, we're going to break these down one at a time.
+
+00:00:35.290 --> 00:00:35.790
+That's it.
+

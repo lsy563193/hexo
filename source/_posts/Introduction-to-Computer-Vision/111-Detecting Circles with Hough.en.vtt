@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.110 --> 00:00:02.610
+In fact, here's a nice little example of the thing running.
+
+00:00:02.610 --> 00:00:06.330
+And this is taken from a very ancient photo but you can see right in here,
+
+00:00:06.330 --> 00:00:10.810
+there's a bowling ball, and that's where the plus, the crosshairs are drawn.
+
+00:00:10.810 --> 00:00:14.940
+And just as a, sort of to show you some other way of trying to find this
+
+00:00:14.940 --> 00:00:18.710
+ball that's moving, you could image just looking for the stuff that's moving.
+
+00:00:18.710 --> 00:00:20.220
+After all, it hasn't hit the pins yet.
+
+00:00:20.220 --> 00:00:25.000
+But when you'd look for the stuff that's moving, they find this bounding box.
+
+00:00:25.000 --> 00:00:26.700
+How come we could find more than just the ball?
+
+00:00:26.700 --> 00:00:29.030
+Well actually if you take a look really carefully,
+
+00:00:29.030 --> 00:00:31.650
+you'll see that this lane is very shiny.
+
+00:00:32.720 --> 00:00:36.420
+Okay. In fact, in a little while we're going to talk about reflectance functions
+
+00:00:36.420 --> 00:00:38.510
+and specular reflectance functions, and
+
+00:00:38.510 --> 00:00:42.590
+you'll talk about why on this lane you actually see the image of the ball.
+
+00:00:42.590 --> 00:00:45.710
+And because of that, there's motion in here as well, so
+
+00:00:45.710 --> 00:00:46.704
+you get this bounding box.
+
+00:00:46.704 --> 00:00:47.677
+But that's okay,
+
+00:00:47.677 --> 00:00:53.200
+all of we're saying is basically, that it was able to find the, the circle.
+
+00:00:53.200 --> 00:00:54.770
+Here's another example taken.
+
+00:00:54.770 --> 00:00:58.680
+In fact, if you go and you type Hough transform circles or
+
+00:00:58.680 --> 00:01:00.330
+something like that into Google, in Google, and
+
+00:01:00.330 --> 00:01:03.230
+you look for images, you'll actually come up with this image.
+
+00:01:03.230 --> 00:01:06.550
+This image was actually taken by Vivek Kwatra back when he
+
+00:01:06.550 --> 00:01:11.810
+was a wee graduate student, TA in my class, back in 1811 or something like that.
+
+00:01:11.810 --> 00:01:15.810
+And what we did was we took a picture of of these coins on top of
+
+00:01:15.810 --> 00:01:17.060
+a textured background.
+
+00:01:17.060 --> 00:01:20.080
+We, he did it because he had to, because he was my TA.
+
+00:01:20.080 --> 00:01:24.310
+He's now a really famous guy doing cool research stuff, all right.
+
+00:01:24.310 --> 00:01:27.870
+So, basically, you can take this and you can compute the edges, and
+
+00:01:27.870 --> 00:01:31.778
+here's an edge image of that, and then we can look for circles.
+
+00:01:31.778 --> 00:01:34.100
+Now, we're going to use the known radius method.
+
+00:01:34.100 --> 00:01:37.730
+So, let's suppose we start with the radius for a penny.
+
+00:01:37.730 --> 00:01:38.290
+All right.
+
+00:01:38.290 --> 00:01:42.230
+And you can probably see that there's this nice bright spot right here in
+
+00:01:42.230 --> 00:01:45.070
+the middle that corresponds to the penny.
+
+00:01:45.070 --> 00:01:49.620
+Now what you may also notice is that there are these kind of blown ups areas.
+
+00:01:49.620 --> 00:01:50.190
+Not so much here.
+
+00:01:50.190 --> 00:01:50.870
+It's a little harder to see.
+
+00:01:50.870 --> 00:01:52.820
+We'll go back here.
+
+00:01:52.820 --> 00:01:56.430
+And that's because you could fit a penny.
+
+00:01:56.430 --> 00:02:02.430
+Sort of around the edge of the circle, and the centers would be rotating around
+
+00:02:02.430 --> 00:02:08.919
+the middle of the circle, and that's what this little circle of centers is.
+
+00:02:08.919 --> 00:02:14.180
+But at the real penny, they all align up, and so you get even a brighter spot.
+
+00:02:14.180 --> 00:02:15.990
+So how would we find the quarters?
+
+00:02:15.990 --> 00:02:19.540
+Well, we just use a bigger radius, the radius of a quarter, and
+
+00:02:19.540 --> 00:02:23.950
+we vote again, and again you'll see these spots here, here, and here.
+
+00:02:23.950 --> 00:02:27.150
+And now the penny edges, well they, they again vote for
+
+00:02:27.150 --> 00:02:31.600
+this bit of a circle, but not nearly as strong as the quarters do.
+
+00:02:31.600 --> 00:02:35.750
+So this was the original is, image, and these are the combined detections, and
+
+00:02:35.750 --> 00:02:38.000
+so that's pretty cool, you know, you can just find the circles.
+

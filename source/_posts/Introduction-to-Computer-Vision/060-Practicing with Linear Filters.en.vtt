@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.250 --> 00:00:01.850
+So the very last part of this lesson,
+
+00:00:01.850 --> 00:00:04.960
+we'll do some simple analysis about what different filters we'll do, and
+
+00:00:04.960 --> 00:00:07.340
+then we'll do more sophisticated filtering later.
+
+00:00:07.340 --> 00:00:09.590
+Here we have a picture, there's the original one on the left,
+
+00:00:09.590 --> 00:00:11.960
+somebody's eye, maybe you know whose eye it is,
+
+00:00:11.960 --> 00:00:15.540
+and I convolve it with that filter that's an impulse, what do you get back?
+
+00:00:15.540 --> 00:00:18.080
+Well what do you get when you convolve an image with an impulse,
+
+00:00:18.080 --> 00:00:21.730
+you get the original, and there it is, it's no change, 'kay so
+
+00:00:21.730 --> 00:00:24.370
+when you filter with an impulse, all right.
+
+00:00:24.370 --> 00:00:28.090
+So here's a slightly interesting one, what happens if I've got an impulse but
+
+00:00:28.090 --> 00:00:31.220
+it's actually not centered at the reference point but
+
+00:00:31.220 --> 00:00:33.790
+it's shifted over right, by one.
+
+00:00:33.790 --> 00:00:37.790
+Well what's going to happen is, when I place my filter down the, in the middle,
+
+00:00:37.790 --> 00:00:41.620
+it's going to go get the fill, the pixel from the right, and
+
+00:00:41.620 --> 00:00:44.060
+put that down at the reference point, then I move it over,
+
+00:00:44.060 --> 00:00:46.180
+and I get the right, now whether I get the one on the right or
+
+00:00:46.180 --> 00:00:50.530
+the left will depend on whether I'm doing correlation or convolution,
+
+00:00:50.530 --> 00:00:54.170
+remember correlation I just move it around, convolution I flip it over and
+
+00:00:54.170 --> 00:00:58.860
+then move it around, but what you're going to end up with is a shifted image, so
+
+00:00:58.860 --> 00:01:02.540
+in this case you'll shift to the left if you're doing correlation, so
+
+00:01:02.540 --> 00:01:05.740
+by shifting the impulse you get a shifted function, and
+
+00:01:05.740 --> 00:01:09.536
+that's because the idea is that the center coordinate here is 0,0.
+
+00:01:09.536 --> 00:01:11.470
+All right, what about this?
+
+00:01:11.470 --> 00:01:13.464
+So now I've got all ones divided by 9 so
+
+00:01:13.464 --> 00:01:17.530
+it's so it sums to 1, what is that going to look like?
+
+00:01:17.530 --> 00:01:21.090
+Well, we've already seen that, right, that's just a, kind of a crummy
+
+00:01:21.090 --> 00:01:25.720
+smoothing filter, it's a blur, all right, so I just get out the blurred eye.
+
+00:01:26.760 --> 00:01:29.700
+All right, now comes something really cool.
+
+00:01:29.700 --> 00:01:30.910
+All right?
+
+00:01:30.910 --> 00:01:35.870
+What if my filter, is actually the combination of these two?
+
+00:01:35.870 --> 00:01:37.160
+Okay?
+
+00:01:37.160 --> 00:01:42.798
+This is essentially twice the impulse, minus the blur.
+
+00:01:42.798 --> 00:01:44.379
+All right.
+
+00:01:44.379 --> 00:01:52.040
+Now, this is still all linear, so, the output of applying this kernel,
+
+00:01:52.040 --> 00:01:56.630
+where the kernel is made up of sums and multiplies, can just be done by
+
+00:01:56.630 --> 00:02:02.710
+taking the sums of the original two outputs, and that would look like this.
+
+00:02:02.710 --> 00:02:05.690
+And you'll notice, I'll show you a better example in a minute,
+
+00:02:05.690 --> 00:02:10.880
+that it's kind of sharpened up the image, it's accentuated the differences, and
+
+00:02:10.880 --> 00:02:14.720
+this is, drawing something like this, so here, this is filter is called,
+
+00:02:15.840 --> 00:02:19.290
+a sharpening filter, and it's got these little parts that have to do with the,
+
+00:02:19.290 --> 00:02:21.760
+the minus, and then the part in the middle.
+
+00:02:21.760 --> 00:02:27.500
+And if I show this applied to the whole filter, okay, you'll see that,
+
+00:02:27.500 --> 00:02:30.330
+and you, so, now you know whose eye it is, there is Einstein's eye and
+
+00:02:30.330 --> 00:02:32.880
+you'll, and if you take a look on your screen,
+
+00:02:32.880 --> 00:02:38.010
+you'll see that this one is a good deal sharper than the, than the previous one.
+

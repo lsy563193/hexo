@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.508 --> 00:00:04.120
+So the Gaussian we just talked about is what's referred to as isotropic,
+
+00:00:04.120 --> 00:00:06.580
+a fancy word for circularly symmetric.
+
+00:00:06.580 --> 00:00:10.640
+And so it basically had one parameter, just sigma, right?
+
+00:00:10.640 --> 00:00:12.860
+Bigger sigma is, the more the blur.
+
+00:00:12.860 --> 00:00:15.510
+But we have to implement these in digital computers.
+
+00:00:15.510 --> 00:00:18.520
+We actually have to have a matrix, and so
+
+00:00:18.520 --> 00:00:20.430
+then we have to worry about two things.
+
+00:00:20.430 --> 00:00:23.460
+The size of the matrix, is the matrix three by three,
+
+00:00:23.460 --> 00:00:25.340
+five by five, eleven by eleven?
+
+00:00:25.340 --> 00:00:28.550
+And then the sigma that's represented within that.
+
+00:00:28.550 --> 00:00:30.260
+So let me show you that first.
+
+00:00:30.260 --> 00:00:34.500
+In Gaussian filters we talk about the variance, sigma squared of
+
+00:00:34.500 --> 00:00:38.400
+the standard deviation of sigma, and that's the amount of smoothing.
+
+00:00:38.400 --> 00:00:44.043
+So these two filters are the same size, they’re both 30 by 30s,
+
+00:00:44.043 --> 00:00:47.253
+but the sigma inside one of them is two,
+
+00:00:47.253 --> 00:00:53.020
+the sigma inside the other one is five, so the five has a larger sigma.
+
+00:00:53.020 --> 00:00:57.180
+Now sometimes we’ll make a mistake and say it’s a larger kernel.
+
+00:00:57.180 --> 00:00:57.780
+When we say larger,
+
+00:00:57.780 --> 00:01:01.290
+what we actually are talking about is the size of the sigma inside.
+
+00:01:01.290 --> 00:01:02.750
+And we can distinguish that.
+
+00:01:02.750 --> 00:01:06.450
+So here's an example of the size of the kernel.
+
+00:01:06.450 --> 00:01:11.600
+So both of these kernels have a sigma of five, but one of them is
+
+00:01:11.600 --> 00:01:16.520
+represented within a 10 by 10, and the other is represented within a 30 by 30.
+
+00:01:16.520 --> 00:01:19.420
+Which one do you think is going to work better?
+
+00:01:19.420 --> 00:01:23.400
+The bigger one, it's smoother, it's going to work better, okay.
+
+00:01:23.400 --> 00:01:28.710
+And by the way, if somebody says, oh I, I smooth that with a bigger kernel.
+
+00:01:29.760 --> 00:01:31.910
+They actually mean a bigger sigma.
+
+00:01:31.910 --> 00:01:35.530
+That's what you care about, is the size of the sigma, not the actual kernel.
+
+00:01:35.530 --> 00:01:39.220
+The kernel has to be big enough and then the sigma is, is within that.
+

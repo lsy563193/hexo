@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.570 --> 00:00:03.930
+So those of you that are old enough will remember, and
+
+00:00:03.930 --> 00:00:05.610
+especially if you're from the United States.
+
+00:00:05.610 --> 00:00:06.420
+You'll remember that for
+
+00:00:06.420 --> 00:00:11.650
+a while there was this whole bunch of books out there called Where's Waldo.
+
+00:00:11.650 --> 00:00:15.990
+And they would give you a scene that looked like this on the left, and
+
+00:00:15.990 --> 00:00:18.570
+your goal was to find.
+
+00:00:18.570 --> 00:00:20.330
+Here's Waldo right here, kind of blurred out,
+
+00:00:20.330 --> 00:00:22.620
+hard to see, that would be my template maybe.
+
+00:00:22.620 --> 00:00:24.003
+And I want to find Waldo.
+
+00:00:24.003 --> 00:00:26.650
+And if you take a look at this, can every body see where Waldo is?
+
+00:00:26.650 --> 00:00:29.250
+Well, he's right there, okay.
+
+00:00:29.250 --> 00:00:31.840
+We go back there, okay, you can see him.
+
+00:00:31.840 --> 00:00:33.970
+There he is, all right?
+
+00:00:33.970 --> 00:00:38.950
+So, the question is, how could you do this doing the template matching?
+
+00:00:38.950 --> 00:00:41.150
+Well, we would do the same thing before.
+
+00:00:41.150 --> 00:00:43.740
+We take our image, we take our little template, and
+
+00:00:43.740 --> 00:00:47.670
+maybe you can see over here on this Correlation map, all right?
+
+00:00:47.670 --> 00:00:49.940
+There's that bright spot right there.
+
+00:00:49.940 --> 00:00:52.240
+And you'll notice, that everywhere else it's hardly bright at all.
+
+00:00:52.240 --> 00:00:54.140
+But right there, that's that bright spot.
+

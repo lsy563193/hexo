@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.390 --> 00:00:03.390
+Welcome back to intro to computer vision.
+
+00:00:03.390 --> 00:00:08.470
+Today we're going to start a section that's really on mapping from multiple,
+
+00:00:08.470 --> 00:00:09.960
+across multiple images.
+
+00:00:09.960 --> 00:00:10.810
+Image to images.
+
+00:00:10.810 --> 00:00:13.720
+And so I'll refer to it as n views.
+
+00:00:13.720 --> 00:00:16.219
+Mostly we're going to think of about two views, but
+
+00:00:16.219 --> 00:00:19.248
+a lot of this stuff extends to having multiple views.
+
+00:00:19.248 --> 00:00:22.373
+Today what we're going to do is talk about image to image projections.
+
+00:00:22.373 --> 00:00:26.630
+because last time we talked about calibration.
+
+00:00:26.630 --> 00:00:30.290
+And calibration was all about going from the world to the image, and
+
+00:00:30.290 --> 00:00:31.070
+we made a stop.
+
+00:00:31.070 --> 00:00:34.613
+We go from the world 3D coordinate frame, to a camera coord,
+
+00:00:34.613 --> 00:00:36.180
+3D coordinate frame, and
+
+00:00:36.180 --> 00:00:41.450
+then we do a projection from a 3D camera coordinate frame to a 2D image frame.
+
+00:00:41.450 --> 00:00:42.660
+And we built that m matrix, and
+
+00:00:42.660 --> 00:00:45.560
+we talked about if I gave you 3D points in the world and I gave you 2D
+
+00:00:45.560 --> 00:00:48.590
+points in the image, how you could figure out that that relationship is.
+
+00:00:49.660 --> 00:00:50.690
+For the next several lessons,
+
+00:00:50.690 --> 00:00:53.060
+we'll be talking about mapping from one image to the other.
+
+00:00:53.060 --> 00:00:56.430
+And this is going to be important both for stereo and for
+
+00:00:56.430 --> 00:01:00.710
+other applications where you have multiple views of, of the same scene.
+

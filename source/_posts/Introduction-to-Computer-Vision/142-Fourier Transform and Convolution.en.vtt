@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.670 --> 00:00:05.960
+Let's suppose we have a function, g, which is just f convolved with h.
+
+00:00:05.960 --> 00:00:08.990
+Maybe h is a filter, f was the original image, doesn't matter,
+
+00:00:08.990 --> 00:00:13.620
+it's f convolved with h, and suppose I want the Fourier transform of g.
+
+00:00:13.620 --> 00:00:18.270
+All right, well, that's going to be written as follows, 'kay?
+
+00:00:18.270 --> 00:00:23.870
+Our definition right, G of u, is just the Fourier Transform of g of x.
+
+00:00:23.870 --> 00:00:27.360
+But g of x is just the convolution, so
+
+00:00:27.360 --> 00:00:31.630
+that's sort of in here, this part here, of f with h.
+
+00:00:31.630 --> 00:00:36.190
+Remember that was my definition of G, the convolution of f with h.
+
+00:00:36.190 --> 00:00:40.470
+What I can do is I can rearrange this, and you'll see what I did here was,
+
+00:00:40.470 --> 00:00:45.932
+this was u x, so here we have u tau, and here we have x minus tau.
+
+00:00:45.932 --> 00:00:46.620
+All right, and so
+
+00:00:46.620 --> 00:00:50.170
+if you multiply those together, you would just get u x, so it's the same thing.
+
+00:00:50.170 --> 00:00:53.600
+But I've rearranged it, so all the tau stuff is here.
+
+00:00:53.600 --> 00:00:56.890
+And all the x stuff is there, with this tau in there.
+
+00:00:56.890 --> 00:01:00.230
+And so, we're going to make a quick change of variables, right?
+
+00:01:00.230 --> 00:01:05.170
+I'm going to say, let's define a new variable of x minus tau is x prime.
+
+00:01:05.170 --> 00:01:08.690
+So, now I've just, just converted that to x prime.
+
+00:01:08.690 --> 00:01:13.530
+So, now I've got one integral here, and one integral there.
+
+00:01:14.780 --> 00:01:17.680
+And if you stare at those, and you ask yourself, get ready.
+
+00:01:17.680 --> 00:01:18.870
+What are those integrals?
+
+00:01:18.870 --> 00:01:20.540
+&gt;&gt; What are those integrals?
+
+00:01:20.540 --> 00:01:21.830
+&gt;&gt; Well, what are those integrals?
+
+00:01:21.830 --> 00:01:24.860
+Well, let's take a look at just this integral.
+
+00:01:24.860 --> 00:01:28.222
+That's the fourier transform of f, right?
+
+00:01:28.222 --> 00:01:30.991
+You happen to use tau instead of x, but it's the same thing.
+
+00:01:30.991 --> 00:01:34.583
+This is the Fourier transform of H, so
+
+00:01:34.583 --> 00:01:38.299
+that can be written as just F u times H u.
+
+00:01:38.299 --> 00:01:41.068
+Megan laughed when I said F u, by the way.
+
+00:01:41.068 --> 00:01:47.476
+So G of u is just F u times H of u.
+
+00:01:47.476 --> 00:01:53.647
+In other words, remember G was the convolution of F with H.
+
+00:01:53.647 --> 00:01:59.299
+G of u, the frequency domain is just the product
+
+00:01:59.299 --> 00:02:04.930
+of the Fourier transforms of F and H, okay?
+
+00:02:04.930 --> 00:02:09.850
+So the idea here is that when you do convolution in the spatial domain,
+
+00:02:09.850 --> 00:02:13.290
+you're essentially doing multiplication in the frequency domain.
+
+00:02:13.290 --> 00:02:15.810
+And this is going to be really important, for
+
+00:02:15.810 --> 00:02:18.650
+the next lesson when we talk about aliasing, and also for what we're going to
+
+00:02:18.650 --> 00:02:22.460
+talk about here in terms of how convolution does frequency manipulation.
+
+00:02:22.460 --> 00:02:25.890
+So this is just written here, is that if in if the spatial domain I
+
+00:02:25.890 --> 00:02:30.180
+do convolution, in the frequency domain, I'm doing multiplication.
+
+00:02:30.180 --> 00:02:33.710
+Also by the way, because of the symmetry of how the transforms work.
+
+00:02:33.710 --> 00:02:37.910
+If I were to multiply in the spatial domain, that is, if I took two functions
+
+00:02:37.910 --> 00:02:42.140
+and I multiply them together, I don't convolve it, I just multiply them.
+
+00:02:42.140 --> 00:02:46.070
+The Fourier transform of that new function is going to be
+
+00:02:46.070 --> 00:02:50.670
+the convolution of the Fourier transforms of each of the individuals, okay.
+
+00:02:50.670 --> 00:02:52.854
+We're going to make use of that, both here, and
+
+00:02:52.854 --> 00:02:54.850
+a little bit when we talk about aliasing.
+
+00:02:54.850 --> 00:02:58.230
+So, in the spatial domain you do convolution in the,
+
+00:02:58.230 --> 00:03:01.449
+in the frequency domain it's multiplication or vice-a-versa.
+

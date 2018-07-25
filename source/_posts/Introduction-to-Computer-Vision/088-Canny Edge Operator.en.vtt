@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.300 --> 00:00:03.090
+Now that we know how to compute smooth derivatives and
+
+00:00:03.090 --> 00:00:07.640
+gradients, we can return to the question of how do we actually find the edges.
+
+00:00:07.640 --> 00:00:10.660
+And fundamentally it's a multi-step process, right?
+
+00:00:10.660 --> 00:00:14.140
+You're going to create smooth derivatives to suppress sort of little bit
+
+00:00:14.140 --> 00:00:17.760
+noise and we're going to compute sort of the main gradients, then we're going to
+
+00:00:17.760 --> 00:00:21.060
+threshold that gradient somehow to find sort of significant areas of change, and
+
+00:00:21.060 --> 00:00:24.180
+then we're going to take those areas and then we're going to take those areas
+
+00:00:24.180 --> 00:00:25.650
+and we're going to do what's called, thinning and
+
+00:00:25.650 --> 00:00:29.300
+there's an example of that shown down here, we'll talk more about that, so
+
+00:00:29.300 --> 00:00:34.040
+that a fat edge becomes just a single contour, and say that's the edge, and
+
+00:00:34.040 --> 00:00:36.200
+then finally, we're going to have to somehow connect or
+
+00:00:36.200 --> 00:00:39.650
+link those pixels if you actually want to have a connected contour.
+
+00:00:39.650 --> 00:00:43.840
+So the edge operator I want to talk about is done by John Canny,
+
+00:00:43.840 --> 00:00:46.370
+actually as his masters, thesis, when I was,
+
+00:00:46.370 --> 00:00:49.970
+still at school there as well, went on to do some really cool stuff in his PhD,
+
+00:00:49.970 --> 00:00:53.640
+but everybody knows it because it was called the Canny, edge operator.
+
+00:00:53.640 --> 00:00:57.970
+And the Canny operator works the following way, you first filter the image with
+
+00:00:57.970 --> 00:01:01.010
+derivative of a Gaussian, you find the magnitude and
+
+00:01:01.010 --> 00:01:05.000
+orientation, then you do what's called non-maximum suppression,
+
+00:01:05.000 --> 00:01:07.640
+which is this thinning, and we'll talk about that in a minute.
+
+00:01:07.640 --> 00:01:11.840
+And then, there's a linking operation, we're going to talk about that in detail,
+
+00:01:11.840 --> 00:01:15.550
+that was really the cool insight, where you're going to define not just one
+
+00:01:15.550 --> 00:01:19.970
+threshold, but two, and you're going to use the, the high threshold to start to
+
+00:01:19.970 --> 00:01:23.500
+edges, but you'll use the lower threshold to continue.
+
+00:01:23.500 --> 00:01:27.970
+By the way, MATLAB does Canny edges, so you can just take the Canny edges by
+
+00:01:27.970 --> 00:01:32.420
+calling the edge function, and I encourage you to do doc edge or, or help if,
+
+00:01:32.420 --> 00:01:36.030
+if your doc thing's not set up, to learn all about the edge detection in MATLAB,
+
+00:01:36.030 --> 00:01:39.700
+it's actually a great source of image processing information,
+
+00:01:39.700 --> 00:01:43.370
+the documentation of the image processing tool box in MATLAB.
+

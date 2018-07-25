@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.240 --> 00:00:03.520
+Let's look at some values from our dolphin image.
+
+00:00:03.520 --> 00:00:06.540
+As before, we load the image with imread and
+
+00:00:06.540 --> 00:00:09.250
+let's also display the image with imshow.
+
+00:00:09.250 --> 00:00:11.660
+How about we print out the size as well?
+
+00:00:11.660 --> 00:00:14.422
+And let's run this to make sure everything's okay.
+
+00:00:14.422 --> 00:00:15.246
+All right.
+
+00:00:15.246 --> 00:00:20.524
+Dolphin's still there, and the size is still 320 by 500.
+
+00:00:20.524 --> 00:00:24.630
+Let's say we want to find out the image value at a particular location.
+
+00:00:24.630 --> 00:00:29.060
+We specify this location with a row and column number.
+
+00:00:29.060 --> 00:00:34.690
+We learned earlier that an image is a function over the two dimensions.
+
+00:00:34.690 --> 00:00:39.500
+Octave uses a notation similar to a function to access values at
+
+00:00:39.500 --> 00:00:41.130
+a particular location.
+
+00:00:41.130 --> 00:00:45.860
+Let's say we want to find out the value at row 50, column 100.
+
+00:00:45.860 --> 00:00:49.200
+We write img, that's our image variable.
+
+00:00:49.200 --> 00:00:52.760
+Followed by the row column coordinates in parenthesis.
+
+00:00:52.760 --> 00:00:54.521
+And let's display this value.
+
+00:00:54.521 --> 00:00:56.255
+All right, let's see what we have.
+
+00:00:56.255 --> 00:00:59.993
+So the value at 50, 100 is 208.
+
+00:00:59.993 --> 00:01:05.150
+Similarly we can find out the values for an entire row.
+
+00:01:05.150 --> 00:01:10.040
+We'll use a similar notation as before, but we'll do something different for
+
+00:01:10.040 --> 00:01:11.410
+the column.
+
+00:01:11.410 --> 00:01:16.480
+Putting a colon tells Octave to return values for all columns.
+
+00:01:16.480 --> 00:01:18.092
+Let's see what the output is.
+
+00:01:18.092 --> 00:01:23.730
+As you can see, Octave dumps values from the entire row, all 500 columns.
+
+00:01:23.730 --> 00:01:28.220
+Obviously, this isn't a useful way to look at values from an entire row.
+
+00:01:28.220 --> 00:01:29.360
+What else can we do?
+
+00:01:29.360 --> 00:01:31.360
+We can plot these values.
+
+00:01:31.360 --> 00:01:33.230
+This makes more sense, doesn't it?
+
+00:01:33.230 --> 00:01:39.340
+You can clearly see the relatively higher values where the white wave is,
+
+00:01:39.340 --> 00:01:42.920
+and then the other values are comparatively lower.
+
+00:01:42.920 --> 00:01:47.180
+Can you find out the values from this three by three slice of the image?
+
+00:01:47.180 --> 00:01:50.610
+Rows 101 to 103.
+
+00:01:50.610 --> 00:01:53.894
+Columns 201 through 203.
+

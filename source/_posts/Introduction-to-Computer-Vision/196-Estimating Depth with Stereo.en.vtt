@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.153 --> 00:00:04.820
+So now, let's think about the geometry of stereo and get to the mathematics.
+
+00:00:04.820 --> 00:00:06.179
+The basic idea is this.
+
+00:00:06.179 --> 00:00:07.319
+If I have two cameras and
+
+00:00:07.319 --> 00:00:10.171
+remember, cameras are defined by their optical centers.
+
+00:00:10.171 --> 00:00:10.915
+All right?
+
+00:00:10.915 --> 00:00:14.538
+And they're both looking at some scene point,
+
+00:00:14.538 --> 00:00:20.075
+if I can figure out which two points in the two cameras are the same point.
+
+00:00:20.075 --> 00:00:23.821
+And furthermore, if I can tell which way, if I know something about which way
+
+00:00:23.821 --> 00:00:27.296
+the cameras are pointed, then I can figure out the depth of that point.
+
+00:00:27.296 --> 00:00:28.213
+That's it.
+
+00:00:28.213 --> 00:00:31.386
+So for estimating the depth between the stereo, remember the shape
+
+00:00:31.386 --> 00:00:34.459
+between the two views, there are two things we have to consider.
+
+00:00:34.459 --> 00:00:38.917
+First is information on camera pose and sometimes referred to as calibration.
+
+00:00:38.917 --> 00:00:42.481
+How are the cameras oriented in space with respect to each other.
+
+00:00:42.481 --> 00:00:45.674
+And the second is on image point correspondences,
+
+00:00:45.674 --> 00:00:48.356
+that is which point corresponds to which.
+
+00:00:48.356 --> 00:00:51.307
+So here you see the red dot in the two images, left and
+
+00:00:51.307 --> 00:00:54.276
+right are both corresponding to that front corner.
+
+00:00:54.276 --> 00:00:57.260
+What we're going to do is we're going to swap that order.
+
+00:00:57.260 --> 00:01:00.165
+We're going to talk about doing the image correspondence first,
+
+00:01:00.165 --> 00:01:03.337
+because that's the what you're going to do for your problem set and
+
+00:01:03.337 --> 00:01:06.211
+it's all, it's the fundamentals between stereo matching.
+
+00:01:06.211 --> 00:01:09.837
+And then we save calibration for later, because calibration is also used for
+
+00:01:09.837 --> 00:01:13.407
+whole bunch of other types of geometric processing that we're going to do
+
+00:01:13.407 --> 00:01:14.320
+with the cameras.
+

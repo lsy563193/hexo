@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.100 --> 00:00:03.060
+Here's a picture, a very famous picture, and the question is, what do you see?
+
+00:00:03.060 --> 00:00:06.640
+All right, so most people probably first see a,
+
+00:00:06.640 --> 00:00:11.150
+the kind of stylistic drawing of a naked woman, and then maybe if you
+
+00:00:11.150 --> 00:00:14.690
+look you'll see down here there's a picture of Abraham Lincoln.
+
+00:00:14.690 --> 00:00:18.830
+But if you take a look at the title of the picture, this is a painting by
+
+00:00:18.830 --> 00:00:23.040
+Salvador Dali and its Gala Contemplating the Mediterranean Sea which at
+
+00:00:23.040 --> 00:00:27.070
+30 meters becomes a portrait of Abraham Lincoln, now you don't actually have to
+
+00:00:27.070 --> 00:00:30.940
+step back 30 meters we can just blur the picture and when, when, and when I
+
+00:00:30.940 --> 00:00:35.670
+blur the picture, it looks like that, and uh-huh, there's Abraham Lincoln.
+
+00:00:35.670 --> 00:00:38.210
+And so the question is, what's going on there?
+
+00:00:38.210 --> 00:00:38.830
+All right.
+
+00:00:38.830 --> 00:00:44.062
+And, loosely the, the answer is that at this image there's all this
+
+00:00:44.062 --> 00:00:48.390
+hig frequency information that's showing you all these squares and you see the,
+
+00:00:48.390 --> 00:00:52.020
+the outline of the woman and you can see the, the, the, what she's looking at
+
+00:00:52.020 --> 00:00:55.240
+something in the distance, and you can see that picture of Abraham Lincoln, but
+
+00:00:55.240 --> 00:01:01.500
+at the low frequency, it actually is a reasonable picture of Abraham Lincoln.
+
+00:01:01.500 --> 00:01:03.350
+And the idea is that images can be decom,
+
+00:01:03.350 --> 00:01:09.300
+actually any signal can be decomposed into a set of things that describe it.
+
+00:01:09.300 --> 00:01:11.320
+And, we're going to get to frequency, but
+
+00:01:11.320 --> 00:01:14.680
+really what we're talking about is what's referred to as a basis set.
+

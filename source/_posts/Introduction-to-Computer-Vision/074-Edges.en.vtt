@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.330 --> 00:00:03.540
+Let's talk about edges in just a generic image,
+
+00:00:03.540 --> 00:00:06.980
+and how it is that edges come to be within a picture.
+
+00:00:06.980 --> 00:00:10.680
+So what you can see here is this is some ancient picture somebody drew out,
+
+00:00:10.680 --> 00:00:13.370
+that there are edges that happen for a variety of reasons, right?
+
+00:00:13.370 --> 00:00:16.110
+So here's one right there, okay.
+
+00:00:16.110 --> 00:00:17.840
+And that's at a depth discontinuity.
+
+00:00:17.840 --> 00:00:20.850
+First we're looking at the bottle, then we're looking at the background.
+
+00:00:20.850 --> 00:00:22.060
+Here's a shadow edge.
+
+00:00:22.060 --> 00:00:24.975
+Of course, shadows aren't really that harsh but, go with me further.
+
+00:00:24.975 --> 00:00:28.360
+There's idea that there's a discontinuity in the illumination.
+
+00:00:28.360 --> 00:00:33.710
+Up here, from this top to there, is a discontinuity in the surface normal.
+
+00:00:33.710 --> 00:00:36.524
+That is the shape in one way, and then the [INAUDIBLE] the shape changes and
+
+00:00:36.524 --> 00:00:38.610
+it's pointing the different direction.
+
+00:00:38.610 --> 00:00:43.620
+And then finally, edges here can do to be to essentially color discontinuity, so
+
+00:00:43.620 --> 00:00:47.840
+we go from white to black on the same surface, same illumination, same shape and
+
+00:00:47.840 --> 00:00:50.840
+everything, but the reflectance is actually different.
+
+00:00:50.840 --> 00:00:52.370
+So that's what edges look like.
+
+00:00:52.370 --> 00:00:54.150
+We can look at them in a real picture.
+
+00:00:54.150 --> 00:00:55.780
+I think this is UT Texas,
+
+00:00:55.780 --> 00:00:58.690
+which would mean that again this was stolen from Crystal Robin as well.
+
+00:00:58.690 --> 00:01:02.990
+Borrowed. All right, so in a real image we have depth discontinuity.
+
+00:01:02.990 --> 00:01:06.040
+So the side of the building, we have shadows.
+
+00:01:06.040 --> 00:01:09.610
+So there you can see the shadow being cast by the sun on the front.
+
+00:01:09.610 --> 00:01:11.730
+What's interesting is we have textures.
+
+00:01:11.730 --> 00:01:13.330
+So if you were to blow up this area.
+
+00:01:13.330 --> 00:01:15.280
+And we'll, maybe we'll take a look at some texture later.
+
+00:01:15.280 --> 00:01:18.630
+Just from the, the texture or you can think of this as paint things are on
+
+00:01:18.630 --> 00:01:21.470
+the surface, you get different edges that show up.
+
+00:01:21.470 --> 00:01:25.350
+And then finally, the top ridge of that little cement thing,
+
+00:01:25.350 --> 00:01:28.620
+the edge around the bridge on top, that's like the top of the bottle cap.
+
+00:01:28.620 --> 00:01:34.130
+Same stuff, same color, but I get a discontinuity in surface orientation.
+
+00:01:34.130 --> 00:01:40.100
+So, our goal for today and, and next time also, is to find the edges in image.
+
+00:01:40.100 --> 00:01:43.280
+Or to put this another way, we want to convert an image,
+
+00:01:43.280 --> 00:01:48.600
+which is a function of x y, into a reduced set of pixels or
+
+00:01:48.600 --> 00:01:52.790
+curves et cetera that are the important elements of the picture somehow.
+
+00:01:52.790 --> 00:01:57.210
+And the idea is so, you know, that it encodes the changes that matter to you.
+

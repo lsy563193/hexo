@@ -1,0 +1,220 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:02.800
+So I'm going to take you through sort of how this works, and
+
+00:00:02.800 --> 00:00:05.939
+the key to the Hough Transform is Hough space.
+
+00:00:05.939 --> 00:00:07.689
+Here we have a line in image space.
+
+00:00:07.689 --> 00:00:11.125
+And you all remember the first equation, you solve a line somewhere in Mrs.
+
+00:00:11.125 --> 00:00:13.480
+Thompson's or Mrs. McGilacutti's or whoever your missus.
+
+00:00:13.480 --> 00:00:15.480
+Mine was Mr. Zebrow actually.
+
+00:00:15.480 --> 00:00:17.000
+He was also the football coach.
+
+00:00:17.000 --> 00:00:20.210
+I learned algebra from the football coach in junior high school,
+
+00:00:20.210 --> 00:00:22.330
+which is a very strange thing.
+
+00:00:22.330 --> 00:00:28.650
+Anyway so you remember that the equation line is y equals m 0 x plus b 0.
+
+00:00:28.650 --> 00:00:32.170
+So what we're going to construct is what's called Hough space.
+
+00:00:32.170 --> 00:00:34.850
+And it's really the Hough parameter space.
+
+00:00:34.850 --> 00:00:39.330
+And in lines in this representation we have two parameters m and b.
+
+00:00:39.330 --> 00:00:43.720
+So for this line y equals m0 x plus 0.
+
+00:00:43.720 --> 00:00:48.170
+That's represented at a location in the Hough space at m0 b0.
+
+00:00:48.170 --> 00:00:48.920
+So there it is.
+
+00:00:48.920 --> 00:00:50.910
+There's the point in Hough's space.
+
+00:00:50.910 --> 00:00:53.580
+Now the key idea here is that the line in
+
+00:00:53.580 --> 00:00:57.250
+the image corresponds to a point in Hough space.
+
+00:00:57.250 --> 00:00:58.300
+Okay, you got that?
+
+00:00:58.300 --> 00:01:01.670
+A line in the image corresponds to a point in Hough space.
+
+00:01:01.670 --> 00:01:03.040
+Now we're going to do something a little different.
+
+00:01:03.040 --> 00:01:05.420
+Suppose we only have one point in the image space.
+
+00:01:05.420 --> 00:01:09.380
+And we'll put that point here at x0, y0.
+
+00:01:09.380 --> 00:01:14.110
+Well, what are the equations of the lines that might go through that point?
+
+00:01:14.110 --> 00:01:17.510
+Well, in image space we know that the line that goes through that
+
+00:01:17.510 --> 00:01:21.270
+point is going to satisfy for whatever the m and the b are.
+
+00:01:21.270 --> 00:01:27.610
+It's going to satisfy the equation y0 has to equal m x0 plus b, right?
+
+00:01:27.610 --> 00:01:31.550
+That, in order for it to go through the point x0, y0 it has to have a m and
+
+00:01:31.550 --> 00:01:33.470
+b such that this equation holds.
+
+00:01:33.470 --> 00:01:36.580
+Well, with some very simple algebraic rearrangement,
+
+00:01:36.580 --> 00:01:42.192
+that becomes b is equal to minus x0 m plus y0.
+
+00:01:43.370 --> 00:01:47.360
+That's the equation of a line in m b space.
+
+00:01:47.360 --> 00:01:52.660
+In fact, it's a line with slope negative x0 and intercept y0.
+
+00:01:52.660 --> 00:01:57.770
+Okay, so the idea here is that a point in image space is a line in Hough space.
+
+00:01:57.770 --> 00:01:58.740
+This is the duality.
+
+00:01:59.800 --> 00:02:04.790
+Well, if we have one point, what happens if we have a second point?
+
+00:02:04.790 --> 00:02:06.160
+X1, y1.
+
+00:02:06.160 --> 00:02:09.490
+Well, that's going to be another line.
+
+00:02:09.490 --> 00:02:14.190
+Right? That's going to be a line with b equals minus x1 m plus y1.
+
+00:02:14.190 --> 00:02:16.690
+And so now here's the really cool question.
+
+00:02:17.700 --> 00:02:22.020
+What line would be consistent with both points?
+
+00:02:22.020 --> 00:02:27.740
+Well it has to be the point where these two lines in Hough's space intersect.
+
+00:02:27.740 --> 00:02:31.436
+because that's the m and b that's consistent with being on
+
+00:02:31.436 --> 00:02:36.190
+a line that goes through x0 y0 and on a line that goes through m1 b1.
+
+00:02:36.190 --> 00:02:38.920
+And this ladies and gentlemen, boys and girls and
+
+00:02:38.920 --> 00:02:43.660
+all you interested parties, this is how we're going to find lines from points.
+
+00:02:43.660 --> 00:02:45.840
+So, now we have to reduce this to an algorithm.
+
+00:02:45.840 --> 00:02:48.850
+We'll first do it graphically and then actually show the algorithm.
+
+00:02:48.850 --> 00:02:52.170
+So basically, every point gives me a line in Hough space.
+
+00:02:52.170 --> 00:02:55.850
+So what I do is, I create a grid, here it's of m and b, we're going to
+
+00:02:55.850 --> 00:02:59.760
+change that in a minute, which, which are made up of a set of bins.
+
+00:02:59.760 --> 00:03:01.850
+And every point votes for
+
+00:03:01.850 --> 00:03:06.990
+a line's worth of bins, so it casts a vote in every bin that it goes through.
+
+00:03:06.990 --> 00:03:09.720
+You collect up all the votes.
+
+00:03:09.720 --> 00:03:11.620
+And after every point has voted, and
+
+00:03:11.620 --> 00:03:16.220
+whichever bin has the most votes, that's your line.
+
+00:03:16.220 --> 00:03:19.330
+So this, basically, we're going to be casting votes into bins and
+
+00:03:19.330 --> 00:03:23.320
+then finding the bins that have, sort of a large number of votes.
+
+00:03:23.320 --> 00:03:25.880
+Larger than, sort of the average noisy area.
+
+00:03:25.880 --> 00:03:28.960
+Before we implement this in real code and real math,
+
+00:03:28.960 --> 00:03:32.500
+we're going to have to rethink our representation of lines just a little bit.
+
+00:03:32.500 --> 00:03:33.330
+You might remember,
+
+00:03:34.420 --> 00:03:39.510
+that there were some issues with the m b representation of ver, or lines.
+
+00:03:39.510 --> 00:03:43.305
+In particular for example a vertical line is really painful, right?
+
+00:03:43.305 --> 00:03:48.156
+Because m is equal to infinity and in 7th or 8th grade or 9th grade or
+
+00:03:48.156 --> 00:03:50.522
+12th grade algebra.
+
+00:03:50.522 --> 00:03:54.150
+The notion of having an infinite slope is kind of very painful.
+
+00:03:54.150 --> 00:03:54.885
+All right, so
+
+00:03:54.885 --> 00:03:58.639
+what we want to do is we want to use a more robust representation of lines.
+
+00:03:58.639 --> 00:04:03.140
+So that we don't have any sort of bad numerical problems.
+
+00:04:03.140 --> 00:04:06.910
+So what we're going to use is a polar representation for lines.
+

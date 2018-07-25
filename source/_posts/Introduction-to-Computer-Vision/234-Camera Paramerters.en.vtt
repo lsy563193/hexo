@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.136 --> 00:00:03.788
+So finally, we can talk about full camera parameters or
+
+00:00:03.788 --> 00:00:05.973
+camera and calibration matrix.
+
+00:00:05.973 --> 00:00:09.326
+The camera and its matrix M, and sometimes it's called pi, and
+
+00:00:09.326 --> 00:00:13.748
+that's what I've written here, as we know, is described by several parameters.
+
+00:00:13.748 --> 00:00:18.185
+It's got a translation T of the optical center from the origin of the world.
+
+00:00:18.185 --> 00:00:21.655
+We've got a rotation R of the coordinate system.
+
+00:00:21.655 --> 00:00:24.792
+We've got a focal length and aspect, f and a.
+
+00:00:24.792 --> 00:00:28.963
+Pixels or, or pixel size, sx sy.
+
+00:00:28.963 --> 00:00:34.686
+A principle point, that's the offset x, xc, yc or cx cy.
+
+00:00:34.686 --> 00:00:36.370
+And skew.
+
+00:00:36.370 --> 00:00:40.043
+And in this slide, the blue parameters are called the extrinsics and
+
+00:00:40.043 --> 00:00:41.575
+the red are the intrinsics.
+
+00:00:41.575 --> 00:00:44.486
+And we can put the whole thing together,
+
+00:00:44.486 --> 00:00:47.915
+we want to find this as a sort of a single matrix.
+
+00:00:47.915 --> 00:00:53.474
+M is going to be built up of all of the effects of our parameters,
+
+00:00:53.474 --> 00:00:56.090
+and so that looks like this.
+
+00:00:56.090 --> 00:00:56.690
+Okay?
+
+00:00:56.690 --> 00:01:01.430
+What is says is that M is a combination of translate,
+
+00:01:01.430 --> 00:01:04.465
+this is extrinsic, and rotate.
+
+00:01:04.465 --> 00:01:08.504
+So now we have the point in the 3D camera coordinate system.
+
+00:01:08.504 --> 00:01:12.582
+Project, this is just the extraction of the xyz, and
+
+00:01:12.582 --> 00:01:15.943
+then you pump that through the intrinsics.
+
+00:01:15.943 --> 00:01:18.345
+And how many degrees of freedom are there here?
+
+00:01:18.345 --> 00:01:19.647
+Well, there are 11.
+
+00:01:19.647 --> 00:01:24.685
+Five for the intrinsics, three for the rotation, three for the translation.
+
+00:01:24.685 --> 00:01:26.354
+I'll get rid of all that scribble.
+
+00:01:26.354 --> 00:01:31.470
+That equation there, that M, that is the full camera calibration matrix.
+

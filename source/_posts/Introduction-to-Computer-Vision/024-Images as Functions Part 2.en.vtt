@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.370 --> 00:00:03.969
+So, let's talk a little bit more about images as functions, all right?
+
+00:00:03.969 --> 00:00:07.220
+So, we can think of an image as a function, f, sometimes we'll say f,
+
+00:00:07.220 --> 00:00:08.560
+sometimes we'll say I.
+
+00:00:08.560 --> 00:00:10.940
+That maps, you know, to, from R squared to R.
+
+00:00:10.940 --> 00:00:15.540
+That is, it goes from an x y to some pure intensity or
+
+00:00:15.540 --> 00:00:19.020
+value at that position x y.
+
+00:00:19.020 --> 00:00:20.420
+But we're not going to have, sort of,
+
+00:00:20.420 --> 00:00:23.240
+arbitrary functions, we're going to limit them in certain ways.
+
+00:00:23.240 --> 00:00:27.330
+For us, an image is going to be defined to be over some bound.
+
+00:00:27.330 --> 00:00:30.040
+So x ranges from a to b.
+
+00:00:30.040 --> 00:00:32.729
+And y ranges from c to d.
+
+00:00:32.729 --> 00:00:38.150
+And the intensity ranges from some min to some max.
+
+00:00:38.150 --> 00:00:41.740
+Now, raise your hands out there if you think that images value go from
+
+00:00:41.740 --> 00:00:43.670
+zero to 255.
+
+00:00:43.670 --> 00:00:46.200
+Come on, be honest, you're raising your hands, okay.
+
+00:00:46.200 --> 00:00:50.770
+That is a pure accident, zero to one probably would have made a lot more sense.
+
+00:00:50.770 --> 00:00:54.420
+Zero be black, white be white, oh sorry, one be white.
+
+00:00:55.980 --> 00:00:56.900
+Where did the 255.
+
+00:00:56.900 --> 00:00:59.070
+Well, you computer nerds we all know.
+
+00:00:59.070 --> 00:01:01.180
+Well there are 8 bits in a byte, right.
+
+00:01:01.180 --> 00:01:04.010
+So if they're all on they're all ones we'll call that 255.
+
+00:01:04.010 --> 00:01:07.601
+There is nothing special about 255, okay.
+
+00:01:07.601 --> 00:01:08.329
+And in fact,
+
+00:01:08.329 --> 00:01:13.430
+later we're going to even have to have images that can have negatives in them.
+
+00:01:13.430 --> 00:01:15.640
+So the thing that you just have to remember,
+
+00:01:15.640 --> 00:01:19.410
+is we're going to allow our images to go from some min to some max.
+
+00:01:19.410 --> 00:01:23.710
+The min will be sort of the blackest black, the max will be the whitest white,
+
+00:01:23.710 --> 00:01:26.820
+if we're actually thinking of them as intensities.
+
+00:01:26.820 --> 00:01:29.710
+But later if we think of them as just pure functions,
+
+00:01:29.710 --> 00:01:34.270
+like image derivatives, they just going to take on some real value.
+
+00:01:34.270 --> 00:01:36.810
+By the way, we can do color images the same way.
+
+00:01:36.810 --> 00:01:41.690
+Now, instead of having one function that maps x,y to an intensity, we just have
+
+00:01:41.690 --> 00:01:45.880
+three functions, often called r, g and b, sometimes called l, u and v.
+
+00:01:45.880 --> 00:01:47.880
+We're going to talk about that way later.
+
+00:01:47.880 --> 00:01:49.200
+All right? But they basically,
+
+00:01:49.200 --> 00:01:52.510
+you can think of this as what we call a vector-valued function so
+
+00:01:52.510 --> 00:01:57.070
+every pixel, the function is a vector of three numbers.
+
+00:01:57.070 --> 00:01:59.620
+Like I said, most of the time we'll be sticking to gray level images.
+

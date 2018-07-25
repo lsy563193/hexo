@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.460 --> 00:00:01.600
+Octave is a free and
+
+00:00:01.600 --> 00:00:05.510
+open source language for numerical and scientific computing.
+
+00:00:05.510 --> 00:00:09.470
+It is mostly syntax and feature compatible with MATLAB.
+
+00:00:09.470 --> 00:00:12.010
+You can download it from the GNU Octave website.
+
+00:00:13.100 --> 00:00:15.850
+Follow the instructions for your corresponding system.
+
+00:00:15.850 --> 00:00:19.610
+Linux is probably the easiest, and Windows is a bit of a pain.
+
+00:00:19.610 --> 00:00:23.390
+I am on an OS X machine here.
+
+00:00:23.390 --> 00:00:25.870
+There is a binary installer for OS X.
+
+00:00:25.870 --> 00:00:30.030
+But I've had problems with it later on when trying to install packages.
+
+00:00:30.030 --> 00:00:31.650
+So I prefer the Homebrew route.
+
+00:00:32.950 --> 00:00:36.530
+If you don't have Homebrew set up already, first install XCode.
+
+00:00:37.540 --> 00:00:39.000
+Then open up a terminal and
+
+00:00:39.000 --> 00:00:42.770
+use the Xcode-select command to install command line tools.
+
+00:00:44.660 --> 00:00:46.050
+Now you can install Homebrew.
+
+00:00:47.640 --> 00:00:51.520
+You will also need a LaTeX distribution, like MacTeX.
+
+00:00:51.520 --> 00:00:53.130
+This may take a while to download.
+
+00:00:54.380 --> 00:00:59.120
+Once you have Xcode, its command line tools, Homebrew, and MapTech installed.
+
+00:00:59.120 --> 00:01:01.000
+Continue with the instructions on the wiki.
+
+00:01:02.250 --> 00:01:04.030
+Once you have Octave installed and
+
+00:01:04.030 --> 00:01:07.930
+it's in your path you should be able to run it by simply typing Octave.
+
+00:01:09.200 --> 00:01:10.960
+This is the Octave Interpreter.
+
+00:01:10.960 --> 00:01:12.940
+Similar to the Math Lab command window.
+
+00:01:14.230 --> 00:01:19.650
+You can type arithmetic expressions, create variables, and
+
+00:01:19.650 --> 00:01:21.439
+even work with vectors and matrices.
+
+00:01:22.560 --> 00:01:25.890
+To suppress the result of an expression showing up in the output,
+
+00:01:25.890 --> 00:01:27.780
+use a semicolon at the end.
+
+00:01:27.780 --> 00:01:30.880
+You can type exit to come out of the interpreter.
+
+00:01:30.880 --> 00:01:33.450
+You can also run Octave in GUI-mode.
+
+00:01:33.450 --> 00:01:37.050
+Note that this might still be an experimental feature, and
+
+00:01:37.050 --> 00:01:38.440
+tends to break very easily.
+
+00:01:39.610 --> 00:01:42.890
+You can carry out the same operations here as the console version.
+
+00:01:44.230 --> 00:01:48.450
+In addition you have a work space which lists the variables currently in memory.
+
+00:01:50.060 --> 00:01:52.820
+And a file browser showing contents of the current directory.
+
+00:01:54.510 --> 00:01:55.400
+As in Matlab,
+
+00:01:55.400 --> 00:02:00.520
+you can read images using the imread command and display them using imshow.
+
+00:02:04.360 --> 00:02:08.800
+The base installation of Octave does not include any additional packages.
+
+00:02:08.800 --> 00:02:12.840
+To install a package, we need to use the pkg install command.
+
+00:02:12.840 --> 00:02:18.092
+The -forge option pulls packages from the online Octave-Forge repository.
+
+00:02:18.092 --> 00:02:22.490
+Octave-Forge contains an extensive collection of packages.
+
+00:02:22.490 --> 00:02:24.430
+We are interested in the image package.
+
+00:02:26.620 --> 00:02:28.939
+Notice that this package has some dependencies.
+
+00:02:30.470 --> 00:02:34.710
+We can install the image package, along with all its dependencies, namely,
+
+00:02:34.710 --> 00:02:38.830
+general, control, and signal, in a single command.
+
+00:02:38.830 --> 00:02:41.930
+Once installed, they should show up in the list of packages.
+
+00:02:43.190 --> 00:02:48.120
+Now you can load the image package by typing pkg load image, and
+
+00:02:48.120 --> 00:02:51.720
+then use functions from it like rgb2gray.
+
+00:02:51.720 --> 00:02:56.740
+It converts a color RGB image into a gray scale or monochrome image.
+
+00:02:56.740 --> 00:03:01.210
+For more information on the image package, check out it's Octave Forge page.
+
+00:03:01.210 --> 00:03:05.270
+There is an extensive function reference that you'll need to use frequently.
+
+00:03:06.290 --> 00:03:09.450
+The Octave Wiki is very useful as well.
+
+00:03:09.450 --> 00:03:13.340
+It has installation instructions for a number of platforms,
+
+00:03:13.340 --> 00:03:16.310
+as well as tutorials and examples to help you get started.
+
+00:03:17.380 --> 00:03:20.550
+Play around with these to become more familiar with the Octave environment.
+

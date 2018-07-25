@@ -106,3 +106,5 @@ _config.yml scrollpercent
 
 2. 开启版权声明
 主题配置文件下,搜索关键字post_copyright,enable改为true
+
+主题

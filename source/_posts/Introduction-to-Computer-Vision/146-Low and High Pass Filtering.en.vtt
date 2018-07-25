@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.190 --> 00:00:02.870
+We've actually looked at this just a little bit before when we
+
+00:00:02.870 --> 00:00:05.470
+introduced the notion of frequency.
+
+00:00:05.470 --> 00:00:09.510
+So here we have a picture of this, this yeah, we did have this picture,
+
+00:00:09.510 --> 00:00:14.470
+this man made scene, all right, and here what I did was, I took the,
+
+00:00:14.470 --> 00:00:18.500
+inside part, and I set this all equal to 0.
+
+00:00:18.500 --> 00:00:22.300
+So instead of tapering it off like a nice Gaussian, I was ruthless and
+
+00:00:22.300 --> 00:00:26.790
+I set all of the, the frequencies outside a certain diameter to 0,
+
+00:00:26.790 --> 00:00:30.910
+so there's no high frequency component at all.
+
+00:00:30.910 --> 00:00:36.670
+And what you get, is this ugly looking thing called ringing, al lright, so
+
+00:00:36.670 --> 00:00:42.550
+this actually has low frequency, but because of some slight variations in here,
+
+00:00:42.550 --> 00:00:47.520
+it can't cancel them out with higher frequencies that it needs, okay so
+
+00:00:47.520 --> 00:00:49.860
+what gets left over is what's called ringing, and
+
+00:00:49.860 --> 00:00:52.970
+that's what happens when you clip the frequency precisely and
+
+00:00:52.970 --> 00:00:56.660
+I'm going to make that a mathematically and better defined in just a minute.
+
+00:00:56.660 --> 00:01:02.560
+The flip side of that, is if I remove, just those center frequencies,
+
+00:01:02.560 --> 00:01:04.560
+and I think in the image processing world, this is what we call coring,
+
+00:01:04.560 --> 00:01:08.440
+where you pull out that center, all that you get left with
+
+00:01:08.440 --> 00:01:13.030
+is this high frequency bit, which is a lot like, what, the edges, okay,
+
+00:01:13.030 --> 00:01:15.980
+we know that there's this relationship between frequency and
+
+00:01:15.980 --> 00:01:19.740
+edges at the high frequencies is where you get these steep derivatives.
+
+00:01:19.740 --> 00:01:20.240
+All right.
+

@@ -1,0 +1,184 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.430 --> 00:00:02.160
+So look, so what what we were just talking about is fine for
+
+00:00:02.160 --> 00:00:05.040
+calculus class, where you got all those fancy little Greek symbols.
+
+00:00:05.040 --> 00:00:05.860
+And you probably, by now,
+
+00:00:05.860 --> 00:00:08.240
+wish you were paying a little more attention to those Greek symbols.
+
+00:00:08.240 --> 00:00:11.110
+But the question is, how do we do these things in a computer where we don't get
+
+00:00:11.110 --> 00:00:12.730
+to do continuous math?
+
+00:00:12.730 --> 00:00:15.490
+So to do that, we have to talk about discrete gradients.
+
+00:00:15.490 --> 00:00:17.640
+So, in continuous math land,
+
+00:00:17.640 --> 00:00:22.010
+the partial of f with respect to x is just this limit, right?
+
+00:00:22.010 --> 00:00:24.320
+So we, we move a little bit in the x direction,
+
+00:00:24.320 --> 00:00:27.420
+epsilon, subtract off the original one and divide by epsilon, and
+
+00:00:27.420 --> 00:00:31.250
+when we let limit go to zero, that becomes our derivative.
+
+00:00:31.250 --> 00:00:35.770
+But in discrete world, we can't move arbitrarily close.
+
+00:00:35.770 --> 00:00:39.080
+We have to take what are called finite differences.
+
+00:00:39.080 --> 00:00:44.250
+So what we're going to do is we're going to talk about approximating our partial
+
+00:00:44.250 --> 00:00:45.980
+by some finite difference.
+
+00:00:45.980 --> 00:00:49.840
+So the simplest finite difference is this one, right?
+
+00:00:49.840 --> 00:00:54.660
+I take one step in the x direction, and I see what the value of the function is,
+
+00:00:54.660 --> 00:00:58.410
+and I subtract off the original, and I divide how big was the step.
+
+00:00:58.410 --> 00:00:59.070
+Just one.
+
+00:00:59.070 --> 00:01:01.490
+So that just becomes this value.
+
+00:01:01.490 --> 00:01:07.480
+So we say it's approximately f of x plus 1 minus f of x, okay?
+
+00:01:07.480 --> 00:01:09.930
+And that's called the right derivative.
+
+00:01:09.930 --> 00:01:10.590
+You get it?
+
+00:01:10.590 --> 00:01:12.090
+because it's, takes step one to the right.
+
+00:01:12.090 --> 00:01:12.590
+Oh, wait.
+
+00:01:13.680 --> 00:01:14.340
+One to the right.
+
+00:01:15.900 --> 00:01:19.060
+Right, left, for those of you who aren't looking at this thing in a mirror.
+
+00:01:19.060 --> 00:01:22.840
+Okay. In order to talk about the right way to think about these derivatives,
+
+00:01:22.840 --> 00:01:25.330
+let's take a look at our finite differences a little bit more.
+
+00:01:25.330 --> 00:01:28.790
+So here we have a picture of the striped duck that David puts in
+
+00:01:28.790 --> 00:01:31.080
+his book very often, David Forsyth.
+
+00:01:31.080 --> 00:01:34.290
+And you can see here we have this, it's a zebra, okay?
+
+00:01:34.290 --> 00:01:37.350
+So we have this picture of this zebra which has all these stripes on it.
+
+00:01:37.350 --> 00:01:41.080
+And over here, we have one of those finite difference images.
+
+00:01:41.080 --> 00:01:43.670
+First question, is this the finite difference in x or in y?
+
+00:01:43.670 --> 00:01:46.120
+Well, let's take a look.
+
+00:01:46.120 --> 00:01:51.830
+Here I have these nice kind of almost vertical stripes, and as I go across,
+
+00:01:51.830 --> 00:01:54.940
+you can see that I get a bright value and a dark value and a bright value and
+
+00:01:54.940 --> 00:01:59.840
+a dark value, so in others words, as I'm seeing changes going horizontally,
+
+00:01:59.840 --> 00:02:04.460
+in x, I'm getting different values of whatever this finite difference is, but
+
+00:02:04.460 --> 00:02:07.430
+across here, I have hardly any changes in x,
+
+00:02:07.430 --> 00:02:11.050
+and only changes in y, and you'll notice this is not a very strong signal there.
+
+00:02:11.050 --> 00:02:14.530
+Okay, so this is going to be a finite difference in x.
+
+00:02:14.530 --> 00:02:17.320
+One of the things that might be bugging you about this,
+
+00:02:17.320 --> 00:02:20.330
+is on the right-hand side here,
+
+00:02:20.330 --> 00:02:24.830
+I'm showing you an image that has positive numbers and negative numbers in it.
+
+00:02:24.830 --> 00:02:26.350
+So here's the deal.
+
+00:02:26.350 --> 00:02:30.090
+Normally, when we display an image, we make zero black and
+
+00:02:30.090 --> 00:02:31.660
+some other number white.
+
+00:02:31.660 --> 00:02:35.670
+Or we say some minimum value's black, and some maximum value is white.
+
+00:02:35.670 --> 00:02:40.690
+Oh, I didn't say it has to be zero, it has to be some minimum.
+
+00:02:40.690 --> 00:02:46.670
+So I could make like minus 128 be black and plus 127 be white.
+
+00:02:46.670 --> 00:02:47.848
+Or minus 20.
+
+00:02:47.848 --> 00:02:51.170
+And I could make zero be gray.
+
+00:02:51.170 --> 00:02:53.440
+So what you're seeing here on the right is what's referred to as
+
+00:02:53.440 --> 00:02:59.540
+a gradient image where gray is zero, white means positive, black means negative.
+
+00:02:59.540 --> 00:03:02.630
+This is sure to mess you up, in some of, doing some of the problem sets,
+
+00:03:02.630 --> 00:03:06.170
+et cetera, but remember, that the display of an image is just for
+
+00:03:06.170 --> 00:03:09.740
+convenience for me and you when it's a mathematical function like this.
+

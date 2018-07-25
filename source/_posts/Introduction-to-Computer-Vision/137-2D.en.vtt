@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.669
+I've been showing you this in one dimension.
+
+00:00:01.669 --> 00:00:04.490
+It extends pretty simply in two dimensions and
+
+00:00:04.490 --> 00:00:07.174
+here are the two dimensional forms, okay?
+
+00:00:07.174 --> 00:00:10.009
+So this f of u, this is just when I've got a,
+
+00:00:10.009 --> 00:00:12.446
+a continuous two dimensional function.
+
+00:00:12.446 --> 00:00:14.081
+Here we have f of x, y.
+
+00:00:14.081 --> 00:00:19.451
+Well, when we do it in discreet land, f of x, y is now going to be at discreet
+
+00:00:19.451 --> 00:00:24.925
+points and we have f of kx, ky, those are the two different frequencies.
+
+00:00:24.925 --> 00:00:28.863
+The fr, the discrete frequency in x, the discrete frequency in y.
+
+00:00:28.863 --> 00:00:31.406
+And by the way, this works middle if you put the origin of k in the middle,
+
+00:00:31.406 --> 00:00:32.767
+you want to put the zero in the middle.
+
+00:00:32.767 --> 00:00:36.737
+So for minus k k n over 2 to plus n over 2.
+
+00:00:36.737 --> 00:00:40.526
+Let's take a look at applying this two dimensional discrete Fourier
+
+00:00:40.526 --> 00:00:41.776
+transform to images.
+
+00:00:41.776 --> 00:00:44.549
+So remember, we showed you, we talked about that we are going to have
+
+00:00:44.549 --> 00:00:47.782
+these bases that have horizontal vertical components that can be combined.
+
+00:00:47.782 --> 00:00:50.518
+What does that look like when we apply these things to images?
+
+00:00:50.518 --> 00:00:52.920
+So let's take a look at some very simple examples.
+
+00:00:52.920 --> 00:00:53.554
+All right.
+
+00:00:53.554 --> 00:00:57.264
+So here I have a sinusoid and it's at some particular frequency and
+
+00:00:57.264 --> 00:00:59.527
+it's only made up of vertical stripes.
+
+00:00:59.527 --> 00:01:04.165
+What is the spectrum, the power spectrum of its Fourier transform look like?
+
+00:01:04.165 --> 00:01:07.510
+Well, it looks just like this and its a little hard for you to see, but
+
+00:01:07.510 --> 00:01:09.136
+there are two bright dots there.
+
+00:01:09.136 --> 00:01:12.394
+The origin is here in the middle and there is a dot to the left and
+
+00:01:12.394 --> 00:01:13.407
+a dot to the right.
+
+00:01:13.407 --> 00:01:13.974
+Okay.
+
+00:01:13.974 --> 00:01:20.481
+Those are my spikes for the, the frequency of this particular sinusoid.
+
+00:01:20.481 --> 00:01:27.521
+So this picture, you see has only horizontal stripes and it varies more quickly.
+
+00:01:27.521 --> 00:01:31.641
+So these dots are now spaced vertically for sinusoid that goes in this
+
+00:01:31.641 --> 00:01:36.630
+direction and they're further out, because the frequency component is higher.
+
+00:01:36.630 --> 00:01:40.935
+If I have a sinusoid in an oriented direction, same deal again.
+
+00:01:40.935 --> 00:01:42.470
+It's a little hard to see.
+
+00:01:42.470 --> 00:01:46.340
+We've got these dots that are spread in that direction.
+
+00:01:46.340 --> 00:01:48.542
+Let's go back to our linearity.
+
+00:01:48.542 --> 00:01:51.524
+So let's suppose I take the picture on the left and
+
+00:01:51.524 --> 00:01:54.515
+the picture in the middle and I sum them together.
+
+00:01:54.515 --> 00:01:57.051
+And we're actually going to do a sum, so it's linear.
+
+00:01:57.051 --> 00:01:57.818
+Right?
+
+00:01:57.818 --> 00:01:59.964
+So this picture's going to look like that, so,
+
+00:01:59.964 --> 00:02:02.289
+you know, it's some combination of sinusoids.
+
+00:02:02.289 --> 00:02:07.138
+But remember, a Fourier transfer, Fourier series is just made up of sums and
+
+00:02:07.138 --> 00:02:09.763
+multiplies, it's a linear operation.
+
+00:02:09.763 --> 00:02:10.631
+Okay?
+
+00:02:10.631 --> 00:02:17.104
+So, the Fourier transform of the sum is just the sum of the Fourier transforms.
+
+00:02:17.104 --> 00:02:18.005
+Okay?
+
+00:02:18.005 --> 00:02:21.770
+So that's why this picture is just these combined.
+

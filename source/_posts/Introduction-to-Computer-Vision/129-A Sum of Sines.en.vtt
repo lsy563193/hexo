@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:02.570
+The idea is that if you have a signal,
+
+00:00:02.570 --> 00:00:07.190
+the signal has as its building blocks these sinusoids.
+
+00:00:07.190 --> 00:00:10.960
+And if you add enough of them, you could get whatever component you want.
+
+00:00:10.960 --> 00:00:12.780
+So here we're adding up different,
+
+00:00:12.780 --> 00:00:16.030
+this is, this was our target, these are the elements that we're adding.
+
+00:00:16.030 --> 00:00:17.470
+We're going to show this more in a minute.
+
+00:00:17.470 --> 00:00:19.890
+And this is the function that we're building up.
+
+00:00:19.890 --> 00:00:21.860
+So before we look at that more carefully,
+
+00:00:21.860 --> 00:00:26.240
+how many degrees of freedom are there in this signal, right here, okay?
+
+00:00:26.240 --> 00:00:27.640
+There are three degrees of freedom.
+
+00:00:27.640 --> 00:00:28.620
+What are they?
+
+00:00:28.620 --> 00:00:32.009
+Well a here is just going to be the amplitude, that's going to be a scale,
+
+00:00:32.009 --> 00:00:32.600
+all right?
+
+00:00:32.600 --> 00:00:35.910
+And then there are these two numbers, omega and phi.
+
+00:00:35.910 --> 00:00:40.420
+And omega is what's referred to as the frequency, and phi is the phase.
+
+00:00:41.570 --> 00:00:43.120
+So which of these is most important?
+
+00:00:43.120 --> 00:00:47.400
+Which of these encodes the, the notion of a coarse signal versus a fine signal?
+
+00:00:47.400 --> 00:00:50.350
+Well it's going to be this one, the frequency.
+
+00:00:50.350 --> 00:00:51.700
+All right? So as you change that frequency,
+
+00:00:51.700 --> 00:00:54.960
+as that number gets bigger, essentially the thing wiggles more quickly.
+

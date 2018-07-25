@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.202
+So here's a result.
+
+00:00:01.202 --> 00:00:03.827
+And, you know, one of the interesting things is,
+
+00:00:03.827 --> 00:00:06.707
+I mean, it looks pretty good, it's a good edge image.
+
+00:00:06.707 --> 00:00:09.973
+But my very first computer vision courses from Berthold Horn,
+
+00:00:09.973 --> 00:00:12.279
+who was one of the creators of computer vision.
+
+00:00:12.279 --> 00:00:17.066
+And, you know, he expressed the concern that it's really hard to know when and
+
+00:00:17.066 --> 00:00:18.285
+edge image is good.
+
+00:00:18.285 --> 00:00:19.020
+Right?
+
+00:00:19.020 --> 00:00:23.057
+Because the real question is what are you going to use those edges for?
+
+00:00:23.057 --> 00:00:26.388
+So I'll just say that the canny edge operator gives us
+
+00:00:26.388 --> 00:00:28.696
+better edges than other operators.
+
+00:00:28.696 --> 00:00:31.982
+Meaning that they tend to pull out the edges that you would want for
+
+00:00:31.982 --> 00:00:33.067
+future processing.
+
+00:00:33.067 --> 00:00:39.238
+Now one question, of course, is since we're doing these smooth derivatives
+
+00:00:39.238 --> 00:00:44.278
+is what size Gaussian kernel do we use in order to compute our edges?
+
+00:00:44.278 --> 00:00:49.391
+And as we said before, the different sigmas, so here we have sigma one, sigma
+
+00:00:49.391 --> 00:00:54.288
+two applied to this clown image, you can see what it does to the edge image.
+
+00:00:54.288 --> 00:00:58.124
+Large sigmas detect large scale images, small ones detect small.
+
+00:00:58.124 --> 00:01:01.410
+And the choice of sigma really depends upon the behavior that you want.
+

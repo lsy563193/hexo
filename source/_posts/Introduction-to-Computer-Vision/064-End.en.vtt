@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.320 --> 00:00:02.100
+So this is the end of the, the lesson.
+
+00:00:02.100 --> 00:00:04.190
+Mostly what we've just talked about is so
+
+00:00:04.190 --> 00:00:07.020
+you understand more about correlation and convolution.
+
+00:00:07.020 --> 00:00:10.560
+Remember, correlation we take the filter straight, convolution is it's
+
+00:00:10.560 --> 00:00:14.210
+the 180 degree rotation so it's both left, right and up and down.
+
+00:00:14.210 --> 00:00:15.900
+Most of the time if we're using symmetric,
+
+00:00:15.900 --> 00:00:18.360
+when we're using symmetric filters it doesn't matter.
+
+00:00:18.360 --> 00:00:21.590
+But if we're taking derivatives, right, so the derivative in the x direction,
+
+00:00:21.590 --> 00:00:24.620
+there's actually a positive direction versus negative direction.
+
+00:00:24.620 --> 00:00:25.500
+That's when you do have to
+
+00:00:25.500 --> 00:00:29.100
+worry a little bit about correlation versus convolution.
+
+00:00:29.100 --> 00:00:33.660
+And most importantly, filtering is going to be an important tool, sort of, in
+
+00:00:33.660 --> 00:00:38.030
+your toolbox for how to deal with images and get out the elements that you need.
+
+00:00:38.030 --> 00:00:39.610
+And we'll do more of that over the next time.
+
+00:00:39.610 --> 00:00:43.370
+And then again, much later, when we're trying to compute features over images.
+

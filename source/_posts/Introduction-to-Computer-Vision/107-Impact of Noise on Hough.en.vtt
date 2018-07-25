@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:02.980
+Couple little things to look at remaining.
+
+00:00:02.980 --> 00:00:07.280
+The first is the impact of noise on the Hough transform.
+
+00:00:07.280 --> 00:00:10.400
+So here what you can see is an image on the left where we've taken that
+
+00:00:10.400 --> 00:00:15.110
+same cartoon set of dots and we perturbed them a little bit off the line.
+
+00:00:15.110 --> 00:00:17.910
+So we've added a little bit of noise to their location.
+
+00:00:17.910 --> 00:00:19.820
+On the right, you see the Hough votes.
+
+00:00:20.900 --> 00:00:24.920
+And you'll notice that now, the peak, not so precise.
+
+00:00:24.920 --> 00:00:30.100
+And in fact, if we had very, very fine bins, we might miss that peak altogether.
+
+00:00:30.100 --> 00:00:33.500
+So, in a minute we're going to talk a little bit about changing bin sizes,
+
+00:00:33.500 --> 00:00:36.760
+with respect to noise, as a, a way of making the thing work.
+
+00:00:36.760 --> 00:00:41.270
+But, what happens is that small amounts of noise can bump you off.
+
+00:00:41.270 --> 00:00:44.420
+So by the way, one really kind of cool thing you could do,
+
+00:00:44.420 --> 00:00:48.780
+if you wanted to find sort of the general peak over here, what might you do?
+
+00:00:49.830 --> 00:00:52.760
+You might smooth this image, right?
+
+00:00:52.760 --> 00:00:55.770
+You could actually take a,
+
+00:00:55.770 --> 00:01:00.280
+say a filtering of that as an image, then find the peaks.
+
+00:01:00.280 --> 00:01:02.382
+And now you know you've moved the peaks around a little bit because
+
+00:01:02.382 --> 00:01:03.200
+you blurred it.
+
+00:01:03.200 --> 00:01:06.240
+But now you at least found the peak, and you say, I'm going to do
+
+00:01:06.240 --> 00:01:11.800
+the Hough transform again, but this time I'm going to just focus on that area.
+
+00:01:11.800 --> 00:01:15.510
+Okay, so I'm going to build a new array with much finer bins but only there, and
+
+00:01:15.510 --> 00:01:18.630
+if d or theta are outside there, I'm not even going to count those votes and
+
+00:01:18.630 --> 00:01:21.810
+that would let you go from a noisy image to, to a better one.
+
+00:01:22.920 --> 00:01:24.730
+There's actually another problem.
+
+00:01:24.730 --> 00:01:27.210
+What happens if we have a lot of noise?
+
+00:01:27.210 --> 00:01:29.950
+Like, suppose all we have is noise.
+
+00:01:29.950 --> 00:01:32.320
+Here on the left, what you've got is a bunch of points that are put down,
+
+00:01:32.320 --> 00:01:34.800
+that are just randomly put there.
+
+00:01:34.800 --> 00:01:37.565
+And on the right, everybody gets the vote.
+
+00:01:37.565 --> 00:01:38.890
+Lara Croft or whoever you want.
+
+00:01:38.890 --> 00:01:40.210
+Go ahead and vote.
+
+00:01:40.210 --> 00:01:42.810
+Turns out there were no real candidates.
+
+00:01:42.810 --> 00:01:44.660
+But maybe we don't know that.
+
+00:01:44.660 --> 00:01:46.840
+You can accidentally find peaks.
+
+00:01:46.840 --> 00:01:48.500
+So sometimes you have to worry about,
+
+00:01:48.500 --> 00:01:51.770
+is the peak that I'm finding actually real or not?
+
+00:01:51.770 --> 00:01:54.620
+It's helpful if you already know, let's suppose you know there's six lines in
+
+00:01:54.620 --> 00:01:57.030
+the picture, well then you just find the six highest peaks, but
+
+00:01:57.030 --> 00:01:59.910
+if you don't know how many are there, you have this question of, when is a peak
+
+00:01:59.910 --> 00:02:03.290
+a real peak and when is it just the accidental alignment of votes?
+

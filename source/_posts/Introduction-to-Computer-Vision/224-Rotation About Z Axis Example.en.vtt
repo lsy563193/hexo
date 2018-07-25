@@ -1,0 +1,175 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.802
+So let's take a very simple example.
+
+00:00:01.802 --> 00:00:04.346
+So here I have two frames and
+
+00:00:04.346 --> 00:00:10.778
+I'm telling you that the rotation of A to B is just about the z-axis.
+
+00:00:10.778 --> 00:00:13.414
+So the image on the right, I'm looking down on the z-axis.
+
+00:00:13.414 --> 00:00:16.283
+Now this should look very familiar to you when I ask you,
+
+00:00:16.283 --> 00:00:17.818
+what is the rotation matrix?
+
+00:00:17.818 --> 00:00:18.386
+Why?
+
+00:00:18.386 --> 00:00:19.954
+Because you did this in algebra, right?
+
+00:00:19.954 --> 00:00:23.489
+You talked about just rotation of an angle theta,
+
+00:00:23.489 --> 00:00:26.527
+about the origin when you were doing x, y.
+
+00:00:26.527 --> 00:00:29.030
+And hopefully, you remember something that looked like this.
+
+00:00:29.030 --> 00:00:33.401
+See it says, cosine theta minus sine theta, sine theta, cosine theta.
+
+00:00:33.401 --> 00:00:34.325
+Right?
+
+00:00:34.325 --> 00:00:37.461
+George Thomas who wrote the Calculus textbook that many of us use,
+
+00:00:37.461 --> 00:00:40.207
+taught it to me as Charlies little sister, sock Charlie.
+
+00:00:40.207 --> 00:00:42.998
+And that way you remember where the minus sign goes.
+
+00:00:42.998 --> 00:00:47.960
+anyway, so the point is that this matrix here is just for
+
+00:00:47.960 --> 00:00:52.086
+rotating the x and y, keeping the z constant.
+
+00:00:52.086 --> 00:00:56.901
+So if I wanted to get an arbitrary orientation, basically what I
+
+00:00:56.901 --> 00:01:01.729
+could do is a series of rotations to get things where I want them.
+
+00:01:01.729 --> 00:01:04.965
+Turns out there are many standards about how to do that.
+
+00:01:04.965 --> 00:01:09.722
+One that most of, many of us know in math and computer vision are Euler angles.
+
+00:01:09.722 --> 00:01:12.640
+Euler angles say, you rotate about Z.
+
+00:01:12.640 --> 00:01:16.645
+If, if this was Z, you would rotate, let's pretend Z is up, rotate about Z.
+
+00:01:16.645 --> 00:01:21.849
+Rotate about the new X, and then you rotate about the new again, Z.
+
+00:01:21.849 --> 00:01:22.988
+All right?
+
+00:01:22.988 --> 00:01:27.621
+For those of you who fly airplanes, I think it's heading, pitch and roll?
+
+00:01:27.621 --> 00:01:29.290
+Maybe it's boats, I don't know.
+
+00:01:29.290 --> 00:01:31.625
+Heading, you orient yourself.
+
+00:01:31.625 --> 00:01:33.727
+So, you know northwest.
+
+00:01:33.727 --> 00:01:37.598
+You pitch, that's up and down this way, and then you roll.
+
+00:01:37.598 --> 00:01:39.635
+That's rotation about this way.
+
+00:01:39.635 --> 00:01:40.167
+All right.
+
+00:01:40.167 --> 00:01:44.878
+So you're about the world Z, the new X, the new Y.
+
+00:01:44.878 --> 00:01:46.273
+There's roll, pitch and yaw.
+
+00:01:46.273 --> 00:01:48.772
+There's azimuth, elevation and I guess roll for
+
+00:01:48.772 --> 00:01:52.413
+those of you who are used to launching mortars, azimuth, el, anyway.
+
+00:01:52.413 --> 00:01:56.585
+Basically, there are these three basic matrices, rotation about the X, Y and Z.
+
+00:01:56.585 --> 00:01:58.285
+The order matters, okay?
+
+00:01:58.285 --> 00:02:02.857
+We're not going to worry too much, in fact not at all about getting that order.
+
+00:02:02.857 --> 00:02:07.240
+But what it is, is here are the three rotation matrices written as
+
+00:02:07.240 --> 00:02:09.562
+a function of the, their angles.
+
+00:02:09.562 --> 00:02:13.300
+There's the rotation about x, rotation about z, rotation about y.
+
+00:02:13.300 --> 00:02:14.235
+I put them in that order.
+
+00:02:14.235 --> 00:02:15.002
+Why?
+
+00:02:15.002 --> 00:02:18.239
+I have no idea they used to be a different order, but, but it doesn't matter.
+
+00:02:18.239 --> 00:02:22.078
+The idea is that you can rotate about each of these different axes.
+
+00:02:22.078 --> 00:02:26.580
+Now, whether you pre-multiply or post-multiply, that's an issue.
+
+00:02:26.580 --> 00:02:29.216
+So do we do the x1, then the y1 and the z1?
+
+00:02:29.216 --> 00:02:31.519
+Or the z1, the y1 and the x1?
+
+00:02:31.519 --> 00:02:35.156
+And that depends upon whether you're rotating in the new frame or the old frame.
+
+00:02:35.156 --> 00:02:38.526
+Then, is theta positive or negative?
+
+00:02:38.526 --> 00:02:41.762
+So you have to worry about these things really well when you do this.
+
+00:02:41.762 --> 00:02:46.100
+And this is why we build spacecraft in simulation before we build them for real?
+
+00:02:46.100 --> 00:02:49.292
+Because when it doesn't work in simulation, the engineer goes, says,
+
+00:02:49.292 --> 00:02:50.838
+I don't know, try negative 20.
+
+00:02:50.838 --> 00:02:54.070
+Because knowing which way your angles go is, is, is a very difficult thing.
+

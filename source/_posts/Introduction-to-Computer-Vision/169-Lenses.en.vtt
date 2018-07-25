@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.300 --> 00:00:03.630
+The rest of what we're about to do for this lesson is just talk a little bit
+
+00:00:03.630 --> 00:00:08.060
+more about some of the properties of, of image formation and lenses and cameras.
+
+00:00:08.060 --> 00:00:13.100
+Actually belongs more in a course called Computational Photography.
+
+00:00:13.100 --> 00:00:17.200
+And my colleague Irfan Essa at Georgia Tech teaches one.
+
+00:00:17.200 --> 00:00:18.550
+And there are others online.
+
+00:00:18.550 --> 00:00:22.240
+And it teaches you sort of the math of the, of, of photography.
+
+00:00:22.240 --> 00:00:24.160
+I'm only going to talk a little bit about it here.
+
+00:00:24.160 --> 00:00:26.730
+Because next time we'll sort of run back and
+
+00:00:26.730 --> 00:00:29.580
+revert to a very simplified model of imaging.
+
+00:00:29.580 --> 00:00:32.940
+And do a much more complicated notion on recovery of computer vision.
+
+00:00:32.940 --> 00:00:35.730
+So, the first thing about computation photography is well,
+
+00:00:35.730 --> 00:00:37.370
+we don't actually use pinhole cameras.
+
+00:00:37.370 --> 00:00:39.050
+Right? We use lenses.
+
+00:00:39.050 --> 00:00:41.910
+And lenses have this notion of focus.
+
+00:00:41.910 --> 00:00:46.210
+And in general, lenses are designed so that all the points at
+
+00:00:46.210 --> 00:00:51.690
+a particular distance away will all be focused to the same point on your film or
+
+00:00:51.690 --> 00:00:53.180
+on your recording medium.
+
+00:00:53.180 --> 00:00:56.400
+One of the challenges there is that another point that's at
+
+00:00:56.400 --> 00:00:59.930
+a different distance away, so here the blue point on the tree,
+
+00:00:59.930 --> 00:01:02.360
+they're not all going to be focused at that point.
+
+00:01:02.360 --> 00:01:04.239
+They're going to be sort of spread out a little bit.
+
+00:01:04.239 --> 00:01:08.090
+And in fact, that spread is referred to sometimes as the circle of confusion.
+
+00:01:08.090 --> 00:01:12.010
+It's a, if it's a single point there's a circle that it cuts out.
+
+00:01:12.010 --> 00:01:15.920
+So, the way you change where things focus and
+
+00:01:15.920 --> 00:01:20.370
+how much is in focus have to do with changing the shape of the lens.
+
+00:01:20.370 --> 00:01:23.550
+So, talk just a little bit about lenses.
+
+00:01:23.550 --> 00:01:27.600
+Sort of our slightly simplified view of lenses as follows.
+
+00:01:27.600 --> 00:01:29.580
+One is that lenses have an optical axis,
+
+00:01:29.580 --> 00:01:33.010
+along which light passes straight through unbent.
+
+00:01:33.010 --> 00:01:33.890
+The other is,
+
+00:01:33.890 --> 00:01:39.970
+is that light that comes in parallel are all bent to the same point.
+
+00:01:39.970 --> 00:01:42.270
+And that's referred to as the focal point.
+
+00:01:42.270 --> 00:01:45.530
+The other thing is in order to reduce the amount of spread of things,
+
+00:01:45.530 --> 00:01:47.670
+lenses also have an aperture.
+
+00:01:47.670 --> 00:01:50.140
+But now the aperture, instead of being just a single point,
+
+00:01:50.140 --> 00:01:52.860
+is restricting the set of rays that are coming in.
+
+00:01:52.860 --> 00:01:56.380
+It used to be that almost all lenses were cut out of parts of spheres,
+
+00:01:56.380 --> 00:01:59.910
+because if we understood the mechanics of that and were easy to make, and
+
+00:01:59.910 --> 00:02:01.220
+you could do the math.
+
+00:02:01.220 --> 00:02:04.460
+But these days there are many of what are called aspherical elements
+
+00:02:04.460 --> 00:02:06.040
+because it's all computer modeling.
+
+00:02:06.040 --> 00:02:08.090
+We'll talk about that just a little bit at the very end.
+

@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.280 --> 00:00:02.130
+All right, welcome back to Computer Vision.
+
+00:00:02.130 --> 00:00:05.272
+Today, we're going to sort of finish up our edge detection unit.
+
+00:00:05.272 --> 00:00:08.250
+Which will then be used for things that you're going to be doing later.
+
+00:00:08.250 --> 00:00:10.620
+Our last lesson we talked about the notion of edges and
+
+00:00:10.620 --> 00:00:13.920
+how they related to magnitudes of gradients and derivatives of functions.
+
+00:00:13.920 --> 00:00:16.100
+And we remembered what a gradient was in case that part of
+
+00:00:16.100 --> 00:00:17.019
+your brain had fallen off.
+
+00:00:18.070 --> 00:00:20.780
+And we talked about developing some operators that you could apply to
+
+00:00:20.780 --> 00:00:23.150
+the image that would be computing these gradients.
+
+00:00:23.150 --> 00:00:24.890
+We showed how they were sensitive to noise, and
+
+00:00:24.890 --> 00:00:28.160
+we had to do worry about filtering in order to smooth these things out.
+
+00:00:28.160 --> 00:00:32.390
+And we talked, we could sort of first filter the image.
+
+00:00:32.390 --> 00:00:33.870
+And then apply the operator.
+
+00:00:33.870 --> 00:00:35.560
+Or we could filter the operate.
+
+00:00:35.560 --> 00:00:39.700
+We could, sorry, smooth the operator and apply that to the image.
+
+00:00:39.700 --> 00:00:40.380
+And here is a,
+
+00:00:40.380 --> 00:00:44.580
+a picture just reminding that by doing this, saved us that one operation.
+
+00:00:44.580 --> 00:00:46.380
+So here is our function, f.
+
+00:00:46.380 --> 00:00:47.870
+Here is the smoothing filter.
+
+00:00:47.870 --> 00:00:49.000
+We take the derivative of that.
+
+00:00:49.000 --> 00:00:49.820
+And from then on in,
+
+00:00:49.820 --> 00:00:53.760
+we could just use that operator to find these peaks and edges.
+

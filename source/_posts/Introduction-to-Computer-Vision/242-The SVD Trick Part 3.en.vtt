@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.430 --> 00:00:04.220
+So, m equals Vy is the last column.
+
+00:00:04.220 --> 00:00:08.039
+And, here's something, just because of what we said before,
+
+00:00:08.039 --> 00:00:12.670
+these singular values of A, that's d, well the singular values of
+
+00:00:12.670 --> 00:00:19.230
+A are the square roots of the eigenvalues of A transpose A,
+
+00:00:19.230 --> 00:00:23.960
+and the columns of V are the eigenvector of A transpose A.
+
+00:00:23.960 --> 00:00:28.580
+So, I could show you this, it's actually pretty, well, I was going to say but
+
+00:00:28.580 --> 00:00:30.833
+you know, if I just write out this,
+
+00:00:30.833 --> 00:00:37.820
+since A is we know is written to UDV, transpose.
+
+00:00:37.820 --> 00:00:38.700
+Okay.
+
+00:00:38.700 --> 00:00:47.290
+A transpose A, is just that transpose, so that's VD transpose U transpose.
+
+00:00:47.290 --> 00:00:50.480
+Well, okay, U is an orthogonal vector, so
+
+00:00:50.480 --> 00:00:55.770
+U transpose is also U inverse, so that's an identity, okay, so that goes away.
+
+00:00:56.810 --> 00:01:01.650
+D transpose D, well D is a diagonal matrix, so D transpose D is just, I'll,
+
+00:01:01.650 --> 00:01:06.350
+I'm just going to call it D squared, it's just the squared values, okay?
+
+00:01:06.350 --> 00:01:07.825
+And V transpose V.
+
+00:01:07.825 --> 00:01:14.010
+So, I'm just, so I'm just going to write that A transpose A is equal to VD
+
+00:01:15.880 --> 00:01:22.300
+squared V transpose, and that is the equation of the eigen-decomposition,
+
+00:01:22.300 --> 00:01:27.180
+where V is the, eigenvectors of A transpose A.
+
+00:01:27.180 --> 00:01:29.620
+And by pulling out the very last one,
+
+00:01:29.620 --> 00:01:33.590
+I'm pulling out the eigenvector with the smallest value of A transpose A.
+
+00:01:33.590 --> 00:01:35.470
+Just to recap.
+
+00:01:35.470 --> 00:01:41.500
+Given that, what we have is Am equal 0 for some long A, what we do is we find
+
+00:01:41.500 --> 00:01:48.570
+the eigenvector of A transpose A with the smallest eigenvalue, and that's our m.
+
+00:01:48.570 --> 00:01:53.700
+That is the set of values that create the calibration matrix for us.
+
+00:01:53.700 --> 00:01:54.200
+Cool.
+

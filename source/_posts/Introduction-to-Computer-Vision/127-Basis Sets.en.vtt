@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.350 --> 00:00:01.500
+So what a basis set?
+
+00:00:01.500 --> 00:00:04.790
+So here we've lifted this from Wikipedia.
+
+00:00:04.790 --> 00:00:06.200
+Edited a little bit.
+
+00:00:06.200 --> 00:00:10.550
+So a basis set, B, well you have to talk about a vector space.
+
+00:00:10.550 --> 00:00:15.150
+So something is a basis set of a vector space, V,
+
+00:00:15.150 --> 00:00:21.600
+is a linearly independent subset of V that spans V.
+
+00:00:21.600 --> 00:00:24.070
+So let's expand those words out just a little bit.
+
+00:00:24.070 --> 00:00:27.970
+So let's suppose that we have B that's just these vectors v1 through vn,
+
+00:00:27.970 --> 00:00:31.590
+and it's just some finite subset over this field.
+
+00:00:31.590 --> 00:00:34.450
+So field comes from mathematics, but
+
+00:00:34.450 --> 00:00:36.940
+let's just talk about the realer complex number.
+
+00:00:36.940 --> 00:00:41.390
+Okay, then a basis set B if it satisfies the following conditions.
+
+00:00:41.390 --> 00:00:43.785
+So linear independence.
+
+00:00:43.785 --> 00:00:48.580
+Okay, basically means that if I have some different constants, a1 through an, so
+
+00:00:48.580 --> 00:00:50.400
+these are constants.
+
+00:00:50.400 --> 00:00:55.640
+If I take a constant times each of the vectors, I've got a different constant,
+
+00:00:55.640 --> 00:00:58.070
+and if the sum of those is 0.
+
+00:00:58.070 --> 00:01:01.860
+Then it has to be the case that all of those constants were 0.
+
+00:01:01.860 --> 00:01:04.310
+This is no different if you think of this in two dimensions.
+
+00:01:04.310 --> 00:01:07.860
+If I have two vectors that are not in the same direction,
+
+00:01:07.860 --> 00:01:12.230
+then if I combine them, right, I get this answer like that.
+
+00:01:12.230 --> 00:01:17.820
+Well the only way that distance can be 0 is if both of the coefficients are 0.
+
+00:01:17.820 --> 00:01:19.830
+So that's linear independence.
+
+00:01:19.830 --> 00:01:23.210
+And then there's what's referred to as the spanning property.
+
+00:01:23.210 --> 00:01:26.440
+Okay? That, remember it spans this vector field.
+
+00:01:26.440 --> 00:01:31.830
+And what that means is that for any vector in that vector space,
+
+00:01:31.830 --> 00:01:36.470
+I can create it by just some linear sum of the basis set.
+
+00:01:36.470 --> 00:01:39.580
+Then again, you know, basically the idea is, so we normally think of
+
+00:01:39.580 --> 00:01:42.790
+a basis set as being perpendicular, but it doesn't have to be.
+
+00:01:42.790 --> 00:01:47.450
+Right? So if I've got this and I've got that as my two basis elements and
+
+00:01:47.450 --> 00:01:50.220
+I want to create a vector that's like that.
+
+00:01:50.220 --> 00:01:52.840
+Then, basically, what I have to do is I have to take some multiple of
+
+00:01:52.840 --> 00:01:57.415
+the horizontal plus some multiple of the vertical we'll get me to that picture.
+
+00:01:57.415 --> 00:02:01.880
+By the way, most of you are used to basis sets being orthogonal.
+
+00:02:01.880 --> 00:02:05.340
+Okay? So you know, x, y.
+
+00:02:06.620 --> 00:02:11.008
+All we said they had to be independent, okay?
+
+00:02:11.008 --> 00:02:15.150
+Now, it's helpful if basis sets are orthogonal, we'll talk more about it
+
+00:02:15.150 --> 00:02:18.080
+in a minute, because what it means by orthogonal is in order for
+
+00:02:18.080 --> 00:02:21.580
+me to figure out how much of the x there is in a vector.
+
+00:02:21.580 --> 00:02:25.290
+I don't have to worry at all about the y because the y amount and the,
+
+00:02:25.290 --> 00:02:28.710
+it doesn't affect the x amount because they are orthogonal.
+
+00:02:28.710 --> 00:02:30.660
+Another way of saying that is if I take a vector and
+
+00:02:30.660 --> 00:02:33.850
+I take a docked product with the x direction I get one value and
+
+00:02:33.850 --> 00:02:36.410
+a docked product in the y direction I get another value.
+
+00:02:36.410 --> 00:02:41.870
+Well, if I take each of those dot products times their basis vector and
+
+00:02:41.870 --> 00:02:44.140
+sum them up I get back the, the new vector.
+
+00:02:44.140 --> 00:02:46.230
+And that's just because x and
+
+00:02:46.230 --> 00:02:50.790
+y are orthogonal, and that's helpful if your, if your basis sets are orthogonal.
+
+00:02:50.790 --> 00:02:53.600
+But technically they don't have to be, they just have to be independent.
+
+00:02:53.600 --> 00:02:55.090
+That'll let you reach any vector.
+

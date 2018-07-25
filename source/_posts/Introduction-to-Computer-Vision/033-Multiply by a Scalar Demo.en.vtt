@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.300 --> 00:00:05.410
+In the previous example, we saw how we can divide an image by a number.
+
+00:00:05.410 --> 00:00:09.120
+Dividing by 2 is the same as multiplying by 0.5.
+
+00:00:09.120 --> 00:00:14.040
+And the order of writing these two doesn't matter either.
+
+00:00:14.040 --> 00:00:17.700
+The constant 0.5 is known as a scalar.
+
+00:00:17.700 --> 00:00:22.390
+This potentially comes from the fact that it scales the image values.
+
+00:00:22.390 --> 00:00:25.700
+Let's see what the result looks like compared to the original image.
+
+00:00:27.020 --> 00:00:29.670
+Halve the intensity values, clearly darker.
+
+00:00:31.540 --> 00:00:37.100
+Note that we can potentially multiply by any number, even greater than 1.
+
+00:00:37.100 --> 00:00:42.370
+Multiplying the intensity values by 1.5 makes the image brighter.
+
+00:00:42.370 --> 00:00:46.290
+And we see the same washed out effect in certain areas.
+
+00:00:46.290 --> 00:00:52.140
+This is due to the image values above 255 getting truncated at that limit.
+
+00:00:52.140 --> 00:00:56.460
+In Octave, we can write a function to perform a common operation.
+
+00:00:56.460 --> 00:00:58.610
+Let's turn the scaling into a function.
+
+00:00:59.630 --> 00:01:04.150
+We write a function by typing in the word function,
+
+00:01:04.150 --> 00:01:06.920
+followed by a variable name for the return value.
+
+00:01:07.960 --> 00:01:13.925
+Then an equal sign, the name of the function, and parameters in parentheses.
+
+00:01:14.960 --> 00:01:17.760
+This is followed by the body of the function.
+
+00:01:17.760 --> 00:01:22.950
+In this case, we want the result to be the product of value and image.
+
+00:01:22.950 --> 00:01:26.800
+To ensure that we are performing element-wise multiplication,
+
+00:01:26.800 --> 00:01:29.420
+let's change the star to a dot star.
+
+00:01:29.420 --> 00:01:33.990
+This doesn't make any difference when one of the values is scalar, but
+
+00:01:33.990 --> 00:01:37.010
+when the two quantities being multiplied are vectors or
+
+00:01:37.010 --> 00:01:41.530
+matrices, then star and dot star produce different results.
+
+00:01:42.550 --> 00:01:45.890
+We end the function by typing endfunction.
+
+00:01:45.890 --> 00:01:48.310
+Let us load an image and try out this function.
+
+00:01:49.320 --> 00:01:50.640
+And there is the scaled image.
+

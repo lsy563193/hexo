@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.190 --> 00:00:03.220
+So let's take a look at some spectra of some real images and
+
+00:00:03.220 --> 00:00:04.870
+some examples, okay?
+
+00:00:04.870 --> 00:00:06.580
+So here's one.
+
+00:00:06.580 --> 00:00:09.920
+Now, if you remember, this is Lena from way back in 1972,
+
+00:00:09.920 --> 00:00:14.110
+and this is no relative of Lena whatsoever, okay?
+
+00:00:14.110 --> 00:00:17.310
+You'll notice that, just looking at the image, you know,
+
+00:00:17.310 --> 00:00:21.910
+there's a lot of power in the middle and then stuff falls out towards the edges.
+
+00:00:21.910 --> 00:00:25.112
+And that's to like I'd said, it's often the case,
+
+00:00:25.112 --> 00:00:28.730
+that natural images have similar power spectra.
+
+00:00:28.730 --> 00:00:33.320
+And what really matters for reconstructing the image would be the phase.
+
+00:00:33.320 --> 00:00:37.070
+We're not doing reconstruction here, we're only looking at the magnitude.
+
+00:00:37.070 --> 00:00:40.990
+So suppose I wanted to get rid of the high-frequency content.
+
+00:00:41.990 --> 00:00:43.290
+Well here's what you could do, and
+
+00:00:43.290 --> 00:00:46.750
+we'll talk about using the inverse Fourier transform next time.
+
+00:00:46.750 --> 00:00:50.990
+But I could take Lena, I could take her power spectrum.
+
+00:00:50.990 --> 00:00:56.270
+I could remove all the stuff out here, and then I could reconstruct it.
+
+00:00:56.270 --> 00:01:00.750
+You can see that there's all these ugly lines in here, okay?
+
+00:01:00.750 --> 00:01:02.880
+That's what's referred to as ringing.
+
+00:01:02.880 --> 00:01:07.300
+This ringing happens because this actually doesn't have any high frequency at
+
+00:01:07.300 --> 00:01:08.380
+all, but
+
+00:01:08.380 --> 00:01:13.250
+you actually needed the high frequency to smooth out those little edges.
+
+00:01:13.250 --> 00:01:16.650
+Okay, and so when I remove them, I end up with having just these little ripples,
+
+00:01:16.650 --> 00:01:18.250
+and that's referred to as ringing.
+
+00:01:18.250 --> 00:01:22.090
+And here's an example of doing the other thing, we take Lena, okay?
+
+00:01:22.090 --> 00:01:26.050
+We remove the stuff out of the middle so you can see this thing zeros there, and
+
+00:01:26.050 --> 00:01:29.610
+you'll notice that what's left here is essentially an edge image.
+
+00:01:29.610 --> 00:01:32.480
+And if you think about that,
+
+00:01:32.480 --> 00:01:37.020
+the high frequency components are giving you where the edges are, 'kay?
+
+00:01:37.020 --> 00:01:38.090
+And we'll, we'll also look a little bit
+
+00:01:38.090 --> 00:01:40.340
+more about that when we talk about aliasing.
+
+00:01:40.340 --> 00:01:42.390
+Couple more things real quick here.
+
+00:01:42.390 --> 00:01:44.380
+Remember our sharpening filter?
+
+00:01:44.380 --> 00:01:48.610
+So our sharpening filter sharpened the image by subtracting,
+
+00:01:48.610 --> 00:01:52.260
+by giving you twice the original image, minus a little bit of blurring.
+
+00:01:52.260 --> 00:01:55.270
+So what's happened here is this is our Lena again.
+
+00:01:55.270 --> 00:01:59.070
+And if you compare this one to this one, you'll notice that there's a little bit
+
+00:01:59.070 --> 00:02:01.820
+more bright stuff out here than there was there.
+
+00:02:01.820 --> 00:02:05.840
+And you'll notice that this picture is, in fact, sharper than that picture, and
+
+00:02:05.840 --> 00:02:09.060
+that's because we've accentuated the high frequencies.
+
+00:02:09.060 --> 00:02:10.100
+And one more here.
+
+00:02:10.100 --> 00:02:11.360
+So here's a cool texture.
+
+00:02:11.360 --> 00:02:14.980
+Here's our brick texture, right, that has mostly these lines here but
+
+00:02:14.980 --> 00:02:16.260
+a few of these there.
+
+00:02:16.260 --> 00:02:20.380
+And what you can see is you basically have just the verticals here,
+
+00:02:20.380 --> 00:02:21.440
+horizontals there.
+
+00:02:21.440 --> 00:02:27.360
+Okay. And then in this picture, okay, you've got all these angled lines and
+
+00:02:27.360 --> 00:02:31.092
+that's what's showing up as all these angled sinusoids in here.
+

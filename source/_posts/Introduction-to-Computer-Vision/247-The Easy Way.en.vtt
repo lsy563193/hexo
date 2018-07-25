@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.410 --> 00:00:03.610
+But suppose you actually wanted to like do something useful.
+
+00:00:03.610 --> 00:00:06.040
+What would be the easy way of doing that?
+
+00:00:06.040 --> 00:00:08.400
+Well the easy way is I just give you the formula.
+
+00:00:08.400 --> 00:00:15.090
+So, if M is equal to Q b as I said before, then, the center
+
+00:00:15.090 --> 00:00:19.920
+is just found by taking this quantity above that quantity in a vector.
+
+00:00:19.920 --> 00:00:21.040
+So this is a,
+
+00:00:21.040 --> 00:00:25.360
+remember Q is a three by three, so minus Q inverse is a three by three,
+
+00:00:25.360 --> 00:00:30.960
+b is a three by one, so this is a three by one, and then I add the one there,
+
+00:00:30.960 --> 00:00:35.580
+that is the vector that is the camera center in the world coordinate frame.
+
+00:00:35.580 --> 00:00:39.380
+So if I made, you know, the corner of that table that you can't see,
+
+00:00:39.380 --> 00:00:43.550
+there's really a corner over there, if I said that's the origin, right, and this
+
+00:00:43.550 --> 00:00:50.450
+way is x, and, this way is y, and that way is z, and then I have a camera here.
+
+00:00:50.450 --> 00:00:53.150
+And I, took a look at a bunch of points here, and
+
+00:00:53.150 --> 00:00:57.370
+I gave you the value of those points in this coordinate system, and
+
+00:00:57.370 --> 00:01:01.650
+then I located those points, in my image plane.
+
+00:01:01.650 --> 00:01:05.016
+And then I did all that math to compute that M vector, and that,
+
+00:01:05.016 --> 00:01:07.460
+that M matrix, and then I pulled out the three by three and
+
+00:01:07.460 --> 00:01:10.440
+called that Q and three by one and called that b.
+
+00:01:10.440 --> 00:01:16.890
+And then I took minus Q inverse times b over one, that, vector would
+
+00:01:16.890 --> 00:01:22.080
+be the actual location of this camera in that coord, world coordinate system.
+
+00:01:22.080 --> 00:01:23.420
+Pretty, pretty cool.
+

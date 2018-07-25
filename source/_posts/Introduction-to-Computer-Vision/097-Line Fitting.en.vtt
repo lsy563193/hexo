@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.340 --> 00:00:02.220
+Here's a simple example, okay?
+
+00:00:02.220 --> 00:00:02.810
+Line fitting.
+
+00:00:02.810 --> 00:00:07.520
+And you might wonder, you know, what's, why might I want to find lines?
+
+00:00:07.520 --> 00:00:10.840
+Well, you know, as the example shows here on the left, you might want to
+
+00:00:10.840 --> 00:00:15.410
+know that your chips are seated correctly, so you see the lines on the chips.
+
+00:00:15.410 --> 00:00:18.290
+Or this is the tower again for the University of Texas, and
+
+00:00:18.290 --> 00:00:20.880
+you find the edges, and you might just want to see whether or
+
+00:00:20.880 --> 00:00:23.630
+not you might be in the State Legislature, and you want to make sure
+
+00:00:23.630 --> 00:00:26.400
+the tower at the University of Texas is not leaning to the left.
+
+00:00:27.670 --> 00:00:29.060
+That's a joke for some of you.
+
+00:00:29.060 --> 00:00:29.900
+But we're going to assume, for
+
+00:00:29.900 --> 00:00:32.580
+now, that finding lines is something we want to do.
+
+00:00:32.580 --> 00:00:34.800
+So you might be wondering, well, wait a minute,
+
+00:00:34.800 --> 00:00:37.980
+we just spent a long time learning about how to find edges.
+
+00:00:37.980 --> 00:00:38.550
+Aren't we done?
+
+00:00:38.550 --> 00:00:40.570
+Can't we just find the edges?
+
+00:00:40.570 --> 00:00:43.100
+Well, if that were true, I wouldn't be standing here.
+
+00:00:43.100 --> 00:00:45.300
+So let's talk about the difficulty of line finding.
+
+00:00:45.300 --> 00:00:48.920
+So here's that same University of Texas tower, again,
+
+00:00:48.920 --> 00:00:52.530
+courtesy of Christian Gromen, and we've run an edge operator.
+
+00:00:52.530 --> 00:00:55.810
+And what I've done here is, I've pulled up a part of it just so
+
+00:00:55.810 --> 00:00:57.910
+we can talk about some of the phenomenon.
+
+00:00:57.910 --> 00:01:02.290
+So problem number one is that there's lots of points here that have nothing to
+
+00:01:02.290 --> 00:01:02.960
+do with the lines.
+
+00:01:04.430 --> 00:01:07.530
+So all these little edge points down here, these have nothing to do with
+
+00:01:07.530 --> 00:01:11.950
+the lines, so we have to be able to dealt with them efficiently and rapidly.
+
+00:01:13.260 --> 00:01:16.700
+Second, only parts of the lines are actually detected.
+
+00:01:16.700 --> 00:01:20.850
+So for example, here you can see that there's this big gap in the line.
+
+00:01:20.850 --> 00:01:24.300
+Even though what we'd really like to do is say that we found the entire line.
+
+00:01:24.300 --> 00:01:29.130
+And finally, there's noise and corruption actually where we do find the edge.
+
+00:01:29.130 --> 00:01:32.290
+So over here, you'll notice that in these lines across here,
+
+00:01:32.290 --> 00:01:35.120
+there's all this stuff that doesn't exactly lie on the line.
+
+00:01:35.120 --> 00:01:37.790
+You can see that pixels are jumping around here, as well.
+
+00:01:37.790 --> 00:01:40.720
+So we have to be able to go from these noisy measurements to
+
+00:01:40.720 --> 00:01:43.330
+where the edges are in order to find the actual lines.
+

@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.320 --> 00:00:04.880
+So the first question to ask is, well, why multiple views?
+
+00:00:04.880 --> 00:00:06.280
+Obviously, structure and
+
+00:00:06.280 --> 00:00:11.090
+depth are fundamentally inherently ambiguous from a single view.
+
+00:00:11.090 --> 00:00:13.620
+Remember, we're projecting from 3D to 2D?
+
+00:00:13.620 --> 00:00:15.580
+When we do that, we lose information.
+
+00:00:15.580 --> 00:00:19.328
+So here's an example of a man pushing the Leaning Tower of Pisa over to make it
+
+00:00:19.328 --> 00:00:20.540
+lean even further.
+
+00:00:20.540 --> 00:00:24.256
+And either he's very large, the building's very small, or
+
+00:00:24.256 --> 00:00:27.628
+there's an ambiguity when you project from 3D to 2D.
+
+00:00:27.628 --> 00:00:30.624
+Or how about, so those of us who grew up in the States who were a fan of,
+
+00:00:30.624 --> 00:00:32.670
+It's a Great Pumpkin, Charlie Brown.
+
+00:00:32.670 --> 00:00:34.700
+So that might be a picture that looks like this.
+
+00:00:34.700 --> 00:00:36.620
+Which would be really a great pumpkin.
+
+00:00:36.620 --> 00:00:40.430
+But of course, what's really going on here is that the location of the camera
+
+00:00:40.430 --> 00:00:45.930
+makes it such that this picture just appears like the pumpkin is very large.
+
+00:00:45.930 --> 00:00:47.150
+And what's fundamental problem?
+
+00:00:47.150 --> 00:00:50.910
+Well, the fundamental problem comes for, from perspective projection.
+
+00:00:50.910 --> 00:00:52.830
+Here we have an optical center.
+
+00:00:52.830 --> 00:00:53.410
+All right.
+
+00:00:53.410 --> 00:00:59.720
+And we have several points such as P1 and P2 projecting along the same ray.
+
+00:00:59.720 --> 00:01:03.252
+And of course, because they project along the same ray,
+
+00:01:03.252 --> 00:01:06.133
+they land in the same spot P1 prime P2 prime.
+
+00:01:06.133 --> 00:01:08.702
+And so that's where the ambiguity comes from.
+
+00:01:08.702 --> 00:01:12.474
+And the question is how to figure out where P1 and P2 really are.
+
+00:01:12.474 --> 00:01:15.165
+And the trick, of course, is going to be the look at a different camera.
+

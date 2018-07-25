@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.230 --> 00:00:04.110
+So here, I have just I think this is a figure from Forsythe and Ponds.
+
+00:00:04.110 --> 00:00:05.070
+Maybe it's from Salinski.
+
+00:00:05.070 --> 00:00:06.600
+I hope their lawyers aren't watching.
+
+00:00:06.600 --> 00:00:07.500
+It's somebody.
+
+00:00:07.500 --> 00:00:10.220
+And basically, it talks about how you can transform an image.
+
+00:00:10.220 --> 00:00:12.650
+And so on the bottom left hand corner, you have a square.
+
+00:00:12.650 --> 00:00:14.700
+And you can see, you could just translate it.
+
+00:00:14.700 --> 00:00:16.040
+They, they call it Euclidean, but
+
+00:00:16.040 --> 00:00:19.470
+that's just a rigid transformation where you have the rotation translation.
+
+00:00:19.470 --> 00:00:22.320
+You have similarity, affine, and projective, and
+
+00:00:22.320 --> 00:00:25.640
+we're going to talk about each of those in terms of the mathematics.
+
+00:00:25.640 --> 00:00:27.180
+So let's take the simplest example.
+
+00:00:27.180 --> 00:00:31.060
+So the simpi, the simplest example here is translation.
+
+00:00:31.060 --> 00:00:34.910
+So we have an x and, and by the way in, in this cool little figure.
+
+00:00:34.910 --> 00:00:38.670
+So the original x and y is the green box, and take our x and
+
+00:00:38.670 --> 00:00:41.440
+we just add some translation vector to it.
+
+00:00:41.440 --> 00:00:44.500
+And we saw that it was an easy way to describe this using
+
+00:00:44.500 --> 00:00:49.740
+homogeneous coordinates where we just do xy and 1, and we add 1 to the end.
+
+00:00:49.740 --> 00:00:54.750
+And then we can just have a transformation matrix here, which is just made up of
+
+00:00:54.750 --> 00:00:58.600
+an identity plus the translation vector that we add from over here.
+
+00:01:00.110 --> 00:01:04.280
+And to keep the whole thing in homogeneous coordinates, we would just say we
+
+00:01:04.280 --> 00:01:07.960
+would make a, instead of a 2 by 3, would make this a 3 by 3.
+
+00:01:07.960 --> 00:01:11.230
+So that 0 vector now is on the bottom row.
+
+00:01:11.230 --> 00:01:15.450
+And what we do is we get from one homogeneous vector to another.
+
+00:01:15.450 --> 00:01:15.980
+Okay?
+
+00:01:15.980 --> 00:01:17.610
+So that would be translation.
+
+00:01:17.610 --> 00:01:21.290
+By the way, because these are now just matrix multiplications,
+
+00:01:21.290 --> 00:01:23.030
+we could chain these transformations.
+

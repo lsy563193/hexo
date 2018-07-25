@@ -1,0 +1,246 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.720 --> 00:00:06.320
+As I mentioned, the core of the doing
+of this class are the problem sets.
+
+00:00:06.320 --> 00:00:07.779
+It says 8.
+
+00:00:07.779 --> 00:00:11.394
+The first one is a very simple thing
+just to make sure that you can get your
+
+00:00:11.394 --> 00:00:15.080
+images in, do some basic manipulation
+of the pixels, and submit them.
+
+00:00:15.080 --> 00:00:18.530
+It's a way of making sure the mechanics
+of everything are working for you.
+
+00:00:18.530 --> 00:00:22.120
+Then problem sets one through seven
+are actually to implement a variety of
+
+00:00:22.120 --> 00:00:25.010
+the algorithms that we talk
+about sometimes some simplified
+
+00:00:25.010 --> 00:00:26.290
+versions of them.
+
+00:00:26.290 --> 00:00:28.410
+Apply them to imagery
+that we'll give you and
+
+00:00:28.410 --> 00:00:29.930
+see what sort of results you can get.
+
+00:00:31.680 --> 00:00:35.140
+A quick thing also,
+we'll be using Piazza.
+
+00:00:35.140 --> 00:00:39.410
+Piazza is a social network thing for
+academics.
+
+00:00:39.410 --> 00:00:40.160
+I've been using this for
+
+00:00:40.160 --> 00:00:43.480
+a couple of years now in my
+class here at Georgia Tech.
+
+00:00:43.480 --> 00:00:44.670
+Is a great way for
+
+00:00:44.670 --> 00:00:47.460
+students to communicate about
+whatever's bothering them.
+
+00:00:47.460 --> 00:00:48.363
+Now what's bothering them?
+
+00:00:48.363 --> 00:00:50.380
+It's always the problem sets.
+
+00:00:50.380 --> 00:00:53.620
+Every now and then it's the lecturer but
+mostly it's the problem sets.
+
+00:00:53.620 --> 00:00:56.650
+And you'll see, you know, Piazza used
+and then all of the sudden the problem
+
+00:00:56.650 --> 00:01:00.190
+set is due and Piazza use goes like
+this and then it goes like that.
+
+00:01:00.190 --> 00:01:03.679
+So I encourage you strongly
+to use the forums.
+
+00:01:04.690 --> 00:01:05.880
+If you have a question,
+
+00:01:05.880 --> 00:01:09.580
+almost certainly somebody else
+has that same question too.
+
+00:01:09.580 --> 00:01:11.550
+So go ahead and post it, and
+somebody's going to say,
+
+00:01:11.550 --> 00:01:13.050
+man I'm glad you asked that question.
+
+00:01:13.050 --> 00:01:17.059
+Or, you may find they already asked
+that question, and either or I or
+
+00:01:17.059 --> 00:01:19.789
+somebody else has already
+answered that question.
+
+00:01:19.789 --> 00:01:22.810
+So I encourage you to
+actively use that forum.
+
+00:01:24.590 --> 00:01:27.450
+Whenever you have a sharing system
+like this, people always say, well,
+
+00:01:27.450 --> 00:01:30.450
+how much exactly are we
+allowed to share?
+
+00:01:30.450 --> 00:01:35.360
+And it's always a challenge, and
+here's what I tell students.
+
+00:01:35.360 --> 00:01:38.200
+Full blackboard or
+whiteboard collaboration is fine.
+
+00:01:38.200 --> 00:01:41.830
+So if you guys want to stand or talk to
+each other in front of a whiteboard and
+
+00:01:41.830 --> 00:01:43.790
+sketch out how the code works and
+
+00:01:43.790 --> 00:01:48.150
+what you had to do and how you had to
+change the parameters, that's great.
+
+00:01:48.150 --> 00:01:51.580
+What I want you to do, though,
+is write your own code.
+
+00:01:51.580 --> 00:01:55.790
+So, if you're posting an answer to
+Piazza, don't post big chunks of code,
+
+00:01:55.790 --> 00:01:59.040
+because it's just going to be too
+tempting for somebody to just take that.
+
+00:01:59.040 --> 00:02:01.840
+Post sort of what you had to do.
+
+00:02:01.840 --> 00:02:03.070
+If you don't write your own code,
+
+00:02:03.070 --> 00:02:08.070
+you won't understand why it is that
+certain things make things happen.
+
+00:02:08.070 --> 00:02:10.407
+I every now and
+then get a complaint from people,
+
+00:02:10.407 --> 00:02:13.903
+why is it that we're implementing
+things that just exist in libraries?
+
+00:02:13.903 --> 00:02:16.881
+And the real answer is,
+"so when it doesn't work,
+
+00:02:16.881 --> 00:02:19.330
+you'll know why." Because guess what?
+
+00:02:19.330 --> 00:02:23.590
+It often won't work in the library
+either or won't work as well.
+
+00:02:23.590 --> 00:02:26.580
+And then you'll have no
+understanding of what goes on.
+
+00:02:26.580 --> 00:02:29.910
+So, yes some of what you will do
+will say you're not allowed to use
+
+00:02:29.910 --> 00:02:31.500
+now that function A, B or C.
+
+00:02:31.500 --> 00:02:33.440
+We'll talk about that in a minute.
+
+00:02:33.440 --> 00:02:36.410
+And it's not just because it's good for
+your health right it's not
+
+00:02:36.410 --> 00:02:38.870
+just like you're eating spinach,
+it actually is important for
+
+00:02:38.870 --> 00:02:41.590
+you to develop some understanding
+as to how these algorithms work.
+
+00:02:42.920 --> 00:02:44.640
+There will be a final exam.
+
+00:02:44.640 --> 00:02:46.380
+It is not designed to be hard.
+
+00:02:46.380 --> 00:02:51.040
+It is simply designed to force you to
+go back and look at the material and
+
+00:02:51.040 --> 00:02:55.110
+just for a second time get it into your
+head, and it also allows us to ask some
+
+00:02:55.110 --> 00:02:58.010
+questions about stuff that didn't
+show up on the problem sets.
+
+00:02:58.010 --> 00:03:01.060
+Normally when I give the exam
+here it's a three-hour slot and
+
+00:03:01.060 --> 00:03:02.890
+it takes people an hour.
+
+00:03:02.890 --> 00:03:06.990
+But it just basically
+covers the base material.
+
+00:03:06.990 --> 00:03:12.040
+The grading, current rubric is
+that 85% of the grade is based
+
+00:03:12.040 --> 00:03:16.380
+upon the problem sets, which means 15%
+of the grade is based upon the final,
+
+00:03:16.380 --> 00:03:18.480
+and the other 10% of the grade
+is based upon how I feel.
+

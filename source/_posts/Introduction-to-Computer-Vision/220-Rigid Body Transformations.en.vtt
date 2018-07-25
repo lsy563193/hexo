@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.006 --> 00:00:02.460
+Well, you can e, easily think about it this way.
+
+00:00:03.460 --> 00:00:06.650
+Let's define a rigid body as just a collection of points whose
+
+00:00:06.650 --> 00:00:09.880
+relative positions to each other can't change.
+
+00:00:09.880 --> 00:00:11.510
+And, for the mathematicians in the audience,
+
+00:00:11.510 --> 00:00:14.400
+we're going to pretend that's a well-defined statement, okay?
+
+00:00:14.400 --> 00:00:15.380
+Or, you can think of it as a box.
+
+00:00:15.380 --> 00:00:20.120
+So, the first thing I can do is I can located that box in 3D.
+
+00:00:20.120 --> 00:00:21.990
+I can take one point of that box,
+
+00:00:21.990 --> 00:00:26.330
+say the corner here, and figure out the x, y and z location of that box.
+
+00:00:26.330 --> 00:00:28.080
+So, that's three degrees of freedom.
+
+00:00:28.080 --> 00:00:30.820
+Then, I can take some other point on that box,
+
+00:00:30.820 --> 00:00:33.310
+let's say the corner, and I can move it around.
+
+00:00:33.310 --> 00:00:36.800
+Now, I can't change it's location space arbitrarily because I'm
+
+00:00:36.800 --> 00:00:37.970
+holding this point fixed.
+
+00:00:37.970 --> 00:00:41.740
+So, essentially, this corner can move around on the sphere.
+
+00:00:41.740 --> 00:00:46.130
+So, this point here can be moved around anywhere on the sphere.
+
+00:00:46.130 --> 00:00:49.850
+So rot, this is supposed to be like rotated backwards this way, all right?
+
+00:00:49.850 --> 00:00:51.950
+And just the way you can think of on a globe.
+
+00:00:51.950 --> 00:00:55.460
+&gt;From the middle, there's a latitude and longitude to get any location.
+
+00:00:55.460 --> 00:00:59.100
+There's two degrees of freedom of a vector's direction.
+
+00:00:59.100 --> 00:01:00.920
+So, that's another two degrees of freedom.
+
+00:01:00.920 --> 00:01:02.920
+So, we're up to five.
+
+00:01:02.920 --> 00:01:07.900
+And finally, once I have this vector specified, I can rotate,
+
+00:01:07.900 --> 00:01:09.980
+I can spin about that vector.
+
+00:01:09.980 --> 00:01:14.150
+So, the cube here, as indicated by this fancy Microsoft PowerPoint arrow that's
+
+00:01:14.150 --> 00:01:16.950
+in here, we can rotate it about that diagonal.
+
+00:01:16.950 --> 00:01:18.830
+So, that's one more degree of freedom.
+
+00:01:18.830 --> 00:01:21.850
+So, that's why there are six degrees of freedom for a rigid body.
+
+00:01:21.850 --> 00:01:25.680
+I'm going to assume most of you knew that already, but there you go.
+
+00:01:25.680 --> 00:01:27.040
+That's why there's a fast forward button.
+

@@ -1,0 +1,223 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.450 --> 00:00:04.280
+So let's now compute this homography for the, the Great Wall of China.
+
+00:00:04.280 --> 00:00:06.510
+Actually Steve did this a really long time ago,
+
+00:00:06.510 --> 00:00:09.490
+but I'm going to pretend that we're doing it right now.
+
+00:00:09.490 --> 00:00:11.830
+So in order to compute homography, the first thing we need,
+
+00:00:11.830 --> 00:00:14.160
+is we need sets of corresponding points all right?
+
+00:00:14.160 --> 00:00:18.027
+So on the left, we have the original points, x1, y1, x2, y2,
+
+00:00:18.027 --> 00:00:19.310
+all the way up to xN yN.
+
+00:00:19.310 --> 00:00:20.846
+We have a bunch of points, and
+
+00:00:20.846 --> 00:00:24.419
+on the right, we have the corresponding points in the second image.
+
+00:00:24.419 --> 00:00:26.756
+X1 prime, Y1 prime, X2, and for
+
+00:00:26.756 --> 00:00:31.585
+now, we're going to assume that these points have been found by that tried and
+
+00:00:31.585 --> 00:00:35.250
+true method of paying somebody else to click on them.
+
+00:00:35.250 --> 00:00:38.020
+That's called Amazon Mechanical Turk or something where, or
+
+00:00:38.020 --> 00:00:40.710
+maybe you're an undergraduate, and your advisor's beating you up, and
+
+00:00:40.710 --> 00:00:43.670
+so you have to do all the clicking, or maybe you're doing this for
+
+00:00:43.670 --> 00:00:47.420
+a problem set for a computer vision class and you have to do the clicking.
+
+00:00:47.420 --> 00:00:51.370
+But basically is somehow you've identified corresponding points between
+
+00:00:51.370 --> 00:00:52.880
+the two images.
+
+00:00:52.880 --> 00:00:56.110
+So, what we have to do now, is we have to solve for this equation, right?
+
+00:00:56.110 --> 00:00:59.990
+We know that the relationship between p and p prime is going to
+
+00:00:59.990 --> 00:01:05.379
+be this homogeneous coordinate, transform, or homogenous, homography H.
+
+00:01:05.379 --> 00:01:08.300
+So how do we solve for H given some number of points?
+
+00:01:08.300 --> 00:01:10.970
+Well, there are two ways.
+
+00:01:10.970 --> 00:01:13.870
+The first way is the non-homogeneous.
+
+00:01:13.870 --> 00:01:16.010
+Boo, hiss, all right.
+
+00:01:16.010 --> 00:01:19.250
+Going back here, even though there are nine variables in the,
+
+00:01:19.250 --> 00:01:22.410
+in the, matrix, we know there are only eight degrees of
+
+00:01:22.410 --> 00:01:24.530
+freedom because it's only known up to a scale value.
+
+00:01:24.530 --> 00:01:30.090
+So we can set, for example, the last entry to one, all right?
+
+00:01:30.090 --> 00:01:35.270
+Well then, we can set up a linear set of equations, Equals b, where,
+
+00:01:35.270 --> 00:01:43.040
+the vector now is of h where it's going to be a, b, c, d, e, f, g, h.
+
+00:01:43.040 --> 00:01:44.540
+But this h isn't the same as that h.
+
+00:01:44.540 --> 00:01:49.790
+This is the h that's all the elements of the big matrix h,
+
+00:01:49.790 --> 00:01:52.740
+and this is dumb little h.
+
+00:01:52.740 --> 00:01:55.380
+Okay, so we got a through f, pretty smart, and dumb little h,
+
+00:01:55.380 --> 00:01:57.080
+and then g is in there somewhere.
+
+00:01:57.080 --> 00:01:57.590
+You, you get it.
+
+00:01:57.590 --> 00:01:59.190
+There's eight unknowns.
+
+00:01:59.190 --> 00:02:01.280
+Okay, if I knew the first eight letters of the Greek alphabet I
+
+00:02:01.280 --> 00:02:02.660
+would have made them that way.
+
+00:02:02.660 --> 00:02:04.710
+But basically, I've got eight unknowns.
+
+00:02:04.710 --> 00:02:09.680
+As long as I have four points, I would have eight equations, why?
+
+00:02:09.680 --> 00:02:10.669
+Because I get an equation for
+
+00:02:10.669 --> 00:02:14.790
+the X, an equation for the Y for each point, corresponding point.
+
+00:02:14.790 --> 00:02:20.300
+But I really because my location, locating of the points won't be precise.
+
+00:02:20.300 --> 00:02:23.320
+I would be better if I had a whole bunch more points then I would do a least
+
+00:02:23.320 --> 00:02:24.550
+square solution.
+
+00:02:24.550 --> 00:02:30.330
+And you would solve for the minimum of the magnitude of Minus b squared,
+
+00:02:30.330 --> 00:02:33.840
+the minimum of that square using least-squares, and
+
+00:02:33.840 --> 00:02:36.730
+you've known how to do that since eighth grade, I hope, ninth grade,
+
+00:02:36.730 --> 00:02:38.410
+twelfth grade, I don't, somewhere along the way.
+
+00:02:39.430 --> 00:02:41.160
+If you don't know what I'm talking about [LAUGH],
+
+00:02:41.160 --> 00:02:45.210
+go learn a lot of linear algebra before we take the rest of this class.
+
+00:02:45.210 --> 00:02:48.370
+All right, but this is the non-homogeneous way.
+
+00:02:48.370 --> 00:02:52.040
+Thinking about this set of equations we've already seen this, right?
+
+00:02:52.040 --> 00:02:56.060
+Remember when we were doing the extrinsics and we had a whole bunch of
+
+00:02:56.060 --> 00:03:04.320
+equations, two N of them, and we had am equals 0, because we didn't change it.
+
+00:03:04.320 --> 00:03:06.630
+So we can do just like we did before.
+
+00:03:06.630 --> 00:03:08.288
+You multiply this through.
+
+00:03:08.288 --> 00:03:09.470
+You divide out by the,
+
+00:03:09.470 --> 00:03:14.080
+by w, and you'll get two homogeneous equations for each point, right?
+
+00:03:14.080 --> 00:03:15.460
+Now instead of m, we're solving for h,
+
+00:03:15.460 --> 00:03:20.860
+and we have a whole bunch of terms all linear in terms of h, and it equals 0.
+
+00:03:20.860 --> 00:03:25.710
+And we have 2n of those equations where n is the number of points.
+
+00:03:25.710 --> 00:03:27.190
+And how do we solve this?
+
+00:03:27.190 --> 00:03:31.070
+Well you use that singular value decomposition just like we did last time.
+
+00:03:31.070 --> 00:03:35.450
+Or you could take that a transpose a matrix, solve for the eigenvectors.
+
+00:03:35.450 --> 00:03:39.180
+Pull out the eigenvector with the smallest eigenvalue and that was our solution.
+
+00:03:39.180 --> 00:03:41.170
+Remember we showed that it was the same thing.
+
+00:03:41.170 --> 00:03:44.630
+That's the way for solving for the homography coefficients.
+
+00:03:44.630 --> 00:03:47.780
+And by the way, that's the cool way, because you can impress people.
+
+00:03:47.780 --> 00:03:50.950
+because you can tell them to use singular value decomposition, which has so
+
+00:03:50.950 --> 00:03:53.170
+many syllables in it, they're sure you're really smart.
+

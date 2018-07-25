@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.310 --> 00:00:02.540
+And actually that ends this lesson.
+
+00:00:02.540 --> 00:00:07.500
+Essentially we're using filters to localize interesting areas in
+
+00:00:07.500 --> 00:00:12.640
+the image that have some sort of property that makes the filter respond well.
+
+00:00:12.640 --> 00:00:15.930
+So what we're going to do going forward is we'll use some special filters to
+
+00:00:15.930 --> 00:00:18.810
+compute some functions, like smoothing, but
+
+00:00:18.810 --> 00:00:23.090
+also to sort of find strong responses just like the templates.
+
+00:00:23.090 --> 00:00:25.610
+And we'll do that actually in the next couple of lessons.
+

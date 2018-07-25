@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.050 --> 00:00:04.170
+Here is a quick demo in MATLAB showing you a few different ways of
+
+00:00:04.170 --> 00:00:05.939
+computing edges.
+
+00:00:05.939 --> 00:00:08.180
+Note that you can do the same in Octave.
+
+00:00:08.180 --> 00:00:10.120
+Just remember to load the image package.
+
+00:00:11.302 --> 00:00:15.270
+All right, let's read an image and display it.
+
+00:00:15.270 --> 00:00:20.840
+Here we use figure to open a new window, imshow to show the image in the window,
+
+00:00:20.840 --> 00:00:24.980
+and title to set a title, all in one line.
+
+00:00:24.980 --> 00:00:27.028
+We will use this idiom frequently.
+
+00:00:31.465 --> 00:00:34.940
+Let's now convert the image to monochrome or grayscale.
+
+00:00:34.940 --> 00:00:39.000
+We'll use the rgb2gray function for this purpose.
+
+00:00:39.000 --> 00:00:40.341
+And here's what it looks like.
+
+00:00:43.577 --> 00:00:45.859
+Now let's create a smoothed version of the image.
+
+00:00:47.300 --> 00:00:50.608
+First, create a Gaussian filter using the fspecial function.
+
+00:00:52.660 --> 00:00:55.060
+Here's what the filter looks like.
+
+00:00:55.060 --> 00:00:56.924
+Whoa, plotting it as a surface might help.
+
+00:01:00.661 --> 00:01:01.460
+Okay.
+
+00:01:01.460 --> 00:01:02.909
+Now apply this filter to the image.
+
+00:01:04.250 --> 00:01:05.540
+Compare this with the original.
+
+00:01:07.250 --> 00:01:11.483
+All right. For the first method, we will shift the image left by one pixel,
+
+00:01:11.483 --> 00:01:14.820
+right by one pixel, and compute their difference.
+
+00:01:16.570 --> 00:01:20.260
+Let's make a copy of the smooth version to create the left image.
+
+00:01:20.260 --> 00:01:24.850
+To shift the image to the left, we copy all the pixels from the second column
+
+00:01:24.850 --> 00:01:29.745
+onwards til the end to positions first column to n minus 1.
+
+00:01:30.820 --> 00:01:34.230
+Note that the last and second last columns here would be identical.
+
+00:01:35.490 --> 00:01:37.560
+Similarly for right.
+
+00:01:37.560 --> 00:01:42.160
+Now we compute the difference, remembering to convert to double type.
+
+00:01:42.160 --> 00:01:45.070
+Note that the difference may contain negative numbers.
+
+00:01:45.070 --> 00:01:46.430
+So to display it correctly,
+
+00:01:46.430 --> 00:01:50.000
+we pass in an empty vector as the second argument to imshow.
+
+00:01:51.560 --> 00:01:54.760
+Notice how object boundaries are highlighted as brighter or
+
+00:01:54.760 --> 00:02:00.580
+darker areas, indicating greater positive or negative differences.
+
+00:02:00.580 --> 00:02:04.980
+Other areas are almost gray, indicating close to zero difference.
+
+00:02:06.090 --> 00:02:09.440
+Our second method is to use the canny edge detector.
+
+00:02:09.440 --> 00:02:13.130
+We use the edge function, passing in canny as the method argument.
+
+00:02:14.790 --> 00:02:18.300
+Remember that the Canny algorithm performs non-maximal suppression?
+
+00:02:19.360 --> 00:02:23.420
+That, along with some other tricks, result in a much more meaningful edge image.
+
+00:02:25.630 --> 00:02:29.129
+Let's also run the Canny edge detector on the smooth version of the image.
+
+00:02:31.170 --> 00:02:33.910
+Notice how a lot of the detail features are now gone.
+
+00:02:35.780 --> 00:02:38.180
+Here is the original set of edges for comparison.
+
+00:02:40.310 --> 00:02:42.760
+Our last method uses Laplacian of Gaussian.
+
+00:02:43.860 --> 00:02:47.270
+You simply need to pass in log as the method argument.
+
+00:02:49.100 --> 00:02:52.080
+Again, the edges found by Canny are shown for comparison.
+
+00:02:54.650 --> 00:02:58.360
+You can use doc edge to find out more options that might be available.
+
+00:03:00.010 --> 00:03:04.360
+As you can see, there are other edge operators that you can apply,
+
+00:03:04.360 --> 00:03:07.460
+as well as pass in custom parameters.
+
+00:03:07.460 --> 00:03:12.310
+By this time, you should have MATLAB or Octave installed on your local machine.
+
+00:03:12.310 --> 00:03:15.180
+You will need it to solve the problem sets.
+
+00:03:15.180 --> 00:03:18.380
+Please refer back to the introduction lesson for instructions.
+

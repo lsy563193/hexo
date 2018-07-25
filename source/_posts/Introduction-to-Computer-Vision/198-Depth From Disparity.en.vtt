@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.240 --> 00:00:04.510
+So here we're going to show you some example of disparity, okay?
+
+00:00:04.510 --> 00:00:06.870
+In the left hand side, you'll see,
+
+00:00:06.870 --> 00:00:12.680
+that there is a point, at the bottom of this window, okay?
+
+00:00:12.680 --> 00:00:15.170
+And in this image on the right over here, and by the way,
+
+00:00:15.170 --> 00:00:17.240
+it took me a while to figure out which image was left and
+
+00:00:17.240 --> 00:00:21.400
+which image was right, and I did that by looking right up here at the trees.
+
+00:00:21.400 --> 00:00:25.890
+You can see that, in the image on the right, that the chimney has moved to
+
+00:00:25.890 --> 00:00:29.970
+the left with respect to the tree behind it, so that's the right image.
+
+00:00:29.970 --> 00:00:33.940
+What happened is, if I go to the same location in this image as in
+
+00:00:33.940 --> 00:00:37.770
+the first image, I don't land on the window.
+
+00:00:37.770 --> 00:00:42.600
+I actually have to move this far, in order to get to that window point.
+
+00:00:42.600 --> 00:00:44.770
+That's the disparity.
+
+00:00:44.770 --> 00:00:49.720
+And in fact, you can build what's called a disparity map, for every point x, y,
+
+00:00:49.720 --> 00:00:52.340
+you can say what's the disparity.
+
+00:00:52.340 --> 00:00:54.720
+And you'll notice something about this disparity image,
+
+00:00:54.720 --> 00:01:00.630
+right, notice that the stuff here is brighter than the stuff there.
+
+00:01:00.630 --> 00:01:03.890
+Well, I just made an image of disparity, and remember, disparity is
+
+00:01:03.890 --> 00:01:09.850
+inversely proportional to depth, so the brighter values are the closer zs.
+
+00:01:09.850 --> 00:01:10.380
+All right.
+
+00:01:10.380 --> 00:01:15.050
+And the smaller values are further away, and, the really small values,
+
+00:01:15.050 --> 00:01:18.830
+which are very dark, are going to be further away yet.
+
+00:01:18.830 --> 00:01:22.530
+Okay, and that's this notion of, from disparity being able to get to depth.
+

@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.904
+So like I said, when you do this, you end up with this gradient function.
+
+00:00:03.904 --> 00:00:07.475
+And of course, we do this both in the x direction and the y direction.
+
+00:00:07.475 --> 00:00:11.412
+And, you know, we now have this problem of correlation versus convolution.
+
+00:00:11.412 --> 00:00:15.475
+Well, if this is the x direction, if x goes positive this way,
+
+00:00:15.475 --> 00:00:17.485
+this is a correlation filter.
+
+00:00:17.485 --> 00:00:23.290
+By the way, this picture is what this looks like as an image.
+
+00:00:23.290 --> 00:00:24.091
+Okay?
+
+00:00:24.091 --> 00:00:28.023
+So these zero values on the outside, that's these gray, and
+
+00:00:28.023 --> 00:00:32.800
+where it goes negative is negative and where it goes positive is positive.
+
+00:00:32.800 --> 00:00:36.371
+In the y direction, which way is positive is always a problem because,
+
+00:00:36.371 --> 00:00:38.406
+like we said, y can go up or y can go down.
+
+00:00:38.406 --> 00:00:41.575
+You know, the main issue of course, is that it, it, it goes vertically.
+
+00:00:41.575 --> 00:00:43.878
+So those are our two operators.
+
+00:00:43.878 --> 00:00:47.548
+So that's how you would use a Gaussian in order to get some smooth derivatives.
+
+00:00:47.548 --> 00:00:50.985
+But there is this question of how big a Gaussian should we use?
+
+00:00:50.985 --> 00:00:55.225
+You might remember from filtering that we could pick different size Gaussians,
+
+00:00:55.225 --> 00:00:58.859
+and here again is the fspecial being used, to get different sigmas.
+
+00:00:58.859 --> 00:01:03.964
+And what happens is, you get more or less smooth versions of the image.
+
+00:01:03.964 --> 00:01:07.835
+The same is true when we compute derivatives, right?
+
+00:01:07.835 --> 00:01:10.738
+We can change the sigma, the size of the Gaussian.
+
+00:01:10.738 --> 00:01:15.906
+And when you do that, you'll get sort of enhancing the, the magnitudes of these
+
+00:01:15.906 --> 00:01:20.848
+derivatives as a function of sort of how quickly the image varies over space.
+
+00:01:20.848 --> 00:01:21.482
+All right?
+
+00:01:21.482 --> 00:01:23.164
+So with a small sigma,
+
+00:01:23.164 --> 00:01:27.688
+all of this fine texture in here shows up everywhere in here.
+
+00:01:27.688 --> 00:01:31.325
+In fact, even this little texture in here shows up in there.
+
+00:01:31.325 --> 00:01:34.395
+But if I use a bigger sigma, okay?
+
+00:01:34.395 --> 00:01:38.245
+So this area here you see there's a whole lot less going on there,
+
+00:01:38.245 --> 00:01:41.535
+because we smoothed away most of that small variation.
+
+00:01:41.535 --> 00:01:45.800
+So one way of thinking about this, smaller values, finer features are going to
+
+00:01:45.800 --> 00:01:50.270
+be detected and larger values, only the larger scale edges will be detected.
+

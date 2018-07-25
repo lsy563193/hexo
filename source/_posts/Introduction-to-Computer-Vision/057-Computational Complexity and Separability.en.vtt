@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.170 --> 00:00:03.580
+I want to talk just a quick second about computational complexity.
+
+00:00:03.580 --> 00:00:05.040
+Mentioned it before.
+
+00:00:05.040 --> 00:00:09.511
+As we said, if your image is N by N and your kernel is M by M or
+
+00:00:09.511 --> 00:00:12.415
+we will call it W by W for sort of width.
+
+00:00:12.415 --> 00:00:15.666
+And it's easier to say W being different than N because [INAUDIBLE].
+
+00:00:15.666 --> 00:00:17.090
+Exactly, okay?
+
+00:00:17.090 --> 00:00:19.540
+So the question is how many multiplies do we need?
+
+00:00:19.540 --> 00:00:24.390
+And we said before that we need N times N times W times W,
+
+00:00:24.390 --> 00:00:26.240
+or N squared W squared.
+
+00:00:26.240 --> 00:00:29.220
+Doesn't N squared W squared sound better than N squared M squared?
+
+00:00:29.220 --> 00:00:31.470
+Because when I say N squared M squared you have no idea what I'm saying if I
+
+00:00:31.470 --> 00:00:32.619
+say it quickly.
+
+00:00:32.619 --> 00:00:34.580
+N squared W squared works.
+
+00:00:34.580 --> 00:00:36.730
+And that can get sort of big.
+
+00:00:36.730 --> 00:00:38.640
+So there's a cute little property.
+
+00:00:38.640 --> 00:00:42.670
+Sometimes your main kernel, your, your filter,.
+
+00:00:42.670 --> 00:00:47.740
+Can be created by convolving a single row with a single column.
+
+00:00:47.740 --> 00:00:48.730
+And when that's true,
+
+00:00:48.730 --> 00:00:52.690
+you can take advantage of the associative property, in terms of how we do this.
+
+00:00:52.690 --> 00:00:56.400
+And this is what's refered to as a linearly separable kernel.
+
+00:00:56.400 --> 00:00:57.970
+So let me show you an example.
+
+00:00:57.970 --> 00:01:03.060
+So here we have a single column, and here we have a single row.
+
+00:01:03.060 --> 00:01:05.600
+And just think of 0s being around it.
+
+00:01:05.600 --> 00:01:09.910
+If I convolve this column by this row I would get out
+
+00:01:11.490 --> 00:01:13.540
+this new H which has 1 2 1 2 4 2 1 2 1 in it.
+
+00:01:14.770 --> 00:01:18.430
+Okay? So c convolved with r equals H.
+
+00:01:18.430 --> 00:01:21.370
+See, this is why we don't use my handwriting.
+
+00:01:21.370 --> 00:01:25.170
+Let's suppose we wanted to filter something with H.
+
+00:01:25.170 --> 00:01:25.980
+All right?
+
+00:01:25.980 --> 00:01:27.710
+So that would look like this.
+
+00:01:27.710 --> 00:01:32.402
+We have a function G that we're going to create by convolving F with H.
+
+00:01:32.402 --> 00:01:38.420
+But we said that C convolved R is the same as H, so that convolves F.
+
+00:01:38.420 --> 00:01:41.120
+And because of the associative property,
+
+00:01:41.120 --> 00:01:44.970
+C convolved with R then convolved with F.
+
+00:01:44.970 --> 00:01:46.660
+In order to get our new function,
+
+00:01:46.660 --> 00:01:51.740
+is the same as C convolved with R convolve with F.
+
+00:01:51.740 --> 00:01:54.450
+And the reason that's better is that I can do
+
+00:01:54.450 --> 00:01:58.440
+two column convolutions instead of one square.
+
+00:01:58.440 --> 00:02:05.800
+So now instead of being W squared N squared it's 2 times W times N squared.
+
+00:02:05.800 --> 00:02:07.720
+And that can be,
+
+00:02:07.720 --> 00:02:11.160
+that used to be very important when computers were not quite as fast.
+
+00:02:11.160 --> 00:02:14.010
+But it's still reasonably important, because for
+
+00:02:14.010 --> 00:02:19.170
+example, if W is say a 31 by 31, that's a factor of 15 difference, all right?
+
+00:02:19.170 --> 00:02:21.120
+So that's more than an order of magnitude.
+
+00:02:21.120 --> 00:02:23.910
+Anytime you can do anything that buys you an order of magnitude for
+
+00:02:23.910 --> 00:02:24.940
+not a lot of money.
+
+00:02:24.940 --> 00:02:26.350
+You should go ahead and make that purchase.
+
+00:02:26.350 --> 00:02:28.850
+Because orders of magnitude are hard to come by.
+
+00:02:28.850 --> 00:02:30.600
+So here's a nice way of doing this.
+
+00:02:30.600 --> 00:02:31.965
+So when we do various kinds of smoothing,
+
+00:02:31.965 --> 00:02:35.660
+etc, often we use linerally separable filters and you can just apply them.
+

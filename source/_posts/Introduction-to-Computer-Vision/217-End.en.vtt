@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.124
+So that ends the lesson on stereo matching.
+
+00:00:02.124 --> 00:00:04.783
+In fact, that ends all of our lessons on stereo.
+
+00:00:04.783 --> 00:00:08.071
+You're going to implement the simple correspondence method.
+
+00:00:08.071 --> 00:00:12.018
+By the way, for a more advanced version of this class, we ask to do the energy
+
+00:00:12.018 --> 00:00:16.178
+minimization by either implementing or using the library for graph cuts.
+
+00:00:16.178 --> 00:00:20.089
+If you're so disposed, you might find that a really cool thing to do.
+
+00:00:20.089 --> 00:00:22.069
+When you go to implement this simple version,
+
+00:00:22.069 --> 00:00:24.472
+hopefully you're going to be impressed by two things.
+
+00:00:24.472 --> 00:00:27.469
+One is, doesn't work nearly, as well as I implied it work.
+
+00:00:27.469 --> 00:00:29.820
+And I even, didn't even imply that it would work well at all, so
+
+00:00:29.820 --> 00:00:30.788
+that's really going to be.
+
+00:00:30.788 --> 00:00:37.162
+However, your computer will be seeing in 3D.
+
+00:00:37.162 --> 00:00:41.328
+You're going to give it two pictures, we provide the pictures and
+
+00:00:41.328 --> 00:00:43.884
+your computer will recover the depth.
+
+00:00:43.884 --> 00:00:47.558
+You know, up until not that long ago, that was considered magic done by
+
+00:00:47.558 --> 00:00:50.327
+human being's brains that was un, not understood.
+
+00:00:50.327 --> 00:00:53.310
+And now you can do it on your iPhone, if you had two cameras.
+
+00:00:53.310 --> 00:00:56.940
+Anyway, I hope you'll find it cool that you can recover that depth.
+
+00:00:56.940 --> 00:00:58.244
+That ends for stereo.
+
+00:00:58.244 --> 00:00:59.000
+Talk to you soon.
+

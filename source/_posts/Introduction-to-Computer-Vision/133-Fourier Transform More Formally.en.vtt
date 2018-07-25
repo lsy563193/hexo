@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.380 --> 00:00:05.560
+Doing this a little bit more formally, so we're going to represent our signal as
+
+00:00:05.560 --> 00:00:09.110
+an infinite weighted sum of an infinite number of sinusoids.
+
+00:00:09.110 --> 00:00:11.160
+So the Fourier Transform, here it is,
+
+00:00:11.160 --> 00:00:15.100
+in it's beautiful glory, in one dimension, okay.
+
+00:00:15.100 --> 00:00:16.630
+F of u is a Fourier transform.
+
+00:00:16.630 --> 00:00:21.350
+We just take the infinite integral of the original function times e to
+
+00:00:21.350 --> 00:00:25.620
+the minus i 2 pi, u x.
+
+00:00:25.620 --> 00:00:26.740
+You might say, what?
+
+00:00:26.740 --> 00:00:29.296
+Where did that e to the minus i, [SOUND] come from?
+
+00:00:29.296 --> 00:00:30.731
+&gt;&gt; Where did that come from?
+
+00:00:30.731 --> 00:00:33.020
+&gt;&gt; Oh, see, she didn't fall into that trap.
+
+00:00:33.020 --> 00:00:36.040
+Well again, remember from your probably calculus class,
+
+00:00:36.040 --> 00:00:41.330
+somewhere e to the i k is cosine k plus i sine k.
+
+00:00:41.330 --> 00:00:44.250
+That's why this is the even part and that's the odd part.
+
+00:00:44.250 --> 00:00:45.860
+This is where i is the square root of minus 1.
+
+00:00:45.860 --> 00:00:48.760
+By the way, if there are any electrical engineers out there,
+
+00:00:48.760 --> 00:00:50.660
+they have j as being the square root of minus 1.
+
+00:00:50.660 --> 00:00:53.640
+I don't know why, because mathematicians use i,
+
+00:00:53.640 --> 00:00:56.630
+I guess electrical engineers didn't like the mathematicians.
+
+00:00:56.630 --> 00:00:57.270
+We're going to use i.
+
+00:00:58.430 --> 00:01:03.900
+So what the Fourier transform does, is it converts from the spatial domain
+
+00:01:03.900 --> 00:01:07.510
+into the frequency domain, and the frequency domain is either written as omega,
+
+00:01:07.510 --> 00:01:09.130
+sometimes as u, as we're doing here,
+
+00:01:09.130 --> 00:01:12.710
+sometimes even s when you're talking about loss transforms and stuff like that.
+
+00:01:12.710 --> 00:01:18.780
+But the idea is that this cap f is the frequency spectrum, or I should say it's,
+
+00:01:18.780 --> 00:01:22.200
+it's frequency of f of omega, but we're going to talk about its magnitude in
+
+00:01:22.200 --> 00:01:25.670
+a minute, which is going to be sort of what we, we refer to as this spectrum.
+
+00:01:25.670 --> 00:01:29.970
+Just for completeness, by the way, so here we had the Fourier transform.
+
+00:01:29.970 --> 00:01:32.330
+This is the inverse Fourier transform.
+
+00:01:32.330 --> 00:01:37.530
+Unsurprisingly, if you tell me what all of the sinusoids are,
+
+00:01:37.530 --> 00:01:42.250
+if I sum them all up, okay, at some location x, and
+
+00:01:42.250 --> 00:01:47.440
+I sum up over all the sinusoids, I can recover the original signal.
+
+00:01:47.440 --> 00:01:49.590
+And that's called the inverse Fourier Transform.
+

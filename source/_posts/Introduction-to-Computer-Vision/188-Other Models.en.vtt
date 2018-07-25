@@ -1,0 +1,229 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.190 --> 00:00:02.680
+All right, so to finish up the lesson.
+
+00:00:02.680 --> 00:00:06.950
+Besides prospective projection, there are other types of projection operators
+
+00:00:06.950 --> 00:00:11.970
+which in fact are sort of special cases and they're used sometimes.
+
+00:00:11.970 --> 00:00:13.860
+So they're, they're worth mentioning here.
+
+00:00:15.110 --> 00:00:16.270
+One interesting form of
+
+00:00:17.620 --> 00:00:20.770
+special case of perspective projection is called orthographic.
+
+00:00:20.770 --> 00:00:25.110
+And as it's drawn here, basically orthographic is when I take my world and
+
+00:00:25.110 --> 00:00:28.340
+I just smash it right into my image plane.
+
+00:00:28.340 --> 00:00:30.530
+And what's interesting about that is that it actually can be thought of
+
+00:00:30.530 --> 00:00:33.900
+as a special case of perspective projection.
+
+00:00:33.900 --> 00:00:38.100
+But where the distance from the center of projection to the image
+
+00:00:38.100 --> 00:00:39.790
+plane is infinite.
+
+00:00:39.790 --> 00:00:41.810
+And my object is infinite, right?
+
+00:00:41.810 --> 00:00:45.905
+If those both were sort of infinite then basically what I end up doing is the z
+
+00:00:45.905 --> 00:00:49.035
+value doesn't matter because those rays are parallel.
+
+00:00:49.035 --> 00:00:53.088
+So that's why this is also called parallel projection and so
+
+00:00:53.088 --> 00:00:55.820
+xyz just gets moved to xy.
+
+00:00:55.820 --> 00:00:59.270
+This is actually some times used as a model for telephoto lens.
+
+00:00:59.270 --> 00:01:02.580
+Because telephoto lenses are looking at things very, very far away.
+
+00:01:02.580 --> 00:01:05.640
+So all of your rays are almost exactly parallel.
+
+00:01:05.640 --> 00:01:10.020
+Now of course, it has to be scaled so you end up scaling the x and
+
+00:01:10.020 --> 00:01:11.360
+scaling the y.
+
+00:01:11.360 --> 00:01:14.490
+But it's the same scale value for your whole world.
+
+00:01:14.490 --> 00:01:15.720
+I mention that, because we're going to
+
+00:01:15.720 --> 00:01:17.710
+talk about something called weak perspective, in a minute.
+
+00:01:18.790 --> 00:01:22.380
+So basically, when you throw away the z value and then you just scale the x and
+
+00:01:22.380 --> 00:01:26.810
+y by some number, that's this parallel projection.
+
+00:01:26.810 --> 00:01:29.750
+And since it can be, since I said it was a special case of
+
+00:01:29.750 --> 00:01:34.560
+perspective projection, there must be a matrix operation that would recover it.
+
+00:01:34.560 --> 00:01:36.150
+And here it is.
+
+00:01:36.150 --> 00:01:41.320
+And you'll notice, now, that this value is zero, okay?
+
+00:01:41.320 --> 00:01:43.230
+And this value is one.
+
+00:01:43.230 --> 00:01:47.070
+So x, y, z one, the matrix just equals x, y one.
+
+00:01:47.070 --> 00:01:50.620
+And when you divide out by the one, you just get the x, y.
+
+00:01:50.620 --> 00:01:54.760
+So even this orthographic projection can be represented as the same matrix,
+
+00:01:54.760 --> 00:01:58.900
+as a matrix multiplication when we use homogenous coordinates.
+
+00:01:58.900 --> 00:02:01.840
+Another model is called weak perspective.
+
+00:02:01.840 --> 00:02:05.570
+Sometimes called scaled orthographic but I, that's a bad choice.
+
+00:02:05.570 --> 00:02:07.840
+There's also something called power perspective but
+
+00:02:07.840 --> 00:02:10.550
+what we're going to call weak perspective is following.
+
+00:02:10.550 --> 00:02:14.000
+The idea is that we know that when things get further away,
+
+00:02:14.000 --> 00:02:15.820
+they're going to get smaller.
+
+00:02:15.820 --> 00:02:20.250
+But what we're going to do is, we're going to say that all the points on
+
+00:02:20.250 --> 00:02:23.780
+a given object, we're going to assume they're all at, at some constant depth.
+
+00:02:23.780 --> 00:02:26.180
+We'll say z0 as it's written here.
+
+00:02:26.180 --> 00:02:26.810
+Okay?
+
+00:02:26.810 --> 00:02:31.507
+So for all the points on that object, xyz will get mapped to,
+
+00:02:31.507 --> 00:02:33.550
+fx over z0, fy over z0.
+
+00:02:33.550 --> 00:02:36.250
+So that object will get scaled.
+
+00:02:36.250 --> 00:02:37.380
+But some other object,
+
+00:02:37.380 --> 00:02:42.450
+might be a significantly closer object, it will get scaled by a different value.
+
+00:02:42.450 --> 00:02:47.370
+So basically in weak perspective, what we're saying is that the difference of
+
+00:02:47.370 --> 00:02:52.730
+depth over an object or over the range of an object, is very small compared
+
+00:02:52.730 --> 00:02:56.330
+to the difference in depth from the object to the center of projection.
+
+00:02:56.330 --> 00:02:57.230
+And if that's true,
+
+00:02:57.230 --> 00:03:01.300
+then you can basically say that each object has its own scale factor.
+
+00:03:01.300 --> 00:03:04.190
+Of course, as a special case of perspective projection,
+
+00:03:04.190 --> 00:03:07.510
+we can do this in a matrix form also.
+
+00:03:07.510 --> 00:03:09.790
+So, here we have the equation or, or
+
+00:03:09.790 --> 00:03:15.350
+the transformation we said before, x, y, z goes to fx over z0, fy over z0.
+
+00:03:15.350 --> 00:03:21.060
+So basically, f over z0 is acting like a scale factor, okay?
+
+00:03:21.060 --> 00:03:24.730
+So here we have our projection matrix, which now,
+
+00:03:24.730 --> 00:03:28.390
+instead of having a one over here, has a one over s.
+
+00:03:28.390 --> 00:03:30.830
+And then when I multiply that through on the homogenous coordinates and
+
+00:03:30.830 --> 00:03:35.250
+then divide, I'm dividing by the 1 over s, which gives me sx, sy.
+
+00:03:35.250 --> 00:03:40.280
+So weak perspective gives you this scaled effect of each collection of
+
+00:03:40.280 --> 00:03:42.120
+points that sit on a given object.
+
+00:03:43.380 --> 00:03:46.630
+So those are the three camera projections that we'll talk about.
+
+00:03:46.630 --> 00:03:49.090
+The one that we'll use all the time is perspective,
+
+00:03:49.090 --> 00:03:51.750
+which ends up giving you fx over z, fy over z.
+
+00:03:51.750 --> 00:03:55.340
+And we showed you how to do it in matrix coordinates using
+
+00:03:55.340 --> 00:03:57.210
+homogeneous coordinate system.
+
+00:03:57.210 --> 00:04:00.540
+And then we also talked about weak perspective where you have a scale factor,
+
+00:04:00.540 --> 00:04:02.150
+sort of, per object.
+
+00:04:02.150 --> 00:04:05.350
+Or orthographic, where you basically just throw away the z value.
+

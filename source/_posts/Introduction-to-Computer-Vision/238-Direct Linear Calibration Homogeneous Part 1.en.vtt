@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.410 --> 00:00:02.240
+All right, so first, some notation.
+
+00:00:02.240 --> 00:00:07.420
+As before, we've got our world times our m is our projective equation.
+
+00:00:07.420 --> 00:00:09.070
+And notice we've got two versions here.
+
+00:00:09.070 --> 00:00:14.700
+And again, what we're saying here is that uv1 is projectively similar to wu,
+
+00:00:14.700 --> 00:00:15.670
+wv and w.
+
+00:00:15.670 --> 00:00:18.780
+And in fact, in order to get back uv1,
+
+00:00:18.780 --> 00:00:23.030
+I could take wu, divide by w in order to get that.
+
+00:00:23.030 --> 00:00:25.020
+And that's actually what's written on the bottom.
+
+00:00:25.020 --> 00:00:29.470
+All I've shown is that ui, that's for point i, I have to
+
+00:00:29.470 --> 00:00:34.850
+take the product that's the first row divided by what becomes the third row.
+
+00:00:34.850 --> 00:00:36.060
+Same thing for vi.
+
+00:00:36.060 --> 00:00:41.100
+So the point here is that I get a pair of equations for every point.
+
+00:00:41.100 --> 00:00:45.160
+For every point i here, I have an equation that's, that goes from x, y,
+
+00:00:45.160 --> 00:00:49.070
+z to ui, and x, y, z, to vi.
+
+00:00:49.070 --> 00:00:51.350
+So what we're going to do is we're going to have to solve for
+
+00:00:51.350 --> 00:00:55.470
+this m matrix using a, a whole bunch of points.
+
+00:00:55.470 --> 00:00:57.670
+Just continuing, I just slid those equations up, and
+
+00:00:57.670 --> 00:01:00.740
+now I've just carried through, just expanded it through.
+
+00:01:00.740 --> 00:01:05.430
+And one thing you'll notice is that every term has an m in it.
+
+00:01:05.430 --> 00:01:07.300
+And for those of you who know anything about linear algebra,
+
+00:01:07.300 --> 00:01:10.340
+that should start to worry you just a little bit because typically when I
+
+00:01:10.340 --> 00:01:12.130
+want to solve a linear set of equations,
+
+00:01:12.130 --> 00:01:15.160
+I hope that there's some term that doesn't have a variable in it.
+
+00:01:15.160 --> 00:01:16.479
+And we'll see that in just a sec.
+
+00:01:17.520 --> 00:01:19.710
+So, I have this pair of equations for
+
+00:01:19.710 --> 00:01:23.020
+each point, all right, writing it again like that.
+
+00:01:23.020 --> 00:01:26.690
+So now the question is how best to solve this, all right.
+
+00:01:26.690 --> 00:01:29.310
+I'm going to write this a little bit different way.
+
+00:01:29.310 --> 00:01:31.800
+So here I have all my variables, and here for
+
+00:01:31.800 --> 00:01:34.350
+just one point, I have my coefficients.
+
+00:01:34.350 --> 00:01:38.090
+So notice my coefficients involve capital Xs and Ys and Zs.
+
+00:01:38.090 --> 00:01:41.320
+Those are the values out in the world, along with the v's and
+
+00:01:41.320 --> 00:01:44.250
+the u's, which are the points in the image.
+
+00:01:44.250 --> 00:01:48.820
+Now, stretch way back into your memory from linear algebra, and you right,
+
+00:01:48.820 --> 00:01:53.260
+might remember that usually you were solving equations of ax equals b.
+
+00:01:53.260 --> 00:01:55.640
+And you could have more equations than unknowns, and
+
+00:01:55.640 --> 00:01:57.190
+you'd solve to a least square solution.
+
+00:01:57.190 --> 00:01:59.560
+But there was a particular kind of sol,
+
+00:01:59.560 --> 00:02:02.330
+of set of equations where the right-hand side was
+
+00:02:02.330 --> 00:02:06.830
+referred to as a homogeneous set of equations when they were all equal to zero.
+
+00:02:06.830 --> 00:02:09.610
+And that's why this is a homogeneous set of equations,
+
+00:02:09.610 --> 00:02:11.350
+not just homogeneous coordinates.
+
+00:02:11.350 --> 00:02:13.340
+These things are all sort of related.
+
+00:02:13.340 --> 00:02:15.720
+And when you get really, really old, you'll figure that out.
+
+00:02:15.720 --> 00:02:19.490
+But for now, you can just remember that these are homogeneous equations.
+
+00:02:19.490 --> 00:02:22.010
+So the question is, how do we solve that?
+
+00:02:22.010 --> 00:02:24.330
+Because obviously, there's a trivial solution.
+
+00:02:24.330 --> 00:02:26.190
+What's the trivial solution?
+
+00:02:26.190 --> 00:02:29.510
+Well, if a times x equals 0, and I'm looking for
+
+00:02:29.510 --> 00:02:34.100
+an x, well no matter what a is, x equals 0 would be a solution.
+
+00:02:34.100 --> 00:02:36.500
+So I could just say all the m's are equal to 0.
+
+00:02:36.500 --> 00:02:39.650
+And that would not be a very satisfying solution.
+
+00:02:39.650 --> 00:02:42.010
+So the question is, what's the best way to solve this?
+

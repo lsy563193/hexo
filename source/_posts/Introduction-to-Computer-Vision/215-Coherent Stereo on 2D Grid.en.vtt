@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.220 --> 00:00:04.700
+Looking at that scuba university thing again, here you can see that
+
+00:00:04.700 --> 00:00:09.880
+with the dynamic programming we get a lot better solution than we had before.
+
+00:00:09.880 --> 00:00:13.830
+Things are doing better here and little bit, quite a bit better there.
+
+00:00:13.830 --> 00:00:17.150
+But one of the things you'll notice is that you get these streaks.
+
+00:00:17.150 --> 00:00:21.940
+And that makes sense because every scan line is done independently of the other
+
+00:00:21.940 --> 00:00:22.960
+scan line.
+
+00:00:22.960 --> 00:00:28.110
+So it doesn't know anything about the previous solution, so it makes sense that
+
+00:00:28.110 --> 00:00:31.420
+as you change scan lines, you might actually get a reasonable shift.
+
+00:00:31.420 --> 00:00:35.200
+And unfortunately, you can't use dynamic programming to
+
+00:00:35.200 --> 00:00:39.600
+find a spatially coherent set of disparities over two dimensional grid.
+
+00:00:39.600 --> 00:00:41.370
+You have to do another approach.
+
+00:00:42.410 --> 00:00:46.340
+So in motivating that other approach, let's think about it this way.
+
+00:00:46.340 --> 00:00:50.060
+What defines a good set of correspondences?
+
+00:00:51.280 --> 00:00:54.800
+Well, first of all, going back to our earlier work.
+
+00:00:54.800 --> 00:00:58.600
+We want each pixel to find a good appearance match from left image to right.
+
+00:00:58.600 --> 00:00:59.530
+Or, or right to left.
+
+00:00:59.530 --> 00:01:01.940
+So we talk about match quality.
+
+00:01:01.940 --> 00:01:05.290
+But the other thing is, remember when we were first doing filtering for
+
+00:01:05.290 --> 00:01:08.990
+noise, we said one of the assumptions we make is that two pixels that
+
+00:01:08.990 --> 00:01:12.070
+are nearby have similar, sort of, real values?
+
+00:01:12.070 --> 00:01:16.370
+Well when you talk about depth you can also talk about how two pixels that
+
+00:01:16.370 --> 00:01:22.350
+are nearby have a tendency to have approximately the same depth.
+
+00:01:22.350 --> 00:01:26.710
+So that means that they probably should have about the same disparity.
+
+00:01:26.710 --> 00:01:30.540
+So if, if this pixel is, has to be shifted over four,
+
+00:01:30.540 --> 00:01:34.120
+the one nearby shouldn't shift a whole lot.
+
+00:01:34.120 --> 00:01:38.600
+Okay, and I might want to penalize solutions that have lots of jumps.
+
+00:01:39.680 --> 00:01:43.230
+So the method that we're going to use now looks at both of those things.
+
+00:01:43.230 --> 00:01:47.200
+And it thinks of solving stereo as an energy minimization problem.
+
+00:01:48.390 --> 00:01:50.360
+The first term the energy mini, oh, let me.
+
+00:01:50.360 --> 00:01:54.580
+I should define that here we have i1 is the left image, i2 is the right image.
+
+00:01:54.580 --> 00:01:58.350
+We've got a window in the left, we're going to look at it across the right, but
+
+00:01:58.350 --> 00:02:01.660
+then all the way on the right is a disparity image, okay?
+
+00:02:01.660 --> 00:02:04.530
+So that's the disparity that we compute.
+
+00:02:04.530 --> 00:02:09.360
+And our energy is minimization approach requires two energy terms.
+
+00:02:09.360 --> 00:02:11.860
+The first term is a data term.
+
+00:02:11.860 --> 00:02:16.150
+And the date term just says that summed over all the pixels,
+
+00:02:16.150 --> 00:02:21.300
+that the, the window subtracted from the window on the other image, so
+
+00:02:21.300 --> 00:02:25.380
+this window minus that one squared, should be as low as possible.
+
+00:02:25.380 --> 00:02:28.540
+So, we want to, if we're going to do an energy minimization our data term
+
+00:02:28.540 --> 00:02:31.800
+basically takes a look at a look at the squared of the differences.
+
+00:02:31.800 --> 00:02:33.980
+That's similar to what we were doing before.
+
+00:02:33.980 --> 00:02:36.860
+So one way to think about it is, when we were doing corresponds through den
+
+00:02:36.860 --> 00:02:39.880
+search, we were only looking at the data term.
+
+00:02:39.880 --> 00:02:42.000
+The second term is called the smoothness term.
+
+00:02:43.080 --> 00:02:45.880
+And, you'll notice that I don't have any window here,
+
+00:02:45.880 --> 00:02:50.040
+I don't have any window here, I'm only looking at the window over here.
+
+00:02:50.040 --> 00:02:54.120
+In fact, in the smoothness term, the image doesn't come in here at all,
+
+00:02:54.120 --> 00:02:55.570
+neither the left or the right.
+
+00:02:55.570 --> 00:03:00.650
+I'm only looking at the windows of the neighbors in the disparity image.
+
+00:03:00.650 --> 00:03:03.870
+This is the disparity image here, all right.
+
+00:03:03.870 --> 00:03:08.090
+Now, this row function, this is a function that's essentially a robust norm.
+
+00:03:08.090 --> 00:03:13.240
+So what you want is you, it's okay to make small amounts of change and
+
+00:03:13.240 --> 00:03:16.120
+then as you get expensive, to make large changes, but
+
+00:03:16.120 --> 00:03:19.130
+it shouldn't get even more expensive to make even bigger changes.
+
+00:03:19.130 --> 00:03:21.820
+because that's going to be sort of an adjunct edit occlusion.
+
+00:03:21.820 --> 00:03:24.030
+So that row function's meant just to be a robust.
+
+00:03:24.030 --> 00:03:27.630
+I mean, you can think of it as a square that, that, that maxes out.
+
+00:03:27.630 --> 00:03:29.450
+But that's our smoothness term.
+
+00:03:29.450 --> 00:03:34.620
+And for energy minimization, what we do is we have a total energy which is
+
+00:03:34.620 --> 00:03:39.910
+a blend of the data term, and the smoothness term weighed by these coefficients.
+
+00:03:39.910 --> 00:03:42.840
+And what you want to find, and this is the hard part, is you want to
+
+00:03:42.840 --> 00:03:47.670
+find an assignment of disparities that minimizes this energy function.
+

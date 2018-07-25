@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.111
+If you take a look at Rick Szeliski's book which we mentioned earlier,
+
+00:00:04.111 --> 00:00:06.841
+you can see a whole bunch of Fourier Transform pairs.
+
+00:00:06.841 --> 00:00:12.113
+For example the impulse, which is drawn like that has a Fourier Transform of 1.
+
+00:00:12.113 --> 00:00:15.518
+As we said that makes sense, because the impulse when you convolve it,
+
+00:00:15.518 --> 00:00:17.732
+just gives you back the original function, so
+
+00:00:17.732 --> 00:00:19.854
+you'd better keep all of the frequencies.
+
+00:00:19.854 --> 00:00:23.789
+Likewise, we said here that the Fourier Transform of a Gaussian is
+
+00:00:23.789 --> 00:00:24.992
+another Gaussian.
+
+00:00:24.992 --> 00:00:27.661
+But again, G of sigma goes to 1 over sigma.
+
+00:00:27.661 --> 00:00:31.499
+So fat Gaussian in space, skinny Gaussian in frequency.
+
+00:00:31.499 --> 00:00:33.000
+But look at this one.
+
+00:00:33.000 --> 00:00:37.474
+If I have a box filter, which is just a filter that's shaped like a box,
+
+00:00:37.474 --> 00:00:40.474
+it produces what's called the sinc function.
+
+00:00:40.474 --> 00:00:41.709
+Okay. And that's drawn here.
+
+00:00:41.709 --> 00:00:44.512
+And let's look at that a little more closely, okay?
+
+00:00:44.512 --> 00:00:48.519
+So here in this spatial domain, we have our box filter and
+
+00:00:48.519 --> 00:00:50.451
+this is our sinc function.
+
+00:00:50.451 --> 00:00:54.955
+All right? Now sinc of x is sine x over x, all right?
+
+00:00:54.955 --> 00:00:58.534
+And we can think about that, if you take the limit as x goes to zero of the,
+
+00:00:58.534 --> 00:01:02.730
+you remember L'Hopital's rule take the derivative of the top that's the cosine.
+
+00:01:02.730 --> 00:01:05.099
+Derivative of the bottom is just one plug in a zero it's one.
+
+00:01:05.099 --> 00:01:10.571
+So the, the limit as x goes to zero is in fact, one right there.
+
+00:01:10.571 --> 00:01:14.120
+And then as x gets bigger, the sine gets attenuated and
+
+00:01:14.120 --> 00:01:16.444
+that's what you're seeing here.
+
+00:01:16.444 --> 00:01:21.849
+So in other words, if I were to convolve something with a box filter.
+
+00:01:21.849 --> 00:01:25.019
+My frequencies are going to behave kind of in a weird way.
+
+00:01:25.019 --> 00:01:28.507
+You know, I have this nice kind of low pass stuff, but then I'm going to have
+
+00:01:28.507 --> 00:01:31.725
+these various other frequencies that are going to get accentuated.
+
+00:01:31.725 --> 00:01:37.031
+And if you remember, we did that very early on when we introduced filtering.
+
+00:01:37.031 --> 00:01:40.568
+Remember, we convolved something with a box, with a square?
+
+00:01:40.568 --> 00:01:42.670
+And we said, man is that ugly?
+
+00:01:42.670 --> 00:01:44.538
+This is why it's ugly.
+
+00:01:44.538 --> 00:01:45.573
+So you see this picture here?
+
+00:01:45.573 --> 00:01:47.908
+You see how it's got all these little striations.
+
+00:01:47.908 --> 00:01:51.910
+And I said, when we first did this, that that's because boxes aren't smooth and
+
+00:01:51.910 --> 00:01:55.117
+that we would make this more formal when we did Fourier analysis.
+
+00:01:55.117 --> 00:01:56.951
+Well, I made good in my promise.
+
+00:01:56.951 --> 00:02:01.683
+Okay? The reason that when you convolve an image with that
+
+00:02:01.683 --> 00:02:06.343
+little square box that you see all this junk is because of
+
+00:02:06.343 --> 00:02:10.030
+this ringing here in the frequency domain.
+
+00:02:10.030 --> 00:02:12.100
+That's why we said, what you should do is do what?
+
+00:02:12.100 --> 00:02:14.378
+Is you should apply a Gaussian not a box,
+
+00:02:14.378 --> 00:02:18.405
+it makes a nice, pretty picture, you know, a nice, smooth picture.
+
+00:02:18.405 --> 00:02:22.676
+Because in the frequency domain, you get this nice, smooth Gaussian.
+
+00:02:22.676 --> 00:02:25.546
+One more thing about these sinc functions, okay?
+
+00:02:25.546 --> 00:02:30.284
+So we showed that the Fourier Transform of a box is the sinc.
+
+00:02:30.284 --> 00:02:36.668
+Well, because of the symmetry, if I had a box in frequency space,
+
+00:02:36.668 --> 00:02:41.228
+that would be a sinc in the spatial domain.
+
+00:02:41.228 --> 00:02:47.709
+So what if I were to take some function, take its Fourier spectrum and
+
+00:02:47.709 --> 00:02:52.640
+multiply it by that box, what would that look like?
+
+00:02:52.640 --> 00:02:54.542
+Well, I already just showed you that.
+
+00:02:54.542 --> 00:02:58.746
+Right? This is essentially, it's sometimes called a pillbox, because it's a box.
+
+00:02:58.746 --> 00:03:03.918
+But in 2D, that is instead of being just a particular width, it's a radius.
+
+00:03:03.918 --> 00:03:05.052
+Right?
+
+00:03:05.052 --> 00:03:08.860
+So everything outside that diameter is set to zero and
+
+00:03:08.860 --> 00:03:11.492
+everything inside is kept exactly.
+
+00:03:11.492 --> 00:03:15.451
+If you remember the picture we got was this ugly picture with all
+
+00:03:15.451 --> 00:03:16.730
+this ringing in it.
+
+00:03:16.730 --> 00:03:18.732
+Well, now we know why.
+
+00:03:18.732 --> 00:03:24.380
+When you multiple the frequency by a box, it's as if you convolve
+
+00:03:24.380 --> 00:03:30.044
+the image with its Fourier pair over here with the sinc function.
+
+00:03:30.044 --> 00:03:32.502
+So if you take this pretty picture and
+
+00:03:32.502 --> 00:03:37.751
+you convolve it with this ugly beast, you get something that looks like that.
+
+00:03:37.751 --> 00:03:39.887
+And that's where the ringing comes from.
+
+00:03:39.887 --> 00:03:43.443
+That's why you never want to just cut out the high frequencies, because
+
+00:03:43.443 --> 00:03:47.970
+what you're essentially doing is convolving your image with a sinc function.
+

@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.510 --> 00:00:03.990
+So then the question arises, what makes a good kernel?
+
+00:00:03.990 --> 00:00:05.890
+Well obviously a very successful major.
+
+00:00:05.890 --> 00:00:07.590
+That was joke.
+
+00:00:07.590 --> 00:00:09.040
+So let's consider a uniform filter.
+
+00:00:09.040 --> 00:00:10.140
+Did you get that one Megan?
+
+00:00:10.140 --> 00:00:11.190
+Yes, you got it, good.
+
+00:00:11.190 --> 00:00:13.130
+All right, so you remember the averaging filter?
+
+00:00:13.130 --> 00:00:17.010
+Right, so the averaging filter was just this box filter of all one-ninths.
+
+00:00:17.010 --> 00:00:20.110
+And as we moved it around, we took this image on the left and
+
+00:00:20.110 --> 00:00:22.080
+we created this image on the right, all right?
+
+00:00:22.080 --> 00:00:23.980
+So the question actually arises.
+
+00:00:23.980 --> 00:00:27.550
+What if I had some image like this, and I apply that box filter.
+
+00:00:27.550 --> 00:00:28.730
+What would I get?
+
+00:00:28.730 --> 00:00:34.030
+Well, I would get this, and that is known as really, really ugly.
+
+00:00:34.030 --> 00:00:39.050
+Okay, that does least not to me, as a nice smooth version of the original.
+
+00:00:39.050 --> 00:00:42.270
+Now if you're looking at an itty-bitty monitor, it might look nice.
+
+00:00:42.270 --> 00:00:44.330
+But trust me it's really ugly.
+
+00:00:44.330 --> 00:00:47.000
+And the question is, what went wrong?
+
+00:00:47.000 --> 00:00:51.960
+Well, really what went wrong is squares are not smooth.
+
+00:00:51.960 --> 00:00:54.890
+Which is probably a statement from the 60s, but it's, it's what I mean.
+
+00:00:54.890 --> 00:00:59.590
+Basically filtering with something that's not smooth to try to think about
+
+00:00:59.590 --> 00:01:03.410
+blurring or filtering an image to make it smoother doesn't seem right.
+
+00:01:03.410 --> 00:01:06.940
+And in fact we’ll be able to say a lot more about what smooth means in terms of
+
+00:01:06.940 --> 00:01:10.766
+mathematics in a few more lectures when we talk about [INAUDIBLE] analysis.
+
+00:01:10.766 --> 00:01:12.993
+You know, so what was the problem?
+
+00:01:12.993 --> 00:01:17.650
+To get sense of what’s wrong, imagine that you had a single point of
+
+00:01:17.650 --> 00:01:20.790
+light that you’re looking at very far away, right?
+
+00:01:20.790 --> 00:01:24.650
+And you’ve blurred the camera, so it was out of focus.
+
+00:01:24.650 --> 00:01:26.400
+What would the image look like?
+
+00:01:26.400 --> 00:01:28.700
+Well, it would look something like that.
+
+00:01:28.700 --> 00:01:29.670
+Okay?
+
+00:01:29.670 --> 00:01:33.250
+Brighter in the middle, falling off towards blackness at the edges.
+
+00:01:33.250 --> 00:01:34.520
+Very, very deep.
+
+00:01:34.520 --> 00:01:35.300
+All right.
+
+00:01:35.300 --> 00:01:39.770
+And in fact, if we think of images as functions, I could take this image, and
+
+00:01:39.770 --> 00:01:41.770
+I could plot it as this function.
+
+00:01:41.770 --> 00:01:45.130
+If I've taught at that blurry spot, what kind of function would I get?
+
+00:01:45.130 --> 00:01:47.110
+Well it would look something like here on the right.
+

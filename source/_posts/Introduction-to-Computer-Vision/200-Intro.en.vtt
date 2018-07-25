@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.350 --> 00:00:02.210
+Welcome back to Computer Vision.
+
+00:00:02.210 --> 00:00:05.570
+This is going to be the second in a series about stereo.
+
+00:00:05.570 --> 00:00:08.550
+In particular, we're going to focus on what's called epipolar geometry.
+
+00:00:09.745 --> 00:00:12.500
+We'd said last time that if we had two images and
+
+00:00:12.500 --> 00:00:16.840
+we knew something about the cameras, if we could find correspondences given that
+
+00:00:16.840 --> 00:00:19.280
+known relationship, we could find the depth.
+
+00:00:19.280 --> 00:00:21.490
+And we talked about disparity.
+
+00:00:21.490 --> 00:00:26.080
+And disparity was the idea that the location of a point in an image would
+
+00:00:26.080 --> 00:00:31.020
+change, depending upon the depth of the scene as I move my camera.
+
+00:00:31.020 --> 00:00:34.840
+And if I actually had the disparity I could make a disparity map,
+
+00:00:34.840 --> 00:00:37.410
+which tells me how all the points have shifted.
+
+00:00:37.410 --> 00:00:41.560
+And disparity was inversely proportional to the depth, and
+
+00:00:41.560 --> 00:00:44.990
+that's was this disparity map on the right is.
+
+00:00:44.990 --> 00:00:47.710
+But, how do we find the disparity?
+
+00:00:47.710 --> 00:00:51.870
+Essentially given one point in the image, we need to search for it in the other.
+
+00:00:51.870 --> 00:00:56.710
+But our intuition tells us, if I know something about how the two
+
+00:00:56.710 --> 00:01:01.300
+cameras are aligned, you give me one point in the picture on the left.
+
+00:01:01.300 --> 00:01:04.519
+It can't be anywhere on the picture on the right,
+
+00:01:04.519 --> 00:01:08.360
+it has to be somehow constrained in terms of where it can be on the left.
+
+00:01:09.400 --> 00:01:12.900
+This lesson is going to be about those constraints, and
+
+00:01:12.900 --> 00:01:15.870
+then we're going to assume those constraints when we go about actually finding
+
+00:01:15.870 --> 00:01:17.340
+the points in the next lesson.
+

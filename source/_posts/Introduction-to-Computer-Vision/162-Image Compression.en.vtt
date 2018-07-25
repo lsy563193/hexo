@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.398 --> 00:00:06.020
+You probably have heard of JPEG, probably have JPEG images all around you, okay.
+
+00:00:06.020 --> 00:00:08.860
+JPEG uses something called the Discrete Cosine Transform, or
+
+00:00:08.860 --> 00:00:10.140
+variations there of.
+
+00:00:10.140 --> 00:00:13.050
+Basically a way of thinking about that is
+
+00:00:13.050 --> 00:00:16.340
+they take a little 8x8 region of the image.
+
+00:00:16.340 --> 00:00:20.140
+So you carve the whole region up in little 8x8 segments.
+
+00:00:20.140 --> 00:00:27.700
+And then it takes, as a basis set, these sinusoids and co-sinusoids, right.
+
+00:00:27.700 --> 00:00:29.770
+So here we have the ones that are vertical,
+
+00:00:29.770 --> 00:00:32.450
+here we have ones that are coming down and here we have the product of them.
+
+00:00:32.450 --> 00:00:36.460
+And you can see the lower frequencies are in the top left hand corner and
+
+00:00:36.460 --> 00:00:38.920
+the higher frequencies are in the bottom right hand corner.
+
+00:00:38.920 --> 00:00:41.920
+So what you can do is you can say,
+
+00:00:41.920 --> 00:00:46.310
+how much of each of these do I need to make the picture?
+
+00:00:46.310 --> 00:00:47.990
+And you can actually order them, right.
+
+00:00:47.990 --> 00:00:50.190
+You can, you can sort of go through them and order them this way.
+
+00:00:50.190 --> 00:00:54.610
+With the idea being that the top left hand corner might be,
+
+00:00:54.610 --> 00:00:55.350
+in fact go back here.
+
+00:00:55.350 --> 00:00:57.400
+You see how this is a constant?
+
+00:00:57.400 --> 00:01:00.960
+Okay, so that's just, if you, that's just the average of the picture.
+
+00:01:00.960 --> 00:01:04.750
+So the top left hand corner, what sometimes called B(0,0) that's just the DC
+
+00:01:04.750 --> 00:01:07.740
+component, the average and then as you get further and
+
+00:01:07.740 --> 00:01:10.310
+further your getting the higher and higher frequencies.
+
+00:01:10.310 --> 00:01:13.780
+So the top left hand corner represent the lower frequencies.
+
+00:01:13.780 --> 00:01:17.230
+The bottom right hand corner represents the higher frequencies.
+
+00:01:17.230 --> 00:01:19.150
+Now, what we said before is,
+
+00:01:19.150 --> 00:01:23.340
+we don't have to represent the higher frequencies that well, right?
+
+00:01:23.340 --> 00:01:26.640
+Just sort of the high contrasty components of it.
+
+00:01:26.640 --> 00:01:31.850
+So one way of doing that is saying, what if we encode
+
+00:01:31.850 --> 00:01:37.630
+these coefficients better, more bits, than these coefficients?
+
+00:01:37.630 --> 00:01:40.720
+And that gives you what's called a quantization table.
+
+00:01:40.720 --> 00:01:45.750
+And DCT, discrete cosine transform, does the compression by, so
+
+00:01:45.750 --> 00:01:50.650
+what this 3 means is we keep the coefficient say to the nearest three values, so
+
+00:01:50.650 --> 00:01:54.010
+if you're thinking of this in bits you, you can shift it over by two.
+
+00:01:54.010 --> 00:01:56.660
+The idea is that you round this to the nearest 3.
+
+00:01:56.660 --> 00:01:58.530
+Whereas this is rounded to the nearest 31, okay.
+
+00:01:58.530 --> 00:02:03.830
+So in other words, you're doing more representation of
+
+00:02:03.830 --> 00:02:09.280
+the top left hand corner than you are of the bottom right hand corner, okay.
+
+00:02:09.280 --> 00:02:12.980
+And so what that means is you lose information but
+
+00:02:12.980 --> 00:02:17.850
+you're mostly losing the information down here, okay.
+
+00:02:17.850 --> 00:02:21.250
+And the same way, by the way, that you do the inverse Fourier transform
+
+00:02:21.250 --> 00:02:24.150
+given the spectrum you can reconstruct the signal.
+
+00:02:24.150 --> 00:02:26.280
+The same is true of the DCT.
+
+00:02:26.280 --> 00:02:28.280
+IDCT, inverse DCT.
+
+00:02:28.280 --> 00:02:31.280
+Given those coefficients, I can reconstruct the image.
+
+00:02:31.280 --> 00:02:34.970
+But now, instead of maintaining all those coefficients exactly,
+
+00:02:34.970 --> 00:02:38.530
+I'm only going to keep more information about
+
+00:02:38.530 --> 00:02:43.280
+the low frequency coefficients than I am about the high frequency coefficients.
+
+00:02:43.280 --> 00:02:45.650
+And that works really well for the human vision system.
+
+00:02:45.650 --> 00:02:48.440
+And so if you take a look at your average JPEG image and
+
+00:02:48.440 --> 00:02:51.870
+here's an example I've stolen from the web somewhere, okay.
+
+00:02:51.870 --> 00:02:56.730
+So they used 89,000 bytes of information to represent this picture.
+
+00:02:56.730 --> 00:03:00.610
+Using just the, the raw intensities and 12,000 bytes here so
+
+00:03:00.610 --> 00:03:04.810
+this is a ratio of what, seven to one.
+
+00:03:04.810 --> 00:03:09.286
+Using DCT coefficients, the JPEG standard, all right.
+
+00:03:09.286 --> 00:03:14.910
+The reason it works, to sum this all up, is that images vary over frequency,
+
+00:03:14.910 --> 00:03:17.440
+that's our base's set.
+
+00:03:17.440 --> 00:03:22.600
+The human vision system is sensitive to different frequencies at
+
+00:03:22.600 --> 00:03:23.890
+different amounts.
+
+00:03:23.890 --> 00:03:28.950
+So by doing similar to a Fourier transform where you take that integral or
+
+00:03:28.950 --> 00:03:34.370
+that sum, that dot product with the wiggly sinusoids, DCT is a variant of that.
+
+00:03:34.370 --> 00:03:38.660
+We can figure out the coefficients for each of the frequencies.
+
+00:03:38.660 --> 00:03:43.190
+Then we can threshold essentially or reduce the level of representation of
+
+00:03:43.190 --> 00:03:47.380
+the high frequency in order to save a bunch of bits in describing the image.
+

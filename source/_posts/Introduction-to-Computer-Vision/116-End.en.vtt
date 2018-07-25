@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.440 --> 00:00:04.059
+But that ends the lesson on using Hough transforms to find circles.
+
+00:00:04.059 --> 00:00:08.200
+That, along with the lines, is sort of the, sort of very old approach to
+
+00:00:08.200 --> 00:00:13.580
+parameterized method methods of finding parameterized objects.
+
+00:00:13.580 --> 00:00:14.670
+Even though it's old, it's,
+
+00:00:14.670 --> 00:00:18.440
+it's a good way of learning about extracting structure from an image.
+
+00:00:18.440 --> 00:00:20.860
+Remember, we go from pixels to things.
+
+00:00:20.860 --> 00:00:24.126
+And that's actually why it's the first sort of serious problem set.
+
+00:00:24.126 --> 00:00:26.617
+For those of you who are taking the online class, or
+
+00:00:26.617 --> 00:00:28.490
+those of you who just want to try it.
+
+00:00:28.490 --> 00:00:30.150
+And by the way, it's also one of the first problem sets I
+
+00:00:30.150 --> 00:00:31.680
+give my on campus class.
+
+00:00:31.680 --> 00:00:35.370
+Because they are not used to this idea of going from, sort of an image to a,
+
+00:00:35.370 --> 00:00:36.100
+a data structure.
+
+00:00:37.146 --> 00:00:39.014
+Next time, we're going to talk about,
+
+00:00:39.014 --> 00:00:41.142
+something more general uses of Hough transforms.
+
+00:00:41.142 --> 00:00:44.963
+Where your parameter is not based upon, analytical model,
+
+00:00:44.963 --> 00:00:46.620
+like lines and circles.
+
+00:00:46.620 --> 00:00:50.160
+But instead is based upon the shape of the objects that somebody gave you.
+
+00:00:50.160 --> 00:00:52.550
+And we'll talk about how to do that and
+
+00:00:52.550 --> 00:00:57.060
+also why that has developed a little bit of a resurgence in recent years.
+

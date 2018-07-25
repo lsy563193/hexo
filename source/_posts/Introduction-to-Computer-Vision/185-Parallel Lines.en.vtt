@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.199
+A cool thing in perspective projection and something that, that you already know
+
+00:00:05.199 --> 00:00:10.111
+is that parallel lines in the world almost always meet at a point in the image.
+
+00:00:10.111 --> 00:00:15.708
+So here's an example of that's two parallel lines out on the ground plane and
+
+00:00:15.708 --> 00:00:18.252
+they project to two lines in the image.
+
+00:00:18.252 --> 00:00:20.645
+And you can see that they meet at this point,
+
+00:00:20.645 --> 00:00:23.758
+sometimes called the "Vanishing" point in the image.
+
+00:00:23.758 --> 00:00:28.649
+And the, the canonical example of that is always railroad tracks, where the,
+
+00:00:28.649 --> 00:00:31.799
+the tracks themselves all converge to some point.
+
+00:00:31.799 --> 00:00:34.535
+So we can sort of intuitively think about that.
+
+00:00:34.535 --> 00:00:39.140
+But what's really cool is you can see that directly from the mathematics of it.
+
+00:00:39.140 --> 00:00:43.477
+So let's think about what a line in 3-space is.
+
+00:00:43.477 --> 00:00:48.315
+So a line in 3-space can par, parametrized by a single value a single parameter.
+
+00:00:48.315 --> 00:00:50.252
+So in this case, we're going to use t.
+
+00:00:50.252 --> 00:00:52.131
+So we have x of t, y of t and z of t and
+
+00:00:52.131 --> 00:00:55.698
+the idea is as t changes from maybe minus infinity to infinity or
+
+00:00:55.698 --> 00:00:59.360
+zero to however you want to do it, you would move along that line.
+
+00:00:59.360 --> 00:01:03.131
+And a line in 3-space starts at some point in 3-space.
+
+00:01:03.131 --> 00:01:05.933
+I'm saying here, x0, y0, z0.
+
+00:01:05.933 --> 00:01:08.002
+And then its moved along some vector.
+
+00:01:08.002 --> 00:01:10.471
+So right now, we're using the vector a, b, c.
+
+00:01:10.471 --> 00:01:13.522
+So a, a in the x direction, b in the y direction and
+
+00:01:13.522 --> 00:01:16.377
+c in the z direction, scaled by the value of t.
+
+00:01:16.377 --> 00:01:21.420
+So now, let's take a look at where all the points on the line lie in
+
+00:01:21.420 --> 00:01:22.716
+the image plan.
+
+00:01:22.716 --> 00:01:25.441
+All right? So that's for every x, y, z,
+
+00:01:25.441 --> 00:01:29.090
+what's the x prime and y prime for the given t?
+
+00:01:29.090 --> 00:01:34.326
+Well, we learned that the equation of the projection from x,
+
+00:01:34.326 --> 00:01:39.200
+y, z to x prime is just fx over z and for y, it's just fy over z.
+
+00:01:39.200 --> 00:01:44.658
+So here, we just substitute it in the expressions from the other side
+
+00:01:44.658 --> 00:01:46.073
+in terms of t.
+
+00:01:46.073 --> 00:01:50.863
+So that's where all the points on the line go, but
+
+00:01:50.863 --> 00:01:54.181
+what happens as t gets really big?
+
+00:01:54.181 --> 00:01:57.593
+In the limit as t goes to infinity and I'm going to assume for
+
+00:01:57.593 --> 00:02:01.088
+now that c is not zero, we'll talk about that in a minute.
+
+00:02:01.088 --> 00:02:02.123
+Okay?
+
+00:02:02.123 --> 00:02:05.092
+The limit of x prime is just fa over c.
+
+00:02:05.092 --> 00:02:08.195
+The limit of y prime is just fb over c.
+
+00:02:08.195 --> 00:02:10.198
+What's missing?
+
+00:02:10.198 --> 00:02:13.701
+What's missing is x0, y0, z0?
+
+00:02:13.701 --> 00:02:14.701
+In other words,
+
+00:02:14.701 --> 00:02:18.706
+it doesn't matter which point in the world this line starts from.
+
+00:02:18.706 --> 00:02:19.240
+I can start from here.
+
+00:02:19.240 --> 00:02:20.040
+I can start from here.
+
+00:02:20.040 --> 00:02:21.642
+I can start from here.
+
+00:02:21.642 --> 00:02:26.468
+As long as the points are all moving in the direction to a, b,
+
+00:02:26.468 --> 00:02:31.218
+c, they're all going to converge at this point in the image.
+
+00:02:31.218 --> 00:02:32.461
+And that's what were,
+
+00:02:32.461 --> 00:02:35.941
+that's why it's the case that all parallel lines in the world, so
+
+00:02:35.941 --> 00:02:40.061
+it's lines that are parallel in the world will all converge to a single point.
+
+00:02:40.061 --> 00:02:44.720
+So the railroad tracks and a sense along the railroad track, since they're all
+
+00:02:44.720 --> 00:02:48.836
+parallel in the same direction, they all converge to the same point.
+
+00:02:48.836 --> 00:02:52.072
+So what does it mean that c is zero?
+
+00:02:52.072 --> 00:02:56.977
+So c is zero means that the z value doesn't change.
+
+00:02:56.977 --> 00:02:59.642
+So assuming I'm holding my camera like this, so
+
+00:02:59.642 --> 00:03:03.350
+my image plane is a, a vertical plane, so that z is perpendicular.
+
+00:03:03.350 --> 00:03:05.523
+If the z value doesn't change,
+
+00:03:05.523 --> 00:03:09.557
+it means the line in the world is parallel to my image plane.
+
+00:03:09.557 --> 00:03:11.584
+Doesn't get further away or
+
+00:03:11.584 --> 00:03:16.830
+closer, it stays parallel and those lines will all stay parallel lines.
+
+00:03:16.830 --> 00:03:20.540
+And that's why I said that almost all pairs of parallel lines in
+
+00:03:20.540 --> 00:03:22.369
+the world converge to a point.
+
+00:03:22.369 --> 00:03:24.844
+If you have parallel lines that are vertical or
+
+00:03:24.844 --> 00:03:27.770
+aligned with the image plane, they don't converge.
+

@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.280 --> 00:00:03.240
+For the last, part of the lesson, I want to talk about a much more
+
+00:00:03.240 --> 00:00:09.090
+modern approach to using these Hough transform, displacement vectors.
+
+00:00:09.090 --> 00:00:12.090
+In fact it was proposed as recently as 2004,
+
+00:00:12.090 --> 00:00:16.410
+and subsequently, as a way of, locating a particular object.
+
+00:00:17.700 --> 00:00:21.290
+What we're going to do now is, instead of using edges or
+
+00:00:21.290 --> 00:00:25.410
+the idea of high, high value gradients as a, as a feature that you can find.
+
+00:00:25.410 --> 00:00:29.200
+What we're going to use are little feature patches, all right?
+
+00:00:29.200 --> 00:00:34.110
+And feature patches are just little chunks of an image that, for some reason,
+
+00:00:34.110 --> 00:00:35.170
+for, for one reason or
+
+00:00:35.170 --> 00:00:39.170
+another, you've decided, these are useful things to try to go find.
+
+00:00:39.170 --> 00:00:41.399
+So, if you have those, this is the way that would work.
+
+00:00:42.590 --> 00:00:44.130
+So we have a training image here, and
+
+00:00:44.130 --> 00:00:48.400
+I'm going to assume for now that our feature patch is tire, and I'll tell you in
+
+00:00:48.400 --> 00:00:52.920
+a minute about how we go about finding those feature patches, all right?
+
+00:00:52.920 --> 00:00:58.320
+And so here I've located the tire in two different places, and so
+
+00:00:58.320 --> 00:01:02.230
+in the same way as with the gradient, so when I first find it here,
+
+00:01:02.230 --> 00:01:05.390
+I say, okay, there's a displacement vector to the right like that.
+
+00:01:05.390 --> 00:01:10.070
+And I'll put that in a table that's indexed by the feature patch.
+
+00:01:11.070 --> 00:01:15.120
+And then I find that, oop, I found it again, it's over here, and it's index, and
+
+00:01:15.120 --> 00:01:18.230
+it, it has a displacement vector to the left, like that.
+
+00:01:18.230 --> 00:01:20.450
+So I put that in a, in the same table, and
+
+00:01:20.450 --> 00:01:23.560
+in fact it's indexed by the same feature type.
+
+00:01:23.560 --> 00:01:27.480
+So, these features are referred to as visual codewords, which I'll describe in
+
+00:01:27.480 --> 00:01:31.340
+just a minute, and the idea that I would have a table based upon the codewords.
+
+00:01:31.340 --> 00:01:35.780
+And associated with each codeword is the set of displacement vectors that I
+
+00:01:35.780 --> 00:01:40.180
+have to vote with every time I find that feature anywhere in the image.
+

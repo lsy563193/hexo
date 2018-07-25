@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.350 --> 00:00:02.490
+Now life gets uglier, rotation.
+
+00:00:03.510 --> 00:00:07.490
+What I have here is a figure, or I think this is also from four-side composite
+
+00:00:07.490 --> 00:00:12.310
+slides, and what I'm showing you is two coordinate frames, A and B.
+
+00:00:13.350 --> 00:00:19.570
+And you'll notice that A has an I vector, a J vector and a K vector.
+
+00:00:19.570 --> 00:00:23.490
+And B has an I vector, a J vector, and a K vector.
+
+00:00:23.490 --> 00:00:27.570
+And one of the important things to realize is that this P value,
+
+00:00:27.570 --> 00:00:31.410
+the vector from the origin, is, can be expressed in two ways.
+
+00:00:31.410 --> 00:00:36.210
+It can be expressed as some components in the a frame times the x, y,
+
+00:00:36.210 --> 00:00:39.550
+z components, or some components in
+
+00:00:39.550 --> 00:00:44.320
+the B frame with the components in the x, y, and z frame, right?
+
+00:00:44.320 --> 00:00:46.980
+They're the same vector, right?
+
+00:00:46.980 --> 00:00:51.450
+And what's key is understanding that there are these basis vectors and
+
+00:00:51.450 --> 00:00:55.640
+we need to know the amount of component that multiples each of them.
+
+00:00:55.640 --> 00:01:00.700
+What we want to be able to do is say we're going to rotate the frame from A to
+
+00:01:00.700 --> 00:01:03.350
+B, and that's what this says.
+
+00:01:03.350 --> 00:01:10.360
+What this says is given my point described in A, I'm going to have a rotation
+
+00:01:10.360 --> 00:01:15.870
+operator that would give me the P now expressed in the B frame.
+
+00:01:15.870 --> 00:01:21.388
+And R A to B means describing frame A in the coordinate system of B and it says,
+
+00:01:21.388 --> 00:01:26.473
+so if you gave me the location of a point in terms of the components of A,
+
+00:01:26.473 --> 00:01:30.524
+this is and it's only a rotation after applying R,
+
+00:01:30.524 --> 00:01:33.490
+I get the components in the frame B.
+

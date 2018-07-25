@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.002
+So we did an algorithm.
+
+00:00:01.002 --> 00:00:02.418
+Whenever you do an algorithm,
+
+00:00:02.418 --> 00:00:05.473
+you just need to think about things like how well does it work?
+
+00:00:05.473 --> 00:00:07.341
+Well, obviously it work great, because I'm telling you about it.
+
+00:00:07.341 --> 00:00:09.345
+No, but we'll, we'll see that in a minute.
+
+00:00:09.345 --> 00:00:12.513
+More importantly for algorithms we have to talk about things like complexity.
+
+00:00:12.513 --> 00:00:14.315
+So the first question is, this is the easy one.
+
+00:00:14.315 --> 00:00:16.784
+What's the space complexity?
+
+00:00:16.784 --> 00:00:20.454
+That is how much memory do I have to use?
+
+00:00:20.454 --> 00:00:23.049
+Well, forgetting the image for
+
+00:00:23.049 --> 00:00:27.094
+a moment, the bottom line is I need k to the n bins.
+
+00:00:27.094 --> 00:00:27.661
+All right?
+
+00:00:27.661 --> 00:00:33.000
+So if I have k bins in each dimension, it's k to the n is the number of bins.
+
+00:00:33.000 --> 00:00:35.936
+So we were doing this in two dimensions, so it would be k squared.
+
+00:00:35.936 --> 00:00:40.174
+So, you know, if I have about 100, so it's about 10,000 maybe.
+
+00:00:40.174 --> 00:00:44.116
+That should tell you and this is going to come up in our next lesson,
+
+00:00:44.116 --> 00:00:46.525
+that adding the number of parameters,
+
+00:00:46.525 --> 00:00:50.918
+which increases n in this case can be very expensive in terms of memory.
+
+00:00:50.918 --> 00:00:53.876
+In fact, also in your problem set, you're going to try to do something and
+
+00:00:53.876 --> 00:00:55.185
+you're going to grow up MATLAB and
+
+00:00:55.185 --> 00:00:56.991
+then you're going to figure out how to fix it.
+
+00:00:56.991 --> 00:01:01.662
+What about time complexity in terms of the voting?
+
+00:01:01.662 --> 00:01:05.578
+Well, the nice thing is that the voting is linearly proportional to
+
+00:01:05.578 --> 00:01:07.168
+the number of edge points.
+
+00:01:07.168 --> 00:01:10.638
+You run through your edge points and they each vote.
+
+00:01:10.638 --> 00:01:14.942
+And the voting maybe might take a little bit of time, but it's constant.
+
+00:01:14.942 --> 00:01:15.643
+All right?
+
+00:01:15.643 --> 00:01:18.179
+Compare that, let's say, let's suppose you're trying to fit a circle.
+
+00:01:18.179 --> 00:01:19.080
+Okay?
+
+00:01:19.080 --> 00:01:22.016
+So a circle is defined by three points.
+
+00:01:22.016 --> 00:01:25.416
+So if you have some large number of edge points,
+
+00:01:25.416 --> 00:01:29.423
+the number of triples is that number, let's call it q.
+
+00:01:29.423 --> 00:01:32.396
+Q choose three would be a very big number, right?
+
+00:01:32.396 --> 00:01:34.844
+Whereas if you do something that's proportional to just q,
+
+00:01:34.844 --> 00:01:36.097
+you're in much better shape.
+
+00:01:36.097 --> 00:01:41.111
+So the idea here is that the time complexity is constant in the number of
+
+00:01:41.111 --> 00:01:44.390
+features or edge points that you've detected.
+

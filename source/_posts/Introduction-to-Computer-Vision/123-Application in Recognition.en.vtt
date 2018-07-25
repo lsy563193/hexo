@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.969
+So at run time, it works like following.
+
+00:00:02.969 --> 00:00:06.735
+So here I'm going to show you on two cars using just the tire patch as
+
+00:00:06.735 --> 00:00:08.275
+the example, all right?
+
+00:00:08.275 --> 00:00:12.213
+Suppose we have only one feature and it's the tire.
+
+00:00:12.213 --> 00:00:15.182
+And suppose we try looking for it everywhere, okay?
+
+00:00:15.182 --> 00:00:18.486
+So we look for it everywhere and we find these four.
+
+00:00:18.486 --> 00:00:19.520
+Okay?
+
+00:00:19.520 --> 00:00:22.671
+Well, when we find them, what we have to do is we have to
+
+00:00:22.671 --> 00:00:26.444
+take the displacement vectors associated with that codeword and
+
+00:00:26.444 --> 00:00:28.996
+vote with all those displacement vectors.
+
+00:00:28.996 --> 00:00:32.767
+So let's remember for the tire codeword, there are two displacement vectors.
+
+00:00:32.767 --> 00:00:34.368
+One to the right, one to the left.
+
+00:00:34.368 --> 00:00:36.437
+So we vote for those.
+
+00:00:36.437 --> 00:00:38.295
+And then we simply look for
+
+00:00:38.295 --> 00:00:42.277
+spots, points that have more votes than other places.
+
+00:00:42.277 --> 00:00:44.645
+So in the case, where is it, where are those points?
+
+00:00:44.645 --> 00:00:47.114
+Well, just in the center of the cars.
+
+00:00:47.114 --> 00:00:51.209
+As I said, this was originally proposed by some folks at the ECCV,
+
+00:00:51.209 --> 00:00:54.421
+European Conference Creative Vision 2004 and
+
+00:00:54.421 --> 00:00:56.827
+it subsequently been evolved from that.
+
+00:00:56.827 --> 00:01:01.134
+And the, so the idea is that we're now using this notion of detecting features
+
+00:01:01.134 --> 00:01:05.390
+and something about their configuration in order to try to find these objects
+

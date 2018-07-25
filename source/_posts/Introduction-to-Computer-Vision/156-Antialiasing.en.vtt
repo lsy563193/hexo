@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.240 --> 00:00:03.630
+So the question is, how can we prevent aliasing from happening?
+
+00:00:03.630 --> 00:00:06.060
+One is we can get more samples, okay?
+
+00:00:06.060 --> 00:00:10.200
+We can join the megapixel craze in the current video technology.
+
+00:00:10.200 --> 00:00:16.160
+My birthday's coming up this month and I treated myself to a new camera,
+
+00:00:16.160 --> 00:00:20.370
+and the camera has 36 megapixels in an image, all right, so
+
+00:00:20.370 --> 00:00:24.520
+that I can pull out really fine detail in a, in a, in a portrait.
+
+00:00:24.520 --> 00:00:27.610
+But, in general, this sort of the megapixel thing doesn't go on forever.
+
+00:00:27.610 --> 00:00:29.940
+You know, stuff always can or will go faster and
+
+00:00:29.940 --> 00:00:32.590
+faster as I think, as things get further away, for example.
+
+00:00:32.590 --> 00:00:36.030
+So what do you want to do, well, what you want to do is,
+
+00:00:36.030 --> 00:00:38.730
+you want to make sure your signals are less wiggly.
+
+00:00:38.730 --> 00:00:41.530
+That is, they don't have all that high frequency component.
+
+00:00:41.530 --> 00:00:43.460
+You want to get rid of some of that information.
+
+00:00:43.460 --> 00:00:44.290
+So the idea is,
+
+00:00:44.290 --> 00:00:47.550
+we're going to get rid of some of the high frequency information, but
+
+00:00:47.550 --> 00:00:50.620
+that's going to be better than aliasing, all right?
+
+00:00:50.620 --> 00:00:54.440
+The idea is we don't want to see that weird checkerboard effect, right.
+
+00:00:54.440 --> 00:00:56.790
+So we're going to remove some of the high frequency, but
+
+00:00:56.790 --> 00:00:59.460
+the idea is that the thing will be well behaved.
+
+00:00:59.460 --> 00:01:03.970
+So let's talk about that real quickly in our audio example.
+
+00:01:03.970 --> 00:01:08.030
+What we're going to do is, we're going to introduce lowpass filters.
+
+00:01:08.030 --> 00:01:11.160
+And what the lowpass filter is going to do is,
+
+00:01:11.160 --> 00:01:13.150
+we're going to put that right here.
+
+00:01:13.150 --> 00:01:17.190
+So where the analog voltage is coming out of the microphone, so
+
+00:01:17.190 --> 00:01:21.040
+the signal that goes into the A to D converter,
+
+00:01:21.040 --> 00:01:23.740
+doesn't have frequencies higher than a certain amount.
+
+00:01:23.740 --> 00:01:25.980
+We'll say, okay, great.
+
+00:01:25.980 --> 00:01:30.920
+So that says that we can reduce the number of samples we need to take,
+
+00:01:30.920 --> 00:01:34.530
+or limit the number of samples we need to take, and then when we do
+
+00:01:34.530 --> 00:01:39.680
+the reconstruction, we'll know that anything that was reconstructed that was
+
+00:01:39.680 --> 00:01:43.230
+of a higher frequency than we let in should be thrown away.
+
+00:01:43.230 --> 00:01:47.650
+So we use the lowpass filter again for the output to the speaker.
+
