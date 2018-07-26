@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.280 --> 00:00:02.300
+So, unfortunately.
+
+00:00:02.300 --> 00:00:03.370
+Not unfortunately.
+
+00:00:03.370 --> 00:00:07.070
+Necessarily we have to introduce a little bit of notation and mathematics in
+
+00:00:07.070 --> 00:00:11.600
+order to make it easier to understand, what this reflectance map is.
+
+00:00:11.600 --> 00:00:16.900
+So we're going to start by assuming we have a surface z of x, y.
+
+00:00:16.900 --> 00:00:19.230
+Right? So here we have z in this direction.
+
+00:00:19.230 --> 00:00:20.800
+X and y in that direction.
+
+00:00:20.800 --> 00:00:22.390
+And you have some surface.
+
+00:00:22.390 --> 00:00:25.610
+As you move in say, the x direction and the y direction.
+
+00:00:25.610 --> 00:00:27.280
+Your z value changes and
+
+00:00:27.280 --> 00:00:30.990
+in fact, you can talk about how z changes as you move an x and
+
+00:00:30.990 --> 00:00:35.650
+y, that would be the partial derivatives of z with a spec to x and a spec to y.
+
+00:00:35.650 --> 00:00:40.480
+And we are going to find two variables referred to as p and
+
+00:00:40.480 --> 00:00:42.880
+q to represent these derivatives.
+
+00:00:42.880 --> 00:00:46.110
+Now there is a little bit is ambiguity in the literature.
+
+00:00:46.110 --> 00:00:51.090
+When I learned it from Burtoll, p was the partial of z with respect to x.
+
+00:00:51.090 --> 00:00:53.370
+Q is the partial of z with respect to y.
+
+00:00:53.370 --> 00:00:56.790
+As I was rummaging around the web to see how people talk about this all of
+
+00:00:56.790 --> 00:01:00.900
+sudden sometimes people use the negative of the partial of
+
+00:01:00.900 --> 00:01:03.540
+z with respect to x and the partial of z respect to y.
+
+00:01:03.540 --> 00:01:06.620
+And it turns out when you do it as the negative it makes some
+
+00:01:06.620 --> 00:01:08.520
+formulations a little bit easier.
+
+00:01:08.520 --> 00:01:10.410
+So I'm going to use it as the negative, but
+
+00:01:10.410 --> 00:01:12.670
+you can use it either way as long as you're consistent.
+

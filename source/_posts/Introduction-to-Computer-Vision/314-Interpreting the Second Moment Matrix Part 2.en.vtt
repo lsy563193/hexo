@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.520 --> 00:00:03.719
+So we can look at this ellipse a little more carefully, okay.
+
+00:00:05.040 --> 00:00:09.970
+Let's first consider the case, where the gradient at
+
+00:00:09.970 --> 00:00:15.340
+every point in the image, is either horizontal or vertical.
+
+00:00:15.340 --> 00:00:16.510
+Sorry, not in the image in the window.
+
+00:00:16.510 --> 00:00:18.360
+So, at each point.
+
+00:00:18.360 --> 00:00:19.390
+It could be horizontal or
+
+00:00:19.390 --> 00:00:22.910
+it could be vertical, but it's not going to be slanted, okay?
+
+00:00:22.910 --> 00:00:27.590
+So some places it'll be horizontal, some places it'll be vertical, but
+
+00:00:27.590 --> 00:00:33.460
+it's never, the, both Ix and Iy are never non-zero at the same time.
+
+00:00:33.460 --> 00:00:38.980
+Well, that would mean that these terms would always be 0, right.
+
+00:00:38.980 --> 00:00:41.100
+Ix times Iy, all right.
+
+00:00:41.100 --> 00:00:43.050
+So, that would look like this.
+
+00:00:43.050 --> 00:00:47.290
+And I'm writing this as lambda one, lambda two, these are the diagonal terms.
+
+00:00:47.290 --> 00:00:49.530
+The off diagonals would be 0.
+
+00:00:49.530 --> 00:00:53.600
+Now, that's a nice full right matrix, right, lambda one, lambda two.
+
+00:00:54.630 --> 00:00:59.090
+Except if one of those were 0, it would not be a very good full,
+
+00:00:59.090 --> 00:01:01.070
+it would not be a full rank equation, right?
+
+00:01:01.070 --> 00:01:05.319
+So for example, if the Iy squareds were all 0 and
+
+00:01:05.319 --> 00:01:10.490
+that there was no gradient in the Y direction, only in the horizontal direction,
+
+00:01:10.490 --> 00:01:15.330
+that would mean that my matrix would only have one of these values, and
+
+00:01:15.330 --> 00:01:17.930
+probably, that's not really a good corner, right?
+
+00:01:17.930 --> 00:01:20.700
+Because if I only have say gradient in this way and
+
+00:01:20.700 --> 00:01:24.960
+not in that way, then I can slide up and down as much as I want.
+
+00:01:24.960 --> 00:01:29.620
+So, something about these numbers tells us how good a corner,
+
+00:01:29.620 --> 00:01:31.780
+the location in the image is.
+
+00:01:31.780 --> 00:01:33.660
+Can you smell the algorithm that's coming?
+
+00:01:33.660 --> 00:01:35.080
+It's not me, it's Megan.
+
+00:01:35.080 --> 00:01:36.870
+In fact, I'll write it just this way.
+
+00:01:36.870 --> 00:01:42.620
+If either of those lambdas were close to 0, this is not a corner.
+
+00:01:42.620 --> 00:01:44.358
+So what we want is we want,
+
+00:01:44.358 --> 00:01:47.820
+is we want to look for locations where both of those are large.
+
+00:01:49.060 --> 00:01:52.090
+Now for those of you who remember from your calculus and and you're learning
+
+00:01:52.090 --> 00:01:57.650
+algebra, of course, we can take this second order matrix, this ellipse,
+
+00:01:57.650 --> 00:02:02.190
+and what we can do is we can diagonalize it through a rotation, and remember we
+
+00:02:02.190 --> 00:02:06.300
+talked about singular value decomposition, well this is not exactly that but
+
+00:02:06.300 --> 00:02:11.330
+it's quite related, where basically, what it says is we can think of M which is
+
+00:02:11.330 --> 00:02:15.960
+that special matrix as being sort of rotated or unrotated by R.
+
+00:02:15.960 --> 00:02:18.950
+Then it's a diagonal matrix and then it's re-rotated.
+
+00:02:18.950 --> 00:02:23.160
+The axis lengths of those ellipses, okay how big those ellipses are,
+
+00:02:23.160 --> 00:02:28.030
+that's determined by the eigenvalues these numbers.
+
+00:02:28.030 --> 00:02:29.520
+Of that diagonalization, and
+
+00:02:29.520 --> 00:02:35.130
+the orientation of the ellipse is determined by that rotation.
+
+00:02:35.130 --> 00:02:38.790
+So here I'm drawing that, like this, so remember,
+
+00:02:38.790 --> 00:02:43.830
+this is a particular ellipse of constant E, constant error.
+
+00:02:43.830 --> 00:02:48.870
+So for places where, it's a very narrow ellipse.
+
+00:02:48.870 --> 00:02:51.620
+That means that the E changes quickly.
+
+00:02:51.620 --> 00:02:54.820
+I didn't have to move very far for the E to get to that value.
+
+00:02:54.820 --> 00:02:58.070
+Whereas, the places where it goes very slowly, okay,
+
+00:02:58.070 --> 00:03:03.680
+I have to move a farther distance, in order for that value to change.
+
+00:03:03.680 --> 00:03:06.480
+And you see how it says it's one over the, the square root?
+
+00:03:06.480 --> 00:03:09.140
+So, remember, if that lando were 0, okey?
+
+00:03:09.140 --> 00:03:12.200
+That would mean I'd have to go an infinite direction,
+
+00:03:12.200 --> 00:03:16.120
+that means it doesn't change at all as I move in that direction.
+
+00:03:16.120 --> 00:03:21.190
+So what I'm telling you here is that the eigenvalues, of that M matrix,
+
+00:03:21.190 --> 00:03:25.690
+are indicative of the cornerness of that matrix.
+
+00:03:25.690 --> 00:03:27.350
+That's pretty cool.
+
+00:03:27.350 --> 00:03:30.490
+So, it turns out, Harris figured this out and
+
+00:03:30.490 --> 00:03:33.260
+they figured out a really simple way of thinking about this.
+

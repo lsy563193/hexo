@@ -1,7 +1,7 @@
 ---
 title: notes-python
 date: 2018-07-25 19:12:47
-tags:
+tags: python
 category: python
 ---
 

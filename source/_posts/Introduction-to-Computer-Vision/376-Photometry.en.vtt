@@ -1,0 +1,304 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.200 --> 00:00:03.200
+So here's a sort of toy or a schematic, right?
+
+00:00:03.200 --> 00:00:07.830
+So the, the general idea is that we've got some lighting.
+
+00:00:07.830 --> 00:00:10.970
+All right? And the lighting hits objects.
+
+00:00:10.970 --> 00:00:13.990
+And so we need physical models or models of the physics.
+
+00:00:13.990 --> 00:00:18.050
+And the idea is that that causes light to impinge upon whatever your
+
+00:00:18.050 --> 00:00:19.480
+photo sensitive system is.
+
+00:00:19.480 --> 00:00:23.010
+Whether it's a, a retina or a CCD, or CMOS, or
+
+00:00:23.010 --> 00:00:25.850
+whatever your imaging technology is, and then, of course,
+
+00:00:25.850 --> 00:00:29.330
+that's the picture, that we're going to take a look at in the computer.
+
+00:00:29.330 --> 00:00:34.480
+So there are all sorts of physical processes that impact the image that
+
+00:00:34.480 --> 00:00:35.700
+you're going to see.
+
+00:00:35.700 --> 00:00:37.570
+So, you know, here's a picture, I think,
+
+00:00:37.570 --> 00:00:39.550
+actually, this might be from [INAUDIBLE] don't remember.
+
+00:00:39.550 --> 00:00:44.070
+And you know, here is a picture, two pictures and
+
+00:00:44.070 --> 00:00:46.490
+it is pretty clear to you what is going on here, right?
+
+00:00:46.490 --> 00:00:50.650
+We've got sort of this textured stuff everywhere and
+
+00:00:50.650 --> 00:00:53.150
+there is differential light falling on it.
+
+00:00:53.150 --> 00:00:54.730
+There are shadows.
+
+00:00:54.730 --> 00:00:56.230
+And so when you look at that,
+
+00:00:56.230 --> 00:01:01.130
+you probably don't think that that's a texture painted on the, the surface of
+
+00:01:01.130 --> 00:01:06.780
+the road, but rather that that's a shadow on a more uniform texture.
+
+00:01:06.780 --> 00:01:08.070
+But of course, it could of been painted.
+
+00:01:08.070 --> 00:01:11.010
+So it's your brain has to be doing something in order to understand that.
+
+00:01:11.010 --> 00:01:13.170
+And this white tape that's shown here,
+
+00:01:13.170 --> 00:01:16.580
+is just a little bit showing you sort of how things appear to you, right.
+
+00:01:16.580 --> 00:01:20.790
+To you it's clear that this is a thing that's on the ground, right, that,
+
+00:01:20.790 --> 00:01:23.960
+that is not part of the texture of the ground, but is, is something else.
+
+00:01:23.960 --> 00:01:27.160
+So you said okay, that's one thing that is reflecting one way, and I've got
+
+00:01:27.160 --> 00:01:31.670
+some other object, namely the, the, the asphalt, that's reflecting another way.
+
+00:01:31.670 --> 00:01:33.880
+So that's sort of lighting surfaces and shadows.
+
+00:01:33.880 --> 00:01:38.750
+Of course, there are reflections, right, so in both of these window pictures,
+
+00:01:38.750 --> 00:01:41.690
+you know, you're probably guessing that's there's not like,
+
+00:01:41.690 --> 00:01:44.780
+this thing here that's behind the window, and
+
+00:01:44.780 --> 00:01:48.060
+maybe it's just a, a reflection of what's behind you.
+
+00:01:48.060 --> 00:01:52.150
+Likewise, you can see in this tree, it's all distorted a little bit,
+
+00:01:52.150 --> 00:01:55.600
+because maybe this glass isn't so perfect, but the idea is that you can
+
+00:01:55.600 --> 00:02:00.310
+see this reflection, and that reflection is impacting the image that gets made.
+
+00:02:00.310 --> 00:02:03.050
+Going along with reflection is refraction.
+
+00:02:03.050 --> 00:02:05.590
+Right, so it's most easily seen in things like water, or
+
+00:02:05.590 --> 00:02:07.510
+in various kinds of deformed glass.
+
+00:02:07.510 --> 00:02:11.420
+So here, you know, these wavy lines on the bottom of the pool,
+
+00:02:11.420 --> 00:02:14.140
+well, there are no wavy lines on the bottom of the pool,
+
+00:02:14.140 --> 00:02:19.350
+at least I hope not but instead the water itself is no longer flat there.
+
+00:02:19.350 --> 00:02:20.720
+There are some waves and
+
+00:02:20.720 --> 00:02:23.900
+that's causing the light rays to bend in a particular way.
+
+00:02:23.900 --> 00:02:27.930
+So, again, that impacts the image that you see.
+
+00:02:27.930 --> 00:02:31.490
+This beautiful picture here, has got both reflection and
+
+00:02:31.490 --> 00:02:34.110
+refraction going on inside of it.
+
+00:02:35.670 --> 00:02:38.050
+An interesting property which is really,
+
+00:02:38.050 --> 00:02:43.100
+it's just about reflection is what's referred to as interreflections and
+
+00:02:43.100 --> 00:02:46.290
+both of these pictures are drawn from computer graphics.
+
+00:02:46.290 --> 00:02:50.620
+It's not so much about the nature of the surface but what impacts the light that
+
+00:02:50.620 --> 00:02:53.930
+you see at a point, and sometimes we tend to think of well,
+
+00:02:53.930 --> 00:02:56.750
+there's just some light source and it's illuminating our objects.
+
+00:02:56.750 --> 00:02:59.980
+Well, there's been a lot of work done sort of since the 90's on what's
+
+00:02:59.980 --> 00:03:04.610
+referred to as interreflection, both in computer vision and computer graphics.
+
+00:03:04.610 --> 00:03:06.870
+So here where we have the shiny materials,
+
+00:03:06.870 --> 00:03:09.370
+you can see everything being reflected within it.
+
+00:03:09.370 --> 00:03:12.300
+But I think a more subtle example is oh this is
+
+00:03:12.300 --> 00:03:16.350
+the famous graphics teapot being rendered in a variety of ways, now of course,
+
+00:03:16.350 --> 00:03:20.560
+in a shiny surface you know that you're going to see a reflection of this
+
+00:03:20.560 --> 00:03:25.540
+purple teapot in front of it, but also in these partially reflective things.
+
+00:03:25.540 --> 00:03:27.500
+You see this purple color in there?
+
+00:03:27.500 --> 00:03:31.020
+That's reflective of this purple pot that's in front of it, so the idea is,
+
+00:03:31.020 --> 00:03:33.310
+you have all this light bouncing around.
+
+00:03:33.310 --> 00:03:38.280
+And all of that light can impact what's actually observed at a particular point.
+
+00:03:38.280 --> 00:03:42.570
+In computer graphics there's a method called ray tracing, which basically,
+
+00:03:42.570 --> 00:03:46.380
+as rays of light come in and they bounce off, they create illumination at all
+
+00:03:46.380 --> 00:03:51.530
+these, different facets of the model, and you can get a really rich, rendering.
+
+00:03:51.530 --> 00:03:53.440
+You know, one of the things that's a little different in
+
+00:03:53.440 --> 00:03:55.450
+computer vision today than before is.
+
+00:03:55.450 --> 00:03:58.310
+Traditionally when I talk computer vision I could assume that everybody had
+
+00:03:58.310 --> 00:03:58.950
+taken graphics.
+
+00:03:58.950 --> 00:04:02.250
+because there was sort of this connection between graphics and vision.
+
+00:04:02.250 --> 00:04:05.650
+These days it's much more likely people have taken machine learning because it's
+
+00:04:05.650 --> 00:04:09.150
+as if you have computer vision is a data driven inference problem.
+
+00:04:09.150 --> 00:04:11.480
+And people are less likely to have taken a graphics course and
+
+00:04:11.480 --> 00:04:13.540
+understand the physics that are here.
+
+00:04:13.540 --> 00:04:17.500
+Computer vision draws both from understanding what's going on from data, but
+
+00:04:17.500 --> 00:04:21.779
+also having built in models that have to do with the, the nature of the physics.
+
+00:04:21.779 --> 00:04:25.600
+Then there is things that happen to the light between bouncing off a surface and
+
+00:04:25.600 --> 00:04:27.090
+entering your eye.
+
+00:04:27.090 --> 00:04:29.450
+So here's an example referred to as scattering.
+
+00:04:29.450 --> 00:04:32.980
+Where this is what the picture maybe should look like if you think of
+
+00:04:32.980 --> 00:04:34.600
+it as being very clear.
+
+00:04:34.600 --> 00:04:37.640
+But if you actually just took a look at the raw image you would
+
+00:04:37.640 --> 00:04:39.930
+see this because of moisture and
+
+00:04:39.930 --> 00:04:44.160
+other particulates in the air, and the, the wavelengths that are absorbed.
+
+00:04:44.160 --> 00:04:46.280
+That the light changes as it comes through.
+
+00:04:46.280 --> 00:04:49.090
+And in fact there was a really cool paper done about depth,
+
+00:04:49.090 --> 00:04:50.880
+from what's called The Dark Channel.
+
+00:04:50.880 --> 00:04:54.000
+Which basically says that you know, the further away something is,
+
+00:04:54.000 --> 00:04:56.610
+the harder it is for something to be black in your image,
+
+00:04:56.610 --> 00:04:59.080
+because there's a little bit of fog all the way through.
+
+00:04:59.080 --> 00:05:02.730
+So they actually estimate the depth of the seam based upon,
+
+00:05:02.730 --> 00:05:06.200
+essentially, the amount of fog induced lightness that's there.
+
+00:05:06.200 --> 00:05:09.380
+And this is all from an understanding of the nature of the physics.
+
+00:05:10.520 --> 00:05:13.900
+And, there are lots of other phenomena that impact, you know,
+
+00:05:13.900 --> 00:05:17.690
+the light that comes in, you know, here's fog, and water dripping, and,
+
+00:05:17.690 --> 00:05:20.040
+and all sorts of, different types of effects
+

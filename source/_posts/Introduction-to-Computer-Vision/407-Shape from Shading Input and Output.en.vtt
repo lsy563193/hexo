@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.280 --> 00:00:05.760
+So now we're ready to talk in general about the problem of shape from shading.
+
+00:00:05.760 --> 00:00:10.495
+So the basic problem is this, given say, one, maybe more, but for
+
+00:00:10.495 --> 00:00:15.647
+now one image, that looks like either this top image or the bottom image,
+
+00:00:15.647 --> 00:00:20.154
+can you, you the computer, recover for me a function Z of x,y.
+
+00:00:20.154 --> 00:00:23.360
+So this, that's why it's going to map under this gradient space nicely.
+
+00:00:23.360 --> 00:00:27.093
+So we're imagining that we've just got a single viewpoint,
+
+00:00:27.093 --> 00:00:29.674
+you can think of Z as coming towards me, and
+
+00:00:29.674 --> 00:00:33.435
+I want to know the height of the function as I go over the image.
+
+00:00:33.435 --> 00:00:36.201
+By the way, this is just one representation of depth,
+
+00:00:36.201 --> 00:00:39.660
+it's a very viewpoint-specific representation of depth.
+
+00:00:39.660 --> 00:00:41.720
+If I had multiple cameras and
+
+00:00:41.720 --> 00:00:45.115
+I had different viewpoints, then the notion of Z as a function of
+
+00:00:45.115 --> 00:00:48.960
+x,y would not be a great representation of the geometry that's out there.
+
+00:00:48.960 --> 00:00:54.110
+And in fact, much later in the class, we'll talk about other depth sensors and
+
+00:00:54.110 --> 00:00:57.630
+things like point clouds, which is a different way of representing geometry.
+
+00:00:57.630 --> 00:01:02.120
+But for here, we're just talking about Z as a function of x,y.
+
+00:01:02.120 --> 00:01:06.180
+So, the fundamental question is, given this single image,
+
+00:01:06.180 --> 00:01:08.700
+can we recover the 3D shape.
+
+00:01:08.700 --> 00:01:11.950
+Well, as we talked about when we did lightness, fundamentally, this is an ill
+
+00:01:11.950 --> 00:01:16.530
+posed problem, right, because I don't know what the underlying albedo is, and
+
+00:01:16.530 --> 00:01:19.010
+I don't, may, not know what the illumination is.
+
+00:01:19.010 --> 00:01:21.046
+So there could be lots of different shapes and
+
+00:01:21.046 --> 00:01:24.540
+combinations of illumination, albedo, that would give the same image.
+
+00:01:24.540 --> 00:01:27.410
+So, as I said, this is ill-posed.
+
+00:01:27.410 --> 00:01:31.260
+In order to solve this, we have to make some form of assumptions.
+
+00:01:31.260 --> 00:01:34.170
+And those assumptions can be, the lighting is known, so
+
+00:01:34.170 --> 00:01:40.010
+I know the direction of the light, maybe I'm assuming that it's Lambertian.
+
+00:01:40.010 --> 00:01:42.460
+And that it's the same albedo everywhere.
+
+00:01:42.460 --> 00:01:43.960
+That would be an example.
+
+00:01:43.960 --> 00:01:46.870
+Or maybe I say that I know what the boundary conditions are.
+
+00:01:46.870 --> 00:01:49.450
+What we're going to have to do is, we're going to have to bring in some,
+
+00:01:49.450 --> 00:01:51.700
+some other kinds of assumptions to make this work.
+

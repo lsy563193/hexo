@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.190 --> 00:00:02.850
+There's some more cool applications.
+
+00:00:02.850 --> 00:00:06.110
+There's a whole bunch of work in building up
+
+00:00:06.110 --> 00:00:12.240
+structures from multiple images taken of that same structure.
+
+00:00:12.240 --> 00:00:16.610
+And there's a system and a whole bunch of work that came out of the folks at
+
+00:00:16.610 --> 00:00:20.280
+Microsoft Research and also University of Washington.
+
+00:00:20.280 --> 00:00:22.140
+Here's an example published at SIGGRAPH.
+
+00:00:22.140 --> 00:00:24.010
+And they built this system called Photosynth, and
+
+00:00:24.010 --> 00:00:27.750
+what you can see here are a bunch of pictures that were taken of Notre Dame.
+
+00:00:27.750 --> 00:00:32.509
+And, what these little things down here are meant to show,
+
+00:00:32.509 --> 00:00:37.461
+are the locations of the image with respect to the structure.
+
+00:00:37.461 --> 00:00:41.560
+And that has to do with relating between the views that you have things.
+
+00:00:41.560 --> 00:00:44.145
+When you do that, you can do some really cool things.
+
+00:00:44.145 --> 00:00:46.797
+They basically launched a site, this whole photo tourism,
+
+00:00:46.797 --> 00:00:50.240
+this idea of that being able to put in your images and this is their Photosynth.
+
+00:00:50.240 --> 00:00:52.305
+And I encourage you to check it out if, if, if,
+
+00:00:52.305 --> 00:00:54.910
+when you're using this we still use computers.
+
+00:00:54.910 --> 00:00:58.587
+In fact, here's a really cool demonstration done by Agarwal in,
+
+00:00:58.587 --> 00:01:00.197
+back in 2009, isn't it.
+
+00:01:00.197 --> 00:01:04.894
+So what you're seeing is, there's a whole bunch of these little dots,
+
+00:01:04.894 --> 00:01:09.950
+these, those are camera view points of the Colosseum, in Rome.
+
+00:01:09.950 --> 00:01:13.140
+You should go see that, see the, I mean, this is nice, see the real one,
+
+00:01:13.140 --> 00:01:14.140
+it's really cool.
+
+00:01:14.140 --> 00:01:17.940
+And this is just, flying you around the reconstruction of
+
+00:01:17.940 --> 00:01:22.400
+all these points based upon the solution to where all these cameras were.
+
+00:01:22.400 --> 00:01:26.710
+And this all relates to, first sun, solving fundamental matrix issues and
+
+00:01:26.710 --> 00:01:29.650
+then getting the full 3D calibration.
+
+00:01:29.650 --> 00:01:33.480
+I don't want to claim that you can do this with just the fundamental matrix,
+
+00:01:33.480 --> 00:01:36.830
+because in fact you eventually end up getting full 3D reconstruction here.
+
+00:01:36.830 --> 00:01:39.830
+But the idea is you have to know how the, the points correspond.
+

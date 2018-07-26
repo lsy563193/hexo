@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.012 --> 00:00:00.970
+All right.
+
+00:00:00.970 --> 00:00:04.410
+So, just to review a little bit, we talked about sort of
+
+00:00:04.410 --> 00:00:08.160
+practical application about how to make a mosaic or a panorama.
+
+00:00:08.160 --> 00:00:11.910
+We said you take a bunch of pictures from the same center of projection,
+
+00:00:11.910 --> 00:00:13.570
+same camera position.
+
+00:00:13.570 --> 00:00:16.510
+You compute the transformation between each of the images.
+
+00:00:16.510 --> 00:00:18.120
+Say the first and second, right?
+
+00:00:18.120 --> 00:00:19.560
+What's that transformation going to be?
+
+00:00:19.560 --> 00:00:20.160
+Well.
+
+00:00:20.160 --> 00:00:21.020
+Same center projection.
+
+00:00:21.020 --> 00:00:23.090
+It's going to be homography.
+
+00:00:23.090 --> 00:00:26.390
+You then use that homography to transform, say,
+
+00:00:26.390 --> 00:00:29.160
+the first image to align with the second.
+
+00:00:29.160 --> 00:00:30.300
+There'll be some overlap, so
+
+00:00:30.300 --> 00:00:33.040
+you'll have to blend them, and then you can continue to do that.
+
+00:00:33.040 --> 00:00:35.000
+So, that was for the, the cool application.
+
+00:00:36.260 --> 00:00:39.350
+But the theory, and this is really important part,
+
+00:00:39.350 --> 00:00:42.110
+is that homographies map from planes to planes.
+
+00:00:42.110 --> 00:00:45.950
+And this allows us to compute what a different image plane would look like from
+
+00:00:45.950 --> 00:00:48.100
+the same center of projection.
+
+00:00:48.100 --> 00:00:51.530
+So we can build mosaics by projecting a set of
+
+00:00:51.530 --> 00:00:55.480
+images that are all taken from the, the same camera center.
+
+00:00:55.480 --> 00:00:57.870
+And in, in general, what we're doing is we're going to be,
+
+00:00:57.870 --> 00:01:04.780
+we're working more in this projective relationship between image planes.
+
+00:01:04.780 --> 00:01:08.040
+So that ends the lesson on homographics and mosaics.
+
+00:01:08.040 --> 00:01:10.880
+That was kind of the cool part with a very gentle introduction to
+
+00:01:10.880 --> 00:01:12.440
+projective geometry.
+
+00:01:12.440 --> 00:01:15.280
+Now we're going to do a little bit more serious, or next lesson I'd say, we're
+
+00:01:15.280 --> 00:01:18.830
+going to do a little more serious conversation about projected geometry and
+
+00:01:18.830 --> 00:01:20.820
+the duality between points and lines.
+
+00:01:20.820 --> 00:01:23.210
+How often do you get to use the word duality in a, at a party?
+
+00:01:23.210 --> 00:01:24.555
+I mean, seriously.
+
+00:01:24.555 --> 00:01:27.490
+We're going to talk about the duality between points and
+
+00:01:27.490 --> 00:01:30.430
+lines, and that will help us get to relationship between sort of
+
+00:01:30.430 --> 00:01:32.730
+arbitrary cameras that you might, I don't know,
+
+00:01:32.730 --> 00:01:36.520
+want to do stereo matching between, or some other alignment between those views.
+

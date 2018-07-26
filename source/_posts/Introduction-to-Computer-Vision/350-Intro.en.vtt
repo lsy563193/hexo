@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.660 --> 00:00:01.839
+And welcome back to computer vision.
+
+00:00:03.180 --> 00:00:06.770
+With today's lesson and the next we're going to close a circle that
+
+00:00:06.770 --> 00:00:09.000
+we started it seems like forever ago.
+
+00:00:09.000 --> 00:00:12.207
+I remember we were talking about trying to compute transformations between
+
+00:00:12.207 --> 00:00:15.011
+images, and we talked about doing panoramas and mosaics, and o,
+
+00:00:15.011 --> 00:00:16.961
+and other ways of doing this, and we said, and
+
+00:00:16.961 --> 00:00:20.260
+also when we're talking about fundamental matrices.
+
+00:00:20.260 --> 00:00:23.450
+Key to all of these things was if we knew the correspondences,
+
+00:00:23.450 --> 00:00:27.665
+you could compute the various transforms whether it's or something else.
+
+00:00:27.665 --> 00:00:30.191
+Then we talked about competing features, and
+
+00:00:30.191 --> 00:00:33.220
+feature points detections, and descriptions.
+
+00:00:33.220 --> 00:00:35.200
+So today we'll finish the story,
+
+00:00:35.200 --> 00:00:39.590
+where we're going to actually do the approach for doing feature-based alignment.
+
+00:00:39.590 --> 00:00:41.880
+We'll describe it as a form of model fitting,
+
+00:00:41.880 --> 00:00:45.740
+since, really that's what you're doing, we'll show you more about that.
+
+00:00:45.740 --> 00:00:50.170
+And then, we'll talk about a really cool method that let's you effectively find
+
+00:00:50.170 --> 00:00:55.250
+the best global solution, or probabilistically the best global solution,
+
+00:00:55.250 --> 00:00:59.290
+without being too exhaustive, too combinatorically challenging.
+

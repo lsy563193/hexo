@@ -1,0 +1,205 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.440 --> 00:00:03.390
+Color constancy is that the hue of something, the hue and
+
+00:00:03.390 --> 00:00:07.689
+pretty much saturation, under different color, over different spectra or
+
+00:00:07.689 --> 00:00:10.200
+color of lighting, you're still good at seeing.
+
+00:00:10.200 --> 00:00:10.960
+So, you know, you,
+
+00:00:10.960 --> 00:00:15.930
+you go outside and or you go inside where lights are different colors,
+
+00:00:15.930 --> 00:00:20.090
+and purple shirts look purple, green, green pants look green.
+
+00:00:20.090 --> 00:00:22.220
+Purple shirts and green pants together look bizarre.
+
+00:00:22.220 --> 00:00:23.880
+But you know, it's okay, you can still,
+
+00:00:23.880 --> 00:00:27.270
+you can still see it, regardless of the color of the illumination.
+
+00:00:27.270 --> 00:00:29.240
+The same thing, lightness constancy is like,
+
+00:00:29.240 --> 00:00:32.920
+what I was talking about the, the, the black piece of coal always looks black,
+
+00:00:32.920 --> 00:00:35.790
+even though more light is hitting your eye from the black piece of
+
+00:00:35.790 --> 00:00:39.470
+coal outdoors, than from the white piece of paper indoors.
+
+00:00:39.470 --> 00:00:42.830
+So humans are very good at perceiving ,.
+
+00:00:42.830 --> 00:00:45.870
+What color a surface would have looked like if the light had
+
+00:00:45.870 --> 00:00:47.320
+actually been white?
+
+00:00:47.320 --> 00:00:50.660
+So you sort of remove the effect of the illumination.
+
+00:00:50.660 --> 00:00:54.200
+We're pretty good at also being able to figure out what's
+
+00:00:54.200 --> 00:00:56.850
+actually hitting our eyes, so you can say well it's a bluish thing, but
+
+00:00:56.850 --> 00:01:00.120
+I actually see kind of a more purplish light coming in.
+
+00:01:00.120 --> 00:01:02.380
+You can sort of make that distinction.
+
+00:01:02.380 --> 00:01:03.270
+What humans are not so
+
+00:01:03.270 --> 00:01:06.560
+good at is being able to tell you what the color of the light is,
+
+00:01:06.560 --> 00:01:10.210
+because they're brain is spending all this time trying to eliminate,
+
+00:01:10.210 --> 00:01:14.990
+the color of the light and they're not so good at being able to report that.
+
+00:01:14.990 --> 00:01:17.940
+So there are lots of methods that are used to try to
+
+00:01:17.940 --> 00:01:19.670
+accomplish this kind of computationally.
+
+00:01:21.020 --> 00:01:23.310
+One method is.
+
+00:01:23.310 --> 00:01:25.100
+Let's suppose I don't know the color of a light, but
+
+00:01:25.100 --> 00:01:28.400
+I want to render something well on, say, a color CCD image.
+
+00:01:28.400 --> 00:01:29.320
+Right?
+
+00:01:29.320 --> 00:01:30.930
+Well, one thing you can do is you can say,
+
+00:01:30.930 --> 00:01:34.440
+let me assume that the average color is gray.
+
+00:01:34.440 --> 00:01:37.150
+That the average intensity is gray.
+
+00:01:37.150 --> 00:01:40.570
+And so those of you who have auto white balance on your cameras.
+
+00:01:40.570 --> 00:01:42.420
+And most of us with digital cameras do.
+
+00:01:42.420 --> 00:01:45.090
+It's essentially averaging over all that and saying.
+
+00:01:45.090 --> 00:01:47.830
+Let me take a look at all the different average color and
+
+00:01:47.830 --> 00:01:52.100
+assume that it's really grey out there, so anything that's
+
+00:01:52.100 --> 00:01:56.770
+makes the whole average not grey is due to the illuminant and I'll change that.
+
+00:01:56.770 --> 00:02:00.570
+And it works okay it can sort of fail in that.
+
+00:02:00.570 --> 00:02:02.800
+So, you know that tungsten film, right, so
+
+00:02:02.800 --> 00:02:07.610
+if you're, if you're, you know, if things aren't, aren't really great,
+
+00:02:07.610 --> 00:02:11.490
+you're ability to automatically do white balance, is really difficult.
+
+00:02:11.490 --> 00:02:13.820
+There's another really very simple method,
+
+00:02:13.820 --> 00:02:16.280
+assume that the brightest thing I see is white.
+
+00:02:17.670 --> 00:02:21.740
+So that way if the brightest thing I see is actually light blueish, I say okay,
+
+00:02:21.740 --> 00:02:23.450
+that was really supposed to be white.
+
+00:02:23.450 --> 00:02:25.780
+So I'm going to assume the light is kind of blue, and
+
+00:02:25.780 --> 00:02:28.160
+I'll undo the blue light that's there.
+
+00:02:28.160 --> 00:02:32.990
+Okay, those of you that ever done, manual white balancing in cameras,
+
+00:02:32.990 --> 00:02:36.320
+you know that you put out a white card, or white piece of paper,
+
+00:02:36.320 --> 00:02:39.250
+you take an image of it, you say this is a white balance image, and
+
+00:02:39.250 --> 00:02:41.860
+you're telling it, this thing is really white, so
+
+00:02:41.860 --> 00:02:45.290
+that any color that you see in there is because of the illuminant.
+
+00:02:45.290 --> 00:02:49.260
+Pull that out when you're doing the, when,
+
+00:02:49.260 --> 00:02:50.610
+when you're trying to do the color balancing.
+
+00:02:52.380 --> 00:02:53.850
+There are other things that say,
+
+00:02:53.850 --> 00:02:58.330
+I'm going to assume that the colors are supposed to span the entire color gamut.
+
+00:02:58.330 --> 00:03:02.580
+And so if I see the color sort of shifted, let me try to bring it back and
+
+00:03:02.580 --> 00:03:04.090
+fill the whole gamut.
+
+00:03:04.090 --> 00:03:09.180
+So, these methods work sort of okay for photography because,
+
+00:03:09.180 --> 00:03:12.290
+it turns out that even if you get it a little wrong, your brain,
+
+00:03:12.290 --> 00:03:16.480
+when looking at the photograph, will often undo the right thing to begin with.
+
+00:03:16.480 --> 00:03:19.020
+But none of these methods really work well enough for
+
+00:03:19.020 --> 00:03:22.500
+computer vision in order to analyze what's going on out there.
+
+00:03:22.500 --> 00:03:23.800
+It's still really an open problem.
+

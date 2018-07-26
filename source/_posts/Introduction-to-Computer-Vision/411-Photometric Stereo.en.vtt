@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.350 --> 00:00:01.540
+If you look up shape from shading,
+
+00:00:01.540 --> 00:00:03.700
+you'll see a lot of pictures that look like this.
+
+00:00:03.700 --> 00:00:06.230
+And these are typically synthetic, results.
+
+00:00:06.230 --> 00:00:10.290
+So, given some depth map, you can make some sort of a shaded image and
+
+00:00:10.290 --> 00:00:15.020
+then you can show that you can recover, the shape that's really there.
+
+00:00:15.020 --> 00:00:19.610
+Unfortunately, one of the reasons, they show synthetic results so much is.
+
+00:00:19.610 --> 00:00:25.380
+That the results on real images are somewhat, shall we say, less than wonderful.
+
+00:00:25.380 --> 00:00:29.840
+In fact, there was a paper by mubarak shah and some students I
+
+00:00:29.840 --> 00:00:34.130
+think the late 90s, early 2000s, where I think the phrase was something like,
+
+00:00:34.130 --> 00:00:38.430
+well, it works poorly in the lab and not quite as well as that in real life.
+
+00:00:38.430 --> 00:00:40.540
+You know basically,.
+
+00:00:40.540 --> 00:00:41.310
+And, and why is that?
+
+00:00:41.310 --> 00:00:44.520
+Well the problem is that these assumptions are, overly restrictive.
+
+00:00:44.520 --> 00:00:46.330
+I mean a constant albedo everywhere?
+
+00:00:46.330 --> 00:00:48.000
+That means you get no,
+
+00:00:48.000 --> 00:00:51.260
+variation in the color of the underlying texture of what's there.
+
+00:00:51.260 --> 00:00:52.940
+You know, knowing about the light source, the,
+
+00:00:52.940 --> 00:00:57.290
+the orientation directions, its a very brittle type of computation.
+
+00:00:57.290 --> 00:01:00.340
+So, what can we do instead?
+
+00:01:00.340 --> 00:01:04.910
+Well what we can do instead is we can take more images, all right.
+
+00:01:04.910 --> 00:01:08.130
+And this is what's referred to as photometric stereo.
+
+00:01:08.130 --> 00:01:13.180
+So the idea is, that we take a picture from the same camera location so
+
+00:01:13.180 --> 00:01:16.580
+we can still have Z as a function of XY.
+
+00:01:16.580 --> 00:01:19.670
+Same object, but with different lighting.
+
+00:01:19.670 --> 00:01:22.120
+So here we have the picture taken from the same location,
+
+00:01:22.120 --> 00:01:26.630
+with different lighting directions and what we want to get out, is this.
+
+00:01:26.630 --> 00:01:27.190
+Right?
+
+00:01:27.190 --> 00:01:30.650
+The Z is a function of X, Y and
+
+00:01:30.650 --> 00:01:34.550
+unlike traditional shape from shading with enough lights and
+
+00:01:34.550 --> 00:01:40.310
+sort of careful calibration, etcetera, we can also recover the albedo.
+
+00:01:40.310 --> 00:01:43.390
+The reflectance function, at every point.
+
+00:01:43.390 --> 00:01:46.850
+So now we don't have to make this a really restrictive assumption,
+
+00:01:46.850 --> 00:01:51.000
+that the color or the reflectance of the object is the same everywhere,
+
+00:01:51.000 --> 00:01:52.190
+we're allowed to let it vary.
+

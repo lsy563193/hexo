@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.220 --> 00:00:03.670
+So, let's talk about your orientation assignment.
+
+00:00:03.670 --> 00:00:06.270
+Computing the best orientation, okay?
+
+00:00:06.270 --> 00:00:08.920
+Well, that's actually pretty easy.
+
+00:00:08.920 --> 00:00:11.980
+Remember the gradient and we had different operators for doing the gradients?
+
+00:00:11.980 --> 00:00:15.690
+So, what we're going to do is we're going to computer the image gradient out
+
+00:00:15.690 --> 00:00:16.670
+all these points and
+
+00:00:16.670 --> 00:00:20.470
+then, locally, we're going to compute some estimate of orientation.
+
+00:00:20.470 --> 00:00:23.030
+And the way we do that is really pretty simple.
+
+00:00:23.030 --> 00:00:27.279
+So nominally, this is your image area with a little line drawing and
+
+00:00:27.279 --> 00:00:29.310
+it just shown here.
+
+00:00:29.310 --> 00:00:32.860
+But the idea is, you're going to build a histogram.
+
+00:00:32.860 --> 00:00:36.530
+Okay, this is our little histogram where you've cut the angle of
+
+00:00:36.530 --> 00:00:39.280
+orientation into some number of bins.
+
+00:00:39.280 --> 00:00:43.050
+In this particular case, they're using 36 bins of orientation.
+
+00:00:43.050 --> 00:00:46.430
+You know, which, what's the right number to use is, is a question.
+
+00:00:46.430 --> 00:00:50.580
+All right, and then what you do is you say I've got a peak, and
+
+00:00:50.580 --> 00:00:52.550
+I'm going to say, okay, that peak.
+
+00:00:52.550 --> 00:00:55.440
+That's my dominant orientation.
+
+00:00:55.440 --> 00:01:00.290
+And that's going to be the the orientation that we use.
+
+00:01:00.290 --> 00:01:07.180
+Okay? Once we've picked that, that becomes essentially our new north.
+
+00:01:07.180 --> 00:01:08.240
+Okay? We're saying that's,
+
+00:01:08.240 --> 00:01:11.290
+that's the way we're going to think about our window here.
+
+00:01:11.290 --> 00:01:16.660
+Now once we've done that, notice, we found it in x, y so
+
+00:01:16.660 --> 00:01:18.630
+we've removed the translation problem.
+
+00:01:18.630 --> 00:01:20.180
+That is we know where it is.
+
+00:01:20.180 --> 00:01:25.470
+We found it in scale when we detected the the, the interest point to begin with.
+
+00:01:25.470 --> 00:01:26.580
+We've picked this scale.
+
+00:01:26.580 --> 00:01:29.660
+And now we have a new orientation.
+
+00:01:29.660 --> 00:01:32.890
+So what that means is that whatever descriptors we build are going to be
+
+00:01:32.890 --> 00:01:38.600
+invariant to the transformation in x, in y, in scale, and in orientation.
+
+00:01:38.600 --> 00:01:39.520
+And that's what we wanted.
+

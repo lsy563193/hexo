@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.260 --> 00:00:01.286
+So let me motivate the problem.
+
+00:00:01.286 --> 00:00:05.062
+Remember stereo twice good.
+
+00:00:05.062 --> 00:00:08.930
+All right, if you have two views of the scene, and these are two cameras that
+
+00:00:08.930 --> 00:00:13.050
+are not necessarily going to have parallel image planes, just two views.
+
+00:00:13.050 --> 00:00:18.230
+What is the relationship between the location of a scene point in one camera and
+
+00:00:18.230 --> 00:00:20.370
+its location in the other camera.
+
+00:00:20.370 --> 00:00:21.420
+That was what we wanted to know,
+
+00:00:21.420 --> 00:00:24.390
+we wanted to know if we could know something about that relationship so
+
+00:00:24.390 --> 00:00:28.780
+when we went looking for the matches, we could use it as a constraint.
+
+00:00:28.780 --> 00:00:31.160
+Just to animate it a little bit, if we have of points, so
+
+00:00:31.160 --> 00:00:34.550
+the idea is we have a point P, out there in the scene.
+
+00:00:34.550 --> 00:00:39.370
+That point images to some location in the left image plane, center projection 1
+
+00:00:39.370 --> 00:00:45.720
+here, and that line maps to a line in the center projection number two, and
+
+00:00:45.720 --> 00:00:50.810
+that was what was referred to as an epipolar line with respect to that point.
+
+00:00:50.810 --> 00:00:51.510
+So if you're looking for
+
+00:00:51.510 --> 00:00:54.610
+that point, it's going to have to be somehow on that line.
+
+00:00:54.610 --> 00:00:58.890
+Likewise the ray from the other center of projection maps to
+
+00:00:58.890 --> 00:01:04.400
+the corresponding epipolar line in the other image, its center projection.
+
+00:01:04.400 --> 00:01:09.780
+And those pair of epipolar lines, we showed before, that they're defined by
+
+00:01:09.780 --> 00:01:15.180
+a plane called the epipolar plane, and that plane is defined, well, the simplest
+
+00:01:15.180 --> 00:01:19.430
+way of thinking about it, is that it's defined by this base line vector.
+
+00:01:19.430 --> 00:01:23.780
+So the translational vector between the two centers of projection and
+
+00:01:23.780 --> 00:01:25.350
+this world point.
+
+00:01:25.350 --> 00:01:28.120
+Or you could think of it as being defined by the three points,
+
+00:01:28.120 --> 00:01:32.090
+P, CP2, CP1, that's the epipolar plane.
+
+00:01:32.090 --> 00:01:36.690
+So we have a different epipolar plane for each point out in the world.
+
+00:01:36.690 --> 00:01:39.880
+We then talked about what we call the epipolar constraint.
+
+00:01:39.880 --> 00:01:43.230
+Right? The idea was, if I know about my epipolar lines or
+
+00:01:43.230 --> 00:01:45.230
+I know about the epipolar planes.
+
+00:01:45.230 --> 00:01:48.880
+The epipolar constraint means that if I have a point P
+
+00:01:48.880 --> 00:01:51.040
+in the image on the left hand side.
+
+00:01:51.040 --> 00:01:54.940
+There's only a one dimensional search in the right hand image to look along.
+
+00:01:54.940 --> 00:01:56.670
+That was the epipolar line.
+
+00:01:56.670 --> 00:01:58.900
+For the parallel image planes, everything lined up,
+
+00:01:58.900 --> 00:02:01.140
+it was the same horizontal line.
+
+00:02:01.140 --> 00:02:04.650
+But in general, if I have verged cameras we showed your
+
+00:02:04.650 --> 00:02:06.910
+epipolar lines weren't going to be parallel.
+
+00:02:06.910 --> 00:02:10.460
+And here was this example where we had converged cameras and
+
+00:02:10.460 --> 00:02:13.150
+corresponding epipolar lines.
+
+00:02:13.150 --> 00:02:15.980
+It also allowed us to define a couple of terms.
+
+00:02:15.980 --> 00:02:22.190
+So the baseline was just the vector separating the two centers of projection.
+
+00:02:22.190 --> 00:02:25.050
+The epipolar plane we just talked about, given a world point and
+
+00:02:25.050 --> 00:02:27.640
+that baseline defines the plane.
+
+00:02:27.640 --> 00:02:31.860
+The epipolar lines were the intersection of the epipolar plane and
+
+00:02:31.860 --> 00:02:36.180
+each of the image planes, so that's a pair of corresponding epipolar lines.
+
+00:02:36.180 --> 00:02:40.710
+The epipole of each image was the point in
+
+00:02:40.710 --> 00:02:43.530
+the image plane that intersected the baseline.
+
+00:02:43.530 --> 00:02:47.440
+And we said sometimes you don't actually see that, in fact if we, if we go
+
+00:02:47.440 --> 00:02:52.340
+back to this pair of images here, all of these would have intersected over here.
+
+00:02:52.340 --> 00:02:56.410
+So if this image had been huge, you would have been able to see the epipole, but
+
+00:02:56.410 --> 00:02:59.630
+because it's in some sense cropped out, you can't always see the epipole.
+

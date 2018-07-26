@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.330 --> 00:00:01.910
+So now, the question is,
+
+00:00:01.910 --> 00:00:06.450
+we need to compute this descriptor about this local image region, all right.
+
+00:00:06.450 --> 00:00:08.860
+And remember, we want two things for the descriptor.
+
+00:00:08.860 --> 00:00:12.950
+We want it to be highly distinctive, that is, given two different points in
+
+00:00:12.950 --> 00:00:15.510
+the image, I should be able to come up with two different descriptions.
+
+00:00:15.510 --> 00:00:18.830
+But, we like it to be invariant as much as possible,
+
+00:00:18.830 --> 00:00:22.780
+to just small changes in viewpoint, maybe even large changes in viewpoint.
+
+00:00:22.780 --> 00:00:26.680
+Sir, illumination in other kinds of imaging parameters.
+
+00:00:26.680 --> 00:00:29.660
+So, before we build that descriptor we normalize.
+
+00:00:29.660 --> 00:00:31.050
+What's the normalization?
+
+00:00:31.050 --> 00:00:35.800
+Wherever our little window is, we're going to say, okay, this is our new north.
+
+00:00:35.800 --> 00:00:38.960
+We're going to rotate north to be north, to be up let's say.
+
+00:00:38.960 --> 00:00:41.750
+So we're going to move them, rotate them all back.
+
+00:00:41.750 --> 00:00:45.106
+And the other thing is that we're going to scale it to be some uniform size.
+
+00:00:45.106 --> 00:00:48.990
+So if the, if the, when we did the, the detection to begin with,
+
+00:00:48.990 --> 00:00:51.910
+it said it was a small scale we're going to blow it up to be that size.
+
+00:00:51.910 --> 00:00:53.210
+And if it said it was a large scale we
+
+00:00:53.210 --> 00:00:55.550
+might shrink it down to be some fixed size.
+
+00:00:55.550 --> 00:00:59.160
+So the idea is we you know, pick particular sizes.
+
+00:00:59.160 --> 00:01:03.130
+By the way, getting SIFT to work is painful.
+
+00:01:03.130 --> 00:01:07.370
+And that's one of the reasons people tend to use libraries for descriptors.
+
+00:01:09.380 --> 00:01:11.500
+it, because it's a lot of you know the,
+
+00:01:11.500 --> 00:01:13.090
+the expression, the devil's in the detail?
+
+00:01:13.090 --> 00:01:15.040
+There are a lot of details to makings this work.
+

@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.720 --> 00:00:04.778
+So in David Lowe's work in doing the sift work, he had a pretty clever idea, and
+
+00:00:04.778 --> 00:00:05.696
+this is the idea.
+
+00:00:05.696 --> 00:00:09.880
+Take your first-nearest neighbor, so you do the best match.
+
+00:00:11.070 --> 00:00:14.110
+See what its score is.
+
+00:00:14.110 --> 00:00:18.350
+Now we already said setting a threshold just on that is challenging.
+
+00:00:18.350 --> 00:00:20.000
+But here's what he's going to do.
+
+00:00:20.000 --> 00:00:23.650
+Take a look at the next-best match.
+
+00:00:23.650 --> 00:00:26.740
+So I now have the first nearest neighbor and
+
+00:00:26.740 --> 00:00:28.730
+what's called the second nearest neighbor.
+
+00:00:28.730 --> 00:00:34.680
+And, take a look at the ratio of the best to the second best.
+
+00:00:34.680 --> 00:00:37.960
+Now if you think about this, [COUGH] before we get to the plot.
+
+00:00:37.960 --> 00:00:41.870
+When you're a correct match, the best is really good and it's the best one.
+
+00:00:41.870 --> 00:00:43.900
+And the next best one, well.
+
+00:00:43.900 --> 00:00:46.960
+You know, presumably it won't be it, we know it not going to be as good, and
+
+00:00:46.960 --> 00:00:50.820
+how, however much it falls off will depend upon sort of where in the image there
+
+00:00:50.820 --> 00:00:54.960
+happens to be another point that just happens to look like this one.
+
+00:00:54.960 --> 00:00:57.780
+So, you're going to get that ratio, all right?
+
+00:00:57.780 --> 00:01:01.780
+But now consider a point that is not the right one.
+
+00:01:01.780 --> 00:01:06.710
+So it's sort of randomly, maybe its real match was occluded.
+
+00:01:06.710 --> 00:01:08.780
+It's not actually in the picture.
+
+00:01:08.780 --> 00:01:12.910
+So it randomly went and picked some point, and it happened to be its best match.
+
+00:01:14.350 --> 00:01:18.460
+Its second best match, is going to be some other random point in the picture.
+
+00:01:19.590 --> 00:01:25.700
+So those are going to be more similar in value than in the correct case.
+
+00:01:25.700 --> 00:01:29.210
+And that's exactly what this graph shows.
+
+00:01:29.210 --> 00:01:34.880
+This is the ratio of the best to the next best, okay.
+
+00:01:34.880 --> 00:01:37.650
+And what you're seeing here is for
+
+00:01:37.650 --> 00:01:42.880
+the correct matches the distribution is over here, okay.
+
+00:01:42.880 --> 00:01:46.500
+So, that ratio of error, okay?
+
+00:01:46.500 --> 00:01:50.190
+Is, you know, a lot of this stuff is over here.
+
+00:01:50.190 --> 00:01:54.470
+Right, so like this 0.1 would mean that the best match SSD is sum of
+
+00:01:54.470 --> 00:02:00.510
+square differences which you want to be low, is 10% of the next best match.
+
+00:02:00.510 --> 00:02:05.284
+So that's, that's really a big difference, here it's 20%,
+
+00:02:05.284 --> 00:02:08.310
+30% for the incorrect method matches.
+
+00:02:08.310 --> 00:02:11.513
+Remember it's randomly selecting them you hardly get any
+
+00:02:11.513 --> 00:02:13.710
+that have such an extreme ratio.
+
+00:02:13.710 --> 00:02:16.720
+And in fact you don't start seeing them show up until you get to
+
+00:02:16.720 --> 00:02:18.840
+this much higher value.
+
+00:02:18.840 --> 00:02:22.510
+So setting a threshold here, you could set a threshold, you know,
+
+00:02:22.510 --> 00:02:24.140
+right about there.
+
+00:02:24.140 --> 00:02:29.130
+And almost all of your matches, your best matches would have been correct ones.
+
+00:02:29.130 --> 00:02:31.600
+And very few of them would have been incorrect.
+
+00:02:31.600 --> 00:02:32.510
+Now you might ask, but
+
+00:02:32.510 --> 00:02:36.070
+wait a minute, you're going to throw out some correct matches that way.
+
+00:02:36.070 --> 00:02:37.500
+Isn't that a problem?
+
+00:02:37.500 --> 00:02:40.010
+There's no way Megan's going to be able to remember that entire question.
+
+00:02:40.010 --> 00:02:44.130
+So you might just say, well, aren't you going to throw out these here,
+
+00:02:44.130 --> 00:02:47.850
+that are the correct matches, but the ratio didn't pass your test?
+
+00:02:47.850 --> 00:02:49.230
+Yep.
+
+00:02:49.230 --> 00:02:51.650
+So you're going to be throwing away some correct matches, but
+
+00:02:51.650 --> 00:02:55.540
+our assumption is that we've got plenty of correct matches and
+
+00:02:55.540 --> 00:02:58.100
+we just have to figure out which ones are there.
+
+00:02:58.100 --> 00:03:00.900
+Okay, so that's this cool method of doing this
+
+00:03:00.900 --> 00:03:05.000
+selection by comparing the best to the nearest best.
+
+00:03:05.000 --> 00:03:06.030
+Cool?
+
+00:03:06.030 --> 00:03:06.530
+Good.
+

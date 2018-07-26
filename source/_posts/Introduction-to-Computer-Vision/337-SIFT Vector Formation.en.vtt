@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.300 --> 00:00:02.450
+So here's how we're going to build our descriptor.
+
+00:00:03.460 --> 00:00:04.920
+We're going to build a feature vector.
+
+00:00:04.920 --> 00:00:08.050
+So there's going to be some vector of some length.
+
+00:00:08.050 --> 00:00:13.010
+Okay, and it's going to be based essentially upon properties of
+
+00:00:13.010 --> 00:00:16.270
+the histograms of gradients, all right.
+
+00:00:16.270 --> 00:00:19.190
+So what I'm showing you here is, this is a, a nice picture nomolist,
+
+00:00:19.190 --> 00:00:23.280
+this is pretending that we've got a little grid of 8 by 8 pixels.
+
+00:00:23.280 --> 00:00:27.490
+I'm only showing 8 by 8 because to show you more, would be, too hard.
+
+00:00:27.490 --> 00:00:28.130
+Okay?
+
+00:00:28.130 --> 00:00:29.080
+And, what we're going to do
+
+00:00:29.080 --> 00:00:32.659
+is we're going to take this histogram of gradients, all right?
+
+00:00:32.659 --> 00:00:35.400
+And we're also going to weight it by a Gaussian.
+
+00:00:35.400 --> 00:00:37.832
+So sort of this circle that's drawn out here and
+
+00:00:37.832 --> 00:00:39.750
+then The idea is that we're going to, if,
+
+00:00:39.750 --> 00:00:43.590
+if our center point if located in the middle, we're going to take the gradients
+
+00:00:43.590 --> 00:00:47.770
+in the middle to be weighted more than the gradients toward the outside.
+
+00:00:47.770 --> 00:00:52.110
+So, what we're going to do is we're going to build these little histograms.
+
+00:00:52.110 --> 00:00:55.460
+What we do is we take, say 4 pixels by 4 pixels.
+
+00:00:55.460 --> 00:00:56.170
+Can I count to four?
+
+00:00:56.170 --> 00:00:57.080
+Yes I can.
+
+00:00:57.080 --> 00:01:02.710
+Okay, and we take a little histogram of those orientations and
+
+00:01:02.710 --> 00:01:04.000
+that's done right over here.
+
+00:01:04.000 --> 00:01:07.780
+So this thing has sort of eight different dimensions.
+
+00:01:07.780 --> 00:01:10.720
+And then this four pixels here would be.
+
+00:01:10.720 --> 00:01:11.380
+There.
+
+00:01:11.380 --> 00:01:14.200
+Now, I'm only showing this as a two-by-two, right?
+
+00:01:14.200 --> 00:01:15.140
+One, two.
+
+00:01:15.140 --> 00:01:16.940
+Well, actually, for real sift,
+
+00:01:16.940 --> 00:01:20.410
+they do a four-by-four, two-by-two just shows better.
+
+00:01:20.410 --> 00:01:24.940
+So just to think about that, we have a four-by-four away.
+
+00:01:24.940 --> 00:01:26.190
+That's 4 times 4, that's 16.
+
+00:01:26.190 --> 00:01:29.380
+Each histogram has eight bins.
+
+00:01:29.380 --> 00:01:31.760
+So that's 16 times 8 that's 128.
+
+00:01:31.760 --> 00:01:34.980
+That's 128 numbers, okay?
+
+00:01:34.980 --> 00:01:39.830
+Those 128 numbers, that's the feature vector that we're going to use to
+
+00:01:39.830 --> 00:01:43.270
+describe this this single key point.
+
+00:01:43.270 --> 00:01:45.720
+This is the descriptor that we're going to use.
+
+00:01:45.720 --> 00:01:49.390
+Because you take these 4 by 4.
+
+00:01:49.390 --> 00:01:50.700
+And now I'm going to try to draw them out and
+
+00:01:50.700 --> 00:01:53.680
+it won't look quite so good, but you'll see what I'm talking about.
+
+00:01:53.680 --> 00:01:56.880
+Okay, so I have 16 different little histograms.
+
+00:01:56.880 --> 00:01:59.620
+Because I stacked them up into a feature vector.
+
+00:01:59.620 --> 00:02:03.330
+I don't add them together, I stack them into a feature vector.
+
+00:02:03.330 --> 00:02:05.950
+There is a certain amount of spatial sensitivity, right?
+
+00:02:05.950 --> 00:02:10.150
+The top left hand, let's suppose the top left hand histogram is the first part
+
+00:02:10.150 --> 00:02:11.510
+of the feature vector.
+
+00:02:11.510 --> 00:02:12.040
+Right?
+
+00:02:12.040 --> 00:02:13.330
+All the way down to the second, the third,
+
+00:02:13.330 --> 00:02:15.910
+the fourth, finally the, the last part on the bottom.
+
+00:02:15.910 --> 00:02:20.100
+So there's a certain amount of sensitivity to the spatial layout, right?
+
+00:02:20.100 --> 00:02:24.020
+So if you've got some orientation of gradient in the top left-hand corner and
+
+00:02:24.020 --> 00:02:28.220
+different on the bottom right-hand corner, you get that spatial layout.
+
+00:02:28.220 --> 00:02:32.570
+But it's not a very strong sensitivity to the spatial layout.
+
+00:02:32.570 --> 00:02:36.180
+Which is good because and that maintains a bunch of our viewpoint invariance.
+
+00:02:36.180 --> 00:02:39.890
+And remember, we have unrotated this thing,
+
+00:02:39.890 --> 00:02:44.180
+with respect to the dominant orientation locally, okay.
+
+00:02:44.180 --> 00:02:48.420
+So our, all of our histograms that are being put down
+
+00:02:48.420 --> 00:02:51.900
+are placed with respect to this normalized orientation and scale.
+

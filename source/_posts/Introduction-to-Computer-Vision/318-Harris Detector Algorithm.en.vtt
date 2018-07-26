@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.550 --> 00:00:05.290
+All right, so here is the simple Harris detector algorithm, courtesy 1988,
+
+00:00:05.290 --> 00:00:06.540
+still used today a lot.
+
+00:00:06.540 --> 00:00:09.640
+We're going to talk about different versions of it, going forward when we
+
+00:00:09.640 --> 00:00:13.170
+talk about scale and stuff, but for now, we're just going to talk about this.
+
+00:00:13.170 --> 00:00:14.290
+And here's the basic algorithm.
+
+00:00:15.340 --> 00:00:18.710
+You first compute Gaussian derivatives at each pixel.
+
+00:00:18.710 --> 00:00:20.470
+Okay? So remember you need this ix and iy.
+
+00:00:20.470 --> 00:00:23.590
+And we've talked all about how to do derivatives,
+
+00:00:23.590 --> 00:00:26.710
+where you take the derivative of the Gaussian operator, apply that, and
+
+00:00:26.710 --> 00:00:29.530
+you get back, your nice image derivatives.
+
+00:00:29.530 --> 00:00:33.980
+Then, you compute that second order moment matrix M,
+
+00:00:33.980 --> 00:00:35.900
+that M matrix that we were talking about.
+
+00:00:35.900 --> 00:00:39.000
+And, the recommendation is you use a Gaussian window so that you
+
+00:00:39.000 --> 00:00:42.880
+weight the points near the middle more than the points that are further away.
+
+00:00:42.880 --> 00:00:46.920
+And then you compute, that R function on that M matrix,
+
+00:00:46.920 --> 00:00:50.480
+remember you have a different M matrix for every point in the image.
+
+00:00:50.480 --> 00:00:51.060
+Right?
+
+00:00:51.060 --> 00:00:54.270
+Because you take a little window around a point, compute the moment,
+
+00:00:54.270 --> 00:00:55.640
+compute R, move on.
+
+00:00:55.640 --> 00:00:58.140
+So you do have one for every point in the image.
+
+00:00:58.140 --> 00:01:02.140
+So you get all these Rs, you're looking for high values, you threshold that.
+
+00:01:02.140 --> 00:01:05.230
+And then, and we talked a little bit about this when we were doing the edge
+
+00:01:05.230 --> 00:01:09.290
+detection, you do what's called local non-maximum suppression.
+
+00:01:09.290 --> 00:01:12.630
+Right. So I might have a heart, I might be a strong R value, but
+
+00:01:12.630 --> 00:01:17.290
+if there's a stronger R value next to me, throw me away and keep him.
+
+00:01:17.290 --> 00:01:18.380
+Sorry about that.
+
+00:01:18.380 --> 00:01:19.610
+But the idea is that you're looking for
+
+00:01:19.610 --> 00:01:22.290
+local areas that have the highest possible R value.
+
+00:01:22.290 --> 00:01:27.203
+And like I said, this was presented originally in this paper in 88.
+

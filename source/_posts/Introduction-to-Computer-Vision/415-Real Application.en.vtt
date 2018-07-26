@@ -1,0 +1,196 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.380 --> 00:00:05.020
+Okay, so photometric stereo is used in a couple of interesting applications.
+
+00:00:05.020 --> 00:00:09.230
+It does have some challenges, like you have to know the reflectance function.
+
+00:00:09.230 --> 00:00:11.190
+You have to know that reflectance map.
+
+00:00:11.190 --> 00:00:12.420
+So typically, it's assumed for
+
+00:00:12.420 --> 00:00:15.730
+Lambertian types of stuff, maybe a little bit of specularity.
+
+00:00:15.730 --> 00:00:19.080
+But, but basically you have to understand the reflectance function.
+
+00:00:19.080 --> 00:00:20.865
+It also has a problem with shadows or
+
+00:00:20.865 --> 00:00:24.860
+interreflections, because it's assuming that the only thing that matters.
+
+00:00:24.860 --> 00:00:29.120
+Was the orientation of the surface with respect to the light.
+
+00:00:30.500 --> 00:00:32.740
+There's some smaller problems like the cameras and
+
+00:00:32.740 --> 00:00:36.810
+light sources have to be far enough away that, that it's a constant angle.
+
+00:00:36.810 --> 00:00:38.090
+That's not so bad.
+
+00:00:38.090 --> 00:00:39.780
+Calibration is important, right?
+
+00:00:39.780 --> 00:00:42.790
+Remember we're assuming that everything is linear in terms of the intensity,
+
+00:00:42.790 --> 00:00:45.190
+with respect to the light that's hitting the camera.
+
+00:00:45.190 --> 00:00:48.280
+So you need a lot of photometric calibration.
+
+00:00:48.280 --> 00:00:51.810
+Before I conclude a couple of things about some shape from shading.
+
+00:00:51.810 --> 00:00:55.370
+One is, there was a really cool use of it.
+
+00:00:55.370 --> 00:00:59.810
+There was a paper, it actually won one of the Marr prizes in 1995 in ICCV, and
+
+00:00:59.810 --> 00:01:04.580
+it was this idea, that namely shape from shading with Interreflection Under
+
+00:01:04.580 --> 00:01:08.860
+a Proximal Light Source, Distortion Free Copying of an Unfolded Book.
+
+00:01:09.920 --> 00:01:11.710
+And it appeared later in IJCV,
+
+00:01:11.710 --> 00:01:16.030
+International Journal of Computer Vision, and what they were looking at.
+
+00:01:16.030 --> 00:01:19.150
+Was this idea that, you know, when you put a book down on a scanner, or
+
+00:01:19.150 --> 00:01:23.580
+a copier, you get this surface that bends away.
+
+00:01:23.580 --> 00:01:26.550
+And you can recover something about that surface structure.
+
+00:01:26.550 --> 00:01:29.650
+And you should also be able to sort of unshade what happens,
+
+00:01:29.650 --> 00:01:31.610
+because the light falls off.
+
+00:01:31.610 --> 00:01:34.920
+Now unfortunately, the images that are in the original picture
+
+00:01:34.920 --> 00:01:36.360
+don't reproduce very well.
+
+00:01:36.360 --> 00:01:39.220
+So you're going to see something that looks really ugly here.
+
+00:01:39.220 --> 00:01:43.310
+Obviously it wasn't pure black in here, but it was just very darkened.
+
+00:01:43.310 --> 00:01:46.540
+And they were able to recover the white and
+
+00:01:46.540 --> 00:01:50.380
+the text, by essentially undoing the shape from shading.
+
+00:01:50.380 --> 00:01:52.770
+And I thought that was pretty cool.
+
+00:01:52.770 --> 00:01:56.650
+Shape from shading also, in the human world of course is much more complicated.
+
+00:01:56.650 --> 00:01:59.030
+A whole bunch of interesting effects.
+
+00:01:59.030 --> 00:02:02.129
+One that's well known is this light source direction effect.
+
+00:02:03.160 --> 00:02:07.210
+So if you see here on the right, you probably see, especially if you're
+
+00:02:07.210 --> 00:02:12.270
+looking at this sort of vertically, you probably see a sphere lit from up here.
+
+00:02:12.270 --> 00:02:16.310
+What most people see, if you show them just this thing on the right,
+
+00:02:16.310 --> 00:02:20.980
+is a dimple, something pushed in, okay?
+
+00:02:20.980 --> 00:02:23.130
+With, again, the light source coming down.
+
+00:02:23.130 --> 00:02:24.450
+Now of course.
+
+00:02:24.450 --> 00:02:29.150
+Figure b, is just figure a rotated around.
+
+00:02:29.150 --> 00:02:32.430
+So, in one you see something bent out towards you.
+
+00:02:32.430 --> 00:02:34.360
+On the other you see something pushed in.
+
+00:02:35.400 --> 00:02:37.690
+But, the reality is they've just been rotated around.
+
+00:02:37.690 --> 00:02:39.970
+There seems to be a human preference for
+
+00:02:39.970 --> 00:02:42.650
+light sources to be up above, instead of down below.
+
+00:02:42.650 --> 00:02:46.120
+And there's a whole bunch of other work on sort of human effect.
+
+00:02:46.120 --> 00:02:49.490
+There is another demonstration of human shape from shading.
+
+00:02:49.490 --> 00:02:55.920
+Which is a multi, multi, multibillion dollar industry, and that's called makeup.
+
+00:02:55.920 --> 00:02:56.750
+So as, and,
+
+00:02:56.750 --> 00:03:00.240
+and there's no way this without being gender specific, so I will say it.
+
+00:03:00.240 --> 00:03:05.710
+As many women know, properly applied foundation, can cause
+
+00:03:05.710 --> 00:03:11.660
+the shape of your cheekbones and other parts of your face and other elements.
+
+00:03:11.660 --> 00:03:17.270
+To be perceived as having either a higher shape, or a more rounded.
+
+00:03:17.270 --> 00:03:22.580
+And what you're doing is you're changing the shading just a little bit, so
+
+00:03:22.580 --> 00:03:27.380
+that the human vision system ascribes a slightly different shape.
+
+00:03:27.380 --> 00:03:29.300
+To the underlying contour.
+
+00:03:29.300 --> 00:03:32.630
+And so it's taking advantage of shape from shading.
+
+00:03:32.630 --> 00:03:36.560
+And you know, good makeup artists know exactly how that works and
+
+00:03:36.560 --> 00:03:38.600
+that's a, that's a interesting shading phenomenon.
+

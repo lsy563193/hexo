@@ -1,0 +1,183 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.270 --> 00:00:03.500
+So here is a a very
+interesting line drawing.
+
+00:00:03.500 --> 00:00:06.880
+It's, it's a line with two parts and
+notice it has a corner.
+
+00:00:06.880 --> 00:00:08.670
+And here's the next one.
+
+00:00:08.670 --> 00:00:10.140
+Voila, it moved.
+
+00:00:10.140 --> 00:00:12.000
+Back, forth, back, forth.
+
+00:00:12.000 --> 00:00:13.530
+I could do this all day, okay?
+
+00:00:13.530 --> 00:00:15.950
+And you can see it moving, okay?
+
+00:00:15.950 --> 00:00:19.140
+Great, let me put an aperture over that.
+
+00:00:19.140 --> 00:00:22.790
+So here is a great big green aperture,
+all right?
+
+00:00:22.790 --> 00:00:26.980
+And now, I'm going to move
+that line thing the same way.
+
+00:00:26.980 --> 00:00:29.610
+And now it goes like this, whoa.
+
+00:00:30.950 --> 00:00:34.450
+Now it's moving up or
+at least it feels like it's moving up.
+
+00:00:35.670 --> 00:00:37.190
+Is it moving up?
+
+00:00:37.190 --> 00:00:38.880
+No.
+In fact,
+
+00:00:38.880 --> 00:00:41.740
+here I've made it transparent, okay?
+
+00:00:41.740 --> 00:00:44.578
+So now, this is the same motion, right?
+
+00:00:44.578 --> 00:00:46.154
+If you, fact, if you look at the corner,
+
+00:00:46.154 --> 00:00:48.420
+you can tell this thing is moving
+over and down a little bit.
+
+00:00:48.420 --> 00:00:53.795
+But if you were to look just inside the
+circle, it looks like it's moving up.
+
+00:00:53.795 --> 00:00:58.620
+Not down and over,
+that's the aperture problem, okay?
+
+00:00:58.620 --> 00:01:03.800
+You can only tell the motion locally in
+the direction perpendicular to the edge.
+
+00:01:03.800 --> 00:01:08.600
+There are some other effects of getting,
+sort of, strong gradient flow.
+
+00:01:08.600 --> 00:01:11.330
+So this is a, single pattern and
+
+00:01:11.330 --> 00:01:15.070
+then I'm going to use Power Point to
+just put this in motion using animation.
+
+00:01:15.070 --> 00:01:18.930
+So there's no video going on here, this
+thing is just moving back and forth.
+
+00:01:18.930 --> 00:01:23.950
+And hopefully, as you see this move,
+you, every time it bumps,
+
+00:01:23.950 --> 00:01:28.080
+you're going to see the inside
+move relative to the surround.
+
+00:01:28.080 --> 00:01:30.940
+It's not actually moving,
+that's in your head and
+
+00:01:30.940 --> 00:01:34.500
+that's because of various noise and
+various ways of computing the gradient.
+
+00:01:34.500 --> 00:01:37.650
+Like more details and it's not,
+it's just not the aperture problem.
+
+00:01:37.650 --> 00:01:44.110
+But it's showing the sensitivity in
+your mind, in your head of the gradient.
+
+00:01:44.110 --> 00:01:48.250
+The aperture problem also is sometimes
+used to explain the barber pole
+
+00:01:48.250 --> 00:01:49.130
+illusion, right?
+
+00:01:49.130 --> 00:01:51.880
+So it's spinning around but
+you see stripes going up.
+
+00:01:52.910 --> 00:01:54.040
+And in fact,
+
+00:01:54.040 --> 00:01:58.030
+in the you shouldn't believe
+everything you see on the web universe.
+
+00:01:58.030 --> 00:02:01.990
+Some people will say that
+the aperture problem explains
+
+00:02:01.990 --> 00:02:06.580
+the barber pole illusion but
+actually that's not really true.
+
+00:02:06.580 --> 00:02:10.650
+It has to do with it, it doesn't explain
+it, because if you think about it,
+
+00:02:10.650 --> 00:02:16.210
+the gradients here are not
+quite vertical, right?
+
+00:02:16.210 --> 00:02:21.980
+They are off a little bit and so
+you can get a flow that's like that.
+
+00:02:21.980 --> 00:02:24.600
+And you have to do some integration
+
+00:02:24.600 --> 00:02:27.060
+to decide that the whole
+thing is moving up.
+
+00:02:27.060 --> 00:02:30.790
+And actually, Ellen Hildreth,
+a very long time ago and
+
+00:02:30.790 --> 00:02:34.880
+her PhD thesis looked at how
+you use the normal flow.
+
+00:02:34.880 --> 00:02:36.880
+And you can integrate it in
+order to make the, the, the,
+
+00:02:36.880 --> 00:02:38.990
+you might see the pole move up.
+
+00:02:38.990 --> 00:02:42.270
+But it is the case that there are places
+
+00:02:43.960 --> 00:02:47.210
+out there that will tell you that
+this is because of the, the vectors.
+

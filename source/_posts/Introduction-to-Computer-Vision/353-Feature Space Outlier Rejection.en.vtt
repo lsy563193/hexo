@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.167 --> 00:00:04.089
+So let's suppose you have a whole bunch of matches and since you,
+
+00:00:04.089 --> 00:00:08.976
+the human are going to click on which one's are correct and which one's are not.
+
+00:00:08.976 --> 00:00:10.111
+Well, actually not you.
+
+00:00:10.111 --> 00:00:11.879
+This is what you're going to do if you're a professor.
+
+00:00:11.879 --> 00:00:14.815
+You're going to find a bunch of undergraduates, okay?
+
+00:00:14.815 --> 00:00:17.600
+And you're going to offer to pay them not very much money and
+
+00:00:17.600 --> 00:00:19.820
+then you're going to offer to give them pizza.
+
+00:00:19.820 --> 00:00:20.354
+Okay?
+
+00:00:20.354 --> 00:00:22.924
+You can get undergraduates to do anything for pizza.
+
+00:00:22.924 --> 00:00:26.060
+Turns out you can get graduate students to do anything for pizza and Coca-Cola.
+
+00:00:26.060 --> 00:00:29.229
+So anyway, so you get a army of students to click on which matches were
+
+00:00:29.229 --> 00:00:31.265
+correct and which matches are not correct.
+
+00:00:31.265 --> 00:00:34.035
+So after everybody's clicked on all these matches,
+
+00:00:34.035 --> 00:00:36.070
+you can actually generate two graphs.
+
+00:00:36.070 --> 00:00:39.843
+What you're going to do is you're going to measure the nearest
+
+00:00:39.843 --> 00:00:41.542
+neighbor squared error.
+
+00:00:41.542 --> 00:00:46.947
+So this is how good is the SSD of the nearest neighbor?
+
+00:00:46.947 --> 00:00:50.801
+And we're going to check it for all of the correct matches and
+
+00:00:50.801 --> 00:00:52.853
+all of the incorrect matches.
+
+00:00:52.853 --> 00:00:54.454
+And so incorrect matches,
+
+00:00:54.454 --> 00:00:58.359
+remember, are where the best match is actually not the right one.
+
+00:00:58.359 --> 00:01:00.750
+Okay? So we're just plotting the best matches, but
+
+00:01:00.750 --> 00:01:04.031
+the correct, the ones that are correct and the ones that are incorrect.
+
+00:01:04.031 --> 00:01:08.869
+And so here is the squared error of the correct matches.
+
+00:01:08.869 --> 00:01:10.504
+That's what it says here, correct matches.
+
+00:01:10.504 --> 00:01:13.174
+All right. And you'll see that it falls off nicely.
+
+00:01:13.174 --> 00:01:15.684
+So most of them tend to be small and,
+
+00:01:15.684 --> 00:01:19.213
+you know, modest amount of them tend to be large.
+
+00:01:19.213 --> 00:01:22.684
+So you might say, well, I'll just set the threshold here and that'll be fine.
+
+00:01:22.684 --> 00:01:24.985
+Well, except not so fast.
+
+00:01:24.985 --> 00:01:28.744
+If you then take a plot of the incorrect matches,
+
+00:01:28.744 --> 00:01:34.628
+you see that the incorrect matches have a whole bunch of stuff early on also.
+
+00:01:34.628 --> 00:01:37.779
+So what that means is I've taken a point and
+
+00:01:37.779 --> 00:01:42.603
+I've found it's best match and the best one is not the right one.
+
+00:01:42.603 --> 00:01:48.442
+So it's not a surprise that it's a lowish value, because this is the best match.
+
+00:01:48.442 --> 00:01:53.027
+The problem is that some of your best matches are correct and
+
+00:01:53.027 --> 00:01:54.682
+have a lowish score.
+
+00:01:54.682 --> 00:02:00.721
+But some of your best matches are not correct and they also have a low score.
+
+00:02:00.721 --> 00:02:04.330
+So it's not so clear where you, where you should set that threshold.
+

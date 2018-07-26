@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.260 --> 00:00:04.620
+One more little piece of technical detail which is easy and then we'll just show
+
+00:00:04.620 --> 00:00:07.710
+you some examples and then we're going to go have a beer because it's Friday.
+
+00:00:07.710 --> 00:00:11.880
+Remember, n is a function of the probability you want of success.
+
+00:00:11.880 --> 00:00:14.840
+S, the size of the minimal set.
+
+00:00:14.840 --> 00:00:18.070
+And e, e is the percentage of outliers.
+
+00:00:18.070 --> 00:00:20.010
+But I don't know e, right?
+
+00:00:20.010 --> 00:00:23.080
+If I knew which ones were wrong, right?
+
+00:00:23.080 --> 00:00:26.680
+If the oracle of Delphi told me which ones were wrong I would of just thrown
+
+00:00:26.680 --> 00:00:30.000
+those away to begin with, and just computed the thing that was right.
+
+00:00:30.000 --> 00:00:33.200
+So if I don't know which ones are wrong I also probably therefore don't know
+
+00:00:33.200 --> 00:00:34.490
+what percentage of them are wrong.
+
+00:00:34.490 --> 00:00:35.530
+I could try to guess.
+
+00:00:37.050 --> 00:00:38.610
+So here's what you can do.
+
+00:00:38.610 --> 00:00:42.850
+You could say here it's just in words and then we'll do the algorithm.
+
+00:00:42.850 --> 00:00:44.370
+You can guess say, okay, I don't know,
+
+00:00:44.370 --> 00:00:48.210
+I'm going to assume that it's 50% are wrong.
+
+00:00:48.210 --> 00:00:51.520
+Maybe even 80 but whatever it is I'm going to assume that some percent is wrong.
+
+00:00:51.520 --> 00:00:55.020
+And I'm going to start computing some models.
+
+00:00:56.290 --> 00:00:59.070
+If I start finding lots of models where
+
+00:00:59.070 --> 00:01:02.820
+the inliers are much higher percentage than I guessed,
+
+00:01:02.820 --> 00:01:08.910
+then I'm going to adapt my belief about the outliers to some smaller value.
+
+00:01:08.910 --> 00:01:11.020
+So that's written here, as a, as an algorithm.
+
+00:01:12.720 --> 00:01:14.450
+basically, I start off saying,
+
+00:01:14.450 --> 00:01:17.820
+I'm going to assume that everything is an outlier and therefore,
+
+00:01:17.820 --> 00:01:20.360
+I'm going to assume that I have to take an infinite number of samples.
+
+00:01:20.360 --> 00:01:24.450
+So I'm going to be here all day or night, and weeks, and years, whatever.
+
+00:01:24.450 --> 00:01:25.500
+But, not so bad.
+
+00:01:25.500 --> 00:01:28.520
+The algorithm says, I start how many have I done so far?
+
+00:01:28.520 --> 00:01:31.970
+Zero, I say as long as N is bigger than my current set of samp,
+
+00:01:31.970 --> 00:01:36.330
+samples that I've tried I'm going to pick a sample and
+
+00:01:36.330 --> 00:01:38.590
+I'm going to count the number of inliers.
+
+00:01:39.940 --> 00:01:44.665
+And I'm going to guess that the percentage of outliers is
+
+00:01:44.665 --> 00:01:47.740
+1 minus the percentage of the inliers that I've seen so far.
+
+00:01:47.740 --> 00:01:50.410
+After all, this is just my first one, et cetera.
+
+00:01:50.410 --> 00:01:55.040
+If that value is less than the value that I started with, and since I started
+
+00:01:55.040 --> 00:01:59.830
+out believing that they're all outliers, I'm going to get some values smaller.
+
+00:01:59.830 --> 00:02:05.110
+So if the new e is less than the one I had before, I set that value, and
+
+00:02:05.110 --> 00:02:05.960
+I re-compute N.
+
+00:02:05.960 --> 00:02:10.130
+So, first time around, N was at infinity, and then N gets lower.
+
+00:02:10.130 --> 00:02:13.230
+And I keep doing this and what can happen is,
+
+00:02:13.230 --> 00:02:19.200
+since I only change e if it's smaller, that means N can only get smaller.
+
+00:02:19.200 --> 00:02:23.290
+So, eventually my samples, the number of samples that I've tried,
+
+00:02:23.290 --> 00:02:25.220
+will get bigger than the N that I need.
+
+00:02:25.220 --> 00:02:27.660
+And, when I do that, then I stop.
+
+00:02:27.660 --> 00:02:31.153
+And that's a way of adapting when you don't know a priori,
+
+00:02:31.153 --> 00:02:34.070
+the number of outliers that are there.
+
+00:02:34.070 --> 00:02:36.510
+Something that I, I didn't mention before.
+
+00:02:36.510 --> 00:02:40.620
+It's true if you have a real noise model in terms of how
+
+00:02:40.620 --> 00:02:44.220
+the noise distribute from measurements, you can analytically set some threshold.
+
+00:02:45.370 --> 00:02:49.450
+Dirty little secret, we almost never have a noise model.
+
+00:02:49.450 --> 00:02:51.240
+Sometimes we do, but not too often.
+
+00:02:52.520 --> 00:02:54.780
+Because we have a noise model from somebody else's censor center.
+
+00:02:54.780 --> 00:02:55.530
+So you know what we do?
+
+00:02:55.530 --> 00:02:58.310
+We end up adjusting it to see what works.
+
+00:02:58.310 --> 00:03:01.980
+Now, not always, and certainly never in our papers.
+
+00:03:01.980 --> 00:03:04.700
+But for real, sometimes you just have to make the thing work.
+

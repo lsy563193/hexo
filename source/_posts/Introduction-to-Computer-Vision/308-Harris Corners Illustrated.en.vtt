@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.053 --> 00:00:02.933
+So now we can start to graphically illustrate this.
+
+00:00:02.933 --> 00:00:07.240
+So on the left, I have an image I of x, y.
+
+00:00:07.240 --> 00:00:12.557
+And on the right, I have the new function E of u, v.
+
+00:00:12.557 --> 00:00:14.820
+Okay? So remember, E is the error.
+
+00:00:14.820 --> 00:00:15.818
+Okay?
+
+00:00:15.818 --> 00:00:17.704
+And what we're going to do is we're going to put 0,
+
+00:00:17.704 --> 00:00:19.035
+0 sort of in the middle, right?
+
+00:00:19.035 --> 00:00:21.775
+So this goes plus in u and minus in u.
+
+00:00:21.775 --> 00:00:23.841
+This would be plus in v and minus in v.
+
+00:00:23.841 --> 00:00:24.793
+All right?
+
+00:00:24.793 --> 00:00:29.379
+So what if I just leave the square right in the same place?
+
+00:00:29.379 --> 00:00:31.712
+What if I make u and v be zero?
+
+00:00:31.712 --> 00:00:33.360
+How much error am I going to get?
+
+00:00:33.360 --> 00:00:34.939
+Well, none.
+
+00:00:34.939 --> 00:00:35.694
+Okay?
+
+00:00:35.694 --> 00:00:39.038
+And so E of 0, 0 is 0.
+
+00:00:39.038 --> 00:00:41.899
+I'm just subtracting the same image from itself and
+
+00:00:41.899 --> 00:00:44.576
+that's what this E 0, 0 is meant to show.
+
+00:00:44.576 --> 00:00:49.777
+Oh, and by the way, just showing you this little pixel here is black.
+
+00:00:49.777 --> 00:00:51.135
+Why is that black?
+
+00:00:51.135 --> 00:00:52.760
+Because that's zero, right?
+
+00:00:52.760 --> 00:00:55.338
+There's zero error E of u, v.
+
+00:00:55.338 --> 00:00:55.930
+Right?
+
+00:00:55.930 --> 00:00:59.737
+Error because it's the sum of squares could only give, become more positive.
+
+00:00:59.737 --> 00:01:03.812
+Right? So at zero, zero it's going to be an error of zero.
+
+00:01:03.812 --> 00:01:08.136
+So now suppose I move my window just a couple of pixels,
+
+00:01:08.136 --> 00:01:11.335
+like 3 in the u and 2 in the v direction.
+
+00:01:11.335 --> 00:01:14.075
+Now my error going to be whatever it is, right?
+
+00:01:14.075 --> 00:01:15.909
+And over here, right?
+
+00:01:15.909 --> 00:01:17.837
+You notice this is just a gray value, right?
+
+00:01:17.837 --> 00:01:20.333
+Because the value is gone higher, right?
+
+00:01:20.333 --> 00:01:24.768
+So the error grows as I move away and just think for one minute,
+
+00:01:24.768 --> 00:01:30.154
+suppose that picture were perfectly gray, every pixel is the same value.
+
+00:01:30.154 --> 00:01:33.401
+That error would be zero at the middle, at zero, zero and
+
+00:01:33.401 --> 00:01:35.575
+as I moved it, it would still be zero.
+
+00:01:35.575 --> 00:01:37.274
+So that should give you some idea of where we're headed.
+
+00:01:37.274 --> 00:01:41.138
+We're looking for points where as I move in u, v,
+
+00:01:41.138 --> 00:01:45.192
+I get this nice change, no matter how I move in u, v.
+
+00:01:45.192 --> 00:01:46.028
+Got it?
+
+00:01:46.028 --> 00:01:46.528
+Cool.
+

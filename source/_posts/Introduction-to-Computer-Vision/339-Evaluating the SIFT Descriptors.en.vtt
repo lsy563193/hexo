@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.140 --> 00:00:02.920
+One of the really nice things about some of this initial work is,
+
+00:00:02.920 --> 00:00:07.100
+they did some pretty extensive evaluation.
+
+00:00:07.100 --> 00:00:11.330
+They would take a whole bunch of images and they would change their,
+
+00:00:11.330 --> 00:00:13.070
+they would rotate them, they would scale them,
+
+00:00:13.070 --> 00:00:17.050
+stretch them, change the brightness, contrast, and, and add noise.
+
+00:00:17.050 --> 00:00:21.520
+And then the feature point descriptors would get run on the original image and
+
+00:00:21.520 --> 00:00:25.830
+the the, the transformed, the distorted image.
+
+00:00:25.830 --> 00:00:28.890
+And then what you could do is you could say, under some matching criteria,
+
+00:00:29.990 --> 00:00:34.360
+how often does the point, does this descriptor.
+
+00:00:34.360 --> 00:00:39.250
+How often is its best match in this whole other image, the correct one?
+
+00:00:39.250 --> 00:00:41.710
+The correct one being actually comes from the same point,
+
+00:00:41.710 --> 00:00:44.290
+on the same object, in two different images.
+
+00:00:44.290 --> 00:00:46.160
+And that's what they evaluated.
+
+00:00:46.160 --> 00:00:49.960
+So, here's the first graph that we'll, that I'll show you.
+
+00:00:49.960 --> 00:00:55.180
+again, the error measure is the correct nearest descriptor percentage.
+
+00:00:55.180 --> 00:00:59.990
+How often is the one that matches best the correct one, all right?
+
+00:00:59.990 --> 00:01:02.870
+And then they varied a couple of things.
+
+00:01:02.870 --> 00:01:07.920
+The first thing that's easiest to see here is this number n.
+
+00:01:07.920 --> 00:01:14.150
+This was the number of those of the histogram that got used.
+
+00:01:14.150 --> 00:01:14.850
+Remember, I said,
+
+00:01:14.850 --> 00:01:19.000
+I was showing you only a two by two, but they actually used a four by four.
+
+00:01:19.000 --> 00:01:22.920
+Well, one of the reasons they used a four by four is a two by two is here,
+
+00:01:22.920 --> 00:01:24.110
+a three by three was there,
+
+00:01:24.110 --> 00:01:27.570
+a four by four is here, and all of a sudden, you're sort of maxing out.
+
+00:01:27.570 --> 00:01:31.840
+So, it looked like four by four was, was a good thing to use.
+
+00:01:31.840 --> 00:01:35.265
+By the way, this was evaluated by looking at a bunch of images, and
+
+00:01:35.265 --> 00:01:40.020
+40,000 key point descriptors, you know, a bunch of images.
+
+00:01:40.020 --> 00:01:44.930
+So, they looked at 40,000 different descriptors and the corresponding other
+
+00:01:44.930 --> 00:01:48.780
+image with all those perturbations, and so it's, it's pretty serious evaluation.
+
+00:01:49.810 --> 00:01:53.860
+The other thing that's shown here is, how many orientations in the bins, right?
+
+00:01:53.860 --> 00:01:56.970
+How many, sorry, how many orientations in histogram, how many bins?
+
+00:01:56.970 --> 00:01:58.475
+So, you could have used just four.
+
+00:01:58.475 --> 00:02:00.610
+You could have used eight, you could use 16.
+
+00:02:00.610 --> 00:02:02.749
+Well, what you can see here is four does that.
+
+00:02:02.749 --> 00:02:04.850
+When you go up to eight it gets much better.
+
+00:02:04.850 --> 00:02:08.530
+When you went to sixteen, you didn't do very much better than eight.
+
+00:02:08.530 --> 00:02:11.432
+So, they picked eight.
+
+00:02:11.432 --> 00:02:15.430
+All right, so this is an empirically motivated set of parameters.
+
+00:02:15.430 --> 00:02:18.008
+Without going into too much detail, they also show,
+
+00:02:18.008 --> 00:02:20.470
+this is as they add image noise to the picture,
+
+00:02:20.470 --> 00:02:24.333
+how much percentage of pixels get noise or, or the magnitude of the noise.
+
+00:02:24.333 --> 00:02:27.998
+And you can see that the correctly matched value, again, falls off nice and
+
+00:02:27.998 --> 00:02:30.416
+gracefully, which is what you're looking for.
+
+00:02:30.416 --> 00:02:32.640
+You're looking for it slowly.
+
+00:02:32.640 --> 00:02:35.540
+By the way, going back to this previous one.
+
+00:02:35.540 --> 00:02:38.586
+You know, it's only getting up to like, 50% match.
+
+00:02:38.586 --> 00:02:42.330
+We don't know, we don't need everything to be matched correctly.
+
+00:02:42.330 --> 00:02:46.270
+We need enough of them to be matched correctly.
+
+00:02:46.270 --> 00:02:50.460
+And we'll assume the ones that don't match are all voting for
+
+00:02:50.460 --> 00:02:54.570
+Santa Claus, Mickey Mouse and Donald Duck, if you remember that analogy, right?
+
+00:02:54.570 --> 00:02:58.220
+The ones that don't match, match sort of arbitrarily.
+
+00:02:58.220 --> 00:03:02.110
+So, as long as we get ones that match well then we're doing okay.
+

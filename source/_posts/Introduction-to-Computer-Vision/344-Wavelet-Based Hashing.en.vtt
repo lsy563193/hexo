@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.470 --> 00:00:04.730
+Another cool thing you can do is do some form of a hashing based method in
+
+00:00:04.730 --> 00:00:05.360
+order to index.
+
+00:00:05.360 --> 00:00:08.610
+So, what I'm showing you here is what's called Wavelet-based hashing done by
+
+00:00:08.610 --> 00:00:10.270
+Brown, Szelski, and Winder in 2005.
+
+00:00:10.270 --> 00:00:12.675
+It comes from Szelski's book.
+
+00:00:12.675 --> 00:00:14.230
+you, you can see it.
+
+00:00:14.230 --> 00:00:18.070
+And, and basically the idea is this, so here's our little neighborhood.
+
+00:00:18.070 --> 00:00:18.760
+Okay?
+
+00:00:18.760 --> 00:00:21.210
+And we apply what are called these Haar wavelet's.
+
+00:00:21.210 --> 00:00:24.552
+Now wavelet's are just a self-similar form of filters,
+
+00:00:24.552 --> 00:00:26.080
+may be applied different scales.
+
+00:00:26.080 --> 00:00:27.380
+We didn't talk too much about them.
+
+00:00:27.380 --> 00:00:28.320
+That's okay.
+
+00:00:28.320 --> 00:00:30.430
+But basically these are the three filters.
+
+00:00:30.430 --> 00:00:33.500
+And these filters are, you know, sum up plus here, minus there.
+
+00:00:33.500 --> 00:00:34.620
+Plus here, minus there.
+
+00:00:34.620 --> 00:00:37.930
+And then plus here, plus here, minus there, minus there.
+
+00:00:37.930 --> 00:00:38.640
+Okay?
+
+00:00:38.640 --> 00:00:43.890
+So, what you do is, that means you'll get three different numbers, right,
+
+00:00:43.890 --> 00:00:46.300
+from each of the three filter outputs.
+
+00:00:46.300 --> 00:00:51.622
+And what you do is, you can then quantize each of those into ten bins, or
+
+00:00:51.622 --> 00:00:54.748
+maybe ten overlapping bins, all right?
+
+00:00:54.748 --> 00:00:59.788
+So, you have 10 bins 3, that means you have 10 to the 3 different possible
+
+00:00:59.788 --> 00:01:05.050
+values that you can get out for a single application to the neighborhood.
+
+00:01:05.050 --> 00:01:08.380
+And because the bins overlap, you don't have to worry about well, maybe I got
+
+00:01:08.380 --> 00:01:13.860
+out a 4 vs a 4.1 for some value, because the bins don't have a, a sharp border.
+
+00:01:13.860 --> 00:01:15.530
+They have an overlapping border.
+
+00:01:15.530 --> 00:01:19.790
+So then what you do is, you compute these three numbers quantized to over 10.
+
+00:01:19.790 --> 00:01:22.890
+That gives you 10 to the 3 possible bins to pick from.
+
+00:01:22.890 --> 00:01:24.510
+And you go and you get that.
+
+00:01:24.510 --> 00:01:27.791
+So that has, that reduces the set of neighbors that you have to look at,
+
+00:01:27.791 --> 00:01:30.467
+or the set of key points you have to look at by a factor of
+
+00:01:30.467 --> 00:01:33.532
+something less than 1,000, because overlapping bins, but
+
+00:01:33.532 --> 00:01:37.460
+on the, between, again, between two and three orders of magnitude.
+
+00:01:37.460 --> 00:01:37.960
+Pretty cool.
+

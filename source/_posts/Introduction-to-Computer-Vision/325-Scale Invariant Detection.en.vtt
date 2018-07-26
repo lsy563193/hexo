@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.435
+So let's just think for a minute.
+
+00:00:01.435 --> 00:00:04.038
+Suppose we wanted scale invariance.
+
+00:00:04.038 --> 00:00:05.573
+How could we do that?
+
+00:00:05.573 --> 00:00:09.107
+So to think about this, let's consider some regions, and I'm going to use
+
+00:00:09.107 --> 00:00:13.280
+circles, it's easier to think about, of different sizes around some point, okay?
+
+00:00:13.280 --> 00:00:16.373
+So here on the left, I've got a curve that is the zoomed in version of
+
+00:00:16.373 --> 00:00:19.220
+the curve on the right and I've got some circles around this.
+
+00:00:19.220 --> 00:00:21.143
+You know, when I look at the part that's in this circle and
+
+00:00:21.143 --> 00:00:22.633
+the part that's in that circle, I say, no,
+
+00:00:22.633 --> 00:00:24.058
+that curve doesn't really look the same.
+
+00:00:24.058 --> 00:00:25.578
+If I make the same circle a little bit bigger,
+
+00:00:25.578 --> 00:00:26.827
+no it doesn't really look the same.
+
+00:00:26.827 --> 00:00:28.295
+How about now, no, not yet.
+
+00:00:28.295 --> 00:00:29.897
+Then I say, oh, wait.
+
+00:00:29.897 --> 00:00:32.019
+Now with this bigger size,
+
+00:00:32.019 --> 00:00:36.370
+this piece of curve looks a lot like this piece of curve.
+
+00:00:36.370 --> 00:00:37.271
+All right?
+
+00:00:37.271 --> 00:00:42.510
+So the regions of corresponding sizes will look the same in both images.
+
+00:00:42.510 --> 00:00:45.646
+It's not the same size, I, I call them corresponding sizes.
+
+00:00:45.646 --> 00:00:48.682
+It is, it spans the same amount of the image.
+
+00:00:48.682 --> 00:00:52.948
+So the problem, of course is, we have to choose the circles independently,
+
+00:00:52.948 --> 00:00:54.916
+because I'm dealing with this image and
+
+00:00:54.916 --> 00:00:57.558
+I've gotta figure out what scale to do things.
+
+00:00:57.558 --> 00:01:00.327
+And I'm dealing with this image, I've gotta figure what scale to do things.
+
+00:01:00.327 --> 00:01:04.297
+And I want it to be the case the way the, the red circles are indicating here,
+
+00:01:04.297 --> 00:01:08.142
+that the scale I picked for the left-hand image is this nice big circle and
+
+00:01:08.142 --> 00:01:11.639
+the scale I picked for the right-hand image is this small circle.
+
+00:01:11.639 --> 00:01:12.606
+So, that's what we want to do.
+
+00:01:12.606 --> 00:01:15.843
+We want to be able to do this independently on the, in the images.
+
+00:01:15.843 --> 00:01:17.845
+So, how might we do that?
+
+00:01:17.845 --> 00:01:19.180
+Well, here's a solution.
+
+00:01:19.180 --> 00:01:19.713
+Okay.
+
+00:01:19.713 --> 00:01:21.782
+And graphically, it'll be a little bit easier to see.
+
+00:01:21.782 --> 00:01:24.819
+What we're going to do is, we're going to design some function, okay?
+
+00:01:24.819 --> 00:01:27.640
+And it's going to be a function over that circle, and
+
+00:01:27.640 --> 00:01:31.225
+this is a little bit tricky, we're going to call it scale invariant.
+
+00:01:31.225 --> 00:01:32.858
+And what we mean by that is,
+
+00:01:32.858 --> 00:01:37.689
+the function doesn't actually care how big the circle is, it just cares about,
+
+00:01:37.689 --> 00:01:41.969
+say, the distribution of the values of the pixels within that circle.
+
+00:01:41.969 --> 00:01:44.386
+So a simple example, not one that we're going to use, but
+
+00:01:44.386 --> 00:01:47.491
+it's simplest to understand is imagine average intensity.
+
+00:01:47.491 --> 00:01:50.404
+All right. If I just take the average intensity over a circle,
+
+00:01:50.404 --> 00:01:53.280
+that function doesn't care how big the circle is.
+
+00:01:53.280 --> 00:01:57.818
+It's just going to compute that function over whatever size circle you give it.
+
+00:01:57.818 --> 00:02:00.451
+And in fact, if there were a constant grey value,
+
+00:02:00.451 --> 00:02:04.792
+if you kept making the circle bigger and bigger and bigger, it wouldn't matter.
+
+00:02:04.792 --> 00:02:07.795
+The, the function would stay the same.
+
+00:02:07.795 --> 00:02:12.246
+If you have a function that changes over different corresponding regions,
+
+00:02:12.246 --> 00:02:14.193
+then that function would go up and
+
+00:02:14.193 --> 00:02:17.404
+down as you've looked over those different regions.
+
+00:02:17.404 --> 00:02:21.075
+And if I zoomed out of that thing, it would go up and down again.
+
+00:02:21.075 --> 00:02:25.425
+But now it would go up and down faster, because as I grew my circle,
+
+00:02:25.425 --> 00:02:30.184
+I would be covering more, more of that picture as I move that circle out.
+
+00:02:30.184 --> 00:02:32.653
+Now, I know that was clear as mud, so let's take a look at a picture.
+
+00:02:32.653 --> 00:02:33.209
+All right.
+

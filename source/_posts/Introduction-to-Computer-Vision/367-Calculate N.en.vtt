@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.280 --> 00:00:01.970
+So, what we're going to do is we're going to calculate N.
+
+00:00:01.970 --> 00:00:03.415
+And it's actually really easy.
+
+00:00:03.415 --> 00:00:04.750
+You just step right through it.
+
+00:00:04.750 --> 00:00:05.980
+So we start off with s.
+
+00:00:05.980 --> 00:00:10.895
+S is going to be the number of points in the minimal set, okay?
+
+00:00:10.895 --> 00:00:13.000
+P: the probability of success.
+
+00:00:13.000 --> 00:00:15.700
+This is, I wanted to have probability of p,
+
+00:00:15.700 --> 00:00:22.150
+that at least one of my samples will be a correct set of points.
+
+00:00:22.150 --> 00:00:25.400
+Now e, we said before, is the proportion of outliers.
+
+00:00:25.400 --> 00:00:28.910
+So, what's the proportion of inliers?
+
+00:00:28.910 --> 00:00:31.020
+Well, if the proportion of outliers is 20%,
+
+00:00:31.020 --> 00:00:34.470
+the inliers is 80%, just 1 minus e, okay?
+
+00:00:34.470 --> 00:00:38.300
+All right, now we start with just a little bit of combinatorics, all right?
+
+00:00:38.300 --> 00:00:42.170
+So, let's suppose I pick s of these things.
+
+00:00:42.170 --> 00:00:45.810
+What's the probability that they're all inliers?
+
+00:00:45.810 --> 00:00:49.440
+Well, if the pro, probability of in, being inlier is 1 minus e,
+
+00:00:49.440 --> 00:00:53.950
+the probability that they're, all s are inliers is 1 minus e to the s.
+
+00:00:53.950 --> 00:00:56.560
+I'm assuming that there are a lot of points to choose from.
+
+00:00:56.560 --> 00:00:59.695
+So, that the fact that I pulled one out doesn't diminish things.
+
+00:00:59.695 --> 00:01:01.790
+It, it's a pretty good approximation.
+
+00:01:01.790 --> 00:01:05.680
+Okay, so that's the probability that all of
+
+00:01:05.680 --> 00:01:08.790
+the points in the sample I pulled are inliers.
+
+00:01:08.790 --> 00:01:13.580
+So, what's the probability that at least one of those is an outlier?
+
+00:01:13.580 --> 00:01:15.870
+Well, 1 minus that.
+
+00:01:15.870 --> 00:01:20.490
+Okay, so that's just 1 minus 1 minus e to the s, okay?
+
+00:01:20.490 --> 00:01:28.030
+So, if I pull out n sets, what's the probability that all n are outliers?
+
+00:01:28.030 --> 00:01:30.170
+Well, given that my sets are independent, so
+
+00:01:30.170 --> 00:01:35.410
+it's just this 1 minus, 1 minus e to the s, all raised to the n, okay?
+
+00:01:35.410 --> 00:01:40.380
+So, that's the probability that all n samples have an outlier.
+
+00:01:40.380 --> 00:01:41.960
+Okay. But, of course,
+
+00:01:41.960 --> 00:01:46.680
+what we want is the probability that all of them are outliers.
+
+00:01:46.680 --> 00:01:49.040
+So that means they were all bad.
+
+00:01:49.040 --> 00:01:52.000
+We want that probability to be really small.
+
+00:01:52.000 --> 00:01:56.370
+That is, less than 1 minus the probability of, of the success.
+
+00:01:56.370 --> 00:01:58.670
+So judging here, right.
+
+00:01:58.670 --> 00:02:03.370
+So if p here was 99%, 1 minus p would be 1%.
+
+00:02:03.370 --> 00:02:06.700
+We want the probability that they were,
+
+00:02:06.700 --> 00:02:09.949
+all of our samples had at least one outlier in them.
+
+00:02:09.949 --> 00:02:13.280
+We want that to be less than 1%.
+
+00:02:13.280 --> 00:02:17.100
+So that means that we can now just substitute in.
+
+00:02:17.100 --> 00:02:18.860
+And we get this ugly expression,
+
+00:02:18.860 --> 00:02:23.440
+1 minus 1 minus e to the s to the N has to all be less than 1 minus p.
+
+00:02:23.440 --> 00:02:25.000
+Drum roll, please.
+
+00:02:25.000 --> 00:02:27.480
+We can solve for N and bingo.
+
+00:02:27.480 --> 00:02:28.920
+There is our equation.
+
+00:02:28.920 --> 00:02:32.770
+N's gotta be greater than the log of 1 minus p divided by the log of 1 minus
+
+00:02:32.770 --> 00:02:34.360
+1 minus e to the s.
+
+00:02:34.360 --> 00:02:37.420
+And I'm sure you all have deep intuitions for what that looks like.
+
+00:02:37.420 --> 00:02:39.710
+No? Okay, let's look at some representative values.
+

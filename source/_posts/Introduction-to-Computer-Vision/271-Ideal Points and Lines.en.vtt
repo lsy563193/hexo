@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.100 --> 00:00:04.460
+To finish our little tutorial on projective geometry,
+
+00:00:04.460 --> 00:00:06.740
+talk about something that's really more of a vocabulary issue.
+
+00:00:06.740 --> 00:00:09.800
+There's this notion of Ideal points and ideal lines.
+
+00:00:10.800 --> 00:00:14.950
+So, Ideal points come this way.
+
+00:00:14.950 --> 00:00:20.150
+We said that points are the intersection of a ray from the origin,
+
+00:00:20.150 --> 00:00:22.090
+hitting the image plane.
+
+00:00:22.090 --> 00:00:23.520
+Okay, fine no problem.
+
+00:00:23.520 --> 00:00:27.650
+And all the rays will hit that plane, unless what.
+
+00:00:27.650 --> 00:00:31.590
+Unless the ray is parallel to the image plane.
+
+00:00:31.590 --> 00:00:36.470
+The ray is parallel to the image plane, where does it intersect the image plane?
+
+00:00:37.540 --> 00:00:41.460
+We answered this before we said you had to go, they intersect out in infinity,
+
+00:00:41.460 --> 00:00:46.360
+remember you had to go ask somebody high in the Himalayas about why that's true?
+
+00:00:46.360 --> 00:00:46.990
+That's the second time,
+
+00:00:46.990 --> 00:00:50.250
+that joke was so good the first time I thought I'd use it a second time.
+
+00:00:50.250 --> 00:00:53.000
+Anyway, but the idea is that this notion of an ideal point is
+
+00:00:53.000 --> 00:00:54.280
+essentially a point in infinity.
+
+00:00:54.280 --> 00:00:59.520
+And the way you get a point in infinity is that you have z, the, the,
+
+00:00:59.520 --> 00:01:04.019
+the last term is x, y, 0, scale being 0, gives you a point at infinity.
+
+00:01:04.019 --> 00:01:07.310
+And if you want to think about that, what happens when you divide by zero, x and
+
+00:01:07.310 --> 00:01:09.940
+y blow up, and, and they go to infinity.
+
+00:01:09.940 --> 00:01:13.130
+So that's an ideal point, and the problem with an ideal point is that the ray
+
+00:01:13.130 --> 00:01:15.920
+that's supposed to define it is parallel to the image plane.
+
+00:01:15.920 --> 00:01:20.390
+Well, what about a line, where the normal
+
+00:01:20.390 --> 00:01:25.230
+that defines the plane is parallel to the image plane, and that's shown here.
+
+00:01:25.230 --> 00:01:29.500
+It's a little difficult to see but here's our normal, right here.
+
+00:01:29.500 --> 00:01:32.400
+And you'll notice it has a z value of 0, okay?
+
+00:01:32.400 --> 00:01:34.710
+So it's parallel to the image plane.
+
+00:01:34.710 --> 00:01:38.630
+Well, that's actually okay, what it means is that the plane that it
+
+00:01:38.630 --> 00:01:44.270
+defines is also going to be perpendicular to the image plane,
+
+00:01:44.270 --> 00:01:46.910
+which means it's going to go right through the origin.
+
+00:01:46.910 --> 00:01:50.990
+So, the ideal line corresponds to the image that go through the origin, or
+
+00:01:50.990 --> 00:01:52.010
+the principle point.
+
+00:01:52.010 --> 00:01:54.370
+And that's typically in the middle of our images, but
+
+00:01:54.370 --> 00:01:56.730
+remember, you, your images might be offset.
+
+00:01:56.730 --> 00:02:02.080
+So an ideal point is off in infinity, an ideal line goes through the origin.
+

@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.230 --> 00:00:02.590
+That's all the physics we're going to do.
+
+00:00:02.590 --> 00:00:05.000
+We've talked about how we, model the light, and
+
+00:00:05.000 --> 00:00:10.270
+we talked about surface property, so the albedo of the mat reflectance, and
+
+00:00:10.270 --> 00:00:12.300
+sort of the specular component, and
+
+00:00:12.300 --> 00:00:17.040
+we've talked about how the shape, the surface normals, interacts with that.
+
+00:00:17.040 --> 00:00:20.380
+So in computer vision, there are these fundamental questions of,
+
+00:00:20.380 --> 00:00:24.792
+well, when I look at a, a scene, can I figure out, say the shape, or
+
+00:00:24.792 --> 00:00:30.780
+the albedo or both, just from an image that I'm, that I'm looking at.
+
+00:00:30.780 --> 00:00:33.230
+And so fundamentally, this is an ill-posed problem, right,
+
+00:00:33.230 --> 00:00:38.540
+because it's an interaction between both the shape and the whatever's painted,
+
+00:00:38.540 --> 00:00:42.270
+or the texture on the surface, and yet our brain does it all the time, which
+
+00:00:42.270 --> 00:00:45.860
+means that we, as computer vision scientists, we'd like to try to do it, too.
+
+00:00:45.860 --> 00:00:48.230
+So over the next couple of lessons, we'll be talking, sort of,
+
+00:00:48.230 --> 00:00:50.830
+the computer vision approach to recovering those elements.
+

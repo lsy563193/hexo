@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.210 --> 00:00:03.576
+I should mention that, there've been other attempts at not,
+
+00:00:03.576 --> 00:00:06.630
+the other pieces of work on finding corners.
+
+00:00:06.630 --> 00:00:10.730
+In fact, Shi-Tomasi did this nice work on, cornerness, and
+
+00:00:10.730 --> 00:00:13.050
+it, it did something different looking at the lambdas,
+
+00:00:13.050 --> 00:00:15.880
+instead of using that r, and found local maximums.
+
+00:00:15.880 --> 00:00:19.470
+And, I will tell you, if any of you who use OpenCV,
+
+00:00:19.470 --> 00:00:23.540
+they have something called OpenCV Good Features to Track, it's a function, it
+
+00:00:23.540 --> 00:00:27.480
+finds you points in the image, that are good features to, good points to track.
+
+00:00:27.480 --> 00:00:28.320
+How does it work?
+
+00:00:28.320 --> 00:00:31.220
+I'm pretty sure that's the Shi and Tomasi version of this.
+
+00:00:31.220 --> 00:00:33.670
+It's still based upon the same moment matrix,
+
+00:00:33.670 --> 00:00:36.800
+it's just a different use of the eigenvalues.
+
+00:00:36.800 --> 00:00:39.870
+And, there's reports that maybe it's a slightly better way for
+
+00:00:39.870 --> 00:00:42.820
+things that are undergoing certain kinds of deformations.
+
+00:00:42.820 --> 00:00:44.820
+There was another one 2005 Brown, Szeliski and
+
+00:00:44.820 --> 00:00:48.048
+Winder, and I write this one because I've stolen so many of these pictures from
+
+00:00:48.048 --> 00:00:50.830
+Rick Szeliski's book, I feel like I have to put this in there.
+
+00:00:50.830 --> 00:00:55.206
+It again looked at eigenvectors in another slightly different way, and
+
+00:00:55.206 --> 00:00:58.247
+there are other, types of, of corner detectors.
+

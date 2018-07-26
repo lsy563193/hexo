@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.239
+All right. Welcome back to computer vision today and the next couple of lessons.
+
+00:00:05.239 --> 00:00:09.934
+We're going to just a little bit of time on the whole light reflection process
+
+00:00:09.934 --> 00:00:14.650
+that results in photos essentially hitting our camera or our retina.
+
+00:00:14.650 --> 00:00:17.979
+The idea this is how the physics of the imaging or
+
+00:00:17.979 --> 00:00:22.690
+the creation of the light that the imaging is going to make a picture of.
+
+00:00:22.690 --> 00:00:26.864
+And there's actually a huge amount known about, and, about this area, and
+
+00:00:26.864 --> 00:00:31.161
+it comes from both, sort of, the material science, where we study the materials,
+
+00:00:31.161 --> 00:00:34.568
+but the big, motivator has been computer graphics, right?
+
+00:00:34.568 --> 00:00:38.682
+Computer graphics, the idea is I have some model of of an object and
+
+00:00:38.682 --> 00:00:41.642
+its surface type and I have some model of the light.
+
+00:00:41.642 --> 00:00:45.465
+And I'd like to produce an image as if you were actually looking at
+
+00:00:45.465 --> 00:00:46.515
+the real object.
+
+00:00:46.515 --> 00:00:51.052
+So to do that, I have to understand how light interacts with these objects.
+
+00:00:51.052 --> 00:00:53.888
+Now in the old days and when I say, the old days.
+
+00:00:53.888 --> 00:00:56.024
+I mean, like 20 to 40 years ago.
+
+00:00:56.024 --> 00:00:58.791
+There was this view that computer vision was
+
+00:00:58.791 --> 00:01:01.495
+just inverse computer graphics, right?
+
+00:01:01.495 --> 00:01:04.788
+I mean, computer graphics, you have model of the object and a model of light and
+
+00:01:04.788 --> 00:01:05.633
+you make a picture.
+
+00:01:05.633 --> 00:01:07.742
+And computer vision was thought of as well,
+
+00:01:07.742 --> 00:01:11.739
+given a picture, can you tell me about the light and the object that's there.
+
+00:01:11.739 --> 00:01:16.434
+And so there was a lot of focus on recovering image prop surface properties and
+
+00:01:16.434 --> 00:01:21.348
+object properties and light and conditions as it's sort of an inverse problem.
+
+00:01:21.348 --> 00:01:22.252
+And to do that,
+
+00:01:22.252 --> 00:01:26.787
+we had to have a lot of understanding of the physics of how images were formed.
+
+00:01:26.787 --> 00:01:30.115
+Now more recently in computer vision a lot of what we've talked about here,
+
+00:01:30.115 --> 00:01:32.767
+there's been more of a focus on really the geometry of sort of
+
+00:01:32.767 --> 00:01:34.119
+where features get located and
+
+00:01:34.119 --> 00:01:37.187
+that relates to sort of the, the shapes of objects and the relation and
+
+00:01:37.187 --> 00:01:40.355
+you didn't have to worry quite so much about the precise physics.
+
+00:01:40.355 --> 00:01:42.004
+And then also a lot was saying,
+
+00:01:42.004 --> 00:01:44.939
+let's lump all together, the lighting, the shape.
+
+00:01:44.939 --> 00:01:47.975
+The texture, the imaging, the camera, et cetera.
+
+00:01:47.975 --> 00:01:51.389
+We just get out pictures and we use machine learning or
+
+00:01:51.389 --> 00:01:54.882
+recognition techniques for to trying to do labeling.
+
+00:01:54.882 --> 00:01:59.448
+And we talked and when we will actually be talking about that in the future.
+
+00:01:59.448 --> 00:02:03.499
+But it is it's still important to understand something about how the physics of
+
+00:02:03.499 --> 00:02:05.620
+light works with respect to making images.
+

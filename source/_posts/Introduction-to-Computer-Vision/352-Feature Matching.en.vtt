@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.390 --> 00:00:03.900
+So how to get the putative matches.
+
+00:00:03.900 --> 00:00:05.200
+We talked a little bit so
+
+00:00:05.200 --> 00:00:10.500
+far about essentially doing exhaustive search, where you, you know,
+
+00:00:10.500 --> 00:00:14.990
+compare one against every other and you, pick the one that's best.
+
+00:00:14.990 --> 00:00:19.110
+We also talked about hashing and nearest neighbor, techniques.
+
+00:00:19.110 --> 00:00:20.590
+But.
+
+00:00:20.590 --> 00:00:22.560
+You now find a best match.
+
+00:00:22.560 --> 00:00:24.510
+How do we know it's a good one?
+
+00:00:24.510 --> 00:00:25.190
+Okay.
+
+00:00:25.190 --> 00:00:29.930
+So, in this next lesson, not today, we're going to talk about looking at
+
+00:00:29.930 --> 00:00:34.110
+the global solution that's suggested by this match and
+
+00:00:34.110 --> 00:00:38.120
+using that to prune off some, some of these, but even before that,
+
+00:00:38.120 --> 00:00:40.830
+there's something we can do at the local level.
+
+00:00:40.830 --> 00:00:43.050
+And here, here's the idea.
+
+00:00:43.050 --> 00:00:45.260
+So, we don't want to.
+
+00:00:45.260 --> 00:00:47.220
+We're not going to match everything.
+
+00:00:47.220 --> 00:00:51.750
+We're only going to take, match the ones that have good enough matching.
+
+00:00:51.750 --> 00:00:52.540
+All right?
+
+00:00:52.540 --> 00:00:54.220
+So, how do we do that?
+
+00:00:54.220 --> 00:00:56.780
+Okay? Well here would be a simple idea.
+
+00:00:56.780 --> 00:00:58.790
+You find the best match.
+
+00:00:58.790 --> 00:01:01.250
+And you take the correlation.
+
+00:01:01.250 --> 00:01:02.600
+A little patch from here.
+
+00:01:02.600 --> 00:01:04.019
+A little patch from there.
+
+00:01:04.019 --> 00:01:06.380
+And you do it says here SSD.
+
+00:01:06.380 --> 00:01:07.530
+Sum of squared differences.
+
+00:01:07.530 --> 00:01:08.870
+Remember where we talked about that?
+
+00:01:08.870 --> 00:01:12.210
+And we could say, all right, well if that number is less that
+
+00:01:12.210 --> 00:01:15.400
+a certain threshold, we're going to accept that match.
+
+00:01:15.400 --> 00:01:19.130
+By the way, something that I've said before and is implicit here and
+
+00:01:19.130 --> 00:01:20.350
+we'll say it again later.
+
+00:01:20.350 --> 00:01:25.560
+The general idea is I need to find enough good matches.
+
+00:01:25.560 --> 00:01:27.020
+Not all of them.
+
+00:01:27.020 --> 00:01:29.840
+And I need to not find too many bad matches.
+
+00:01:29.840 --> 00:01:32.980
+So the goal is to try to get a bucket of good matches with
+
+00:01:32.980 --> 00:01:34.990
+only some bad matches thrown in.
+
+00:01:34.990 --> 00:01:39.300
+So, going back to the SSD, the question would be how to set that threshold.
+
+00:01:39.300 --> 00:01:42.770
+So, empirically, you can start to take a look at this.
+
+00:01:42.770 --> 00:01:43.270
+All right.
+

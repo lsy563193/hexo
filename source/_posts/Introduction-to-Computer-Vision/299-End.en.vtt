@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.140 --> 00:00:03.680
+Summary slides, I love summary slides.
+
+00:00:03.680 --> 00:00:08.651
+For 2-views and we learned at the beginning, there's a geometric relationship
+
+00:00:08.651 --> 00:00:13.279
+that defines the relation between rays in one view and rays in the other view.
+
+00:00:13.279 --> 00:00:16.740
+And we were referring to that about the epipolar geometry.
+
+00:00:16.740 --> 00:00:20.720
+These relations can be captured algebraically besides geometrically.
+
+00:00:20.720 --> 00:00:24.540
+For the calibrated camera case that was referred to as the essential matrix.
+
+00:00:24.540 --> 00:00:28.360
+For the uncalibrated camera case, it's the fundamental matrix.
+
+00:00:28.360 --> 00:00:32.037
+And the math that we've been going through has been talking about how you can
+
+00:00:32.037 --> 00:00:33.140
+find these matrices.
+
+00:00:33.140 --> 00:00:36.139
+How you can find these relations by just giving me
+
+00:00:36.139 --> 00:00:40.099
+the correspondences between points from one image to the next.
+
+00:00:40.099 --> 00:00:41.039
+All right.
+
+00:00:41.039 --> 00:00:43.200
+This ends the lesson on fundamental matrices.
+
+00:00:43.200 --> 00:00:47.608
+In fact, it ends the entire unit on calibration in stereo.
+
+00:00:47.608 --> 00:00:50.060
+I hope you realize that from these relationships,
+
+00:00:50.060 --> 00:00:52.120
+you can capture the geometry of the scene.
+
+00:00:52.120 --> 00:00:54.088
+That is given some camera views,
+
+00:00:54.088 --> 00:00:58.880
+you can eventually figure out the three-dimensional locations of the points.
+
+00:00:58.880 --> 00:01:00.939
+So this is not image processing, right?
+
+00:01:00.939 --> 00:01:04.779
+This is actually vision where we recover a 3D structure.
+
+00:01:04.779 --> 00:01:08.228
+And if you're taking the OMS version of this, of this class and
+
+00:01:08.228 --> 00:01:12.540
+you're doing the OMS problem sets, you're going to get to know and love these.
+
+00:01:12.540 --> 00:01:13.640
+Well, you're going to get to know.
+
+00:01:13.640 --> 00:01:16.980
+I hope you'll love these processes pretty well.
+
+00:01:16.980 --> 00:01:18.020
+That's it for this unit.
+

@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.190 --> 00:00:03.480
+All right, so let's rememb, remind ourselves of the overall strategy for
+
+00:00:03.480 --> 00:00:07.720
+doing feature-based alignment to affine transforms.
+
+00:00:07.720 --> 00:00:09.170
+We know how to compute features.
+
+00:00:09.170 --> 00:00:12.270
+That involves both detection, remember all that Harris, that Harris Laplace
+
+00:00:12.270 --> 00:00:16.540
+stuff, for finding feature points, and for generating descriptors.
+
+00:00:16.540 --> 00:00:20.030
+We talked about SIFT where we generate descriptions around the little local
+
+00:00:20.030 --> 00:00:22.480
+neighborhoods of the points.
+
+00:00:22.480 --> 00:00:26.290
+Second, we know how to find some pau, plausible, or
+
+00:00:26.290 --> 00:00:28.640
+what we're soon going to call putative matches.
+
+00:00:28.640 --> 00:00:32.770
+We talked about doing the vari, the variation on Kd-trees,
+
+00:00:32.770 --> 00:00:35.350
+the Best-Bin hashing methods.
+
+00:00:35.350 --> 00:00:36.430
+Basically ways of saying,
+
+00:00:36.430 --> 00:00:40.100
+well which features are likely to match which other features?
+
+00:00:40.100 --> 00:00:41.320
+I might make some mistakes, but
+
+00:00:41.320 --> 00:00:43.880
+at least they get me some, some reasonable matches.
+
+00:00:43.880 --> 00:00:48.750
+Then we would have to compute a transform that aligns one image to the next.
+
+00:00:48.750 --> 00:00:52.760
+So for we talked about doing homographies or affine transforms.
+
+00:00:52.760 --> 00:00:54.978
+And then finally you would apply that transform.
+
+00:00:54.978 --> 00:00:56.301
+Great.
+
+00:00:56.301 --> 00:01:00.960
+All right, so the algorithm follows this pretty carefully, but
+
+00:01:00.960 --> 00:01:03.530
+you'll see in a minute, we're going to get to a point where we don't,
+
+00:01:03.530 --> 00:01:05.220
+there's a step that we don't know actually how to do.
+
+00:01:05.220 --> 00:01:08.220
+So the first is extract the features, fine, we do that.
+
+00:01:08.220 --> 00:01:11.070
+Second, is compute these putative matches.
+
+00:01:11.070 --> 00:01:12.900
+That's the term that's used.
+
+00:01:12.900 --> 00:01:16.560
+This is that, what I was talking about doing this kd-tree or the best bin.
+
+00:01:16.560 --> 00:01:21.210
+And what you see drawn here, all those red arrows, those are going from
+
+00:01:21.210 --> 00:01:26.400
+some feature in the left to the best feature matching it on the right.
+
+00:01:26.400 --> 00:01:27.950
+Now if this was nice, if this,
+
+00:01:27.950 --> 00:01:31.440
+if everything was right, you'd see this nice smooth transition.
+
+00:01:31.440 --> 00:01:33.930
+But of course what you see here is a lot of stuff.
+
+00:01:33.930 --> 00:01:37.710
+In fact you can see, you know, some of these things tend to be all lined up
+
+00:01:37.710 --> 00:01:41.190
+the same direction, but here's one right, it goes from here to there.
+
+00:01:41.190 --> 00:01:44.580
+That is clearly, I think the technical word is, wrong.
+
+00:01:44.580 --> 00:01:49.450
+So what we'd like to do is, somehow figure out a solution to this that makes it
+
+00:01:49.450 --> 00:01:53.460
+clear that we're going to ignore that one and pay attention to another.
+
+00:01:53.460 --> 00:01:55.719
+So after we find the putative matches,
+
+00:01:55.719 --> 00:01:58.800
+then we have the loop until happy routine.
+
+00:01:58.800 --> 00:02:00.870
+Okay, so loop until happy says,
+
+00:02:00.870 --> 00:02:04.910
+hypothesize some transform T from some of the matches.
+
+00:02:04.910 --> 00:02:07.280
+Actually, this is what's going to be interesting.
+
+00:02:07.280 --> 00:02:09.740
+This sum of the matches, okay?
+
+00:02:09.740 --> 00:02:12.930
+And then we're going to verify the transform.
+
+00:02:12.930 --> 00:02:15.060
+We'll talk about what that means in a minute, and
+
+00:02:15.060 --> 00:02:18.300
+we keep doing this until we think we found a solution that's really good.
+
+00:02:18.300 --> 00:02:20.460
+That's what it means loop until happy.
+
+00:02:21.470 --> 00:02:24.790
+At least today and then you apply the transform.
+

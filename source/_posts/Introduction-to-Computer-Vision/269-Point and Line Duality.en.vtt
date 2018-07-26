@@ -1,0 +1,247 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.352 --> 00:00:01.661
+So to understand this project,
+
+00:00:01.661 --> 00:00:04.915
+this perpendicular relationship, let's look at the projective space.
+
+00:00:04.915 --> 00:00:10.858
+So what does a line in the image correspond to in projective space?
+
+00:00:10.858 --> 00:00:17.064
+Well, a line really is defined by this plane of rays that's intersecting
+
+00:00:17.064 --> 00:00:23.489
+the image plane and that plane's defined, like all planes are by a normal.
+
+00:00:23.489 --> 00:00:26.996
+And this is that same normal, a, b, c.
+
+00:00:26.996 --> 00:00:32.810
+So all the rays that are perpendicular to that normal form the line,
+
+00:00:32.810 --> 00:00:36.278
+because the line is really just a plane in
+
+00:00:36.278 --> 00:00:41.276
+this projected space intersecting the image plane.
+
+00:00:41.276 --> 00:00:42.239
+Cool, right?
+
+00:00:42.239 --> 00:00:43.354
+It gets better.
+
+00:00:43.354 --> 00:00:46.862
+Oh, and we can write this very simply in the same vector notation I
+
+00:00:46.862 --> 00:00:48.114
+was showing you before.
+
+00:00:48.114 --> 00:00:51.762
+So essentially, in fact, you know, what, let's, let's say,
+
+00:00:51.762 --> 00:00:54.196
+l transpose p if I wanted to write it that way.
+
+00:00:54.196 --> 00:00:55.753
+Right? So that's in vector notation.
+
+00:00:55.753 --> 00:01:00.398
+And the thing to think about is that in projective geometry and
+
+00:01:00.398 --> 00:01:06.491
+in this homogenous coordinate system, a line is also a homogenous 3-vector.
+
+00:01:06.491 --> 00:01:12.435
+So a point is a homogenous 3-vector, but a line is also a homogenous 3-vector.
+
+00:01:12.435 --> 00:01:16.368
+In fact, this relationship that a point is a 3-vector and a line is
+
+00:01:16.368 --> 00:01:20.794
+a 3-vector is what's going to get to this duality between points and lines.
+
+00:01:20.794 --> 00:01:24.413
+And as we've said, a line is a homogeneous 3-vector,
+
+00:01:24.413 --> 00:01:27.128
+which is defined by that normal to the plane and
+
+00:01:27.128 --> 00:01:30.627
+it is perpendicular to every point p that's on that plane.
+
+00:01:30.627 --> 00:01:32.427
+And what does it mean to be perpendicular to a point?
+
+00:01:32.427 --> 00:01:36.369
+Well, in projective geometry, being perpendicular to a point means that
+
+00:01:36.369 --> 00:01:40.007
+you're actually perpendicular to the ray that defines that point.
+
+00:01:40.007 --> 00:01:42.527
+And that's what gives us some of that duality.
+
+00:01:42.527 --> 00:01:46.010
+Given these points and lines are both three vectors and we have this duality.
+
+00:01:46.010 --> 00:01:49.493
+Suppose I have two points, p1 and p2.
+
+00:01:49.493 --> 00:01:53.185
+Now remember, points are actually these rays, p1 and p2.
+
+00:01:53.185 --> 00:01:57.154
+How would you solve for the line that goes between them?
+
+00:01:57.154 --> 00:01:59.233
+Okay. So you know in algebra, if I gave you two points,
+
+00:01:59.233 --> 00:02:00.765
+you would figure out your formula for line.
+
+00:02:00.765 --> 00:02:03.631
+Well, in projective geometry, it's actually pretty easy.
+
+00:02:03.631 --> 00:02:11.026
+Since l here is just perpendicular to both p1 and p2.
+
+00:02:11.026 --> 00:02:14.349
+Well, you remember how to get a perpendicular vector given two other vectors?
+
+00:02:14.349 --> 00:02:16.948
+You just take their cross product, okay?
+
+00:02:16.948 --> 00:02:21.883
+So l is equal to p1 cross p2, that's it.
+
+00:02:21.883 --> 00:02:23.008
+No problem, okay?
+
+00:02:23.008 --> 00:02:25.992
+And l is the normal to the plane.
+
+00:02:25.992 --> 00:02:27.721
+So that plane is the line, so
+
+00:02:27.721 --> 00:02:30.904
+the way I get that line is I just cross the two points.
+
+00:02:30.904 --> 00:02:31.889
+Very easy.
+
+00:02:31.889 --> 00:02:33.423
+Let's just keep going.
+
+00:02:33.423 --> 00:02:38.067
+What is the inner section of two lines?
+
+00:02:38.067 --> 00:02:38.751
+Okay.
+
+00:02:38.751 --> 00:02:42.976
+So remember now, I've got a line l1 and l2 and remember that
+
+00:02:42.976 --> 00:02:48.015
+they're actually planes and what I'm showing you here are the lines that
+
+00:02:48.015 --> 00:02:53.147
+are made up of the planes where the planes intersect the image planes.
+
+00:02:53.147 --> 00:02:56.212
+So the l1 plane gives you this.
+
+00:02:56.212 --> 00:02:59.729
+The L2 plane gives you that, okay?
+
+00:02:59.729 --> 00:03:04.987
+Well, just a little bit of thinking here and you realize if the point p
+
+00:03:04.987 --> 00:03:10.167
+is perpendicular to l1 and point p is perpendicular to l2, okay?
+
+00:03:10.167 --> 00:03:14.590
+Then what I need is a line that is perpendicular or, or, and
+
+00:03:14.590 --> 00:03:18.665
+need a point whose ray is perpendicular to l1 and l2.
+
+00:03:18.665 --> 00:03:19.768
+All right?
+
+00:03:19.768 --> 00:03:21.102
+Well, that's easy.
+
+00:03:21.102 --> 00:03:24.322
+So just as we had before in order to find the intersection,
+
+00:03:24.322 --> 00:03:27.163
+in order to find the line that spans the two points.
+
+00:03:27.163 --> 00:03:29.449
+We took that cross product to find the line.
+
+00:03:29.449 --> 00:03:33.121
+In order to find the point that's the intersection of two lines,
+
+00:03:33.121 --> 00:03:35.208
+I just take the cross product again.
+
+00:03:35.208 --> 00:03:39.553
+So the points and lines as I said, they form a dual in projective space and
+
+00:03:39.553 --> 00:03:43.472
+that means really given any formula, I can sort of switch back and
+
+00:03:43.472 --> 00:03:46.910
+forth between what are the points and what are the lines.
+
+00:03:46.910 --> 00:03:51.380
+So when I showed you that l transpose p equal 0.
+
+00:03:51.380 --> 00:03:53.621
+And I said, l was the line and p was the point.
+
+00:03:53.621 --> 00:03:56.500
+Well, that's just because l is for line and p is point.
+
+00:03:56.500 --> 00:03:59.449
+If this was some other language where l stood for point and p stood for
+
+00:03:59.449 --> 00:04:01.179
+line, you'd all be really confused.
+
+00:04:01.179 --> 00:04:04.877
+But basically, what it would mean is that I was thinking of 1 as the line and
+
+00:04:04.877 --> 00:04:06.066
+the other as the point.
+
+00:04:06.066 --> 00:04:09.309
+We're going to make use of this not in the next lesson, but
+
+00:04:09.309 --> 00:04:13.008
+in the one later when we talk about fundame, fundamental matrices.
+
+00:04:13.008 --> 00:04:16.584
+Where just to, to give you forward looking a little.
+
+00:04:16.584 --> 00:04:19.639
+Remember that if I have a point in a stereo image,
+
+00:04:19.639 --> 00:04:21.959
+it has to appear somewhere on a line.
+
+00:04:21.959 --> 00:04:24.827
+In the other, that's the epipolar line and vice versa.
+
+00:04:24.827 --> 00:04:26.220
+These pair of epipolar lines.
+
+00:04:26.220 --> 00:04:30.500
+So projective geometry will make it real easy to go between points in lines.
+

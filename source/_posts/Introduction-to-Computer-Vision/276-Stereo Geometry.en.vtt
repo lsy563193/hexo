@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.171 --> 00:00:03.943
+The problem with everything that I just showed you,
+
+00:00:03.943 --> 00:00:07.554
+is it would be very difficult to turn it into code.
+
+00:00:07.554 --> 00:00:08.820
+Why do I mean that?
+
+00:00:08.820 --> 00:00:12.710
+What I mean is, I've been showing you everything in terms of geometry, right?
+
+00:00:12.710 --> 00:00:15.380
+I'm like waving my hands, and we've got points, etcetera, whatever.
+
+00:00:15.380 --> 00:00:16.230
+Computers don't do so
+
+00:00:16.230 --> 00:00:19.820
+well with, waving hands and, despite what my undergraduates say.
+
+00:00:19.820 --> 00:00:21.200
+Okay?
+
+00:00:21.200 --> 00:00:25.980
+What we need to do is we need to go from the geometry, to algebra.
+
+00:00:25.980 --> 00:00:26.640
+Because believe it or
+
+00:00:26.640 --> 00:00:29.440
+not, computers are fine for algebra as long as you know what you're doing.
+
+00:00:29.440 --> 00:00:32.540
+That is, you can convert, algebraic expressions into computations.
+
+00:00:32.540 --> 00:00:34.240
+In fact, we talked about that earlier.
+
+00:00:34.240 --> 00:00:37.390
+But, it's very hard to go from geometry to computation.
+
+00:00:37.390 --> 00:00:38.440
+And the way we're going to do that,
+
+00:00:38.440 --> 00:00:41.600
+is we're going to take the geometry and then convert that to algebra.
+
+00:00:42.960 --> 00:00:47.620
+So we're going to start off, today with a pair of calibrated cameras.
+
+00:00:47.620 --> 00:00:50.890
+Okay, so here's my pair of calibrated cameras.
+
+00:00:50.890 --> 00:00:54.590
+I have two camera centers, Oc, and Oc prime,
+
+00:00:54.590 --> 00:00:58.100
+and they're both looking at some world point, X.
+
+00:00:58.100 --> 00:01:01.530
+And it's viewed in the two images, and it's seen here.
+
+00:01:01.530 --> 00:01:04.190
+Because these are calibrated cameras,
+
+00:01:04.190 --> 00:01:09.600
+I'm going to assume that I know the translation T, along the baseline.
+
+00:01:09.600 --> 00:01:13.200
+It. Sorry T is the vector that is the baseline right so,
+
+00:01:13.200 --> 00:01:15.960
+if I have to shift you know, two, seven, nine.
+
+00:01:15.960 --> 00:01:20.230
+To get from one camera to the other in XYZ, that's what my translation would be.
+
+00:01:20.230 --> 00:01:23.930
+And I also know R, I know the rotation matrix though, you would have to
+
+00:01:23.930 --> 00:01:28.920
+rotate one camera center to become aligned with the other camera center.
+
+00:01:28.920 --> 00:01:31.220
+That's what it means to be calibrated.
+
+00:01:31.220 --> 00:01:33.360
+So we write this, this way, okay?
+
+00:01:33.360 --> 00:01:35.860
+It says from geometry to algebra, we're not quite there but, but
+
+00:01:35.860 --> 00:01:36.910
+we're almost there.
+
+00:01:36.910 --> 00:01:38.670
+But basically what we're saying is,
+
+00:01:38.670 --> 00:01:44.050
+the location of the point X in the prime frame, can be expressed by
+
+00:01:44.050 --> 00:01:49.740
+rotating X as appearing in the non prime frame and then translating it by T.
+
+00:01:49.740 --> 00:01:51.470
+That's just the equations we had before.
+
+00:01:51.470 --> 00:01:53.990
+I know this is not the homogenous version, it's okay,
+
+00:01:53.990 --> 00:01:56.180
+in a minute we'll make everything beautiful.
+

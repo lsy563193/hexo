@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.470 --> 00:00:02.900
+All right, welcome back to Computer Vision.
+
+00:00:02.900 --> 00:00:06.870
+Last time, or whenever it is you chose to watch.
+
+00:00:06.870 --> 00:00:11.820
+The last thing I talked to you guys about was how surface appearance involve
+
+00:00:11.820 --> 00:00:17.140
+the interaction between the lighting and the surface itself and the shape.
+
+00:00:17.140 --> 00:00:21.920
+So that's what it says here that the image intensity that we'll see will be
+
+00:00:21.920 --> 00:00:27.290
+a function of the lighting or the illumination, the surface reflectance, and
+
+00:00:27.290 --> 00:00:30.580
+then when we say the shape what we actually mean is sort of the surface normals.
+
+00:00:30.580 --> 00:00:35.130
+That is, how the shape is how the surface bends depending upon its
+
+00:00:35.130 --> 00:00:38.190
+direction with respect to the illumination.
+
+00:00:38.190 --> 00:00:43.450
+And so one of the challenges that this poses is, if you wanted to recover
+
+00:00:43.450 --> 00:00:47.620
+say one of these, like you wanted to recover the shape or you wanted to recover
+
+00:00:47.620 --> 00:00:51.130
+the reflectance of what's there, you know the texture or how bright it is.
+
+00:00:51.130 --> 00:00:53.850
+In some sense you can't do one without knowing the other.
+
+00:00:53.850 --> 00:00:57.630
+And this is a classic example of what's referred to as an ill posed problem in
+
+00:00:57.630 --> 00:00:58.860
+computer vision.
+
+00:00:58.860 --> 00:01:03.560
+That in some sense you cant do it without making some sort of an assumption.
+
+00:01:03.560 --> 00:01:05.960
+And a simple example can be seen here.
+
+00:01:05.960 --> 00:01:07.744
+All right, so what do you see here?
+
+00:01:07.744 --> 00:01:10.490
+What you see is an image stolen from the web.
+
+00:01:10.490 --> 00:01:14.160
+But probably what you're probably seeing, is you see some sort of matte,
+
+00:01:14.160 --> 00:01:18.930
+or, light-textured sphere, with a light shining,
+
+00:01:18.930 --> 00:01:21.240
+probably from say this direction here.
+
+00:01:21.240 --> 00:01:24.090
+You might even see this is just a little ridged in it there, and
+
+00:01:24.090 --> 00:01:26.730
+then the light falls off and then there's a shadow-cast here.
+
+00:01:26.730 --> 00:01:27.780
+Is that what you see?
+
+00:01:27.780 --> 00:01:28.280
+&gt;&gt; Yes.
+
+00:01:30.790 --> 00:01:34.350
+&gt;&gt; But actually, what's really there, of course, is this very flat monitor
+
+00:01:34.350 --> 00:01:37.710
+with different pixels that are sort of violating the whole illumination thing.
+
+00:01:37.710 --> 00:01:39.870
+Because they actually emit light themselves,
+
+00:01:39.870 --> 00:01:43.320
+which violates the entire principle of what we were saying before.
+
+00:01:43.320 --> 00:01:45.080
+And, in fact, your stereo, right?
+
+00:01:45.080 --> 00:01:49.470
+My two eyes are looking at this thing and saying, this thing is totally flat.
+
+00:01:49.470 --> 00:01:53.380
+And yet, my brain says okay, yeah, there's this nice rounded thing there.
+

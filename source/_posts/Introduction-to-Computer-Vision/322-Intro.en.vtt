@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.320 --> 00:00:01.480
+Welcome back to computer vision,
+
+00:00:03.040 --> 00:00:07.750
+today we're going to continue our exploration of future detections.
+
+00:00:07.750 --> 00:00:12.230
+Remember last time we started talking about interest points of ways to
+
+00:00:12.230 --> 00:00:14.610
+detecting locations the image we can get back to.
+
+00:00:14.610 --> 00:00:18.190
+And we, focused on finding corners, and why corners?
+
+00:00:18.190 --> 00:00:19.530
+Well as we talked about.
+
+00:00:19.530 --> 00:00:24.410
+Corners had this nice property that if you put a little operator over,
+
+00:00:24.410 --> 00:00:28.480
+over an area that was a corner, whether you moved it left or
+
+00:00:28.480 --> 00:00:31.250
+right, or however you moved it, you would see a pattern changing.
+
+00:00:31.250 --> 00:00:33.795
+And that was not true if you were over a flat region, or
+
+00:00:33.795 --> 00:00:37.359
+over an edge, or an edge if you moved in the direction parallel to the edge,
+
+00:00:37.359 --> 00:00:40.180
+you couldn't see, any change.
+
+00:00:40.180 --> 00:00:43.430
+And, we derived some, nice mathematical formulations,
+
+00:00:43.430 --> 00:00:46.110
+where we talk about the error as you slid things around.
+
+00:00:46.110 --> 00:00:49.680
+We said how the error was zero, before you do any sliding at all.
+
+00:00:49.680 --> 00:00:52.330
+And that, as you move, the error changes a little bit.
+
+00:00:52.330 --> 00:00:56.280
+And, what we did was, we said, well, can we build a model.
+
+00:00:56.280 --> 00:00:58.150
+Or can we approximate that error,
+
+00:00:58.150 --> 00:01:02.240
+by looking locally at the structure of the image.
+
+00:01:02.240 --> 00:01:06.840
+And then we wrote this out as a expression really just involving what's called
+
+00:01:06.840 --> 00:01:08.480
+the second order moment matrix.
+
+00:01:08.480 --> 00:01:12.430
+That moment matrix being the sum of the squares, of the first derivatives.
+
+00:01:12.430 --> 00:01:16.670
+So I x squared, I y squared, or I x times I y.
+
+00:01:16.670 --> 00:01:18.800
+And even though it was a second order,
+
+00:01:18.800 --> 00:01:21.690
+moment, there were no second derivatives, right?
+
+00:01:21.690 --> 00:01:24.370
+No I, I sub, xx.
+
+00:01:24.370 --> 00:01:28.360
+Cause those all went away when we evaluated around u and v being zero, zero.
+
+00:01:28.360 --> 00:01:31.690
+You can go back and re review that lecture.
+
+00:01:31.690 --> 00:01:34.720
+And then we talked about how Harrison who?
+
+00:01:34.720 --> 00:01:36.180
+Harrison who, yeah who knows.
+
+00:01:36.180 --> 00:01:40.420
+No Harrison Stevens, did this thing where you derive an operator based upon that
+
+00:01:40.420 --> 00:01:44.160
+little matrix based upon it's demonstrative trace.
+
+00:01:44.160 --> 00:01:48.330
+And you could use that to find good points.
+
+00:01:48.330 --> 00:01:52.970
+And we showed this horrible giraffe image and we said,
+
+00:01:52.970 --> 00:01:56.410
+yep, the thing seems to work pretty well finding those points
+

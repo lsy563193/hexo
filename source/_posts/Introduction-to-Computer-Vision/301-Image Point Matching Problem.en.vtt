@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.330 --> 00:00:01.110
+We talked about that,
+
+00:00:01.110 --> 00:00:05.900
+there were different ways of transforming images one to another.
+
+00:00:05.900 --> 00:00:07.830
+And you know, so
+
+00:00:07.830 --> 00:00:11.290
+I might have two images that are related by some transformation.
+
+00:00:11.290 --> 00:00:13.330
+And we talked about how if I know the transformation, and
+
+00:00:13.330 --> 00:00:15.120
+I know it go from one image to the next.
+
+00:00:15.120 --> 00:00:17.490
+But suppose I have two images.
+
+00:00:17.490 --> 00:00:21.940
+And I'd like to figure out the transformation that takes image 1 to image 2.
+
+00:00:21.940 --> 00:00:24.020
+How would I go about doing that?
+
+00:00:24.020 --> 00:00:27.240
+Well, to do this, I need matching or corresponding points.
+
+00:00:28.470 --> 00:00:31.250
+So, the way we're going to go about finding corresponding points is,
+
+00:00:31.250 --> 00:00:33.990
+using something that we're going to call Local Features.
+
+00:00:33.990 --> 00:00:35.610
+You know, this is a little 1 and a little 2 there.
+
+00:00:35.610 --> 00:00:38.970
+We're going to put some meat behind defining what we mean to be Local, and
+
+00:00:38.970 --> 00:00:40.860
+what we mean to be Features.
+
+00:00:40.860 --> 00:00:43.880
+By the way, some of you have taken machine learning courses and
+
+00:00:43.880 --> 00:00:44.830
+things like that.
+
+00:00:44.830 --> 00:00:48.330
+And then and, you've seen feature vectors.
+
+00:00:48.330 --> 00:00:49.660
+That's not what we mean here.
+
+00:00:49.660 --> 00:00:51.690
+We're actually going to mean that later in the course,
+
+00:00:51.690 --> 00:00:55.510
+here features are going to be things that we compute about some little
+
+00:00:55.510 --> 00:01:00.300
+local spot, they're related to feature vectors but, but we were here first.
+
+00:01:00.300 --> 00:01:01.100
+All right.
+
+00:01:01.100 --> 00:01:06.720
+Our goal is to find points in an image, that can be found in other images.
+
+00:01:06.720 --> 00:01:11.160
+And by the way, not just found in other images, but found precisely.
+
+00:01:11.160 --> 00:01:13.800
+And what that means is, you know, you, you tell me about,
+
+00:01:13.800 --> 00:01:17.530
+I should be able to precisely determine where that point is.
+
+00:01:17.530 --> 00:01:21.010
+So just saying it's the middle of this gray panel, not so great.
+
+00:01:21.010 --> 00:01:23.500
+But if you told me it's this tip of this spear,
+
+00:01:23.500 --> 00:01:26.300
+that would be better in terms of being localized.
+
+00:01:26.300 --> 00:01:29.070
+Also I want to reliably do the matching, right?
+
+00:01:29.070 --> 00:01:30.080
+So if I find this point,
+
+00:01:30.080 --> 00:01:33.850
+if I find a bunch of other points, I want to be really sure that they say no,
+
+00:01:33.850 --> 00:01:36.530
+it's not this one, it's not, it's definitely that one, right?
+
+00:01:36.530 --> 00:01:39.890
+So this is this idea of well matched points.
+
+00:01:39.890 --> 00:01:42.440
+All right? So why do I want to do this?
+
+00:01:42.440 --> 00:01:46.000
+Well, we talked about things like I might want to recover the fundamental matrix
+
+00:01:46.000 --> 00:01:47.030
+to recover geometry,
+
+00:01:47.030 --> 00:01:49.380
+remember we said that if you give if you give it enough correspondences.
+
+00:01:50.420 --> 00:01:53.750
+In robotics and other computer vision things, we might want to see how a bunch
+
+00:01:53.750 --> 00:01:57.480
+of points have moved from one frame to the next, and in order to do that.
+
+00:01:57.480 --> 00:02:00.180
+I have to figure out which points were, were which.
+
+00:02:00.180 --> 00:02:02.550
+Or, I might want to build a panorama.
+
+00:02:02.550 --> 00:02:04.620
+Now, we've talked about this is general.
+
+00:02:04.620 --> 00:02:06.700
+But here's really a beautiful example.
+
+00:02:06.700 --> 00:02:10.650
+This comes from a paper by Brown and Lowe in CV, in ICCV in 2003.
+
+00:02:10.650 --> 00:02:14.512
+Let me just play that again, because it's so cool.
+
+00:02:14.512 --> 00:02:15.440
+All right, and
+
+00:02:15.440 --> 00:02:19.200
+here what they've done is they've figured out what matching points.
+
+00:02:19.200 --> 00:02:22.200
+How to place each one of the pictures on top of a another?
+
+00:02:22.200 --> 00:02:24.530
+In order to do that they had to find these matching points.
+

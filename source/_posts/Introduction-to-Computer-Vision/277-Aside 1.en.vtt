@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.110 --> 00:00:03.520
+Before we make everything beautiful a couple of reminders.
+
+00:00:03.520 --> 00:00:06.230
+Actually this is the, the first reminder.
+
+00:00:06.230 --> 00:00:07.410
+Or an aside, I should say.
+
+00:00:07.410 --> 00:00:08.510
+And it's about cross product.
+
+00:00:08.510 --> 00:00:10.930
+The second one's about cross product, too, but.
+
+00:00:10.930 --> 00:00:13.540
+So the first one is to remember that a cross product.
+
+00:00:13.540 --> 00:00:16.510
+So a cross b gives you a new vector, c.
+
+00:00:16.510 --> 00:00:22.170
+And that vector c has the property of being perpendicular to both a and b.
+
+00:00:22.170 --> 00:00:23.920
+So it's in the direction that's perpendicular.
+
+00:00:23.920 --> 00:00:27.810
+And you may also remember that the magnitude of that vector is equal to
+
+00:00:27.810 --> 00:00:30.470
+the sine of the angles between them.
+
+00:00:30.470 --> 00:00:33.590
+Which should make you realize right away that if I
+
+00:00:33.590 --> 00:00:37.580
+take any vector a across itself, that's going to be zero.
+
+00:00:37.580 --> 00:00:40.530
+Because the angle between a vector and itself is zero, the sine is zero.
+
+00:00:40.530 --> 00:00:43.510
+So, a cross a is 0 no matter what a is.
+
+00:00:43.510 --> 00:00:44.270
+Okay?
+
+00:00:44.270 --> 00:00:47.380
+So a cross b gives you c, c being perpendicular to a and b.
+
+00:00:47.380 --> 00:00:49.610
+And a cross a is equal to 0 no matter what.
+

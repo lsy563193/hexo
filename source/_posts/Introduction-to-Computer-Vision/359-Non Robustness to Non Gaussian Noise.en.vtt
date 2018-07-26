@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.230 --> 00:00:06.210
+It turns out that that works fine when you actually have Gaussian noise.
+
+00:00:06.210 --> 00:00:08.490
+Turns out it doesn't work so great when you don't.
+
+00:00:08.490 --> 00:00:11.540
+When you have some various, shall we say, non-Gaussian noise.
+
+00:00:11.540 --> 00:00:12.180
+Okay?
+
+00:00:12.180 --> 00:00:14.610
+So, here in this picture I've got a bunch of red points.
+
+00:00:14.610 --> 00:00:17.760
+And fitting the line through those points, okay, not very exciting.
+
+00:00:17.760 --> 00:00:19.490
+Actually, I probably should have had those points spread out.
+
+00:00:19.490 --> 00:00:21.230
+That's the problem when you steal some other people's slides.
+
+00:00:21.230 --> 00:00:23.580
+You say, you know I should have spread out those lines a little bit,
+
+00:00:23.580 --> 00:00:27.850
+but even with all of those points sitting right on the line,
+
+00:00:27.850 --> 00:00:30.940
+okay, I'm going to add one more point.
+
+00:00:30.940 --> 00:00:32.549
+All right. Just one.
+
+00:00:32.549 --> 00:00:37.010
+And it's not going to be a nice point, it's going to be a.
+
+00:00:37.010 --> 00:00:41.010
+Not a, if it were Gaussian point, it would be very hard to get far away.
+
+00:00:41.010 --> 00:00:44.320
+Let's suppose my points actually are made up of a bunch of
+
+00:00:44.320 --> 00:00:47.590
+points that are perturbed by the Gaussian off the line,
+
+00:00:47.590 --> 00:00:52.790
+plus evil Megan came in and sprinkled a few just nasty points.
+
+00:00:52.790 --> 00:00:53.980
+What would happen?
+
+00:00:53.980 --> 00:00:57.080
+Well, here's just one nasty point, bang.
+
+00:00:57.080 --> 00:01:02.070
+This one point, out here, makes this line the,
+
+00:01:02.070 --> 00:01:05.730
+quote, best solution for all of those points.
+
+00:01:05.730 --> 00:01:08.060
+Now, many of you've seen this before for robust fitting.
+
+00:01:08.060 --> 00:01:09.140
+Bear with me.
+
+00:01:09.140 --> 00:01:12.210
+That point is one of our outliers.
+
+00:01:12.210 --> 00:01:14.580
+It doesn't come from the model that we have.
+
+00:01:14.580 --> 00:01:16.570
+And our model is actually made up of two parts.
+
+00:01:16.570 --> 00:01:20.760
+Our model is that there's a line and that there's a little bit of Gaussian noise
+
+00:01:20.760 --> 00:01:24.630
+added, not, there's Gaussian noise added to the points off the line.
+
+00:01:24.630 --> 00:01:27.390
+This model is the evil Megan model.
+
+00:01:27.390 --> 00:01:29.520
+And we don't even know about that.
+
+00:01:29.520 --> 00:01:34.590
+But we would like to sort of be immune to the evil Megan model.
+
+00:01:34.590 --> 00:01:36.650
+So the question is, how can we do that?
+
+00:01:36.650 --> 00:01:41.990
+And you know, why is the evil Megan model so annoying to us?
+
+00:01:41.990 --> 00:01:46.590
+Well the real problem is that squared error, right?
+
+00:01:46.590 --> 00:01:50.430
+So the bigger the error gets, you square its effect.
+
+00:01:50.430 --> 00:01:53.080
+That heavily penalizes outliers.
+
+00:01:53.080 --> 00:01:56.270
+So outliers can have much more of an effect on our
+
+00:01:56.270 --> 00:01:58.800
+model fitting than we really want them to have.
+
+00:01:58.800 --> 00:02:00.270
+So the question is how to deal with that.
+

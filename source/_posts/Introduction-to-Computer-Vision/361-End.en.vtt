@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.720 --> 00:00:03.400
+All right, we're going to stop here.
+
+00:00:03.400 --> 00:00:06.870
+We've taken a brief look at model fitting,
+
+00:00:06.870 --> 00:00:09.850
+as really being a robust estimation problem.
+
+00:00:09.850 --> 00:00:12.590
+So for transforms, you want to estimate the transform and you want to be
+
+00:00:12.590 --> 00:00:16.570
+able to do that robustly, and we use robust error functions to help.
+
+00:00:16.570 --> 00:00:18.970
+But what we're going to look at next time,
+
+00:00:18.970 --> 00:00:22.590
+is a more algorithmic, approach to doing this.
+
+00:00:23.990 --> 00:00:26.270
+Famous method actually invented by a very good friend of mine,
+
+00:00:27.340 --> 00:00:31.650
+he's older than I am, so I'm not quite that old, that we'll talk about.
+
+00:00:31.650 --> 00:00:36.630
+And what's cool is, it's a little bit more computer science oriented, and
+
+00:00:36.630 --> 00:00:38.810
+this is a computer science class so that's great.
+
+00:00:38.810 --> 00:00:42.960
+And it's nice to, you, we can use a little bit of combinatorial analysis to show
+
+00:00:42.960 --> 00:00:44.530
+exactly how good it is.
+
+00:00:44.530 --> 00:00:47.550
+And the other thing is, it is used all the time, so
+
+00:00:47.550 --> 00:00:50.550
+you can say well finally is going to teach me something useful.
+
+00:00:50.550 --> 00:00:51.310
+Come back next time.
+

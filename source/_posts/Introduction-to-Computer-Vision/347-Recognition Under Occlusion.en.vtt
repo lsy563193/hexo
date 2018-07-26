@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.220 --> 00:00:02.170
+So, how well does it work?
+
+00:00:02.170 --> 00:00:07.170
+Well, here's a nice example of finding both the telephone and the shoe.
+
+00:00:07.170 --> 00:00:10.720
+So here is the original phone and here you can see the outline.
+
+00:00:10.720 --> 00:00:13.990
+And here are the modest number I don't know one, two, I don't know.
+
+00:00:13.990 --> 00:00:17.010
+About 15 key points that have been matched.
+
+00:00:17.010 --> 00:00:21.600
+Now remember, you only need three to find the affine, so by finding more than
+
+00:00:21.600 --> 00:00:25.190
+three, you get a much more robust solution to the transform.
+
+00:00:25.190 --> 00:00:27.800
+Likewise, see so here we have our green shoe and
+
+00:00:27.800 --> 00:00:29.060
+here you can see where it's found.
+
+00:00:29.060 --> 00:00:33.750
+And again, you can find the set of feature points, key points,
+
+00:00:33.750 --> 00:00:35.050
+that were matched.
+
+00:00:35.050 --> 00:00:36.320
+But's also pretty cool.
+
+00:00:37.470 --> 00:00:41.660
+I only need to find three points from one object in the corresponding place, and
+
+00:00:41.660 --> 00:00:44.080
+then I can predict where the rest of them go.
+
+00:00:44.080 --> 00:00:47.720
+So that means, I don't have to see the whole object.
+
+00:00:47.720 --> 00:00:49.470
+So here you see an example.
+
+00:00:49.470 --> 00:00:50.360
+Here is the shoe.
+
+00:00:50.360 --> 00:00:54.370
+I'm going to draw inside so you can see this right.
+
+00:00:54.370 --> 00:00:59.570
+But you'll notice it's being occluded by this box of whatever the groceries are.
+
+00:00:59.570 --> 00:01:00.500
+Okay.
+
+00:01:00.500 --> 00:01:03.790
+Only the front part and the back part of the shoe were found.
+
+00:01:05.489 --> 00:01:09.010
+All right, but I only needed three matches to find an affine transform, so
+
+00:01:09.010 --> 00:01:11.070
+I didn't have to see the whole shoe.
+
+00:01:11.070 --> 00:01:14.250
+I only had to see enough of it to do what's called the alignment.
+
+00:01:14.250 --> 00:01:16.300
+Same thing is true of this telephone here.
+
+00:01:16.300 --> 00:01:18.380
+The whole back end of the telephone is missing, but
+
+00:01:18.380 --> 00:01:22.950
+we're able to recognize it by just finding features within the front part.
+
+00:01:22.950 --> 00:01:27.949
+That's pretty impressive robustness with respect to occlusion.
+
+00:01:29.150 --> 00:01:30.660
+Here's another one.
+
+00:01:30.660 --> 00:01:34.060
+Now you can see the again, David had this thing about teddy bears,
+
+00:01:34.060 --> 00:01:34.920
+shoes, and telephones.
+
+00:01:34.920 --> 00:01:36.090
+I'm not exactly sure why.
+
+00:01:36.090 --> 00:01:39.140
+Anyway here you can see the shoes behind the teddy bear,
+
+00:01:39.140 --> 00:01:41.740
+only the front part is visible but you can see it.
+
+00:01:41.740 --> 00:01:42.520
+Same thing with the phone.
+
+00:01:42.520 --> 00:01:45.310
+So the idea is that as long as I can find these,
+
+00:01:45.310 --> 00:01:49.139
+a small number of these local matches, I'm able to do the recognition.
+
+00:01:50.310 --> 00:01:51.840
+oh, and here's one you, you saw before.
+
+00:01:51.840 --> 00:01:53.720
+Remember the, the, the totem poles?
+
+00:01:53.720 --> 00:01:55.490
+He's at UBC, University of British Columbia.
+
+00:01:55.490 --> 00:01:57.870
+They got a lot of Native American, Indian stuff up there, so
+
+00:01:57.870 --> 00:01:59.920
+I'm guessing that's what this is.
+
+00:01:59.920 --> 00:02:01.740
+And you remember the thing just works.
+

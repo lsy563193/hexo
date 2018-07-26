@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.240 --> 00:00:04.332
+So this general area of work, is actually started by, I guess,
+
+00:00:04.332 --> 00:00:09.110
+probably Horn and maybe some others, but I certainly learned about it from back,
+
+00:00:09.110 --> 00:00:11.170
+way back in the 70s and continued in the 80s and
+
+00:00:11.170 --> 00:00:14.420
+90s quite a bit, it's referred to as shape from shading.
+
+00:00:14.420 --> 00:00:19.130
+And the idea is, over here you see a picture of a real sphere this time, right,
+
+00:00:19.130 --> 00:00:23.370
+and you can tell this is a sphere, right with the light source over here.
+
+00:00:23.370 --> 00:00:26.420
+Likewise, you can tell that from this person that,
+
+00:00:26.420 --> 00:00:30.710
+that probably this is the front part facing you and that the shape tapers off.
+
+00:00:30.710 --> 00:00:34.160
+Likewise, you can tell from the shading here something about the texture and
+
+00:00:34.160 --> 00:00:36.390
+the shape of the face.
+
+00:00:36.390 --> 00:00:37.670
+And the, the question is,
+
+00:00:37.670 --> 00:00:44.290
+is how do you use shading as sort of a cue for recovering the shape information?
+
+00:00:44.290 --> 00:00:47.390
+So in order to talk about shape from shading or,
+
+00:00:47.390 --> 00:00:48.710
+I'll call it shape from lighting.
+
+00:00:48.710 --> 00:00:50.060
+Because one of the things that we're going to do in
+
+00:00:50.060 --> 00:00:52.470
+a little bit called photometric stereo, it's not so
+
+00:00:52.470 --> 00:00:56.660
+much a shading variation as it is from having multiple light sources.
+
+00:00:56.660 --> 00:00:59.790
+What we have to do is we have to look at the relationship between the intensity
+
+00:00:59.790 --> 00:01:03.490
+that's seen by the camera and the actual shape of the object.
+
+00:01:03.490 --> 00:01:06.080
+Now, that means we have to look at that reflectance function.
+
+00:01:06.080 --> 00:01:09.390
+Remember what we defined I guess two lessons ago about this interaction between
+
+00:01:09.390 --> 00:01:14.080
+the surface normals and the light direction and the surface itself.
+
+00:01:14.080 --> 00:01:18.540
+In particular we're going to introduce a mathematical construct.
+
+00:01:18.540 --> 00:01:20.380
+Refered to as the reflectance map,
+
+00:01:20.380 --> 00:01:24.100
+and the reflectance map will be the basis of a lot of what we'll be doing today
+

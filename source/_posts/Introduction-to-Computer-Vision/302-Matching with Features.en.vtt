@@ -1,0 +1,238 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.320 --> 00:00:02.400
+Let's step through this just a little bit.
+
+00:00:02.400 --> 00:00:05.490
+So when we talk about building a panorama, what do we have to do?
+
+00:00:05.490 --> 00:00:10.030
+Well, we're going to have to sort of align our pictures in order to be able to
+
+00:00:10.030 --> 00:00:10.910
+paste them together.
+
+00:00:10.910 --> 00:00:12.710
+That's what we just, just saw.
+
+00:00:12.710 --> 00:00:16.050
+So to do that, here's the basic process.
+
+00:00:16.050 --> 00:00:19.910
+The first thing we do is we're going to detect some features, okay?
+
+00:00:19.910 --> 00:00:22.770
+And here features just means some interesting points.
+
+00:00:22.770 --> 00:00:25.240
+In fact, we're going to define something called an interest point
+
+00:00:25.240 --> 00:00:28.810
+operator that'll find some points that we define to be interesting.
+
+00:00:28.810 --> 00:00:30.530
+Don't you wish you had an interesting person operator.
+
+00:00:30.530 --> 00:00:31.960
+You could just scan it around a room, and
+
+00:00:31.960 --> 00:00:33.960
+it would just tell you who's interesting?
+
+00:00:33.960 --> 00:00:35.500
+It wouldn't go off a lot in my house.
+
+00:00:35.500 --> 00:00:38.140
+Anyway, no, sorry, sorry hon.
+
+00:00:38.140 --> 00:00:41.400
+So, here we've detected a bunch of points in in both images, and
+
+00:00:41.400 --> 00:00:43.920
+these are going to be our feature points.
+
+00:00:43.920 --> 00:00:44.960
+The next thing we have to do,
+
+00:00:44.960 --> 00:00:47.960
+and, you know, just looking at this, it looks a little bit like a mess.
+
+00:00:47.960 --> 00:00:50.760
+We need to find the corresponding pairs.
+
+00:00:50.760 --> 00:00:54.750
+That tells us how we need to transform one image to the next, and
+
+00:00:54.750 --> 00:00:57.100
+then we can use those pair to align the images.
+
+00:00:57.100 --> 00:00:59.500
+And, if we do them in this particular example.
+
+00:00:59.500 --> 00:01:00.850
+You get something that looks like this.
+
+00:01:00.850 --> 00:01:03.530
+By the way the seam has been left in here just to
+
+00:01:03.530 --> 00:01:06.140
+make it clear how that image is being moved.
+
+00:01:06.140 --> 00:01:09.250
+If you were actually splicing these images together you would do
+
+00:01:09.250 --> 00:01:14.760
+something you know sexy in order to make sure that those seams became invisible.
+
+00:01:14.760 --> 00:01:16.870
+Now to do this detection and matching and
+
+00:01:16.870 --> 00:01:20.060
+alignment, there are a couple of things that we have to worry about.
+
+00:01:20.060 --> 00:01:22.670
+The first problem is well,
+
+00:01:22.670 --> 00:01:28.430
+I can't possibly match points if I don't find them in both images.
+
+00:01:28.430 --> 00:01:31.200
+And remember I'm going to detect interest points here, and
+
+00:01:31.200 --> 00:01:33.660
+interesting points there, and look for a match.
+
+00:01:33.660 --> 00:01:37.590
+So it better be the case that a point that's been found here to
+
+00:01:37.590 --> 00:01:39.830
+be interesting is also found over there.
+
+00:01:39.830 --> 00:01:42.490
+In this particular case there would be no chance to match.
+
+00:01:42.490 --> 00:01:45.240
+Because I found some set of four points on the left, and
+
+00:01:45.240 --> 00:01:47.250
+a different set of four points on the right.
+
+00:01:47.250 --> 00:01:50.390
+So what we need is what is referred to as a repeatable detector.
+
+00:01:50.390 --> 00:01:53.770
+If I run on this image, most of the points that I find over here
+
+00:01:53.770 --> 00:01:58.340
+as being interesting, I will also find over here, over there and vice versa.
+
+00:01:58.340 --> 00:02:02.400
+So that's the first problem, reliable finding them at all.
+
+00:02:02.400 --> 00:02:06.170
+The second problem is let's assume that these points on
+
+00:02:06.170 --> 00:02:08.430
+the left are somewhere in the right.
+
+00:02:08.430 --> 00:02:10.322
+So I found here it's four points on the left, and
+
+00:02:10.322 --> 00:02:12.670
+then there's four points on the right.
+
+00:02:12.670 --> 00:02:14.270
+Which point is which?
+
+00:02:14.270 --> 00:02:16.060
+Okay, I have to do the match.
+
+00:02:16.060 --> 00:02:19.510
+The way we do that is what's referred to as using a descriptor.
+
+00:02:19.510 --> 00:02:21.830
+A descriptor is just what it sounds like,
+
+00:02:21.830 --> 00:02:27.300
+it's a description of this of a point, or of a feature to be precise.
+
+00:02:27.300 --> 00:02:32.350
+What I want are distinctive descriptors, that is, you know,
+
+00:02:32.350 --> 00:02:34.490
+if I write down the description of each of these.
+
+00:02:34.490 --> 00:02:37.660
+So you can think of the description as being the name, right?
+
+00:02:37.660 --> 00:02:42.380
+So I want this one to be Bob, Ted, Alice and George.
+
+00:02:42.380 --> 00:02:44.580
+That's mixing some metaphors from the sixties, by the way.
+
+00:02:46.150 --> 00:02:50.540
+because if they all said George, George, George, and this one says George, then
+
+00:02:50.540 --> 00:02:54.450
+I've got a French movie, and I don't know whether, what's going anywhere, okay.
+
+00:02:54.450 --> 00:02:59.780
+But if this one says Edward, it better be that one of these things says Edward.
+
+00:02:59.780 --> 00:03:02.900
+Maybe if it just says Ed I'll be okay, but
+
+00:03:02.900 --> 00:03:08.170
+my descriptor can't change that much of the same point in, in the two images.
+
+00:03:08.170 --> 00:03:10.990
+So that's what we talk about it being distinctive.
+
+00:03:10.990 --> 00:03:12.860
+You know, Bob, Carol, Ted and Alice.
+
+00:03:12.860 --> 00:03:15.160
+That's who it was from the movie, right?
+
+00:03:15.160 --> 00:03:17.490
+They have different names, but they also have to be reliable.
+
+00:03:17.490 --> 00:03:21.140
+So Ed might become Edward, but Ed doesn't become Francesca.
+
+00:03:21.140 --> 00:03:22.030
+All right?
+
+00:03:23.240 --> 00:03:27.566
+So Feature points are used for all sorts of operations in computer vision.
+
+00:03:27.566 --> 00:03:31.116
+Image alignment we talked a lot about, 3D reconstruction, Motion, Motion
+
+00:03:31.116 --> 00:03:35.400
+tracking, I'm trying to figure out how either the object's moving or the camera.
+
+00:03:35.400 --> 00:03:39.310
+Object recognition in fact, in a couple lectures from now we're going to
+
+00:03:39.310 --> 00:03:43.460
+take some features on, from a bunch of different objects.
+
+00:03:43.460 --> 00:03:45.180
+Take the features in our image, and
+
+00:03:45.180 --> 00:03:48.420
+figure out up, it's this object that's in that image.
+
+00:03:48.420 --> 00:03:49.320
+All right.
+
+00:03:49.320 --> 00:03:53.600
+Database indexing, Robot, features are used for all sorts of things.
+
+00:03:53.600 --> 00:03:57.070
+And that's one of the reasons why we have to talk about them in the class.
+

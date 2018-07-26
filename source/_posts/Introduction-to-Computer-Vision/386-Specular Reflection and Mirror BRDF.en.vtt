@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.107 --> 00:00:03.041
+What about the specular or the mirror component?
+
+00:00:03.041 --> 00:00:06.442
+Now of course in a real mirror, you all learned this in high school physics.
+
+00:00:06.442 --> 00:00:07.208
+Right?
+
+00:00:07.208 --> 00:00:10.919
+There's only a reflection at the perfect mirror angle.
+
+00:00:10.919 --> 00:00:12.517
+Remember, angle in equals angle out?
+
+00:00:12.517 --> 00:00:15.722
+I'm sure you learned that somewhere in your, in your physics class.
+
+00:00:15.722 --> 00:00:20.719
+Well, so using our, our diagramming again, what this says is
+
+00:00:20.719 --> 00:00:26.207
+that all the incident light is reflected only in a single direction.
+
+00:00:26.207 --> 00:00:26.897
+Okay.
+
+00:00:26.897 --> 00:00:30.676
+And I'm going to call that direction m for the mirror direction.
+
+00:00:30.676 --> 00:00:33.404
+And here, we have v for the viewing direction.
+
+00:00:33.404 --> 00:00:34.510
+Okay?
+
+00:00:34.510 --> 00:00:39.880
+And so that light is only going to be visible when v equals m.
+
+00:00:39.880 --> 00:00:43.187
+All right. So I have to be in the exact, so if I've got a point coming
+
+00:00:43.187 --> 00:00:46.589
+from right here, I'm going to see it right there at that, that point.
+
+00:00:46.589 --> 00:00:48.722
+And everywhere else, it's not reflecting.
+
+00:00:48.722 --> 00:00:50.881
+Or I might see it at a different point, but
+
+00:00:50.881 --> 00:00:53.990
+all the light is being reflected along the particular ray.
+
+00:00:53.990 --> 00:00:54.964
+All right.
+
+00:00:54.964 --> 00:01:01.033
+And so the BRDF is just a, what's called a double-delta function.
+
+00:01:01.033 --> 00:01:03.971
+If I'm, if I'm thinking about this on my surface, right?
+
+00:01:03.971 --> 00:01:10.110
+This angle down and the angle out has to be equal, but this is drawn difficult.
+
+00:01:10.110 --> 00:01:11.683
+It's, it's in 2D.
+
+00:01:11.683 --> 00:01:14.843
+Not only do they have to be sort of at the, the same tilt, but
+
+00:01:14.843 --> 00:01:16.249
+they have to be in a plane.
+
+00:01:16.249 --> 00:01:19.922
+Right? All over to this and this have to be in the same plane,
+
+00:01:19.922 --> 00:01:22.924
+because if I were to rotate it this way, all right?
+
+00:01:22.924 --> 00:01:25.962
+Then it would now be bouncing off in another direction and
+
+00:01:25.962 --> 00:01:28.061
+so, that's why there's two angles.
+
+00:01:28.061 --> 00:01:32.572
+This is the tilt angle and this is the rotation around angle that says,
+
+00:01:32.572 --> 00:01:35.565
+basically one has to be pi opposite the other.
+
+00:01:35.565 --> 00:01:40.012
+So we take this BRDF and we stick it into our radiance equation.
+
+00:01:40.012 --> 00:01:44.379
+And what it says is that the radiance, essentially the brightness that
+
+00:01:44.379 --> 00:01:48.255
+we're going to see out is the magnitude of the source intensity.
+
+00:01:48.255 --> 00:01:50.957
+The row sub s is the specular reflection.
+
+00:01:50.957 --> 00:01:54.588
+So for example, it might be a darkened glass that filters out some light, so
+
+00:01:54.588 --> 00:01:55.858
+it still acts as a mirror.
+
+00:01:55.858 --> 00:01:59.595
+But only reflects some percentage of it, that's what the row would do.
+
+00:01:59.595 --> 00:02:03.090
+And then we have these two delta functions, okay?
+
+00:02:03.090 --> 00:02:07.295
+And these delta functions say that basically the angle in terms of
+
+00:02:07.295 --> 00:02:11.347
+the tilt has to be the same and also the rotation around have to be
+
+00:02:11.347 --> 00:02:15.110
+exactly pie different that's what those two things say.
+
+00:02:15.110 --> 00:02:19.100
+Now remember, the delta function is a function where if the argument is zero,
+
+00:02:19.100 --> 00:02:19.775
+it's a one.
+
+00:02:19.775 --> 00:02:23.250
+Otherwise, it's, it's zero and that's why it's written as a delta function.
+
+00:02:23.250 --> 00:02:27.266
+So I want to abuse the notation just a little bit and I'm going to say,
+
+00:02:27.266 --> 00:02:32.524
+well, I can also write this as saying that the radiance in this particular case,
+
+00:02:32.524 --> 00:02:33.562
+same as before.
+
+00:02:33.562 --> 00:02:37.704
+But now I'm using, I guess what I'm calling a vector delta function.
+
+00:02:37.704 --> 00:02:38.504
+Right?
+
+00:02:38.504 --> 00:02:42.187
+So what we said before is that I only see a reflection if
+
+00:02:42.187 --> 00:02:45.733
+the viewing angle is exactly the mirror angle, right?
+
+00:02:45.733 --> 00:02:49.597
+So essentially these two things would have to be the same, so
+
+00:02:49.597 --> 00:02:52.282
+that I'm lined up in exactly the right spot.
+
+00:02:52.282 --> 00:02:56.611
+Another way of writing that is that the half angle is the same as
+
+00:02:56.611 --> 00:02:58.120
+the normal, right?
+
+00:02:58.120 --> 00:03:01.491
+So another way of saying that is if the vector
+
+00:03:01.491 --> 00:03:05.136
+that's exactly halfway between the sensor and
+
+00:03:05.136 --> 00:03:10.530
+the light is the same as the normal, then you get a mirror reflection.
+
+00:03:10.530 --> 00:03:14.240
+And that would be for a sort of a, you know, a single perfect point.
+
+00:03:14.240 --> 00:03:16.720
+So that's the Mirror BRDF.
+

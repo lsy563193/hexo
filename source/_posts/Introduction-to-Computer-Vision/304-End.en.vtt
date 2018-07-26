@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.410 --> 00:00:04.340
+So believe it or not, that's the end of this first lesson.
+
+00:00:04.340 --> 00:00:07.330
+why, well I want to cut you a break a little bit.
+
+00:00:07.330 --> 00:00:10.411
+Actually the real reason is the next lesson's got, shall we say a,
+
+00:00:10.411 --> 00:00:11.719
+modicum of equations on it.
+
+00:00:11.719 --> 00:00:15.320
+And to do this and then all of that, boy that would be too much, so here we are.
+
+00:00:15.320 --> 00:00:18.810
+But the idea is that we've motivated what it means to be a feature, and
+
+00:00:18.810 --> 00:00:19.650
+a good feature.
+
+00:00:19.650 --> 00:00:22.550
+Features are being used to match one to the next.
+
+00:00:22.550 --> 00:00:26.560
+The two main properties that we talked about is repeated detectability.
+
+00:00:26.560 --> 00:00:28.230
+That is, if I find them over here,
+
+00:00:28.230 --> 00:00:31.060
+I'd like to make sure that I'm going to find them over in this image.
+
+00:00:31.060 --> 00:00:34.230
+And they also should be good for recognition one to another.
+
+00:00:34.230 --> 00:00:36.660
+That is, you can think of them as having a signature.
+
+00:00:36.660 --> 00:00:39.600
+And that signature should be distinct, right?
+
+00:00:39.600 --> 00:00:41.430
+Bob, Carol, Ted, and Alice.
+
+00:00:41.430 --> 00:00:41.930
+Alright.
+
+00:00:42.930 --> 00:00:44.160
+But robust.
+
+00:00:44.160 --> 00:00:46.200
+Right? So Edward might become Ed but
+
+00:00:46.200 --> 00:00:48.550
+nothing significantly different beyond that.
+
+00:00:48.550 --> 00:00:52.050
+Turns out that this notion of being both distinctive and
+
+00:00:52.050 --> 00:00:56.010
+robust sort of works against each other and, and we'll talk about that.
+
+00:00:56.010 --> 00:00:58.750
+So going forward, we're going to introduce about what it means to
+
+00:00:58.750 --> 00:01:01.040
+be a good feature, what it means to be a good interest point,
+
+00:01:01.040 --> 00:01:03.350
+and we'll break that down into two parts.
+
+00:01:03.350 --> 00:01:05.269
+Detecting of interest points, and
+
+00:01:05.269 --> 00:01:09.090
+then characterizing the descriptor around those interest points.
+
+00:01:09.090 --> 00:01:10.740
+So sharpen your lead pencil.
+
+00:01:10.740 --> 00:01:13.560
+You guys even see lead pencils anymore?
+
+00:01:13.560 --> 00:01:15.190
+Don't use a lead pencil on your iPad.
+
+00:01:15.190 --> 00:01:17.010
+It's probably a bad idea.
+
+00:01:17.010 --> 00:01:21.270
+Anyway and we'll do some interest point operators, and
+
+00:01:21.270 --> 00:01:22.480
+how those function mathematically.
+

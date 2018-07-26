@@ -1,0 +1,175 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.720 --> 00:00:04.914
+So this basic idea of finding corners in, in thinking about it this way.
+
+00:00:04.914 --> 00:00:07.127
+I don't know if I would say that it was first introduced.
+
+00:00:07.127 --> 00:00:12.224
+But I'll say that it was most well known introduced way back in 1988.
+
+00:00:12.224 --> 00:00:14.760
+I know some of you guys were, like, in diapers.
+
+00:00:14.760 --> 00:00:17.570
+And some of you were, a dream in your parents' eyes.
+
+00:00:17.570 --> 00:00:20.306
+And some of you were a nightmare in your, no, whatever.
+
+00:00:20.306 --> 00:00:23.050
+It's a long time ago, all right?
+
+00:00:23.050 --> 00:00:26.490
+And, the picture here down below is just showing you sort of a mess of corners.
+
+00:00:26.490 --> 00:00:27.700
+And they don't all look like corners, but
+
+00:00:27.700 --> 00:00:29.940
+they, they're places where the gradient varies.
+
+00:00:29.940 --> 00:00:33.240
+And it was created, this paper, the Alvey Vision Conference is what later I
+
+00:00:33.240 --> 00:00:35.640
+believe became the British Machine Vision Conference.
+
+00:00:35.640 --> 00:00:37.960
+And it was done by this, by Harris and Stephens.
+
+00:00:37.960 --> 00:00:39.160
+Now.
+
+00:00:39.160 --> 00:00:42.590
+If you ask anybody, about the corner detector I'm about to tell you about,
+
+00:00:42.590 --> 00:00:45.540
+they'll you that they're Harris corners.
+
+00:00:45.540 --> 00:00:47.360
+Because that's what everybody remembers.
+
+00:00:48.550 --> 00:00:52.590
+I know an awful lot of people in Computer Vision, I don't know who Stephens is.
+
+00:00:52.590 --> 00:00:53.670
+So this tells you something.
+
+00:00:53.670 --> 00:00:57.150
+That if you're doing a paper with somebody, try to get your name first.
+
+00:00:57.150 --> 00:00:59.040
+Unless of course it's your advisor and he's paying, he or
+
+00:00:59.040 --> 00:01:01.720
+she's paying for your education in which case then you know.
+
+00:01:01.720 --> 00:01:06.080
+But, anyway, so I'm it's, it's actually Harris and Stephens and you can impress
+
+00:01:06.080 --> 00:01:10.600
+somebody by saying, Harris and Stephens corners but it's, it's Harris corners.
+
+00:01:10.600 --> 00:01:12.940
+All right. So let's learn about Harris corners.
+
+00:01:12.940 --> 00:01:15.380
+So, Harris corners are.
+
+00:01:15.380 --> 00:01:20.260
+Based on a approximation, model and an error model.
+
+00:01:20.260 --> 00:01:21.880
+And here's how we do.
+
+00:01:21.880 --> 00:01:26.870
+Let's assume, that we've got an image L and right here, right and
+
+00:01:26.870 --> 00:01:28.520
+I is the intensity image.
+
+00:01:28.520 --> 00:01:32.903
+And what we're going to do is we're going to say, if I shift that I by
+
+00:01:32.903 --> 00:01:37.974
+a little bit, by a u and a v and I were to sum up the square over some window.
+
+00:01:37.974 --> 00:01:40.597
+How much error, would i get?
+
+00:01:40.597 --> 00:01:43.190
+K thats thats thats the game we're going to play.
+
+00:01:43.190 --> 00:01:46.690
+So stepping through that, I is our image intensity, so
+
+00:01:46.690 --> 00:01:49.400
+I of x y is just the orignal image.
+
+00:01:49.400 --> 00:01:52.530
+The u and the v is some small shift, so
+
+00:01:52.530 --> 00:01:55.490
+if I were to pick up my window and move it over a little bit,
+
+00:01:55.490 --> 00:01:59.140
+I would now get some different image just shifted by a little bit.
+
+00:01:59.140 --> 00:02:00.020
+I subtract them and
+
+00:02:00.020 --> 00:02:04.220
+square them, and then I, going to, I'm going to sum them up over some window.
+
+00:02:04.220 --> 00:02:07.940
+Okay? So the window is going to be some area, around some point.
+
+00:02:07.940 --> 00:02:10.720
+So that's written here as w of xy.
+
+00:02:10.720 --> 00:02:14.520
+The total value here, E, is sort of for error.
+
+00:02:14.520 --> 00:02:18.260
+You really could think of it as sum of the change where E for error or energy.
+
+00:02:18.260 --> 00:02:20.290
+But the idea is that we're going to sum it up.
+
+00:02:20.290 --> 00:02:21.030
+Around that window.
+
+00:02:21.030 --> 00:02:24.060
+Now of course your window can typically be a square window,
+
+00:02:24.060 --> 00:02:27.810
+like in my house, or if you want to actually work a little bit, or, on a,
+
+00:02:27.810 --> 00:02:30.080
+on a slow computer you make it be a square window.
+
+00:02:30.080 --> 00:02:34.000
+But if you actually want to weight the pixels near the point you're thinking
+
+00:02:34.000 --> 00:02:38.160
+about, more then the pixels that are far away, you would use a window that
+
+00:02:38.160 --> 00:02:42.910
+falls off in intensity, intensity So like a Gaussian window would be an example.
+
+00:02:42.910 --> 00:02:43.670
+So.
+
+00:02:43.670 --> 00:02:47.340
+Typically your windows can be square, if you need to be really fast, or
+
+00:02:47.340 --> 00:02:49.390
+smooth, if you need to be really good.
+
+00:02:49.390 --> 00:02:50.460
+So, are you fast, or you good?
+

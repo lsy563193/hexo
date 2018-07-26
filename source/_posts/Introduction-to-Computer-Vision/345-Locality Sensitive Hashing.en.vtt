@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.340 --> 00:00:05.680
+This is related to the general idea of what's called locality sensitive hashing.
+
+00:00:05.680 --> 00:00:06.448
+All right?
+
+00:00:06.448 --> 00:00:10.440
+So I'm going to assume that most of you, as computer science students, you know,
+
+00:00:10.440 --> 00:00:12.640
+what hash tables are and what hash functions are.
+
+00:00:12.640 --> 00:00:15.890
+And if you don't, you may not understand this.
+
+00:00:15.890 --> 00:00:19.570
+Normally a hash function maps some data structure.
+
+00:00:20.740 --> 00:00:23.180
+Into some nicely distributed space.
+
+00:00:23.180 --> 00:00:27.890
+So you might have a function that maps, a structure to,
+
+00:00:27.890 --> 00:00:29.910
+integers between one to a hundred, Okay?
+
+00:00:29.910 --> 00:00:31.520
+And you can think of those integers as bins.
+
+00:00:33.290 --> 00:00:36.840
+If you give me some new data structure, and I've already seen one of these
+
+00:00:36.840 --> 00:00:41.400
+before, I map it through that function, and I go and I look at the bin, and
+
+00:00:41.400 --> 00:00:45.110
+I only search through the ones that are in that bin, okay?
+
+00:00:45.110 --> 00:00:48.350
+So, if it's distributed kind of evenly.
+
+00:00:48.350 --> 00:00:50.660
+You're going to reduce your search work by a factor of 100,
+
+00:00:50.660 --> 00:00:54.630
+all right, because you this function and, and you reduce it down.
+
+00:00:54.630 --> 00:00:55.600
+But the problem with hash,
+
+00:00:55.600 --> 00:00:59.040
+not problem, the design of hash functions is that they are very precise.
+
+00:00:59.040 --> 00:01:02.145
+They're designed for precise data structures.
+
+00:01:02.145 --> 00:01:06.270
+Locality-sensitive hashing works similarly, but it's a little bit
+
+00:01:06.270 --> 00:01:09.430
+different because it takes the notion of distance into account.
+
+00:01:09.430 --> 00:01:11.950
+And the basic idea is you're going to construct some hash function.
+
+00:01:11.950 --> 00:01:13.560
+Here it's written as g.
+
+00:01:13.560 --> 00:01:17.140
+Okay? And it's going to map onto some output U.
+
+00:01:17.140 --> 00:01:18.480
+All right?
+
+00:01:18.480 --> 00:01:22.030
+And the idea is, and there's some like Greek written here, et cetera.
+
+00:01:22.030 --> 00:01:27.830
+But the basic idea is that if you have two points that are nearby
+
+00:01:27.830 --> 00:01:33.180
+in the original space by some distance measure, then the probability that those
+
+00:01:33.180 --> 00:01:36.890
+two points will land in the same bin should be pretty high.
+
+00:01:38.220 --> 00:01:43.510
+Likewise, if I've got two other points that are far away in the original space,
+
+00:01:43.510 --> 00:01:47.730
+the likelihood that they land in the same bin should be relatively low.
+
+00:01:47.730 --> 00:01:51.120
+Okay? That's what locality-sensitive hashing is.
+
+00:01:51.120 --> 00:01:55.670
+And when you do that, it means that I can compute this hash function.
+
+00:01:55.670 --> 00:01:57.480
+Go to whatever bit it sends me.
+
+00:01:57.480 --> 00:01:58.900
+And the idea is that.
+
+00:01:58.900 --> 00:02:01.760
+Descriptors that were similar, not exactly the same, but
+
+00:02:01.760 --> 00:02:03.660
+similar will be in the same bin.
+
+00:02:03.660 --> 00:02:07.480
+There was some nice work done by, Kulis and Grauman.
+
+00:02:07.480 --> 00:02:12.960
+The title is Kernelized by Locality Sensitive Hashing for Scalable Image Search.
+
+00:02:12.960 --> 00:02:14.380
+There's a lot of work on kernel functions.
+
+00:02:14.380 --> 00:02:15.380
+We'll talk about them them later.
+
+00:02:15.380 --> 00:02:18.400
+This is not the kernel of a, filter.
+
+00:02:18.400 --> 00:02:20.580
+Sorry, they use the same name.
+
+00:02:20.580 --> 00:02:24.590
+But the kernel functions here are a way of mapping from some dimension,
+
+00:02:24.590 --> 00:02:26.190
+some higher dimension.
+
+00:02:26.190 --> 00:02:28.580
+And then operating on them.
+
+00:02:28.580 --> 00:02:31.030
+And this is a approach of how to do.
+
+00:02:31.030 --> 00:02:33.590
+Applying these kernels to sift features.
+
+00:02:33.590 --> 00:02:34.220
+What.
+
+00:02:34.220 --> 00:02:37.060
+What, what's important is it's the nicest discussion in there
+
+00:02:37.060 --> 00:02:40.340
+about doing this locality sensitive hashing.
+

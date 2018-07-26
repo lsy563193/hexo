@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.150 --> 00:00:03.220
+Look at that a little more carefully in pqs space.
+
+00:00:03.220 --> 00:00:07.920
+Let's assume that we've got some source pq that's right here, all right.
+
+00:00:07.920 --> 00:00:11.790
+So if my surface normal were pointing right at that direction, so
+
+00:00:11.790 --> 00:00:17.550
+the theta i is 0, cosine i is 1, then my value would be 1, all right.
+
+00:00:17.550 --> 00:00:21.570
+But suppose cosine is 0.9, all right?
+
+00:00:21.570 --> 00:00:25.270
+Well, that would be some, some curve.
+
+00:00:25.270 --> 00:00:26.380
+Draw it around here, right.
+
+00:00:26.380 --> 00:00:29.020
+This is some Iso-brightness contour, so
+
+00:00:29.020 --> 00:00:33.445
+every one of those pqs would give a intensity of 0.9.
+
+00:00:33.445 --> 00:00:37.099
+Going out a little further 0.8, 0.7.
+
+00:00:37.099 --> 00:00:40.260
+Gets even further out, 0.6, 0.5, right?
+
+00:00:40.260 --> 00:00:43.030
+Here's all the way down to 0.3.
+
+00:00:43.030 --> 00:00:48.290
+And then finally, what happens when we get to a point where the surface normal,
+
+00:00:48.290 --> 00:00:50.230
+is perpendicular to the light source?
+
+00:00:51.290 --> 00:00:53.970
+Well if the surface normal's perpendicular to light source,
+
+00:00:53.970 --> 00:00:56.590
+the cosine of theta i is 0.
+
+00:00:56.590 --> 00:01:00.990
+So no light is being ref, is hitting that surface, okay?
+
+00:01:00.990 --> 00:01:05.610
+And so that would be this line here all right, right there.
+
+00:01:05.610 --> 00:01:07.758
+Where it says 0 value,
+
+00:01:07.758 --> 00:01:13.417
+because that's the equation of a line in pqs phase, right?
+
+00:01:13.417 --> 00:01:17.690
+P times ps plus q times qs plus 1 equals 0,
+
+00:01:17.690 --> 00:01:22.530
+that's like a x plus b y plus c equals 0 in the p, but it's in pq space so
+
+00:01:22.530 --> 00:01:27.710
+it's ap plus bq plus c equals 0, so it's a line.
+
+00:01:27.710 --> 00:01:31.637
+So the perpendicular situation is a line in pq space.
+
+00:01:32.770 --> 00:01:37.860
+So, and notice by the way, that p, q is a, the R of p, q is a maximum, right
+
+00:01:37.860 --> 00:01:43.390
+when the surface normal lines up with the light source, as you might expect.
+
+00:01:43.390 --> 00:01:46.710
+So that's our reflectance map in the Lambertian situation.
+

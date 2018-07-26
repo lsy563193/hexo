@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.100 --> 00:00:03.790
+The model of noise we have, and we're going to refer to it as a generative model
+
+00:00:03.790 --> 00:00:08.109
+because I have a model of how the noise is actually put within the system.
+
+00:00:08.109 --> 00:00:11.440
+Essentially we have a particular model that we believe in.
+
+00:00:11.440 --> 00:00:13.110
+Computer vision, you have to have faith.
+
+00:00:13.110 --> 00:00:17.450
+The model that we believe is, there's actually some real line underneath.
+
+00:00:17.450 --> 00:00:21.550
+And that each point has been perturbed off that line.
+
+00:00:21.550 --> 00:00:23.740
+Here it's written as epsilon.
+
+00:00:23.740 --> 00:00:28.130
+By some Gaussian noise that has moved you off that line.
+
+00:00:28.130 --> 00:00:32.360
+And the probability of a Gaussian goes down by a function of what?
+
+00:00:32.360 --> 00:00:33.280
+X squared.
+
+00:00:33.280 --> 00:00:37.840
+So if you wanted to find the most likely solution, you would want to
+
+00:00:37.840 --> 00:00:42.670
+find the points that make the data that you're observing most likely.
+
+00:00:42.670 --> 00:00:46.970
+So those would be the ones where the sum of the square distances are the least
+
+00:00:46.970 --> 00:00:48.460
+because, and things,
+
+00:00:48.460 --> 00:00:51.540
+just thinking about the Gaussian, won't go into too much detail.
+
+00:00:51.540 --> 00:00:54.960
+If you assume all those points were independently done, so the probability of
+
+00:00:54.960 --> 00:00:57.950
+getting all those points is just the product of those probabilities.
+
+00:00:57.950 --> 00:01:00.510
+The product of those probabilities is a product of all those Gaussians.
+
+00:01:00.510 --> 00:01:03.510
+Those Gaussians go e to the minus x squared.
+
+00:01:03.510 --> 00:01:07.090
+When you multiply all those e to the minus x squared, right?
+
+00:01:07.090 --> 00:01:11.910
+You just sum up all of those x squareds and so whatever makes that sum of
+
+00:01:11.910 --> 00:01:16.788
+squared difference the smallest, right, will be the highest probability.
+
+00:01:16.788 --> 00:01:17.364
+And so,
+
+00:01:17.364 --> 00:01:21.760
+there's a whole bunch of assumptions going on underneath here in terms of
+
+00:01:21.760 --> 00:01:24.680
+the probability distributions and being independent and all that kind of stuff.
+
+00:01:24.680 --> 00:01:29.990
+But basically this idea of minimizing the perpendicular least squares comes from
+
+00:01:29.990 --> 00:01:35.400
+this idea that closer points are more likely, right?
+
+00:01:35.400 --> 00:01:38.810
+It's more likely a point will land closer to a line then
+
+00:01:38.810 --> 00:01:43.460
+further away from that line, if the point actually came from the line.
+
+00:01:43.460 --> 00:01:43.990
+Got that?
+
+00:01:43.990 --> 00:01:47.530
+That's going to be important to remember for, for our next lesson.
+
+00:01:47.530 --> 00:01:48.190
+All right.
+
+00:01:48.190 --> 00:01:51.400
+So that's written here in this equation.
+
+00:01:51.400 --> 00:01:56.490
+Basically we're saying the point x y that we actually measure is just some
+
+00:01:57.840 --> 00:02:01.520
+real point on the line u v, okay?
+
+00:02:01.520 --> 00:02:06.066
+That has been perturbed in the direction perpendicular to that line, a b,
+
+00:02:06.066 --> 00:02:09.590
+that's the line that we were solving for.
+
+00:02:09.590 --> 00:02:13.522
+And that perturbation has been some amount of noise that came from a Gaussian
+
+00:02:13.522 --> 00:02:18.220
+with a zero mean and some standard deviation sigma or variance sigma squared.
+
+00:02:18.220 --> 00:02:20.765
+So, for the line fitting or in this case,
+
+00:02:20.765 --> 00:02:24.420
+a model fit in general, this is our underlying generative model.
+
+00:02:24.420 --> 00:02:26.800
+That it is a Gaussian perturbation.
+

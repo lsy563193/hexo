@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.140 --> 00:00:03.280
+And here's an example of it being run in a color image.
+
+00:00:03.280 --> 00:00:08.029
+What you should see here is that there's this color board in a dark shadow.
+
+00:00:08.029 --> 00:00:11.680
+Okay? And here's the same color board in bright sunlight.
+
+00:00:11.680 --> 00:00:12.290
+Right?
+
+00:00:12.290 --> 00:00:18.430
+And the idea is that in the image, if you actually measured the intensity coming
+
+00:00:18.430 --> 00:00:23.450
+off of this white square, and the intensity coming off of that black square,
+
+00:00:23.450 --> 00:00:28.260
+you would actually see the values of 119 in both places.
+
+00:00:28.260 --> 00:00:31.440
+So objectively, those two are the same value.
+
+00:00:31.440 --> 00:00:35.070
+But of course, you and I both say that this is white and
+
+00:00:35.070 --> 00:00:39.490
+this is black, even though they have the same value coming to our eye.
+
+00:00:39.490 --> 00:00:42.730
+Because clearly what's going on is we're saying, oh that's in shadows, so
+
+00:00:42.730 --> 00:00:44.520
+I, I recalibrate that.
+
+00:00:44.520 --> 00:00:47.070
+Well when you run that retinex algorithm that I just showed you,
+
+00:00:47.070 --> 00:00:49.810
+and by the way, running it in two dimensions is a little bit trickier than
+
+00:00:49.810 --> 00:00:51.300
+running it in one dimension.
+
+00:00:51.300 --> 00:00:55.340
+That it says that this thing has a value of some random number 126.
+
+00:00:55.340 --> 00:01:01.510
+This thing has a value of 175, so it is figured out, that the white square is
+
+00:01:01.510 --> 00:01:05.910
+brighter than the black square, even though in the darkness, the light square's
+
+00:01:05.910 --> 00:01:09.320
+going to have the same amount of light as the black square in the sunlight.
+
+00:01:09.320 --> 00:01:12.510
+Another way of thinking about this is if you take a piece of coal, black coal,
+
+00:01:12.510 --> 00:01:13.890
+outdoors in the sunlight, and
+
+00:01:13.890 --> 00:01:16.690
+you look at it, more light is going to be hitting your eye,
+
+00:01:16.690 --> 00:01:21.970
+coming from that black coal than a white piece of paper, inside your classroom.
+
+00:01:21.970 --> 00:01:22.660
+Okay?
+
+00:01:22.660 --> 00:01:26.440
+And yet the white piece of paper looks white and the black coal looks black.
+
+00:01:26.440 --> 00:01:28.440
+And that's because your brain is computing for
+
+00:01:28.440 --> 00:01:30.430
+all the stuff that's going on around it.
+
+00:01:30.430 --> 00:01:32.930
+And this, this constancy, and lightness constancy,
+
+00:01:32.930 --> 00:01:36.880
+we'll talk about it in just a second, is it's just remarkable.
+

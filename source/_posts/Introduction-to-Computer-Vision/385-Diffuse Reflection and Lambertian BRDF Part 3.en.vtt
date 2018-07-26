@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:04.780
+Here we're back to our diagram where we've got our incident light coming in,
+
+00:00:04.780 --> 00:00:07.180
+light going out in some direction, and
+
+00:00:07.180 --> 00:00:11.700
+the surface appears equally bright from all directions.
+
+00:00:11.700 --> 00:00:15.990
+That is, it is independent of your viewing direction, all right.
+
+00:00:15.990 --> 00:00:21.195
+So one way of thinking about this is that the BRDF of a Lambertian surface is
+
+00:00:21.195 --> 00:00:25.970
+simply a constant, and that constant is referred to as the albedo.
+
+00:00:25.970 --> 00:00:30.020
+And here it's just written as rho, and this is the rho sub-d for diffuse.
+
+00:00:30.020 --> 00:00:35.270
+By the way, often, when this is written you'll see a cosine theta
+
+00:00:35.270 --> 00:00:41.180
+i in the denominator, and that's for compensating for this viewing condition.
+
+00:00:41.180 --> 00:00:43.460
+But I think that just makes life confusing.
+
+00:00:43.460 --> 00:00:45.840
+So, we're just going to think of the,
+
+00:00:45.840 --> 00:00:50.780
+the BRDF as being a constant for a, a Lambertian surface.
+
+00:00:50.780 --> 00:00:56.170
+And so, what that means is that the surface radiance
+
+00:00:56.170 --> 00:01:01.570
+is just going to be that constant times the source intensity,
+
+00:01:01.570 --> 00:01:05.710
+i, times the cosine of the incident angle.
+
+00:01:05.710 --> 00:01:09.960
+Right? because the, the irradiance is a function of the radiance of
+
+00:01:09.960 --> 00:01:13.030
+your source times the cosine of that angle, and
+
+00:01:13.030 --> 00:01:16.160
+then the thing looks equally bright from all directions.
+
+00:01:16.160 --> 00:01:18.700
+So that's usually written this way,
+
+00:01:18.700 --> 00:01:22.600
+as just the magnitude of the source times the albedo.
+
+00:01:22.600 --> 00:01:28.370
+And you can write this as the dot product between the normal and
+
+00:01:28.370 --> 00:01:30.350
+the incident direction, right.
+
+00:01:30.350 --> 00:01:34.190
+It's just the dot product, the cosine, between the normal of the surface and
+
+00:01:34.190 --> 00:01:36.030
+the angle of the light coming in.
+
+00:01:36.030 --> 00:01:39.280
+And that's what's referred to as Lambertian shading.
+
+00:01:39.280 --> 00:01:43.840
+Here's an example of, again, a fake sphere Lambertian shaded, and the idea of
+
+00:01:43.840 --> 00:01:46.780
+course is that, you know, when it's pointing in the direction of the light
+
+00:01:46.780 --> 00:01:50.760
+source it's brightest, and then it falls off by the cosine of that angle.
+
+00:01:50.760 --> 00:01:54.070
+Okay, so that's the matte component, the body component.
+

@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.220 --> 00:00:05.860
+So let's work a simple example, all right, of finding the fundamental matrix.
+
+00:00:05.860 --> 00:00:09.280
+And bunch of them out there, one that I'm going to show here is
+
+00:00:09.280 --> 00:00:12.490
+one that's a little bit different, because it's not as sort of trivial.
+
+00:00:12.490 --> 00:00:16.530
+Here's the one of the, the two side-by-side stereo views.
+
+00:00:16.530 --> 00:00:18.010
+We'll do them a little different.
+
+00:00:18.010 --> 00:00:23.050
+And remember, a fundamental matrix gives a corresponce between any two views.
+
+00:00:23.050 --> 00:00:27.070
+It doesn't matter where the cameras are taken, okay?
+
+00:00:27.070 --> 00:00:30.940
+So, for example, my images could look like this.
+
+00:00:30.940 --> 00:00:32.860
+And you might say whoa.
+
+00:00:32.860 --> 00:00:34.890
+Okay, you might not say whoa because that would be only if you
+
+00:00:34.890 --> 00:00:36.730
+were born in the late 60s, or maybe early 60s.
+
+00:00:38.150 --> 00:00:41.930
+But here I have a picture and the white lines drawn on it are meant to
+
+00:00:41.930 --> 00:00:45.970
+be sort of nominal epipolar lines, I took a picture and
+
+00:00:45.970 --> 00:00:49.090
+then the camera moves forward, and then I take another picture.
+
+00:00:49.090 --> 00:00:51.110
+Can I do a fundamental matrix for that?
+
+00:00:51.110 --> 00:00:52.530
+Of course I can.
+
+00:00:52.530 --> 00:00:55.643
+In fact that's what this geometry is meaning to show here, it's a,
+
+00:00:55.643 --> 00:00:57.425
+it's a little hard to see, all right.
+
+00:00:57.425 --> 00:01:04.110
+What I have here is that I took one picture and my camera center was there.
+
+00:01:04.110 --> 00:01:08.920
+And then I take another picture and my camera center is moved forward and
+
+00:01:08.920 --> 00:01:15.310
+if you connect those and slice the image, those are the epipoles.
+
+00:01:15.310 --> 00:01:17.010
+So all the epipolar lines,
+
+00:01:17.010 --> 00:01:21.820
+have to go through the epipole and that's what this is showing you, right.
+
+00:01:21.820 --> 00:01:23.950
+The epipole is right in the middle of my picture.
+
+00:01:23.950 --> 00:01:25.485
+It's not exactly the middle, it's off to,
+
+00:01:25.485 --> 00:01:29.020
+to the top, it's actually to the side a little bit, I'll show you in a minute.
+
+00:01:29.020 --> 00:01:31.930
+But all the epipolar lines have to go through the epipole, and
+
+00:01:31.930 --> 00:01:33.660
+that's another way of saying is.
+
+00:01:33.660 --> 00:01:36.440
+You know, just think about that intuitively, if I move straight ahead and
+
+00:01:36.440 --> 00:01:40.780
+I'm looking straight, the points move along that diagonal out from the center.
+
+00:01:40.780 --> 00:01:44.850
+So that means that if you give me one point in, in the first image,
+
+00:01:44.850 --> 00:01:49.060
+it's going to be somewhere along that line in the second image.
+
+00:01:49.060 --> 00:01:52.690
+And how far it's along that line will be a function of its depth, okay?
+
+00:01:52.690 --> 00:01:56.750
+Because remember, the amount that the points move, between one image and
+
+00:01:56.750 --> 00:01:58.080
+the next, function of depth, going way back.
+
+00:01:58.080 --> 00:02:02.730
+Remember disparity, the closer something is, the more it'll be disparate.
+
+00:02:02.730 --> 00:02:05.640
+Something that's very far away like the moon doesn't change much at all.
+
+00:02:05.640 --> 00:02:06.350
+Okay?
+
+00:02:06.350 --> 00:02:10.470
+So they're going to move along the epipolar lines.
+
+00:02:10.470 --> 00:02:14.030
+So we're going to use this as an example because it'll be very clear whether you
+
+00:02:14.030 --> 00:02:16.710
+got the epi polar lines right or you got the epi polar lines wrong
+

@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.200 --> 00:00:03.320
+There was a more recent application of SIFT.
+
+00:00:03.320 --> 00:00:04.550
+Very explicit.
+
+00:00:05.630 --> 00:00:07.760
+You guys, I don't know how old you are anymore, but
+
+00:00:07.760 --> 00:00:11.240
+maybe you remember the Sony AIBOs, the dogs that used to go around and
+
+00:00:11.240 --> 00:00:13.380
+would recharge themselves and live in your house.
+
+00:00:13.380 --> 00:00:16.360
+It was sort of an experiment that Sony did for a while.
+
+00:00:16.360 --> 00:00:18.888
+It was kind of successful, but eventually they stopped making them,
+
+00:00:18.888 --> 00:00:22.540
+because I think, I think they were learning from it and moving from there.
+
+00:00:22.540 --> 00:00:26.450
+Well, one of the things that the dog could do, well there were two things.
+
+00:00:26.450 --> 00:00:31.430
+It could recharge itself and you could show it cards and
+
+00:00:31.430 --> 00:00:35.110
+it would do the commandment based upon what was draw on the card,
+
+00:00:35.110 --> 00:00:36.220
+what was printed on the card.
+
+00:00:37.260 --> 00:00:40.570
+And the way it did that was using SIFT features.
+
+00:00:40.570 --> 00:00:41.190
+All right?
+
+00:00:41.190 --> 00:00:46.330
+So the charging station had a pattern on it, and as the dog walked around and
+
+00:00:46.330 --> 00:00:47.720
+just did kind of whatever it did,
+
+00:00:47.720 --> 00:00:51.086
+whatever little robot dogs do, it would see this pattern.
+
+00:00:51.086 --> 00:00:51.710
+It would be oriented,
+
+00:00:51.710 --> 00:00:56.030
+it would be translated off to the side somewhere at a different scale.
+
+00:00:56.030 --> 00:01:00.040
+But remember, SIFT is translation, rotation scale, and variant.
+
+00:01:00.040 --> 00:01:02.430
+So it could find the charging station.
+
+00:01:02.430 --> 00:01:06.510
+Also, they had these what were called visual cards.
+
+00:01:06.510 --> 00:01:07.840
+And they were things like this.
+
+00:01:07.840 --> 00:01:10.790
+And it doesn't really matter at all what's on the cards as long as
+
+00:01:10.790 --> 00:01:13.050
+they have gradients distributed all over them.
+
+00:01:13.050 --> 00:01:15.780
+The dog can recognize which card you're showing it.
+
+00:01:15.780 --> 00:01:17.980
+You know, I said it doesn't matter at all what's on it.
+
+00:01:17.980 --> 00:01:19.760
+It does matter a little.
+
+00:01:19.760 --> 00:01:23.440
+It has to not look like anything the dog would see otherwise.
+
+00:01:23.440 --> 00:01:25.440
+So if you wonder why do these cards look so
+
+00:01:25.440 --> 00:01:29.200
+strange, it's because it can't look like my dining room table.
+
+00:01:29.200 --> 00:01:32.280
+Because if it looks like my dining room table, my dog will look see
+
+00:01:32.280 --> 00:01:35.850
+my dining room table, and roll over and play dead or whatever robot dogs do.
+
