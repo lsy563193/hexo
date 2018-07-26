@@ -1,7 +1,10 @@
 ---
 title: 一些神奇的工具使用笔记
 date: 2018-07-25 16:28:07
-tags: youtube-dl proxychains notedown
+tags: 
+- youtube-dl 
+- proxychains 
+- notedown
 category: 工具
 ---
 

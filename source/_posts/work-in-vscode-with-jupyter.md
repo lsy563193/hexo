@@ -1,9 +1,11 @@
 ---
 title: 在vscode jupyter模式下工作
 date: 2018-07-26 18:53:19
-tags: vscode
-tags: jupyter
-category: 工具
+tags: 
+- vscode 
+- jupyter
+category: 
+- 工具
 ---
 
 ## 概述
