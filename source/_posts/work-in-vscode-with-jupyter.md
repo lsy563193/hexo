@@ -35,3 +35,8 @@ for markdown, lines in itertools.groupby(open(sys.argv[1]).readlines(), key=lamb
 写的过程中需要注意的几点:
 - **文档直接用＃　隔开，并且不要留有空格**
 - **python文档的代码用＃％％是表示执行cell的**
+
+更新
+vscode 下安装的插件
+- open in github
+- github
