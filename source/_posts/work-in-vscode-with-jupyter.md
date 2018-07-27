@@ -24,19 +24,13 @@ for markdown, lines in itertools.groupby(open(sys.argv[1]).readlines(), key=lamb
         print(''.join(lines).strip())
         print('```\n')
 ```
-
-写的python文档如下：
-![py文档](lxf-python-py.png)
-
-生成的markdown文档如下：
-
-![md文档](lxf-python-md.png)
-
 写的过程中需要注意的几点:
 - **文档直接用＃　隔开，并且不要留有空格**
 - **python文档的代码用＃％％是表示执行cell的**
 
+# 使用vscode 的tasks可以快速的执行python命令
+添加任务的做法可见[vscode 文档](https://code.visualstudio.com/docs/editor/tasks)
+
 更新
 vscode 下安装的插件
-- open in github
 - github
