@@ -26,7 +26,16 @@ for markdown, lines in itertools.groupby(open(sys.argv[1]).readlines(), key=lamb
 ```
 写的过程中需要注意的几点:
 - **文档直接用＃　隔开，并且不要留有空格**
+\# \# 文档直接用＃　隔开，并且不要留有空格
+- **标题上下用#　，　看起来更清晰**
+\# 
+\# ####我是标题
+\# 
 - **python文档的代码用＃％％是表示执行cell的**
+\#%%
+python文档的代码用＃％％是表示执行cell的
+- **输出结果用不带空格的#表示**
+\#输出
 
 # 使用vscode 的tasks可以快速的执行python命令
 添加任务的做法可见[vscode 文档](https://code.visualstudio.com/docs/editor/tasks)
