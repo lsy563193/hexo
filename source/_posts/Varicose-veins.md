@@ -41,7 +41,7 @@ category: 健康
 
 预防的扎6招防小腿静脉曲张 睡前抬腿久站抬脚尖
 ### 1. 睡前抬腿
-![静脉曲张抬脚](https://github.com/lsy563193/image/blob/master/jmqz-taijiao.jpg)
+![静脉曲张抬脚](https://github.com/lsy563193/image/raw/master/jmqz-taijiao.jpg)
 
 ### 2. 久站抬脚尖
 
@@ -83,7 +83,7 @@ category: 健康
 > **注意**: 如何判断自己的静脉曲张严重程度
 国际上，静脉曲张按照程度不同共分为0-6期：
 
-![静脉曲张临床六期图谱表现](https://github.com/lsy563193/image/blob/master/jmqz-%E4%B8%A5%E9%87%8D%E7%A8%8B%E5%BA%A6%E5%88%A4%E5%88%AB.jpeg)
+![静脉曲张临床六期图谱表现](https://github.com/lsy563193/image/raw/master/jmqz-%E4%B8%A5%E9%87%8D%E7%A8%8B%E5%BA%A6%E5%88%A4%E5%88%AB.jpeg)
 
 **c1**: 表层血管像蚯蚓一样曲张，明显凸出皮肤，曲张呈团状或结节状，有毛细血管扩张、网状静脉、踝部潮红。
 **c2**: 在站立时腿部可见弯曲增粗的表浅静脉血管，高出皮肤，在腿部抬高或平卧后可消失，常有小腿酸胀、易疲劳等不适感觉，此期是治疗的较好时期。
@@ -96,7 +96,7 @@ category: 健康
 2. 二级压力裤: c2-c4
 3. 三级压力裤: c4*c6
 
-![适合的压力袜子](https://github.com/lsy563193/image/blob/master/jmqz-%E9%80%82%E5%90%88%E7%9A%84%E5%8E%8B%E5%8A%9B%E8%A2%9C.png)
+![适合的压力袜子](https://github.com/lsy563193/image/raw/master/jmqz-%E9%80%82%E5%90%88%E7%9A%84%E5%8E%8B%E5%8A%9B%E8%A2%9C.png)
 
 #### 去哪里买
 1. 国内压力袜是属于医疗器械，不是哪都可以卖的，如果不是正规的地方卖的，大概率不是真的
