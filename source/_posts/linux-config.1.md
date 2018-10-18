@@ -1,9 +1,3 @@
----
-title: 开机安装
-date: 2018-08-01 12:28:37
-tags:  工具
-category: 工具
----
 ### 安装ssl
 
 ### 安装 git
@@ -13,7 +7,8 @@ git config --global user.name "Your Name"
 
 ### 安装 Node.js
 wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
-export NVM_DIR="$HOME/.nvm"
+echo "export NVM_DIR="$HOME/.nvm"" >> ~/.zshrc
+source ~/.zshrc
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 nvm install stable
 ### 安装 Hexo
