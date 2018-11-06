@@ -1,9 +1,11 @@
 ---
-title: 打造Hexo个人博客中遇到的坑
+title: 打造Hexo个人博客
 date: 2018-07-25 09:46:24
 tags: hexo
-category: 工具
+category: 环境搭建
 ---
+
+配置Hexo渲染MathJax数学公式，推荐文章：https://www.jianshu.com/p/7ab21c7f0674
 
 经历了几天的努力，终于解决了几个重大问题，打造出自己理想的博客个人网站。主要是参照[大黄菌的个人博客](http://kyonhuang.top/),但是她没有公布使用如何使用hexo跳转到docsify的步骤。现在把我这几天填过的坑记下来。
 
@@ -12,6 +14,7 @@ category: 工具
 * hexo作博客,next作主题.
 * 可以自动跳转到docsify文档的界面.
 * 使用个人域名
+* 支持mathjax
 
 ## hexo作博客,next作主题
 

@@ -1,23 +1,21 @@
 ---
-title: 安装docker的的ros
+title: cartographer 论文翻译 
 date: 2018-08-07 11:03:04
 tags: 
-- docker 
-- ros
-category: ros
+- cartographer 
+category: slam技术
+mathjax: true
 ---
 
-# Real-Time Loop Closure in 2D LIDAR SLAM 
-
-## Abstract 摘要
+## 摘要
 
 LIDAR SLAM是获取平面地图的有效方法。  构建便携式捕获平台需要在有限的计算资源下操作。 我们介绍了我们的背包绘图平台中使用的方法，该平台实现了5厘米分辨率的实时构图和`闭环`。 为了实现实时`闭环`，我们使用branch-and-bound将扫描到Submap匹配计算为约束。
 
-## I. INTRODUCTION 简介
+## I. 简介
 
 本文的贡献是一种新的方法，用于降低计算激光数据的闭环约束的需求量。
 
-## II. RELATED WORK 相关工作
+## II. 相关工作
 
 `Scan-to-scan matching`经常用于激光SLAM中计算相对姿态变化，例如[1] - [4]。 它的缺点是很快就会累积误差。
 
@@ -34,7 +32,7 @@ LIDAR SLAM是获取平面地图的有效方法。  构建便携式捕获平台�
 `基于图形`的方法适用于表示位姿和特征的节点集合。 图中的边是由观察产生的约束。 可以使用各种优化方法来最小化由所有约束引入的误差，例如， [11]，[12]。
 在[13]中描述了这种用于室外SLAM的系统，其使用基于图的方法，局部`scan-to-scan`匹配，以及基于Submap特征的直方图的重叠局部图的匹配。
 
-## III. SYSTEM OVERVIEW 系统概述
+## III. 系统概述
 
 Cartographer可实时室内绘图，生成分辨率为5cm的2D网格地图。 `Laser scans`被插入到最优估算位姿的Submap中，假定在短时间内足够准确。 而`Scan match`发生在最近的`Submap`上，因此它只取决于最近的扫描，全局误差会累积。
 
@@ -48,7 +46,7 @@ cartographer `定期`运行`位姿优化`来减少误差积累。
 这导致了`软实时约束`，即`闭环Scan match`必须比添加新扫描更快，否则它会明显落后,闭环失败。
 我们通过对每个完成的Submap使用`branch-and-bound`和几个`预先计算的网格`来实现这一点。
 
-## IV. LOCAL 2D SLAM 局部2d slam
+## IV. 局部2d slam
 
 
 我们的系统将单独的局部和全局方法结合到2D SLAM中。
@@ -103,7 +101,7 @@ and equivalently for misses
 
 等同于未命中
 
-![image](/cartographer-notes/docs/asset/carto_submap.png)
+![image](https://github.com/lsy563193/image/blob/master/cartographer_notes/carto_submap.png?raw=true)
 
 ### C. Ceres scan matching
 
@@ -122,7 +120,7 @@ $$
 能够测量角速度的IMU可用于估计Scan match之间的位置的旋转分量$\theta$。
 虽然计算密集程度更高，但可以在没有IMU的情况下使用更高频率的Scan match或像素精确扫描匹配方法。
 
-## V. CLOSING LOOPS 闭环
+## V. 闭环
 
 由于扫描仅与包含少量最近扫描的Submap匹配，因此上述方法会慢慢累积误差。
 对于仅几十次连续扫描，累积误差很小。
@@ -132,13 +130,13 @@ $$
 除了这些相对位姿之外，一旦Submap不再发生变化，所有其他由scan和Submap组成的对都被认为是`闭环`。
 global scan matcher在后台运行，如果找到良好匹配，则会将相应的相对位姿添加到优化问题中
 
-### A. Optimization problem
+### A. 优化问题
 
 `闭环优化`，和`Scan match`一样，也被称为`非线性最小二乘问题`，它允许轻松添加残差以考虑其他数据。
 每隔几秒钟，我们使用Ceres [14]来计算解决方案
 
 $$
-\underset{\Xi^m,\Xi^n}{argmin} \frac{1}{2}\sum_{ij}\rho(E^2(\xi _i^m,\xi _j^s;\sigma_{ij},\xi_{ij}))\tag{SPA}
+\underset{\Xi ^m,\Xi ^n}{argmin} \frac{1}{2}\sum _{ij}\rho (E^2(\xi _i^m,\xi _j^s;\sigma _{ij},\xi _{ij}))\tag{SPA}
 $$
 
 在给定一些约束的情况下，Submap构成$\Xi^m = \lbrace\xi_i^m\rbrace_{i=1,...,m}$和世界中的扫描构成$\Xi^s = \lbrace\xi_j^s\rbrace_{j=1,...,n}$被优化。
@@ -200,7 +198,7 @@ $$
 
 找到$\xi^*$的朴素算法很容易制定，参见算法1，但对于搜索窗口大小，我们考虑到它会太慢。
 
-![image](https://github.com/lsy563193/image/blob/master/cartographer_notes/algo1.png)
+![image](https://github.com/lsy563193/image/blob/master/cartographer_notes/algo1.png?raw=true)
 
 相反，我们使用branch-and-bound在较大的搜索窗口上有效地计算$\xi^*$。
 有关通用方法，请参见算法2。
@@ -215,9 +213,7 @@ $$
 
 为了得到具体的算法，我们必须决定节点选择，分支和上界计算的方法。
 
-#### 1) Node selection:
-
-1）节点选择：
+#### 1) 节点选择:
 
 在没有更好的替代方案的情况下，我们的算法使用深度优先搜索（DFS）作为默认选择：算法的效率取决于被修剪的树的大部分。
 这取决于两件事：良好的上限和良好的当前解决方案。
@@ -227,42 +223,41 @@ $$
 关于在DFS期间访问孩子的顺序，我们计算每个孩子的分数的上限，访问具有最大边界的最有希望的子节点。
 算法3是这种方法。
 
-#### 2) Branching rule:
-
-2）分支规则：
+#### 2) 分支规则：
 
 树中的每个节点由整数元组$c=（c_x，c_y，c_θ，c_h）\in\Bbb Z^4$描述。
 高度为ch的节点最多可合并$2^{ch}\times2^{ch}$可能的翻译，但代表一个特定的轮换：
 
 $$
-\overline {\overline{W}} = (\{j_x,j_y\} \in \Bbb{Z}^2:\\
-        \left.
-        \begin{array}{l}
-        c_x \leq j_x < c_x + 2^{ch}\\
+\overline {\overline{W}} = \Bigg(\{j_x,j_y\} \in \Bbb{Z}^2:  \\
+\Big\lbrace
+\begin{array}{l}
+        c_x \leq j_x < c_x + 2^{ch} \\
         c_x \leq j_x < c_x + 2^{ch}
         \end{array}
-        \right\}
-        \times \{c_\theta\},\tag11
+\Big\rbrace
+        \times \lbrace c_\theta \rbrace \Bigg) ,\tag{11}
 $$
 
 $$
 \overline{W}_c = \overline{\overline{W}} \cap \overline{W}\tag{12}
 $$
+   
 
-![image](https://github.com/lsy563193/image/blob/master/cartographer_notes/algo2.png)
+![image](https://github.com/lsy563193/image/blob/master/cartographer_notes/algo2.png?raw=true)
 
-![image](https://github.com/lsy563193/image/blob/master/cartographer_notes/algo3.png)
+![image](https://github.com/lsy563193/image/blob/master/cartographer_notes/algo3.png?raw=true)
 
-    
+ 
 叶节点具有高度$c_h=0$，并且对应于可行解$W\ni\xi_c=\xi_0 +（rc_x，rc_y，\xi_\theta c_\theta）$。
 
 在我们的算法3的公式中，包含所有可行解的根节点没有明确地出现并且分支到一组初始节点$C_0$，在固定高度$h_0$覆盖搜索窗口
 
 $$
-\overline{W}_{0,x} =  \{ -w_x + 2^{h_o}:j_x \in \Bbb Z, 0 \leq 2^{h_o} \leq 2w_x \} \\
-\overline{W}_{0,x} =  \{ -w_x + 2^{h_o}:j_x \in \Bbb Z, 0 \leq 2^{h_o} \leq 2w_x \} \\
-\overline{W}_{0,x} =  \{ -w_x + 2^{h_o}:j_x \in \Bbb Z, 0 \leq 2^{h_o} \leq 2w_x \} \\
-C_0 = \overline{W}_{0,x} \times \overline{W}_{0,y} \times \overline{W}_{0,\theta} \times \{h_0\} \tag{13}
+\overline{W}_{0,x} =  \lbrace -w_x + 2^{h_o}:j_x \in \Bbb Z, 0 \leq 2^{h_o} \leq 2w_x \rbrace, \\
+\overline{W}_{0,x} =  \lbrace -w_x + 2^{h_o}:j_x \in \Bbb Z, 0 \leq 2^{h_o} \leq 2w_x \rbrace, \\
+\overline{W}_{0,x} =  \lbrace -w_x + 2^{h_o}:j_x \in \Bbb Z, 0 \leq 2^{h_o} \leq 2w_x \rbrace, \\
+C_0 = \overline{W}_{0,x} \times \overline{W}_{0,y} \times \overline{W}_{0,\theta} \times \{h_0\}. \tag{13}
 $$
 
 At a given node c with $c_h > 1$, we branch into up to four children of height $c_h − 1$
@@ -273,12 +268,8 @@ C_c = ((\{c_x,c_x + 2^{c_h-1}\} \times {c_y, c_y + 2^{c_h-1} \times c_\theta}) \
 $$
 
 
-#### 3) Computing upper bounds: 
+#### 3) 计算上界： 
  
-The remaining part of the branch and bound approach is an efficient way to compute upper bounds at inner nodes, both in terms of computational effort and in the quality of the bound.
-We use
-3）计算上界：
-
 分支和边界方法的剩余部分是计算内部节点上限的有效方式，包括计算工作量和边界质量。
 我们用
 
@@ -323,7 +314,7 @@ $$
 
 计算上限的另一种方法是计算较低分辨率的概率网格，连续减半分辨率，见[1]。
 由于我们的方法的额外内存消耗是可接受的，我们更喜欢使用较低分辨率的概率网格，这导致比（15）更差的界限，从而对性能产生负面影响。
-## REFERENCES 参考
+## 参考
 
 [1] E. Olson，`M3RSM：多对多分辨率Scan match`，载于IEEE国际机器人与自动化会议论文集（ICRA），2015年6月。
 

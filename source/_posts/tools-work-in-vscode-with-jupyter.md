@@ -5,7 +5,7 @@ tags:
 - vscode 
 - jupyter
 category: 
-- 工具
+- 环境搭建
 ---
 
 ## 概述

@@ -5,7 +5,7 @@ tags:
 - youtube-dl 
 - proxychains 
 - notedown
-category: 工具
+category: 环境搭建
 ---
 
 ## youtube-dl
@@ -35,8 +35,9 @@ socks5  127.0.0.1 1080
 > 1080是你翻墙的端口
 
 ```bash
-proxychains youtube-dl --write-sub --sub-lang en --skip-download -o "%(playlist_index)s-%(title)s.%(ext)s" "https://www.youtube.com/watch?v=2S4nn7S8Hk4&list=PLAwxTw4SYaPnbDacyrK_kB_RUkuxQBlCm"
+proxychains youtube-dl --write-sub --sub-lang en --skip-download -o "%(playlist_index)s-%(title)s.%(ext)s" "https://www.youtube.com/playlist?list=PLAwxTw4SYaPkCSYXw6-a_aAoXVKLDwnHK"
  ```
+ youtube-dl --list-subs --no-playlist "https://youtu.be/nLEbJZFm5-E?list=PLAwxTw4SYaPkCSYXw6-a_aAoXVKLDwnHK "
 选项的解释
 * **--write-sub**: 写到字幕文件
 * **--sub-lang**: 下载语言

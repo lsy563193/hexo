@@ -1,0 +1,31 @@
+package "sensor::Data" {
+  class LocalSlamResultData{
+    + AddToPoseGraph()
+    ===
+     Time time
+
+  }
+  Data <-down- Queue
+  Dispatchable -up-|> Data
+  TimedPointCloudData -up-> Dispatchable
+  ImuData -up-> Dispatchable
+  OdomData -up-> Dispatchable
+  LocalSlamResultData --|> Data
+  ' ====
+  abstract Data{
+  + AddToTrajectoryBuilder()
+  + GetTime()
+  + GetSensorId()
+  ===
+  string sensor_id_
+  }
+
+  abstract Dispatchable{
+    + AddToTrajectoryBuilder()
+    + GetTime()
+    + GetSensorId()
+    ===
+    DataType data_
+  }
+  
+}

@@ -2,7 +2,7 @@
 title: 静脉曲张的原理和治疗方法
 date: 2018-07-30 11:25:06
 tags: 
-category: 健康
+category: 生活相关
 ---
 
 ## 概述
