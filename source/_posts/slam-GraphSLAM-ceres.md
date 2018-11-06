@@ -1,11 +1,15 @@
 ---
-title: 图优化 graph slam
+title: graph slam ceres 实现
 date: 2018-08-07 11:03:04
 tags: 
 - cartographer 
 category: slam技术
 mathjax: true
 ---
+本文是graph-slam 理论部分: ceres的实现部分
+$$
+e = (x_0)^2 + (x_1 - x_0 - 1)^2 + (l_0 - x_0 - 2)^2 + (l_0 - x_1 - 0.8)^2
+$$
 
 ```c++
 #include <vector>
