@@ -64,9 +64,27 @@ $$
 分别对$x_0$, $x_1$, $l_0$求偏导数
 
 $$
-\delta x
+\begin{array} 
+{ l } { \frac { \partial c } { \partial x _ { 0 } } = 2 x _ { 0 } - 2 \left( x _ { 1 } - x _ { 0 } - 1 \right) - 2 \left( l _ { 0 } - x _ { 0 } - 2 \right) } = 0\\
+ { \frac { \partial c } { \partial x _ { 1 } } = 2 \left( x _ { 1 } - x _ { 0 } - 1 \right) - 2 \left( l _ { 0 } - x _ { 1 } - 0.8 \right) } = 0\\
+  { \frac { \partial c } { \partial l _ { 0 } } = 2 \left( l _ { 0 } - x _ { 0 } - 2 \right) + 2 \left( l _ { 0 } - x _ { 1 } - 0.8 \right) }  =0
+\end{array}
 $$
 
+最终得到
+$$
+\left[ \begin{array} { c c c } { 3 } & { - 1 } & { - 1 } \\ { - 1 } & { 2 } & { - 1 } \\ { - 1 } & { - 1 } & { 2 } \end{array} \right] \left[ \begin{array} { c } { x _ { 0 } } \\ { x _ { 1 } } \\ { l _ { 0 } } \end{array} \right] = \left[ \begin{array} { r } { - 3.0 } \\ { 0.2 } \\ { 2.8 } \end{array} \right] \quad \text { or } \quad \Omega \mu = \xi
+$$
+
+接着矩阵求解线性方程组：
+$$
+\mu = \Omega ^ { - 1 } \xi = \left[ \begin{array} { c c c } { 3 } & { - 1 } & { - 1 } \\ { - 1 } & { 2 } & { - 1 } \\ { - 1 } & { - 1 } & { 2 } \end{array} \right] ^ { - 1 } \left[ \begin{array} { r } { - 3.0 } \\ { 0.2 } \\ { 2.8 } \end{array} \right] = \left[ \begin{array} { r } { 0 } \\ { 1.07 } \\ { 1.93 } \end{array} \right]
+$$
+
+得到路标和机器人位姿：
+$$
+x _ { 0 } = 0 , x _ { 1 } = 1.07 , \text { and } l _ { 0 } = 1.93
+$$
 ## 矩阵
 
 ## 裁简
