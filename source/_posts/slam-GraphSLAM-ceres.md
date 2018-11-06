@@ -7,6 +7,7 @@ category: slam技术
 mathjax: true
 ---
 本文是graph-slam 理论部分: ceres的实现部分
+<!-- more -->
 $$
 e = (x_0)^2 + (x_1 - x_0 - 1)^2 + (l_0 - x_0 - 2)^2 + (l_0 - x_1 - 0.8)^2
 $$

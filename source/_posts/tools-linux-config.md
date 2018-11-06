@@ -4,7 +4,8 @@ date: 2018-07-25 09:46:24
 tags: hexo
 category: 环境搭建
 ---
-
+ubuntu环境搭建脚本
+<!-- more -->
 ### 使用阿里云存储软件和私有代码
 [阿里云code](https://code.aliyun.com/)
 
@@ -108,3 +109,6 @@ sudo sh get-docker.sh --mirror Aliyun
 sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
+### 用这个漂亮的工具将方程式截图迅速转换为 LaTeX
+
+sudo snap install mathpix-snipping-tool

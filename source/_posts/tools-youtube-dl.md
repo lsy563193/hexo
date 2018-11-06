@@ -1,5 +1,5 @@
 ---
-title: 一些神奇的工具使用笔记
+title: youtube-dl使用教程
 date: 2018-07-25 16:28:07
 tags: 
 - youtube-dl 
@@ -7,7 +7,8 @@ tags:
 - notedown
 category: 环境搭建
 ---
-
+youtube-dl使用教程
+<!-- more -->
 ## youtube-dl
 
 ### 概述

@@ -1,0 +1,58 @@
+
+package "GlobalTrajectoryBuilder_Pack" {
+  class GlobalTrajectoryBuilder{
+    //AddToTrajectoryBuilder时创建,
+    //callback HandleCollatedSensorData,
+    //在Cartographer_ros定义,push到trajectory_state_data_
+    ===
+    + AddSensorData(point_cloud)
+    ===
+      trajectory_id_;
+      pose_graph_;
+      -local_trajectory_builder_;
+      local_slam_result_callback_;
+  }
+  class PoseGraph {
+    ===
+    + AddNode()
+    ===
+    - ComputeConstraintsForNode()//为节点添加约束，并在后台启动扫描匹配。//节点在所有子地图的位姿
+    - AddWorkItem()
+    - WhenDone()在'MaybeAdd * Constraint'触发的所有计算完成后，\n注册要与结果一起"result"的'callback'。 'callback'在'ThreadPool'中执行。
+    - NotifyEndOfNode();//与节点相关的计算全部完成后必须调用
+    ---
+    - finish_node_task_
+    - when_done_task_
+    - constraints_ // \n 1.节点在激活子地图位姿,local_for_front_to_submap \n 2.节点在完成子地图可能有的约束（假如匹配到了）\n 3. 如果是新地图, 为旧的节点计算约束
+    - constraint_builder_
+  }
+  class ConstraintBuilder2D{
+    - MaybeAddConstraint() //调度探索submap和'node_id'的\n'compressed_point_cloud'之间的新约束。
+    - computeConstraint()
+
+    ==
+    submap_scan_matcher_
+    ceres_scan_matcher_
+  }
+  class OptimizationProblem2D {
+    ===
+    - odometry_data_
+    - imu_data_
+    - landmark_data_
+    - node_data_
+    - submap_data_
+  }
+  class MapByTime {
+    //让人联想到std :: map，
+    //但是以'IdType'为索引，
+    //可以是'NodeId'或'SubmapId'。 
+    //注意：此容器只包含非空轨迹。 
+    //修剪轨迹的最后剩余节点会使轨迹下降。
+  }
+  ConstraintBuilder2D <-down- PoseGraph
+  OptimizationProblem2D <-down- PoseGraph
+  MapByTime <-down- OptimizationProblem2D
+  PoseGraph <-down- GlobalTrajectoryBuilder
+}
+
+

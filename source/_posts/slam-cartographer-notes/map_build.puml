@@ -1,0 +1,53 @@
+
+@startuml
+
+!include docs/slam/cartographer/local_slam.iuml
+!include docs/slam/cartographer/global_slam.iuml
+!include docs/slam/cartographer/collated.iuml
+!include docs/slam/cartographer/data.iuml
+!include docs/slam/cartographer/scan_match.iuml
+
+package "Upper interface" {
+  class map_build {
+    callback HandleCollatedSensorData
+    ===
+    + AddTrajectoryBuilder()
+    ===
+    - MapBuilderOptions
+    - thread_pool_
+    - pose_graph_
+    - CollatorInterface sensor_collator_
+    - TrajectoryBuilderInterface trajectory_builders_
+    - all_trajectory_builder_options_
+  }
+}
+
+interface TrajectoryBuilderInterface {
+  void AddSensorData()
+  void AddLocalSlamResultData()
+  ===
+  InsertionResult
+  local_slam_result_callback_
+}
+
+CollatedTrajectoryBuilder <-down- map_build
+TrajectoryCollator -down-|> CollatorInterface
+
+CollatedTrajectoryBuilder --|>TrajectoryBuilderInterface
+GlobalTrajectoryBuilder --|>TrajectoryBuilderInterface
+CollatedTrajectoryBuilder --> GlobalTrajectoryBuilder
+
+LocalTrajectoryBuilder <-down- GlobalTrajectoryBuilder
+
+LocalSlamResultCallback <-down- GlobalTrajectoryBuilder
+
+
+RealTimeCorrelativeScanMatcher2D <-down- LocalTrajectoryBuilder
+RealTimeCorrelativeScanMatcher2D <-down- ConstraintBuilder2D
+CeresScanMatcher2D <-down- LocalTrajectoryBuilder
+CeresScanMatcher2D <-down- ConstraintBuilder2D
+
+
+PoseGraph ..> LocalSlamResultData
+@enduml
+

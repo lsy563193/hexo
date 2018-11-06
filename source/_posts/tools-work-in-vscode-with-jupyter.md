@@ -7,7 +7,8 @@ tags:
 category: 
 - 环境搭建
 ---
-
+在vscode jupyter模式下工作
+<!-- more -->
 ## 概述
 使用jupyter notebook工作时候不习惯，自己还是喜欢在vscode纯vim的工作模式。于是下载了vscode jupyter的插件，但是这是来写pyd代码的。我的目的最终是生成md文档，记录我学习的过程。于是我下载了一个py2md.py的工具。做了些修改，用于把py生成md文件。
 

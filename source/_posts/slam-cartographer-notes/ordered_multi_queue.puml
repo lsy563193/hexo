@@ -1,0 +1,48 @@
+@startuml
+database "OrderedMultiQueue" {
+  folder "imu_1" {
+	[imu 1_1]
+	[imu 1_2]
+	[imu 1_3]
+  }
+  folder "imu_2" {
+	[imu 2_1]
+	[imu 2_2]
+	[imu 2_3]
+  }
+  folder "odom_1" {
+	[odom 1_1]
+	[odom 1_2]
+	[odom 1_3]
+  }
+  folder "odom_2" {
+	[odom 2_1]
+	[odom 2_2]
+	[odom 2_3]
+  }
+  folder "laser_1" {
+	  [laser 1_1]
+	  [laser 1_2]
+	  [laser 1_3]
+  }
+  folder "laser_2" {
+	  [laser 2_1]
+	  [laser 2_2]
+	  [laser 2_3]
+  }
+}
+[imu 1_1] -down- [imu 1_2]
+[imu 1_2] -down- [imu 1_3]
+[imu 2_1] -down- [imu 2_2]
+[imu 2_2] -down- [imu 2_3]
+
+[odom 1_1] -down- [odom 1_2]
+[odom 1_2] -down- [odom 1_3]
+[odom 2_1] -down- [odom 2_2]
+[odom 2_2] -down- [odom 2_3]
+
+[laser 1_1] -down- [laser 1_2]
+[laser 1_2] -down- [laser 1_3]
+[laser 2_1] -down- [laser 2_2]
+[laser 2_2] -down- [laser 2_3]
+@enduml
