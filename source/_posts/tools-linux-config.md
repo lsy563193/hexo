@@ -112,3 +112,11 @@ sudo usermod -aG docker $USER
 ### 用这个漂亮的工具将方程式截图迅速转换为 LaTeX
 
 sudo snap install mathpix-snipping-tool
+
+
+
+###  youtube-dl aria2c
+pip install --upgrade youtube-dl
+sudo apt-get install aria2 privoxy
+
+echo "forward-socks5 / localhost:8118 ." >> /etc/privoxy/config
