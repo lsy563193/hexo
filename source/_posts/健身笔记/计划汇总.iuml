@@ -1,0 +1,22 @@
+@startuml
+package 训练计划汇总{
+class 该练哪
+class 动作类型
+class 训练负荷
+class 训练顺序
+class 训练组数
+class 训练频率
+class 训练量
+class 简易计划
+class 计划表
+class 训练过度
+class 累与动
+class TMF
+class TMF要点
+class 组间间歇 {
+组间间歇 01
+组间间歇 02
+}
+class 十分钟训练计划
+class 三天计划
+@enduml
