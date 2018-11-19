@@ -2,7 +2,7 @@
 title: 健身笔记
 date: 2018-11-07 09:23:23
 tags: 硬派健身
-category: 健身笔记
+category: 运动康复
 ---
 
 

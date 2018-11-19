@@ -2,7 +2,7 @@
 title: 封闭阳台
 date: 2018-07-28 22:38:20
 tags: 阳台
-category: 生活相关
+category: 家居收纳
 ---
 
 ## 概述
