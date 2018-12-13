@@ -1,0 +1,17 @@
+@startuml
+
+interface Submap {
+// 一张独立自地图, 在子地图帧有一个 'local_pose' , 跟踪有多少'range data'被插入
+并且当插入完成时表示该地图不在改变并且准备好闭环
+===
+-const transform::Rigid3d local_pose_;
+-int num_range_data_;
+-bool insertion_finished_;
+}
+class Submap2D {
+  std::unique_ptr<Grid2D> grid_;
+  ValueConversionTables* conversion_tables_;
+}
+
+Submap2D --> Submap
+@enduml
