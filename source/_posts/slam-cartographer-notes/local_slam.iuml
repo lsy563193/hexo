@@ -35,19 +35,14 @@ package "LocalTrajectoryBuilder_Pack" {
 
 
   class RangeDataCollator {
-    // Synchronizes TimedPointCloudData from different sensors. Input needs only be
-    // monotonous in 'TimedPointCloudData::time', output is monotonous in per-point
-    // timing. Up to one message per sensor is buffered, so a delay of the period of
-    // the slowest sensor may be introduced, which can be alleviated by passing
-    // subdivisions.
-    同步来自不同传感器的TimedPointCloudData。 
-    在'TimedPointCloudData :: time'中输入需求只是单调的，
-    输出在每个点的时间是单调的。 
-    每个传感器最多一个消息被缓冲，
-    因此可以引入最慢传感器的周期的延迟，
-    这可以通过传递细分来减轻。
-==
+    同步来自不同传感器的TimedPointCloudData。
+    每个传感器最多缓冲一个消息，
+    1 一个传感器的时间是200到300，另一个是150到310.则取150到300
+    2 再有一帧数据过来，300到350，则取300到310
+
     //等到所有测距仪器数据才开始融合，否则返回空；
+
+==
     + AddRangeData()
     //测距传感器的集合
     expected_sensor_ids_ 

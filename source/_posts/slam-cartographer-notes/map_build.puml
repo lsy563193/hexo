@@ -1,11 +1,11 @@
 
 @startuml
 
-!include docs/slam/cartographer/local_slam.iuml
-!include docs/slam/cartographer/global_slam.iuml
-!include docs/slam/cartographer/collated.iuml
-!include docs/slam/cartographer/data.iuml
-!include docs/slam/cartographer/scan_match.iuml
+!include /home/syue/github/hexo/source/_posts/slam-cartographer-notes/local_slam.iuml
+!include /home/syue/github/hexo/source/_posts/slam-cartographer-notes/global_slam.iuml
+!include /home/syue/github/hexo/source/_posts/slam-cartographer-notes/collated.iuml
+!include /home/syue/github/hexo/source/_posts/slam-cartographer-notes/data.iuml
+!include /home/syue/github/hexo/source/_posts/slam-cartographer-notes/scan_match.iuml
 
 package "Upper interface" {
   class map_build {

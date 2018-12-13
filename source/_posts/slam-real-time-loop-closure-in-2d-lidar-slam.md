@@ -1,5 +1,5 @@
 ---
-title: cartographer 论文翻译 
+title: cartographer论文翻译:2d-lidar-slam的实时闭环
 date: 2018-08-07 11:03:04
 tags: 
 - cartographer 

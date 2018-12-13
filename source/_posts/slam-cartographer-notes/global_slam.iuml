@@ -1,4 +1,4 @@
-
+@startuml
 package "GlobalTrajectoryBuilder_Pack" {
   class GlobalTrajectoryBuilder{
     //AddToTrajectoryBuilder时创建,
@@ -56,3 +56,4 @@ package "GlobalTrajectoryBuilder_Pack" {
 }
 
 
+@enduml

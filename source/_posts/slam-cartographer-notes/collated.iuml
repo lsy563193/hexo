@@ -1,3 +1,4 @@
+@startuml
 package "CollatedTrajectoryBuilder Package" {
   class CollatedTrajectoryBuilder {
     + AddSensorData(TimedPointCloudData)
@@ -59,3 +60,4 @@ package "CollatedTrajectoryBuilder Package" {
   Collator -down-|> CollatorInterface
   Queue <-down- OrderedMultiQueue
 }
+@enduml

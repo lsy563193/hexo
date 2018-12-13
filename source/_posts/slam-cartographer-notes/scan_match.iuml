@@ -1,4 +1,4 @@
-
+@startuml
 package "scan_matching" {
     class RealTimeCorrelativeScanMatcher2D
     class FastCorrelativeScanMatcher2D
@@ -6,3 +6,4 @@ package "scan_matching" {
       - Match()
     }
 }
+@enduml
