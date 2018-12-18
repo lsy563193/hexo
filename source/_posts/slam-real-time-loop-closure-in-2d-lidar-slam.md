@@ -6,11 +6,11 @@ tags:
 category: slam技术
 mathjax: true
 ---
-cartographer 论文翻译
-<!-- more -->
+
 ## 摘要
 
 LIDAR SLAM是获取平面地图的有效方法。  构建便携式捕获平台需要在有限的计算资源下操作。 我们介绍了我们的背包绘图平台中使用的方法，该平台实现了5厘米分辨率的实时构图和`闭环`。 为了实现实时`闭环`，我们使用branch-and-bound将扫描到Submap匹配计算为约束。
+<!-- more -->
 
 ## I. 简介
 
